@@ -1,0 +1,167 @@
+Unit_Code__c,Name,Unit_Type__c,Unit_Status__c,Operating_Model__c,State__c,City__c,Operation_Start_Date__c,Daily_Operational_Capacity__c,Parent_Unit__r.Unit_Code__c,Operating_Partner__r.LT_CNPJ__c
+ALM-PR,Base Almirante Tamandaré (ALM),Base de Entrega,Ativa,Própria,PR,Almirante Tamandaré,2023-02-01,10000,PR SJS,
+ARP-PR,Base Arapongas (ARP),Base de Entrega,Ativa,Própria,PR,Arapongas,2020-04-08,2500,PR SJS,
+BIG-SC,Base Biguaçu (BIG),Base de Entrega,Ativa,Própria,SC,Biguaçu,2023-02-22,10000,SC BNU,
+BNU-SC,Base Blumenau (BNU),Base de Entrega,Ativa,Própria,SC,Blumenau,2022-02-19,5000,SC BNU,
+BRC-SC,Base Balneário Camboriú (BRC),Base de Entrega,Ativa,Própria,SC,Balneário Camboriú,2018-01-03,2500,SC BNU,
+CAC-PR,Base Cascavel (CAC),Base de Entrega,Ativa,Própria,PR,Cascavel,2019-09-20,1500,PR SJS,
+CCM-SC,Base Criciúma (CCM),Base de Entrega,Ativa,Própria,SC,Criciúma,2022-04-23,10000,SC BNU,
+CIC-PR,Base Curitiba (CIC),Base de Entrega,Ativa,Própria,PR,Curitiba,2023-09-14,2500,PR SJS,
+CLB-PR,Base Colombo (CLB),Base de Entrega,Ativa,Própria,PR,Colombo,2021-10-09,1500,PR SJS,
+CPM-PR,Base Campo Mourão (CPM),Base de Entrega,Ativa,Própria,PR,Campo Mourão,2024-03-23,5000,PR SJS,
+CPO-RS,Base Capão da Canoa (CPO),Base de Entrega,Ativa,Própria,RS,Capão da Canoa,2020-05-05,2500,RS NSR,
+CQA-RS,Base Camaquã (CQA),Base de Entrega,Ativa,Própria,RS,Camaquã,2024-06-04,1500,RS NSR,
+CTB-SC,Base Curitibanos (CTB),Base de Entrega,Ativa,Própria,SC,Curitibanos,2021-02-12,3500,SC BNU,
+CWB 02-PR,Base Curitiba (CWB 02),Base de Entrega,Ativa,Própria,PR,Curitiba,2022-05-26,1500,PR SJS,
+CWB 03-PR,Base Curitiba (CWB 03),Base de Entrega,Ativa,Própria,PR,Curitiba,2023-08-18,1500,PR SJS,
+CXJ 02-RS,Base Caxias do Sul (CXJ 02),Base de Entrega,Ativa,Própria,RS,Caxias do Sul,2021-02-18,3500,RS NSR,
+CXJ-RS,Base Caxias do Sul (CXJ),Base de Entrega,Ativa,Própria,RS,Caxias do Sul,2024-11-20,3500,RS NSR,
+F ARP-PR,Base Franqueada Arapongas (F ARP),Base de Entrega,Ativa,Franqueada,PR,Arapongas,2022-04-23,600,PR SJS,11.137.911/0001-53
+F ARQ-SC,Base Franqueada Araquari (F ARQ),Base de Entrega,Ativa,Franqueada,SC,Araquari,2018-11-08,1000,SC BNU,12.274.822/0001-06
+F ARQ02-SC,Base Franqueada Araquari (F ARQ02),Base de Entrega,Ativa,Franqueada,SC,Araquari,2018-04-28,600,SC BNU,13.411.733/0001-59
+F ARR-PR,Base Franqueada Araucária (F ARR),Base de Entrega,Ativa,Franqueada,PR,Araucária,2021-05-15,2000,PR SJS,14.548.644/0001-12
+F BLU 02-SC,Base Franqueada Blumenau (F BLU 02),Base de Entrega,Ativa,Franqueada,SC,Blumenau,2024-06-06,1000,SC BNU,15.685.555/0001-65
+F BLU-SC,Base Franqueada Blumenau (F BLU),Base de Entrega,Ativa,Franqueada,SC,Blumenau,2020-04-22,1000,SC BNU,16.822.466/0001-18
+F BTG-RS,Base Franqueada Bento Gonçalves (F BTG),Base de Entrega,Ativa,Franqueada,RS,Bento Gonçalves,2023-11-21,600,RS NSR,17.959.377/0001-71
+F CAT-RS,Base Franqueada Cruz Alta (F CAT),Base de Entrega,Ativa,Franqueada,RS,Cruz Alta,2022-11-06,1500,RS NSR,18.096.288/0001-24
+F CBU-SC,Base Franqueada Balneário Camboriú (F CBU),Base de Entrega,Ativa,Franqueada,SC,Balneário Camboriú,2023-04-06,1200,SC BNU,19.233.199/0001-77
+F CCH-RS,Base Franqueada Cachoeirinha (F CCH),Base de Entrega,Ativa,Franqueada,RS,Cachoeirinha,2021-05-21,2000,RS NSR,20.370.110/0001-30
+F CDR-SC,Base Franqueada Caçador (F CDR),Base de Entrega,Ativa,Franqueada,SC,Caçador,2022-04-22,1000,SC BNU,21.507.021/0001-83
+F CHA-SC,Base Franqueada Chapecó (F CHA),Base de Entrega,Ativa,Franqueada,SC,Chapecó,2024-01-08,600,SC BNU,22.644.932/0001-36
+F CHA02-SC,Base Franqueada Chapecó (F CHA02),Base de Entrega,Ativa,Franqueada,SC,Chapecó,2024-06-13,1000,SC BNU,23.781.843/0001-89
+F CLR 02-PR,Base Franqueada Colorado (F CLR 02),Base de Entrega,Ativa,Franqueada,PR,Colorado,2018-04-19,2000,PR SJS,24.918.754/0001-42
+F CLR-PR,Base Franqueada Colorado (F CLR),Base de Entrega,Ativa,Franqueada,PR,Colorado,2020-04-21,1200,PR SJS,25.055.665/0001-95
+F CNP-PR,Base Franqueada Cornélio Procópio (F CNP),Base de Entrega,Ativa,Franqueada,PR,Cornélio Procópio,2021-11-15,800,PR SJS,26.192.576/0001-48
+F CNS-RS,Base Franqueada Canoas (F CNS),Base de Entrega,Ativa,Franqueada,RS,Canoas,2020-03-08,2000,RS NSR,27.329.487/0001-01
+F COM 02-PR,Base Franqueada Campo Mourão (F COM 02),Base de Entrega,Ativa,Franqueada,PR,Campo Mourão,2022-09-09,2000,PR SJS,28.466.398/0001-54
+F COM-PR,Base Franqueada Campo Mourão (F COM),Base de Entrega,Ativa,Franqueada,PR,Campo Mourão,2022-07-19,1200,PR SJS,29.603.309/0001-07
+F CRZ-RS,Base Franqueada Carazinho (F CRZ),Base de Entrega,Ativa,Franqueada,RS,Carazinho,2020-04-05,1500,RS NSR,30.740.220/0001-60
+F CSC 02-PR,Base Franqueada Cascavel (F CSC 02),Base de Entrega,Ativa,Franqueada,PR,Cascavel,2021-02-25,600,PR SJS,31.877.131/0001-13
+F CSC-PR,Base Franqueada Cascavel (F CSC),Base de Entrega,Ativa,Franqueada,PR,Cascavel,2024-02-05,2000,PR SJS,32.014.042/0001-66
+F CST-PR,Base Franqueada Castro (F CST),Base de Entrega,Ativa,Franqueada,PR,Castro,2019-11-14,1500,PR SJS,33.151.953/0001-19
+F CTS-PR,Base Franqueada Ponta Grossa (F CTS),Base de Entrega,Ativa,Franqueada,PR,Ponta Grossa,2018-07-13,1500,PR SJS,34.288.864/0001-72
+F CWB 03-PR,Base Franqueada Curitiba (F CWB 03),Base de Entrega,Ativa,Franqueada,PR,Curitiba,2021-09-09,1500,PR SJS,35.425.775/0001-25
+F CWB 04-PR,Base Franqueada Curitiba (F CWB 04),Base de Entrega,Ativa,Franqueada,PR,Curitiba,2024-01-22,2000,PR SJS,36.562.686/0001-78
+F CWB 05-PR,Base Franqueada Curitiba (F CWB 05),Base de Entrega,Ativa,Franqueada,PR,Curitiba,2018-11-18,1000,PR SJS,37.699.597/0001-31
+F CWB 06-PR,Base Franqueada Curitiba (F CWB 06),Base de Entrega,Ativa,Franqueada,PR,Curitiba,2024-11-11,600,PR SJS,38.836.508/0001-84
+F CWB 07-PR,Base Franqueada Curitiba (F CWB 07),Base de Entrega,Ativa,Franqueada,PR,Curitiba,2020-07-06,1200,PR SJS,39.973.419/0001-37
+F CWB-PR,Base Franqueada Curitiba (F CWB),Base de Entrega,Ativa,Franqueada,PR,Curitiba,2018-12-24,1000,PR SJS,40.110.330/0001-90
+F DSU 02-RS,Base Franqueada Santa Cruz do Sul (F DSU 02),Base de Entrega,Ativa,Franqueada,RS,Santa Cruz do Sul,2022-03-17,600,RS NSR,41.247.241/0001-43
+F DSU-RS,Base Franqueada Santa Cruz do Sul (F DSU),Base de Entrega,Ativa,Franqueada,RS,Santa Cruz do Sul,2024-11-10,2000,RS NSR,42.384.152/0001-96
+F DVZ-PR,Base Franqueada Dois Vizinhos (F DVZ),Base de Entrega,Ativa,Franqueada,PR,Dois Vizinhos,2022-10-07,800,PR SJS,43.521.063/0001-49
+F ERM-RS,Base Franqueada Erechim (F ERM),Base de Entrega,Ativa,Franqueada,RS,Erechim,2020-03-18,1500,RS NSR,44.658.974/0001-02
+F FCB-PR,Base Franqueada Francisco Beltrão (F FCB),Base de Entrega,Ativa,Franqueada,PR,Francisco Beltrão,2018-10-11,1200,PR SJS,45.795.885/0001-55
+F FDI-PR,Base Franqueada Foz do Iguaçu (F FDI),Base de Entrega,Ativa,Franqueada,PR,Foz do Iguaçu,2018-02-12,1000,PR SJS,46.932.796/0001-08
+F FLN 02-SC,Base Franqueada Florianópolis (F FLN 02),Base de Entrega,Ativa,Franqueada,SC,Florianópolis,2019-01-08,1500,SC BNU,47.069.707/0001-61
+F FLN-SC,Base Franqueada Florianópolis (F FLN),Base de Entrega,Ativa,Franqueada,SC,Florianópolis,2018-02-24,1200,SC BNU,48.206.618/0001-14
+F FRG-PR,Base Franqueada Fazenda Rio Grande (F FRG),Base de Entrega,Ativa,Franqueada,PR,Fazenda Rio Grande,2024-02-25,1500,PR SJS,49.343.529/0001-67
+F FWT-RS,Base Franqueada Frederico Westphalen (F FWT),Base de Entrega,Ativa,Franqueada,RS,Frederico Westphalen,2024-03-05,2000,RS NSR,50.480.440/0001-20
+F GRB-PR,Base Franqueada Guaratuba (F GRB),Base de Entrega,Ativa,Franqueada,PR,Guaratuba,2021-09-06,1000,PR SJS,51.617.351/0001-73
+F GRP-PR,Base Franqueada Guarapuava (F GRP),Base de Entrega,Ativa,Franqueada,PR,Guarapuava,2022-10-14,800,PR SJS,52.754.262/0001-26
+F IBP-PR,Base Franqueada Ibiporã (F IBP),Base de Entrega,Ativa,Franqueada,PR,Ibiporã,2022-12-23,800,PR SJS,53.891.173/0001-79
+F ICR-SC,Base Franqueada Içara (F ICR),Base de Entrega,Ativa,Franqueada,SC,Içara,2023-05-13,2000,SC BNU,54.028.084/0001-32
+F IJI-RS,Base Franqueada Ijuí (F IJI),Base de Entrega,Ativa,Franqueada,RS,Ijuí,2023-06-15,1500,RS NSR,55.165.995/0001-85
+F IRA-PR,Base Franqueada Irati (F IRA),Base de Entrega,Ativa,Franqueada,PR,Irati,2021-02-08,800,PR SJS,56.302.906/0001-38
+F ITA-SC,Base Franqueada Concórdia (F ITA),Base de Entrega,Ativa,Franqueada,SC,Concórdia,2018-06-01,1500,SC BNU,57.439.817/0001-91
+F ITJ 02-SC,Base Franqueada Itajaí (F ITJ 02),Base de Entrega,Ativa,Franqueada,SC,Itajaí,2022-04-19,800,SC BNU,58.576.728/0001-44
+F ITJ-SC,Base Franqueada Itajaí (F ITJ),Base de Entrega,Ativa,Franqueada,SC,Itajaí,2018-02-23,2000,SC BNU,59.713.639/0001-97
+F ITJ03-SC,Base Franqueada Itajaí (F ITJ03),Base de Entrega,Ativa,Franqueada,SC,Itajaí,2018-04-03,600,SC BNU,60.850.550/0001-50
+F IVP-PR,Base Franqueada Ivaiporã (F IVP),Base de Entrega,Ativa,Franqueada,PR,Ivaiporã,2024-06-03,1500,PR SJS,61.987.461/0001-03
+F JDA-PR,Base Franqueada Jandaia do Sul (F JDA),Base de Entrega,Ativa,Franqueada,PR,Jandaia do Sul,2019-05-22,1200,PR SJS,62.124.372/0001-56
+F JOI 02-SC,Base Franqueada Joinville (F JOI 02),Base de Entrega,Ativa,Franqueada,SC,Joinville,2019-09-05,2000,SC BNU,63.261.283/0001-09
+F JOI-SC,Base Franqueada Joinville (F JOI),Base de Entrega,Ativa,Franqueada,SC,Joinville,2022-10-16,800,SC BNU,64.398.194/0001-62
+F JRS-SC,Base Franqueada Jaraguá do Sul (F JRS),Base de Entrega,Ativa,Franqueada,SC,Jaraguá do Sul,2024-08-26,1200,SC BNU,65.535.105/0001-15
+F LAG-SC,Base Franqueada Lages (F LAG),Base de Entrega,Ativa,Franqueada,SC,Lages,2019-02-04,2000,SC BNU,66.672.016/0001-68
+F LOA-PR,Base Franqueada Loanda (F LOA),Base de Entrega,Ativa,Franqueada,PR,Loanda,2021-06-14,1200,PR SJS,67.809.927/0001-21
+F LOD-PR,Base Franqueada Londrina (F LOD),Base de Entrega,Ativa,Franqueada,PR,Londrina,2021-12-02,2000,PR SJS,68.946.838/0001-74
+F MGR 02-PR,Base Franqueada Maringá (F MGR 02),Base de Entrega,Ativa,Franqueada,PR,Maringá,2023-11-04,600,PR SJS,69.083.749/0001-27
+F MGR-PR,Base Franqueada Maringá (F MGR),Base de Entrega,Ativa,Franqueada,PR,Maringá,2021-12-11,600,PR SJS,70.220.660/0001-80
+F NPT-RS,Base Franqueada Nova Prata (F NPT),Base de Entrega,Ativa,Franqueada,RS,Nova Prata,2019-04-07,1500,RS NSR,71.357.571/0001-33
+F PAL-PR,Base Franqueada Palotina (F PAL),Base de Entrega,Ativa,Franqueada,PR,Palotina,2021-03-14,800,PR SJS,72.494.482/0001-86
+F PBO-SC,Base Franqueada Porto Belo (F PBO),Base de Entrega,Ativa,Franqueada,SC,Porto Belo,2020-08-08,600,SC BNU,73.631.393/0001-39
+F PCN-RS,Base Franqueada Pareci Novo (F PCN),Base de Entrega,Ativa,Franqueada,RS,Pareci Novo,2021-09-04,600,RS NSR,74.768.304/0001-92
+F PCN02-RS,Base Franqueada Pareci Novo (F PCN02),Base de Entrega,Ativa,Franqueada,RS,Pareci Novo,2023-09-27,600,RS NSR,75.905.215/0001-45
+F PET-RS,Base Franqueada Pelotas (F PET),Base de Entrega,Ativa,Franqueada,RS,Pelotas,2018-04-06,1200,RS NSR,76.042.126/0001-98
+F PFB-RS,Base Franqueada Passo Fundo (F PFB),Base de Entrega,Ativa,Franqueada,RS,Passo Fundo,2021-08-07,1200,RS NSR,77.179.037/0001-51
+F PLT-RS,Base Franqueada Pelotas (F PLT),Base de Entrega,Ativa,Franqueada,RS,Pelotas,2018-03-13,600,RS NSR,78.316.948/0001-04
+F POA-RS,Base Franqueada Porto Alegre (F POA),Base de Entrega,Ativa,Franqueada,RS,Porto Alegre,2021-05-26,1200,RS NSR,79.453.859/0001-57
+F PRN-PR,Base Franqueada Paranavaí (F PRN),Base de Entrega,Ativa,Franqueada,PR,Paranavaí,2020-07-23,2000,PR SJS,80.590.770/0001-10
+F PRQ 02-PR,Base Franqueada Piraquara (F PRQ 02),Base de Entrega,Ativa,Franqueada,PR,Piraquara,2024-09-22,2000,PR SJS,81.727.681/0001-63
+F PTG-PR,Base Franqueada Ponta Grossa (F PTG),Base de Entrega,Ativa,Franqueada,PR,Ponta Grossa,2021-03-07,1000,PR SJS,82.864.592/0001-16
+F QNS-RS,Base Franqueada Canoas (F QNS),Base de Entrega,Ativa,Franqueada,RS,Canoas,2019-01-19,2000,RS NSR,83.001.503/0001-69
+F RON-PR,Base Franqueada Rondon (F RON),Base de Entrega,Ativa,Franqueada,PR,Rondon,2022-01-24,1000,PR SJS,84.138.414/0001-22
+F RSL-SC,Base Franqueada Rio do Sul (F RSL),Base de Entrega,Ativa,Franqueada,SC,Rio do Sul,2018-01-19,1200,SC BNU,85.275.325/0001-75
+F SAP-PR,Base Franqueada Santo Antônio da Platina (F SAP),Base de Entrega,Ativa,Franqueada,PR,Santo Antônio da Platina,2022-09-06,600,PR SJS,86.412.236/0001-28
+F SBS-SC,Base Franqueada São Bento do Sul (F SBS),Base de Entrega,Ativa,Franqueada,SC,São Bento do Sul,2022-02-28,800,SC BNU,87.549.147/0001-81
+F SLO-SC,Base Franqueada São Lourenço do Oeste (F SLO),Base de Entrega,Ativa,Franqueada,SC,São Lourenço do Oeste,2018-10-03,2000,SC BNU,88.686.058/0001-34
+F SMO-SC,Base Franqueada São Miguel do Oeste (F SMO),Base de Entrega,Ativa,Franqueada,SC,São Miguel do Oeste,2024-04-13,600,SC BNU,89.823.969/0001-87
+F SMS-PR,Base Franqueada São Mateus do Sul (F SMS),Base de Entrega,Ativa,Franqueada,PR,São Mateus do Sul,2022-04-19,1500,PR SJS,90.960.880/0001-40
+F STA 02-RS,Base Franqueada Santo Ângelo (F STA 02),Base de Entrega,Ativa,Franqueada,RS,Santo Ângelo,2018-10-03,1200,RS NSR,91.097.791/0001-93
+F STA-RS,Base Franqueada Santa Rita (F STA),Base de Entrega,Ativa,Franqueada,RS,Santa Rita,2023-10-19,1500,RS NSR,92.234.702/0001-46
+F TJA-SC,Base Franqueada Tijucas (F TJA),Base de Entrega,Ativa,Franqueada,SC,Tijucas,2020-05-07,2000,SC BNU,93.371.613/0001-99
+F TLD-PR,Base Franqueada Toledo (F TLD),Base de Entrega,Ativa,Franqueada,PR,Toledo,2023-06-08,1000,PR SJS,94.508.524/0001-52
+F TOR-RS,Base Franqueada Torres (F TOR),Base de Entrega,Ativa,Franqueada,RS,Torres,2021-03-22,2000,RS NSR,95.645.435/0001-05
+F UMU 02-PR,Base Franqueada Umuarama (F UMU 02),Base de Entrega,Ativa,Franqueada,PR,Umuarama,2020-08-11,600,PR SJS,96.782.346/0001-58
+F UMU-PR,Base Franqueada Umuarama (F UMU),Base de Entrega,Ativa,Franqueada,PR,Umuarama,2018-08-20,1500,PR SJS,97.919.257/0001-11
+F UNV-PR,Base Franqueada Ponta Grossa (F UNV),Base de Entrega,Ativa,Franqueada,PR,Ponta Grossa,2018-02-18,800,PR SJS,98.056.168/0001-64
+F URG-RS,Base Franqueada Uruguaiana (F URG),Base de Entrega,Ativa,Franqueada,RS,Uruguaiana,2022-05-05,1000,RS NSR,99.193.079/0001-17
+F XNX-SC,Base Franqueada Xanxerê (F XNX),Base de Entrega,Ativa,Franqueada,SC,Xanxerê,2018-04-12,1000,SC BNU,10.330.990/0001-70
+FCB-PR,Base Francisco Beltrão (FCB),Base de Entrega,Ativa,Própria,PR,Francisco Beltrão,2019-08-27,7500,PR SJS,
+FIN-SC,Base Florianópolis (FIN),Base de Entrega,Ativa,Própria,SC,Florianópolis,2023-05-20,10000,SC BNU,
+FIS-SC,Base Florianópolis (FIS),Base de Entrega,Ativa,Própria,SC,Florianópolis,2022-01-22,7500,SC BNU,
+FLC-SC,Base Florianópolis (FLC),Base de Entrega,Ativa,Própria,SC,Florianópolis,2020-11-04,2500,SC BNU,
+GBA-RS,Base Guaíba (GBA),Base de Entrega,Ativa,Própria,RS,Guaíba,2020-02-04,10000,RS NSR,
+GPB-PR,Base Guarapuava (GPB),Base de Entrega,Ativa,Própria,PR,Guarapuava,2022-03-09,3500,PR SJS,
+GRM-RS,Base Caxias do Sul (GRM),Base de Entrega,Ativa,Própria,RS,Caxias do Sul,2022-04-23,3500,RS NSR,
+GRV-RS,Base Gravataí (GRV),Base de Entrega,Ativa,Própria,RS,Gravataí,2019-11-21,3500,RS NSR,
+GSA-SC,Base Gaspar (GSA),Base de Entrega,Ativa,Própria,SC,Gaspar,2022-08-09,1500,SC BNU,
+IBB-SC,Base Imbituba (IBB),Base de Entrega,Ativa,Própria,SC,Imbituba,2018-11-14,3500,SC BNU,
+IBT-PR,Base Ibaiti (IBT),Base de Entrega,Ativa,Própria,PR,Ibaiti,2018-01-11,2500,PR SJS,
+IGU-PR,Base Foz do Iguaçu (IGU),Base de Entrega,Ativa,Própria,PR,Foz do Iguaçu,2023-05-06,10000,PR SJS,
+IJU-RS,Base Ijuí (IJU),Base de Entrega,Ativa,Própria,RS,Ijuí,2021-09-23,5000,RS NSR,
+IOA-SC,Base Itapoá (IOA),Base de Entrega,Ativa,Própria,SC,Itapoá,2022-01-04,1500,SC BNU,
+ITJ-SC,Base Itajaí (ITJ),Base de Entrega,Ativa,Própria,SC,Itajaí,2023-03-18,1500,SC BNU,
+ITP-SC,Base Itapema (ITP),Base de Entrega,Ativa,Própria,SC,Itapema,2024-06-19,7500,SC BNU,
+ITÇ-PR,Base Itaperuçu (ITÇ),Base de Entrega,Ativa,Própria,PR,Itaperuçu,2019-07-05,1500,PR SJS,
+JDS-SC,Base Jandaia do Sul (JDS),Base de Entrega,Ativa,Própria,SC,Jandaia do Sul,2020-06-26,1500,SC BNU,
+JOI-SC,Base Joinville (JOI),Base de Entrega,Ativa,Própria,SC,Joinville,2020-04-22,2500,SC BNU,
+JRS-SC,Base Jaraguá do Sul (JRS),Base de Entrega,Ativa,Própria,SC,Jaraguá do Sul,2023-02-12,7500,SC BNU,
+LAJ-RS,Base Lajeado (LAJ),Base de Entrega,Ativa,Própria,RS,Lajeado,2024-07-20,10000,RS NSR,
+LDB-PR,Base Londrina (LDB),Base de Entrega,Ativa,Própria,PR,Londrina,2019-04-28,2500,PR SJS,
+LGS-SC,Base Lages (LGS),Base de Entrega,Ativa,Própria,SC,Lages,2024-03-14,1500,SC BNU,
+MGF 02-PR,Base Maringá (MGF 02),Base de Entrega,Ativa,Própria,PR,Maringá,2019-12-11,5000,PR SJS,
+MGF-PR,Base Maringá (MGF),Base de Entrega,Ativa,Própria,PR,Maringá,2024-11-28,10000,PR SJS,
+MON-RS,Base Montenegro (MON),Base de Entrega,Ativa,Própria,RS,Montenegro,2024-04-09,2500,RS NSR,
+NHG-RS,Base Novo Hamburgo (NHG),Base de Entrega,Ativa,Própria,RS,Novo Hamburgo,2024-12-04,5000,RS NSR,
+NPT-RS,Base Nova Prata (NPT),Base de Entrega,Ativa,Própria,RS,Nova Prata,2024-01-28,5000,RS NSR,
+PEL-RS,Base Pelotas (PEL),Base de Entrega,Ativa,Própria,RS,Pelotas,2019-04-27,5000,RS NSR,
+PFB-RS,Base Passo Fundo (PFB),Base de Entrega,Ativa,Própria,RS,Passo Fundo,2020-05-27,2500,RS NSR,
+PGZ-PR,Base Ponta Grossa (PGZ),Base de Entrega,Ativa,Própria,PR,Ponta Grossa,2019-01-22,2500,PR SJS,
+PHC-SC,Base Palhoça (PHC),Base de Entrega,Ativa,Própria,SC,Palhoça,2021-06-09,1500,SC BNU,
+PNG-PR,Base Paranaguá (PNG),Base de Entrega,Ativa,Própria,PR,Paranaguá,2024-05-12,10000,PR SJS,
+PNS-PR,Base Pinhais (PNS),Base de Entrega,Ativa,Própria,PR,Pinhais,2022-07-22,7500,PR SJS,
+POA-RS,Base Porto Alegre (POA),Base de Entrega,Ativa,Própria,RS,Porto Alegre,2020-01-04,3500,RS NSR,
+POA 02-RS,Base Porto Alegre (POA 02),Base de Entrega,Ativa,Própria,RS,Porto Alegre,2019-10-09,1500,RS NSR,
+POA 03-RS,Base Porto Alegre (POA 03),Base de Entrega,Ativa,Própria,RS,Porto Alegre,2018-10-14,3500,RS NSR,
+POA 04-RS,Base Porto Alegre (POA 04),Base de Entrega,Ativa,Própria,RS,Porto Alegre,2023-06-14,7500,RS NSR,
+POA 06-RS,Base Porto Alegre (POA 06),Base de Entrega,Ativa,Própria,RS,Porto Alegre,2022-02-13,7500,RS NSR,
+PRB-RS,Base Parobé (PRB),Base de Entrega,Ativa,Própria,RS,Parobé,2019-05-02,10000,RS NSR,
+PTO-PR,Base Pato Branco (PTO),Base de Entrega,Ativa,Própria,PR,Pato Branco,2021-01-17,7500,PR SJS,
+PVI-PR,Base Paranavaí (PVI),Base de Entrega,Ativa,Própria,PR,Paranavaí,2023-12-24,10000,PR SJS,
+QNS-RS,Base Canoas (QNS),Base de Entrega,Ativa,Própria,RS,Canoas,2023-04-12,5000,RS NSR,
+RBS-PR,Base Rio Branco do Sul (RBS),Base de Entrega,Ativa,Própria,PR,Rio Branco do Sul,2018-11-11,7500,PR SJS,
+RDS-SC,Base Rio do Sul (RDS),Base de Entrega,Ativa,Própria,SC,Rio do Sul,2020-11-28,1500,SC BNU,
+RIA-RS,Base Santa Maria (RIA),Base de Entrega,Ativa,Própria,RS,Santa Maria,2023-05-17,3500,RS NSR,
+RNG-PR,Base Rio Negro (RNG),Base de Entrega,Ativa,Própria,PR,Rio Negro,2023-07-11,5000,PR SJS,
+SAT-RS,Base Santiago (SAT),Base de Entrega,Ativa,Própria,RS,Santiago,2023-05-18,2500,RS NSR,
+SCU-RS,Base Santa Cruz do Sul (SCU),Base de Entrega,Ativa,Própria,RS,Santa Cruz do Sul,2019-07-22,5000,RS NSR,
+SJE-SC,Base São José (SJE),Base de Entrega,Ativa,Própria,SC,São José,2023-12-06,7500,SC BNU,
+SJS-PR,Base São José dos Pinhais (SJS),Base de Entrega,Ativa,Própria,PR,São José dos Pinhais,2022-05-13,7500,PR SJS,
+SMO-SC,Base São Miguel do Oeste (SMO),Base de Entrega,Ativa,Própria,SC,São Miguel do Oeste,2024-01-10,3500,SC BNU,
+STR-RS,Base Santa Rosa (STR),Base de Entrega,Ativa,Própria,RS,Santa Rosa,2019-07-26,7500,RS NSR,
+TLB-PR,Base Telêmaco Borba (TLB),Base de Entrega,Ativa,Própria,PR,Telêmaco Borba,2022-11-11,5000,PR SJS,
+TUB-SC,Base Tubarão (TUB),Base de Entrega,Ativa,Própria,SC,Tubarão,2021-08-22,2500,SC BNU,
+UMU-PR,Base Umuarama (UMU),Base de Entrega,Ativa,Própria,PR,Umuarama,2022-08-26,10000,PR SJS,
+VCR-RS,Base Vacaria (VCR),Base de Entrega,Ativa,Própria,RS,Vacaria,2019-11-03,3500,RS NSR,
+XAP-SC,Base Chapecó (XAP),Base de Entrega,Ativa,Própria,SC,Chapecó,2022-11-21,7500,SC BNU,
+XAP 02-SC,Base Chapecó (XAP 02),Base de Entrega,Ativa,Própria,SC,Chapecó,2020-02-27,2500,SC BNU,

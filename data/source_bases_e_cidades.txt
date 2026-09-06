@@ -1,0 +1,167 @@
+ALM -PR	Almirante Tamandaré
+ARP -PR	Arapongas
+BIG -SC	Biguaçu
+BNU -SC	Blumenau
+BRC-SC	Balneário Camboriu
+CAC -PR	Cascavel
+CCM -SC	Criciúma
+CIC-PR	Curitiba
+CLB-PR	Colombo
+CPM -PR	Campo Mourão
+CPO -RS	Capão da Canoa
+CQA -RS	Camaquã
+CTB -SC	Curitibanos
+CWB 02-PR	Curitiba
+CWB 03-PR	Curitiba
+CXJ 02-RS	Caxias do Sul
+CXJ-RS	Caxias do Sul
+F ARP-PR	Arapongas
+F ARQ-SC	Araquari
+F ARQ02-SC	Araquari
+F ARR-PR	Aráucaria
+F BLU 02-SC	Blumenau
+F BLU-SC	Blumenau
+F BTG-RS	Bento Gonçalves
+F CAT-RS	Cruz Alta
+F CBU-SC	Balneário Camboríu
+F CCH-RS	Cachoeirinha
+F CDR-SC	Caçador
+F CHA-SC	Chapecó
+F CHA02-SC	Chapecó
+F CLR 02-PR	Colorado
+F CLR-PR	Colorado
+F CNP-PR	Cornélio Procópio
+F CNS-RS	Canoas
+F COM 02-PR	Campo Mourão
+F COM-PR	Campo Mourão
+F CRZ-RS	Carazinho
+F CSC 02-PR	Cascavel
+F CSC-PR	Cascavel
+F CST-PR	Castro
+F CTS-PR	Ponta Grossa
+F CWB 03-PR	Curitiba
+F CWB 04-PR	Curitiba
+F CWB 05-PR	Curitiba
+F CWB 06-PR	Curitiba
+F CWB 07-PR	Curitiba
+F CWB-PR	Curitiba
+F DSU 02-RS	Santa Cruz do Sul
+F DSU-RS	Santa Cruz do Sul
+F DVZ-PR	Dois vizinhos
+F ERM-RS	Erechim
+F FCB-PR	Francisco Beltrão
+F FDI-PR	Foz do Iguaçu
+F FLN 02-SC	Florianopolis
+F FLN-SC	Florianopolis
+F FRG-PR	Fazenda Rio Grande
+F FWT-RS	Frederico Westephalen
+F GRB-PR	Guaratuba
+F GRP-PR	Guarapuava
+F IBP-PR	Ibiporã
+F ICR-SC	Içara
+F IJI-RS	Ijuí
+F IRA-PR	Irati
+F ITA-SC	Concórdia
+F ITJ 02-SC	Itajai
+F ITJ-SC	Itajai
+F ITJ03-SC	Itajai
+F IVP-PR	Ivaiporã
+F JDA-PR	Jandaia
+F JOI 02-SC	Joinville
+F JOI-SC	Joinville
+F JRS-SC	Jaraguá do sul
+F LAG-SC	Lages
+F LOA-PR	Loanda
+F LOD-PR	Londrina
+F MGR 02-PR	Maringá
+F MGR-PR	Maringá
+F NPT-RS	Nova Prata
+F PAL-PR	Palotina
+F PBO-SC	Porto Belo
+F PCN-RS PERECI NOVO
+F PCN02-RS PERECI NOVO
+F PET-RS Pelotas
+F PFB-RS Passo Fundo
+F PLT-RS Pelotas
+F POA-RS Porto Alegre
+F PRN-PR Paranavai
+F PRQ 02-PR Piraquara
+F PTG-PR Ponta Grossa
+F QNS-RS Canoas
+F RON-PR Rondon
+F RSL-SC Rio do Sul
+F SAP-PR Santo Antônio da Platina
+F SBS-SC São Bento do Sul
+F SLO-SC São Lourenço do Oeste
+F SMO-SC São Miguel do Oeste
+F SMS-PR SÃO Matheus do sul
+F STA 02-RS Santo Ângelo
+F STA-RS Santa Rita
+F TJA-SC Tijucas
+F TLD-PR Toledo
+F TOR-RS Torres
+F UMU 02-PR Umuarama
+F UMU-PR Umuarama
+F UNV-PR Ponta Grossa
+F URG-RS Uruguaiana
+F XNX-SC Xenxerê
+FCB-PR	Francisco Beltrão
+FIN -SC	Florianopolis
+FIS -SC	Florianopolis
+FLC -SC	Florianopolis
+GBA -RS	Guaíba
+GPB -PR	Guarapuava
+GRM-RS	Caxias do Sul
+GRV -RS	Gravataí
+GSA-SC	Gaspar
+IBB -SC	Imbutuba
+IBT -PR	Ibaiti
+IGU-PR	Foz do iguaçu
+IJU -RS	Ijuí
+IOA-SC	Itapoá
+ITJ -SC	Itajaí
+ITP -SC	Itapema
+ITÇ -PR	Itaperuçu
+JDS -SC	Jandaia do Sul
+JOI -SC	Joinville
+JRS-SC	Jaragua do Sul
+LAJ -RS	Lajeado
+LDB-PR	Londrina
+LGS -SC	Lages
+MGF 02-PR Maringá
+MGF-PR	Maringá
+MON -RS	Montenegro
+NHG -RS	Novo Hamburgo
+NPT -RS	Nova Prata
+PEL -RS	Pelotas
+PFB -RS	Passo Fundo
+PGZ-PR	Ponta Grossa
+PHC -SC	Palhoça
+PNG -PR	Paranaguá
+PNS -PR	Pinhais
+POA -RS	Porto Alegre
+POA 02-RS Porto Alegre
+POA 03-RS Porto Alegre
+POA 04-RS Porto Alegre
+POA 06-RS Porto Alegre
+PR SJS	São José dos Pinhais
+PRB-RS	Parobé
+PTO -PR	Pato Branco
+PVI -PR	Paranavaí
+QNS -RS	Canoas
+RBS -PR	Rio Branco do Sul
+RDS -SC	Rio do Sul
+RIA -RS	Santa Maria
+RNG -PR	Rio Negro
+SAT -RS	Santiago
+SCU -RS	Santa Cruz do Sul
+SJE-SC	São José
+SJS -PR	São José dos Pinhais
+SMO -SC	São Miguel do Oeste
+STR -RS	Santa Rosa
+TLB -PR	Telêmaco Borba
+TUB -SC	Tubarão
+UMU -PR	Umuarama
+VCR -RS	Vacaria
+XAP -SC	Chapecó
+XAP 02-SC Chapecó

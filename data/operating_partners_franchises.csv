@@ -1,0 +1,91 @@
+Name,RecordTypeId,LT_Operating_Partner_Type__c,LT_CNPJ__c,LT_Partner_Status__c,Type,Description
+Franquia Arapongas (F ARP),012g8000002pYbBAAU,Franqueado,11.137.911/0001-53,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F ARP-PR em Arapongas/PR.
+Franquia Araquari (F ARQ),012g8000002pYbBAAU,Franqueado,12.274.822/0001-06,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F ARQ-SC em Araquari/SC.
+Franquia Araquari (F ARQ02),012g8000002pYbBAAU,Franqueado,13.411.733/0001-59,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F ARQ02-SC em Araquari/SC.
+Franquia Araucária (F ARR),012g8000002pYbBAAU,Franqueado,14.548.644/0001-12,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F ARR-PR em Araucária/PR.
+Franquia Blumenau (F BLU 02),012g8000002pYbBAAU,Franqueado,15.685.555/0001-65,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F BLU 02-SC em Blumenau/SC.
+Franquia Blumenau (F BLU),012g8000002pYbBAAU,Franqueado,16.822.466/0001-18,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F BLU-SC em Blumenau/SC.
+Franquia Bento Gonçalves (F BTG),012g8000002pYbBAAU,Franqueado,17.959.377/0001-71,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F BTG-RS em Bento Gonçalves/RS.
+Franquia Cruz Alta (F CAT),012g8000002pYbBAAU,Franqueado,18.096.288/0001-24,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CAT-RS em Cruz Alta/RS.
+Franquia Balneário Camboriú (F CBU),012g8000002pYbBAAU,Franqueado,19.233.199/0001-77,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CBU-SC em Balneário Camboriú/SC.
+Franquia Cachoeirinha (F CCH),012g8000002pYbBAAU,Franqueado,20.370.110/0001-30,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CCH-RS em Cachoeirinha/RS.
+Franquia Caçador (F CDR),012g8000002pYbBAAU,Franqueado,21.507.021/0001-83,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CDR-SC em Caçador/SC.
+Franquia Chapecó (F CHA),012g8000002pYbBAAU,Franqueado,22.644.932/0001-36,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CHA-SC em Chapecó/SC.
+Franquia Chapecó (F CHA02),012g8000002pYbBAAU,Franqueado,23.781.843/0001-89,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CHA02-SC em Chapecó/SC.
+Franquia Colorado (F CLR 02),012g8000002pYbBAAU,Franqueado,24.918.754/0001-42,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CLR 02-PR em Colorado/PR.
+Franquia Colorado (F CLR),012g8000002pYbBAAU,Franqueado,25.055.665/0001-95,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CLR-PR em Colorado/PR.
+Franquia Cornélio Procópio (F CNP),012g8000002pYbBAAU,Franqueado,26.192.576/0001-48,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CNP-PR em Cornélio Procópio/PR.
+Franquia Canoas (F CNS),012g8000002pYbBAAU,Franqueado,27.329.487/0001-01,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CNS-RS em Canoas/RS.
+Franquia Campo Mourão (F COM 02),012g8000002pYbBAAU,Franqueado,28.466.398/0001-54,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F COM 02-PR em Campo Mourão/PR.
+Franquia Campo Mourão (F COM),012g8000002pYbBAAU,Franqueado,29.603.309/0001-07,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F COM-PR em Campo Mourão/PR.
+Franquia Carazinho (F CRZ),012g8000002pYbBAAU,Franqueado,30.740.220/0001-60,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CRZ-RS em Carazinho/RS.
+Franquia Cascavel (F CSC 02),012g8000002pYbBAAU,Franqueado,31.877.131/0001-13,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CSC 02-PR em Cascavel/PR.
+Franquia Cascavel (F CSC),012g8000002pYbBAAU,Franqueado,32.014.042/0001-66,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CSC-PR em Cascavel/PR.
+Franquia Castro (F CST),012g8000002pYbBAAU,Franqueado,33.151.953/0001-19,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CST-PR em Castro/PR.
+Franquia Ponta Grossa (F CTS),012g8000002pYbBAAU,Franqueado,34.288.864/0001-72,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CTS-PR em Ponta Grossa/PR.
+Franquia Curitiba (F CWB 03),012g8000002pYbBAAU,Franqueado,35.425.775/0001-25,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CWB 03-PR em Curitiba/PR.
+Franquia Curitiba (F CWB 04),012g8000002pYbBAAU,Franqueado,36.562.686/0001-78,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CWB 04-PR em Curitiba/PR.
+Franquia Curitiba (F CWB 05),012g8000002pYbBAAU,Franqueado,37.699.597/0001-31,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CWB 05-PR em Curitiba/PR.
+Franquia Curitiba (F CWB 06),012g8000002pYbBAAU,Franqueado,38.836.508/0001-84,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CWB 06-PR em Curitiba/PR.
+Franquia Curitiba (F CWB 07),012g8000002pYbBAAU,Franqueado,39.973.419/0001-37,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CWB 07-PR em Curitiba/PR.
+Franquia Curitiba (F CWB),012g8000002pYbBAAU,Franqueado,40.110.330/0001-90,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F CWB-PR em Curitiba/PR.
+Franquia Santa Cruz do Sul (F DSU 02),012g8000002pYbBAAU,Franqueado,41.247.241/0001-43,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F DSU 02-RS em Santa Cruz do Sul/RS.
+Franquia Santa Cruz do Sul (F DSU),012g8000002pYbBAAU,Franqueado,42.384.152/0001-96,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F DSU-RS em Santa Cruz do Sul/RS.
+Franquia Dois Vizinhos (F DVZ),012g8000002pYbBAAU,Franqueado,43.521.063/0001-49,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F DVZ-PR em Dois Vizinhos/PR.
+Franquia Erechim (F ERM),012g8000002pYbBAAU,Franqueado,44.658.974/0001-02,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F ERM-RS em Erechim/RS.
+Franquia Francisco Beltrão (F FCB),012g8000002pYbBAAU,Franqueado,45.795.885/0001-55,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F FCB-PR em Francisco Beltrão/PR.
+Franquia Foz do Iguaçu (F FDI),012g8000002pYbBAAU,Franqueado,46.932.796/0001-08,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F FDI-PR em Foz do Iguaçu/PR.
+Franquia Florianópolis (F FLN 02),012g8000002pYbBAAU,Franqueado,47.069.707/0001-61,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F FLN 02-SC em Florianópolis/SC.
+Franquia Florianópolis (F FLN),012g8000002pYbBAAU,Franqueado,48.206.618/0001-14,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F FLN-SC em Florianópolis/SC.
+Franquia Fazenda Rio Grande (F FRG),012g8000002pYbBAAU,Franqueado,49.343.529/0001-67,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F FRG-PR em Fazenda Rio Grande/PR.
+Franquia Frederico Westphalen (F FWT),012g8000002pYbBAAU,Franqueado,50.480.440/0001-20,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F FWT-RS em Frederico Westphalen/RS.
+Franquia Guaratuba (F GRB),012g8000002pYbBAAU,Franqueado,51.617.351/0001-73,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F GRB-PR em Guaratuba/PR.
+Franquia Guarapuava (F GRP),012g8000002pYbBAAU,Franqueado,52.754.262/0001-26,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F GRP-PR em Guarapuava/PR.
+Franquia Ibiporã (F IBP),012g8000002pYbBAAU,Franqueado,53.891.173/0001-79,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F IBP-PR em Ibiporã/PR.
+Franquia Içara (F ICR),012g8000002pYbBAAU,Franqueado,54.028.084/0001-32,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F ICR-SC em Içara/SC.
+Franquia Ijuí (F IJI),012g8000002pYbBAAU,Franqueado,55.165.995/0001-85,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F IJI-RS em Ijuí/RS.
+Franquia Irati (F IRA),012g8000002pYbBAAU,Franqueado,56.302.906/0001-38,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F IRA-PR em Irati/PR.
+Franquia Concórdia (F ITA),012g8000002pYbBAAU,Franqueado,57.439.817/0001-91,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F ITA-SC em Concórdia/SC.
+Franquia Itajaí (F ITJ 02),012g8000002pYbBAAU,Franqueado,58.576.728/0001-44,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F ITJ 02-SC em Itajaí/SC.
+Franquia Itajaí (F ITJ),012g8000002pYbBAAU,Franqueado,59.713.639/0001-97,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F ITJ-SC em Itajaí/SC.
+Franquia Itajaí (F ITJ03),012g8000002pYbBAAU,Franqueado,60.850.550/0001-50,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F ITJ03-SC em Itajaí/SC.
+Franquia Ivaiporã (F IVP),012g8000002pYbBAAU,Franqueado,61.987.461/0001-03,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F IVP-PR em Ivaiporã/PR.
+Franquia Jandaia do Sul (F JDA),012g8000002pYbBAAU,Franqueado,62.124.372/0001-56,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F JDA-PR em Jandaia do Sul/PR.
+Franquia Joinville (F JOI 02),012g8000002pYbBAAU,Franqueado,63.261.283/0001-09,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F JOI 02-SC em Joinville/SC.
+Franquia Joinville (F JOI),012g8000002pYbBAAU,Franqueado,64.398.194/0001-62,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F JOI-SC em Joinville/SC.
+Franquia Jaraguá do Sul (F JRS),012g8000002pYbBAAU,Franqueado,65.535.105/0001-15,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F JRS-SC em Jaraguá do Sul/SC.
+Franquia Lages (F LAG),012g8000002pYbBAAU,Franqueado,66.672.016/0001-68,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F LAG-SC em Lages/SC.
+Franquia Loanda (F LOA),012g8000002pYbBAAU,Franqueado,67.809.927/0001-21,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F LOA-PR em Loanda/PR.
+Franquia Londrina (F LOD),012g8000002pYbBAAU,Franqueado,68.946.838/0001-74,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F LOD-PR em Londrina/PR.
+Franquia Maringá (F MGR 02),012g8000002pYbBAAU,Franqueado,69.083.749/0001-27,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F MGR 02-PR em Maringá/PR.
+Franquia Maringá (F MGR),012g8000002pYbBAAU,Franqueado,70.220.660/0001-80,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F MGR-PR em Maringá/PR.
+Franquia Nova Prata (F NPT),012g8000002pYbBAAU,Franqueado,71.357.571/0001-33,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F NPT-RS em Nova Prata/RS.
+Franquia Palotina (F PAL),012g8000002pYbBAAU,Franqueado,72.494.482/0001-86,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F PAL-PR em Palotina/PR.
+Franquia Porto Belo (F PBO),012g8000002pYbBAAU,Franqueado,73.631.393/0001-39,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F PBO-SC em Porto Belo/SC.
+Franquia Pareci Novo (F PCN),012g8000002pYbBAAU,Franqueado,74.768.304/0001-92,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F PCN-RS em Pareci Novo/RS.
+Franquia Pareci Novo (F PCN02),012g8000002pYbBAAU,Franqueado,75.905.215/0001-45,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F PCN02-RS em Pareci Novo/RS.
+Franquia Pelotas (F PET),012g8000002pYbBAAU,Franqueado,76.042.126/0001-98,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F PET-RS em Pelotas/RS.
+Franquia Passo Fundo (F PFB),012g8000002pYbBAAU,Franqueado,77.179.037/0001-51,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F PFB-RS em Passo Fundo/RS.
+Franquia Pelotas (F PLT),012g8000002pYbBAAU,Franqueado,78.316.948/0001-04,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F PLT-RS em Pelotas/RS.
+Franquia Porto Alegre (F POA),012g8000002pYbBAAU,Franqueado,79.453.859/0001-57,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F POA-RS em Porto Alegre/RS.
+Franquia Paranavaí (F PRN),012g8000002pYbBAAU,Franqueado,80.590.770/0001-10,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F PRN-PR em Paranavaí/PR.
+Franquia Piraquara (F PRQ 02),012g8000002pYbBAAU,Franqueado,81.727.681/0001-63,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F PRQ 02-PR em Piraquara/PR.
+Franquia Ponta Grossa (F PTG),012g8000002pYbBAAU,Franqueado,82.864.592/0001-16,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F PTG-PR em Ponta Grossa/PR.
+Franquia Canoas (F QNS),012g8000002pYbBAAU,Franqueado,83.001.503/0001-69,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F QNS-RS em Canoas/RS.
+Franquia Rondon (F RON),012g8000002pYbBAAU,Franqueado,84.138.414/0001-22,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F RON-PR em Rondon/PR.
+Franquia Rio do Sul (F RSL),012g8000002pYbBAAU,Franqueado,85.275.325/0001-75,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F RSL-SC em Rio do Sul/SC.
+Franquia Santo Antônio da Platina (F SAP),012g8000002pYbBAAU,Franqueado,86.412.236/0001-28,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F SAP-PR em Santo Antônio da Platina/PR.
+Franquia São Bento do Sul (F SBS),012g8000002pYbBAAU,Franqueado,87.549.147/0001-81,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F SBS-SC em São Bento do Sul/SC.
+Franquia São Lourenço do Oeste (F SLO),012g8000002pYbBAAU,Franqueado,88.686.058/0001-34,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F SLO-SC em São Lourenço do Oeste/SC.
+Franquia São Miguel do Oeste (F SMO),012g8000002pYbBAAU,Franqueado,89.823.969/0001-87,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F SMO-SC em São Miguel do Oeste/SC.
+Franquia São Mateus do Sul (F SMS),012g8000002pYbBAAU,Franqueado,90.960.880/0001-40,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F SMS-PR em São Mateus do Sul/PR.
+Franquia Santo Ângelo (F STA 02),012g8000002pYbBAAU,Franqueado,91.097.791/0001-93,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F STA 02-RS em Santo Ângelo/RS.
+Franquia Santa Rita (F STA),012g8000002pYbBAAU,Franqueado,92.234.702/0001-46,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F STA-RS em Santa Rita/RS.
+Franquia Tijucas (F TJA),012g8000002pYbBAAU,Franqueado,93.371.613/0001-99,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F TJA-SC em Tijucas/SC.
+Franquia Toledo (F TLD),012g8000002pYbBAAU,Franqueado,94.508.524/0001-52,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F TLD-PR em Toledo/PR.
+Franquia Torres (F TOR),012g8000002pYbBAAU,Franqueado,95.645.435/0001-05,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F TOR-RS em Torres/RS.
+Franquia Umuarama (F UMU 02),012g8000002pYbBAAU,Franqueado,96.782.346/0001-58,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F UMU 02-PR em Umuarama/PR.
+Franquia Umuarama (F UMU),012g8000002pYbBAAU,Franqueado,97.919.257/0001-11,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F UMU-PR em Umuarama/PR.
+Franquia Ponta Grossa (F UNV),012g8000002pYbBAAU,Franqueado,98.056.168/0001-64,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F UNV-PR em Ponta Grossa/PR.
+Franquia Uruguaiana (F URG),012g8000002pYbBAAU,Franqueado,99.193.079/0001-17,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F URG-RS em Uruguaiana/RS.
+Franquia Xanxerê (F XNX),012g8000002pYbBAAU,Franqueado,10.330.990/0001-70,Ativo,Franquia,Parceiro operacional responsável pela base franqueada F XNX-SC em Xanxerê/SC.
