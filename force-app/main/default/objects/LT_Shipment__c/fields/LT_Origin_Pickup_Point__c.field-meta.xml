@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Origin_Pickup_Point__c</fullName>
+    <description>Ponto de coleta fisico onde a remessa foi deixada (coletas DropOff).</description>
+    <label>Ponto de Coleta (DropOff)</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Remessas Coletadas</relationshipLabel>
+    <relationshipName>LT_DropOff_Shipments</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Selecione uma conta do tipo Parceiro DropOff.</errorMessage>
+        <filterItems>
+            <field>Account.LT_Operating_Partner_Type__c</field>
+            <operation>equals</operation>
+            <value>Parceiro DropOff</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+</CustomField>

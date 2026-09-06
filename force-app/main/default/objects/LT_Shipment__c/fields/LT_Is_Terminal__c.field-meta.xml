@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Is_Terminal__c</fullName>
+    <description>Verdadeiro quando a remessa chegou a um status final.</description>
+    <label>Fluxo Encerrado</label>
+    <formula>OR(ISPICKVAL(LT_Status__c, "Entregue"), ISPICKVAL(LT_Status__c, "Devolvido ao Remetente"), ISPICKVAL(LT_Status__c, "Extraviado"))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Last_Mile_Driver__c</fullName>
+    <description>Motorista responsavel pela entrega final.</description>
+    <label>Motorista Last Mile</label>
+    <referenceTo>LT_Driver__c</referenceTo>
+    <relationshipLabel>Remessas Entregues</relationshipLabel>
+    <relationshipName>LT_LastMile_Shipments</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

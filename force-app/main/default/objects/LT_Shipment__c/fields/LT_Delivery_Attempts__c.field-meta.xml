@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Delivery_Attempts__c</fullName>
+    <description>Numero de tentativas de entrega realizadas.</description>
+    <label>Tentativas de Entrega</label>
+    <required>false</required>
+    <defaultValue>0</defaultValue>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <precision>2</precision>
+    <scale>0</scale>
+</CustomField>

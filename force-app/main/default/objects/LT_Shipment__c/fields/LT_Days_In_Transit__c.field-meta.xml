@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Days_In_Transit__c</fullName>
+    <description>Dias entre a postagem e a entrega (ou hoje, se ainda em transito).</description>
+    <label>Dias em Transito</label>
+    <formula>IF(ISBLANK(LT_Posted_Date__c), NULL, IF(NOT(ISBLANK(LT_Delivered_Date__c)), DATEVALUE(LT_Delivered_Date__c) - DATEVALUE(LT_Posted_Date__c), TODAY() - DATEVALUE(LT_Posted_Date__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>6</precision>
+    <scale>0</scale>
+    <type>Number</type>
+</CustomField>

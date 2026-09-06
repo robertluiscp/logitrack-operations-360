@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Hours_Without_Movement__c</fullName>
+    <description>Horas desde o ultimo evento de rastreamento (usado para detectar remessas paradas).</description>
+    <label>Horas sem Movimentacao</label>
+    <formula>IF(OR(ISBLANK(LT_Last_Event_Date__c), LT_Is_Terminal__c), 0, (NOW() - LT_Last_Event_Date__c) * 24)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>6</precision>
+    <scale>1</scale>
+    <type>Number</type>
+</CustomField>

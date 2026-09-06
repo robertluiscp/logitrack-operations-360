@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Weight_Kg__c</fullName>
+    <description>Peso da remessa em quilogramas.</description>
+    <label>Peso (kg)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <precision>6</precision>
+    <scale>3</scale>
+</CustomField>

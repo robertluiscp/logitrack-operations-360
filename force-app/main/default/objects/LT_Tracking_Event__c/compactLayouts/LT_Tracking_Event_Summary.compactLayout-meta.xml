@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Tracking_Event_Summary</fullName>
+    <fields>LT_Event_Type__c</fields>
+    <fields>LT_Event_DateTime__c</fields>
+    <fields>LT_Unit__c</fields>
+    <fields>LT_Location_City__c</fields>
+    <fields>LT_Driver__c</fields>
+    <label>Evento - Resumo</label>
+</CompactLayout>

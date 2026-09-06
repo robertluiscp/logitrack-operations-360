@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Shipment_ZIP_Format</fullName>
+    <active>true</active>
+    <description>Valida a mascara do CEP (00000-000).</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_Dest_ZIP__c)), NOT(REGEX(LT_Dest_ZIP__c, "^[0-9]{5}-[0-9]{3}$")))</errorConditionFormula>
+    <errorDisplayField>LT_Dest_ZIP__c</errorDisplayField>
+    <errorMessage>Informe o CEP no formato 00000-000.</errorMessage>
+</ValidationRule>

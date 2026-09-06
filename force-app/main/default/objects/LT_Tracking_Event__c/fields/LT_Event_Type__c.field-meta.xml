@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Event_Type__c</fullName>
+    <description>Natureza do evento de rastreamento.</description>
+    <label>Tipo de Evento</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Etiqueta Gerada</fullName>
+                <default>false</default>
+                <label>Etiqueta Gerada</label>
+            </value>
+            <value>
+                <fullName>Coleta Realizada</fullName>
+                <default>false</default>
+                <label>Coleta Realizada</label>
+            </value>
+            <value>
+                <fullName>Chegada ao SC</fullName>
+                <default>false</default>
+                <label>Chegada ao SC</label>
+            </value>
+            <value>
+                <fullName>Triagem no SC</fullName>
+                <default>false</default>
+                <label>Triagem no SC</label>
+            </value>
+            <value>
+                <fullName>Saida do SC (Transferencia)</fullName>
+                <default>false</default>
+                <label>Saida do SC (Transferencia)</label>
+            </value>
+            <value>
+                <fullName>Chegada a Base</fullName>
+                <default>false</default>
+                <label>Chegada a Base</label>
+            </value>
+            <value>
+                <fullName>Triagem na Base</fullName>
+                <default>false</default>
+                <label>Triagem na Base</label>
+            </value>
+            <value>
+                <fullName>Bipado para Rota</fullName>
+                <default>false</default>
+                <label>Bipado para Rota</label>
+            </value>
+            <value>
+                <fullName>Saiu para Entrega</fullName>
+                <default>false</default>
+                <label>Saiu para Entrega</label>
+            </value>
+            <value>
+                <fullName>Entregue</fullName>
+                <default>false</default>
+                <label>Entregue</label>
+            </value>
+            <value>
+                <fullName>Tentativa de Entrega</fullName>
+                <default>false</default>
+                <label>Tentativa de Entrega</label>
+            </value>
+            <value>
+                <fullName>Destinatario Ausente</fullName>
+                <default>false</default>
+                <label>Destinatario Ausente</label>
+            </value>
+            <value>
+                <fullName>Endereco Nao Localizado</fullName>
+                <default>false</default>
+                <label>Endereco Nao Localizado</label>
+            </value>
+            <value>
+                <fullName>Recusado pelo Destinatario</fullName>
+                <default>false</default>
+                <label>Recusado pelo Destinatario</label>
+            </value>
+            <value>
+                <fullName>Avaria Identificada</fullName>
+                <default>false</default>
+                <label>Avaria Identificada</label>
+            </value>
+            <value>
+                <fullName>Retido</fullName>
+                <default>false</default>
+                <label>Retido</label>
+            </value>
+            <value>
+                <fullName>Sem Movimentacao Detectada</fullName>
+                <default>false</default>
+                <label>Sem Movimentacao Detectada</label>
+            </value>
+            <value>
+                <fullName>Devolucao Iniciada</fullName>
+                <default>false</default>
+                <label>Devolucao Iniciada</label>
+            </value>
+            <value>
+                <fullName>Extravio Registrado</fullName>
+                <default>false</default>
+                <label>Extravio Registrado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Status__c</fullName>
+    <description>Etapa atual da remessa no fluxo operacional.</description>
+    <inlineHelpText>Atualizado automaticamente pelos eventos de rastreamento.</inlineHelpText>
+    <label>Status da Remessa</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Etiqueta Gerada</fullName>
+                <default>true</default>
+                <label>Etiqueta Gerada</label>
+            </value>
+            <value>
+                <fullName>Coletado</fullName>
+                <default>false</default>
+                <label>Coletado</label>
+            </value>
+            <value>
+                <fullName>Em Triagem no SC</fullName>
+                <default>false</default>
+                <label>Em Triagem no SC</label>
+            </value>
+            <value>
+                <fullName>Em Transferencia</fullName>
+                <default>false</default>
+                <label>Em Transferencia</label>
+            </value>
+            <value>
+                <fullName>Recebido na Base</fullName>
+                <default>false</default>
+                <label>Recebido na Base</label>
+            </value>
+            <value>
+                <fullName>Em Triagem na Base</fullName>
+                <default>false</default>
+                <label>Em Triagem na Base</label>
+            </value>
+            <value>
+                <fullName>Em Rota de Entrega</fullName>
+                <default>false</default>
+                <label>Em Rota de Entrega</label>
+            </value>
+            <value>
+                <fullName>Tentativa de Entrega</fullName>
+                <default>false</default>
+                <label>Tentativa de Entrega</label>
+            </value>
+            <value>
+                <fullName>Entregue</fullName>
+                <default>false</default>
+                <label>Entregue</label>
+            </value>
+            <value>
+                <fullName>Retido</fullName>
+                <default>false</default>
+                <label>Retido</label>
+            </value>
+            <value>
+                <fullName>Sem Movimentacao</fullName>
+                <default>false</default>
+                <label>Sem Movimentacao</label>
+            </value>
+            <value>
+                <fullName>Devolvido ao Remetente</fullName>
+                <default>false</default>
+                <label>Devolvido ao Remetente</label>
+            </value>
+            <value>
+                <fullName>Extraviado</fullName>
+                <default>false</default>
+                <label>Extraviado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

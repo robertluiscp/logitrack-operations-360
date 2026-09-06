@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Is_Late__c</fullName>
+    <description>Verdadeiro quando a remessa passou do prazo sem ter sido entregue no prazo.</description>
+    <label>Em Atraso</label>
+    <formula>IF(ISPICKVAL(LT_Status__c, "Entregue"), AND(NOT(ISBLANK(LT_Delivered_Date__c)), DATEVALUE(LT_Delivered_Date__c) &gt; LT_SLA_Deadline__c), AND(NOT(LT_Is_Terminal__c), NOT(ISBLANK(LT_SLA_Deadline__c)), TODAY() &gt; LT_SLA_Deadline__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Checkbox</type>
+</CustomField>

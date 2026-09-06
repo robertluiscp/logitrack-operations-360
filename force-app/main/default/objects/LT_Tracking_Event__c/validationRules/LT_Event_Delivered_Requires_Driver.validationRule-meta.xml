@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Event_Delivered_Requires_Driver</fullName>
+    <active>true</active>
+    <description>Evento Entregue exige o motorista responsavel.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Event_Type__c, "Entregue"), ISBLANK(LT_Driver__c))</errorConditionFormula>
+    <errorDisplayField>LT_Driver__c</errorDisplayField>
+    <errorMessage>Informe o Motorista no evento de entrega.</errorMessage>
+</ValidationRule>

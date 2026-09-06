@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Destination_CD__c</fullName>
+    <description>SC responsavel por triar e redistribuir a remessa.</description>
+    <label>Centro de Distribuicao de Destino</label>
+    <referenceTo>LT_Logistics_Unit__c</referenceTo>
+    <relationshipLabel>Remessas (CD de Destino)</relationshipLabel>
+    <relationshipName>LT_Shipments_As_CD</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Selecione um Centro de Distribuicao.</errorMessage>
+        <filterItems>
+            <field>LT_Logistics_Unit__c.Unit_Type__c</field>
+            <operation>equals</operation>
+            <value>Centro de Distribuicao</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+</CustomField>

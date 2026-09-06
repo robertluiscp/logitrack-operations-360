@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Shipment_Base_Statuses_Require_Base</fullName>
+    <active>true</active>
+    <description>Status de base exigem a Base de Entrega preenchida.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(LT_Status__c, "Recebido na Base"), ISPICKVAL(LT_Status__c, "Em Triagem na Base"), ISPICKVAL(LT_Status__c, "Em Rota de Entrega")), ISBLANK(LT_Delivery_Base__c))</errorConditionFormula>
+    <errorDisplayField>LT_Delivery_Base__c</errorDisplayField>
+    <errorMessage>Informe a Base de Entrega para remessas em processamento na base.</errorMessage>
+</ValidationRule>

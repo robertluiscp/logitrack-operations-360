@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Responsible_User__c</fullName>
+    <description>Usuario que registrou o evento.</description>
+    <label>Registrado Por</label>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Eventos de Rastreamento Registrados</relationshipLabel>
+    <relationshipName>LT_Registered_Tracking_Events</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

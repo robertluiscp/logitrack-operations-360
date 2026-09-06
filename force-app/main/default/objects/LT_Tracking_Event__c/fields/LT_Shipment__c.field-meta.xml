@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Shipment__c</fullName>
+    <description>Remessa a que o evento pertence.</description>
+    <label>Remessa</label>
+    <referenceTo>LT_Shipment__c</referenceTo>
+    <relationshipLabel>Eventos de Rastreamento</relationshipLabel>
+    <relationshipName>LT_Tracking_Events</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

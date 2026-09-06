@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retidas_e_Paradas</fullName>
+    <columns>LT_Tracking_Code__c</columns>
+    <columns>LT_Status__c</columns>
+    <columns>LT_Delivery_Base__c</columns>
+    <columns>LT_Hours_Without_Movement__c</columns>
+    <columns>LT_SLA_Deadline__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LT_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Entregue</value>
+    </filters>
+    <label>Retidas e Sem Movimentacao</label>
+</ListView>

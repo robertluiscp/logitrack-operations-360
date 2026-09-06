@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>LT_Shipment__c</entityName>
+    <fieldName>LT_Status__c</fieldName>
+    <masterLabel>Ciclo de Vida da Remessa</masterLabel>
+    <recordTypeName>__MASTER__</recordTypeName>
+    <pathAssistantSteps>
+        <fieldNames>LT_Tracking_Code__c</fieldNames>
+        <fieldNames>LT_SLA_Deadline__c</fieldNames>
+        <info>&lt;p&gt;Etiqueta gerada pelo embarcador. Confirme codigo de rastreio, destino e prazo de entrega (SLA).&lt;/p&gt;</info>
+        <picklistValueName>Etiqueta Gerada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Collected_Date__c</fieldNames>
+        <info>&lt;p&gt;Motorista First Mile coletou a remessa no Seller ou no Ponto de Coleta (DropOff).&lt;/p&gt;</info>
+        <picklistValueName>Coletado</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Destination_CD__c</fieldNames>
+        <info>&lt;p&gt;Remessa recebida e triada no Centro de Distribuicao (SC) responsavel pelo destino.&lt;/p&gt;</info>
+        <picklistValueName>Em Triagem no SC</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Remessa em transferencia do SC para a Base de Entrega.&lt;/p&gt;</info>
+        <picklistValueName>Em Transferencia</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Delivery_Base__c</fieldNames>
+        <info>&lt;p&gt;Remessa recebida na Base de Entrega da ultima milha.&lt;/p&gt;</info>
+        <picklistValueName>Recebido na Base</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Triagem na base: remessa alocada na gaiola da rota correspondente.&lt;/p&gt;</info>
+        <picklistValueName>Em Triagem na Base</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Last_Mile_Driver__c</fieldNames>
+        <info>&lt;p&gt;Remessa bipada para o motorista Last Mile. Rota em execucao.&lt;/p&gt;</info>
+        <picklistValueName>Em Rota de Entrega</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Delivered_Date__c</fieldNames>
+        <info>&lt;p&gt;Remessa entregue ao destinatario. Registre data/hora da entrega.&lt;/p&gt;</info>
+        <picklistValueName>Entregue</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Tentativa de entrega sem sucesso (ausente, endereco nao localizado, recusa). Nova tentativa sera agendada.&lt;/p&gt;</info>
+        <picklistValueName>Tentativa de Entrega</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Remessa passou do prazo sem entrega: entrou como Retido. Acionar base/motorista.&lt;/p&gt;</info>
+        <picklistValueName>Retido</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Sem atualizacao sistemica ha mais de 6 horas. Investigar localizacao da remessa.&lt;/p&gt;</info>
+        <picklistValueName>Sem Movimentacao</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Remessa devolvida ao remetente apos tentativas esgotadas ou recusa.&lt;/p&gt;</info>
+        <picklistValueName>Devolvido ao Remetente</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Value_Reimbursed__c</fieldNames>
+        <info>&lt;p&gt;Remessa extraviada. Abrir processo de extravio e ressarcimento ao embarcador.&lt;/p&gt;</info>
+        <picklistValueName>Extraviado</picklistValueName>
+    </pathAssistantSteps>
+</PathAssistant>

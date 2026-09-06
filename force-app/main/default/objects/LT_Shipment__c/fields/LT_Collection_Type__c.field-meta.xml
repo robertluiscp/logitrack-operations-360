@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Collection_Type__c</fullName>
+    <description>Como a remessa entrou na malha LogiTrack.</description>
+    <label>Tipo de Coleta</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coleta no Seller</fullName>
+                <default>false</default>
+                <label>Coleta no Seller</label>
+            </value>
+            <value>
+                <fullName>Coleta no DropOff</fullName>
+                <default>false</default>
+                <label>Coleta no DropOff</label>
+            </value>
+            <value>
+                <fullName>C2C - Venda de Etiqueta</fullName>
+                <default>false</default>
+                <label>C2C - Venda de Etiqueta</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -57,6 +57,10 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>LT_Logistics_Unit__c</tabs>
     <tabs>Operational_Indicator__c</tabs>
+    <tabs>LT_Shipment__c</tabs>
+    <tabs>LT_Tracking_Event__c</tabs>
+    <tabs>LT_Driver__c</tabs>
+    <tabs>LT_Vehicle__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LogiTrack_Operations_360_UtilityBar</utilityBar>
 </CustomApplication>

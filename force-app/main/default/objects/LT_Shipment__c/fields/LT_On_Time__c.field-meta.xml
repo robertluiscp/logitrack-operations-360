@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_On_Time__c</fullName>
+    <description>Verdadeiro quando a remessa foi entregue ate a data limite do SLA.</description>
+    <label>Entregue no Prazo</label>
+    <formula>AND(ISPICKVAL(LT_Status__c, "Entregue"), NOT(ISBLANK(LT_Delivered_Date__c)), NOT(ISBLANK(LT_SLA_Deadline__c)), DATEVALUE(LT_Delivered_Date__c) &lt;= LT_SLA_Deadline__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Checkbox</type>
+</CustomField>

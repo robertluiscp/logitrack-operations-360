@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Shipment_Weight_Value_Positive</fullName>
+    <active>true</active>
+    <description>Peso e valor declarado nao podem ser negativos.</description>
+    <errorConditionFormula>OR(LT_Weight_Kg__c &lt; 0, LT_Declared_Value__c &lt; 0)</errorConditionFormula>
+    <errorMessage>Peso e valor declarado nao podem ser negativos.</errorMessage>
+</ValidationRule>

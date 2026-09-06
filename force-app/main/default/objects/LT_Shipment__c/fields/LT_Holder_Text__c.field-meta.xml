@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Holder_Text__c</fullName>
+    <description>Versao texto do Responsavel Atual (usada em automacoes).</description>
+    <label>Responsavel Atual (texto)</label>
+    <formula>TEXT(LT_Current_Holder__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>
