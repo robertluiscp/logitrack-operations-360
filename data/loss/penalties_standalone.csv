@@ -1,0 +1,7 @@
+LT_Driver__c,LT_Penalty_Type__c,LT_Origin__c,LT_Status__c,LT_Case__c,LT_Reference_Date__c,LT_Applied_By__c,LT_Description__c,OwnerId,LT_Contested__c,LT_Contest_Date__c,LT_Contest_Outcome__c,LT_Applied_In_Manifest__c
+a0Fg8000006qKp1EAE,Suspensao Temporaria,Chamado SAC,Registrada,500g8000027bliyAAA,2026-08-24,005g8000004iYenAAE,Penalizacao aplicada apos apuracao de reclamacao de postura pelo SAC.,005g8000004iYenAAE,,,,
+a0Fg8000006qKp5EAE,Advertencia (Postura),Chamado SAC,Registrada,500g8000027blizAAA,2026-08-26,005g8000004iYenAAE,Penalizacao aplicada apos apuracao de reclamacao de postura pelo SAC.,005g8000004iYenAAE,,,,
+a0Fg8000006qKonEAE,Suspensao Temporaria,Chamado SAC,Confirmada,500g8000027blj0AAA,2026-08-08,005g8000004iYenAAE,Penalizacao aplicada apos apuracao de reclamacao de postura pelo SAC.,005g8000004iYenAAE,true,2026-08-16,Reduzida,
+a0Fg8000006qKotEAE,Suspensao Temporaria,Chamado SAC,Registrada,500g8000027blj1AAA,2026-08-24,005g8000004iYenAAE,Penalizacao aplicada apos apuracao de reclamacao de postura pelo SAC.,005g8000004iYenAAE,,,,
+a0Fg8000006qKp6EAE,Advertencia (Postura),Chamado SAC,Revertida,500g8000027blj2AAA,2026-08-14,005g8000004iYenAAE,Penalizacao aplicada apos apuracao de reclamacao de postura pelo SAC.,005g8000004iYenAAE,true,2026-08-20,Cancelada,
+a0Fg8000006qKp4EAE,Suspensao Temporaria,Chamado SAC,Descontada,500g8000027blj3AAA,2026-08-13,005g8000004iYenAAE,Penalizacao aplicada apos apuracao de reclamacao de postura pelo SAC.,005g8000004iYenAAE,,,,a0Kg8000001sWbpEAE
