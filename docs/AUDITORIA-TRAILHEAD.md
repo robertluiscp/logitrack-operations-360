@@ -117,25 +117,28 @@ abas, campos, layout, app do zero — estão amplamente cobertas pelos 19 objeto
 
 ---
 
-## Parte 3 — Lacunas priorizadas (o que faria o projeto "fechar" as trilhas)
+## Parte 3 — Lacunas priorizadas — STATUS
 
-| # | Lacuna | Trilha / módulo | Esforço | Valor p/ portfólio |
-|---|---|---|---|---|
-| 1 | **In‑App Guidance** (2–3 prompts + 1 walkthrough) | Beginner / User Engagement | baixo | alto (módulo inteiro faltando) |
-| 2 | **Custom Buttons & Links** (2–3: rastrear no site, ver no mapa, ligar p/ motorista) | Beginner / LEX Customization | baixo | médio |
-| 3 | **Quick Actions** (4–5: registrar ocorrência, nova tentativa, abrir extravio, log a call) | Beginner / LEX Customization | baixo | alto |
-| 4 | **Regras de Duplicação + Matching Rules** (Driver por CPF/CNPJ; Account por CNPJ) | Beginner / Data Management | baixo | alto |
-| 5 | **Picklists dependentes** (Motivo → Sub‑motivo; Tipo de Ocorrência → Causa Raiz) | Interm. / Picklist Admin | baixo | médio |
-| 6 | **Sharing Rules criteria‑based** + apertar OWD de 1–2 objetos sensíveis (`LT_Payment_Request__c`, `LT_Driver_Penalty__c`) | Interm. / Data Security | médio | alto |
-| 7 | **Lightning Record Pages** (Dynamic Forms) para os objetos‑bandeira (Remessa, Motorista, Solicitação de Pagamento, Extravio, Case) | Beginner / LEX Customization | médio‑alto | alto |
-| 8 | **External Services** (ViaCEP ou mock) + Flow que chama a ação | Interm. / External Services | médio | médio‑alto |
-| 9 | **Set Up Your Org**: Business Hours + Holidays (usar nos SLAs), Company Info, fuso pt‑BR | Beginner / LEX Customization | baixo | médio |
-| 10 | **Report/Dashboard subscriptions** + 1 dashboard dinâmico | Beginner / Reports & Dashboards | baixo | baixo |
-| 11 | **Salesforce Mobile**: navegação mobile + ações mobile‑first + compact layouts revisados | Interm. / Mobile Rollout | médio | baixo‑médio |
-| 12 | **AppExchange**: instalar 1 pacote gratuito útil (ex.: um utilitário de qualidade de dados) | Interm. / AgentExchange | baixo | baixo (foge do "100% declarativo à mão") |
+Implementadas nos **Módulos N a R** (commits a25b238, beb9135, 523c126, c1817ee, 907305b):
 
-> Itens 2, 3, 4, 5, 9 são "vitórias rápidas" — juntos fecham a maior parte das
-> lacunas com pouco esforço. Itens 1, 6, 7, 8 são os que mais agregam ao portfólio.
+| # | Lacuna | Módulo | Status |
+|---|---|---|---|
+| 1 | **In‑App Guidance** | N | ✅ 4 prompts *docked* (Financeiro, Operação, SAC, Cadastro) |
+| 2 | **Custom Buttons & Links** | N | ✅ 4 (rastrear no site, ver destino no mapa, WhatsApp motorista, imprimir romaneio) |
+| 3 | **Quick Actions** | N + R | ✅ 5 de objeto + 3 globais (nova solicitação, registrar ocorrência, consultar CEP) |
+| 4 | **Regras de Duplicação + Matching Rules** | N | ✅ 3 matching + 4 duplicate (veículo por placa = bloqueia) |
+| 5 | **Picklists dependentes** | N | ✅ Causa Raiz → Tipo de Ocorrência; Sub‑motivo → Motivo do Extravio |
+| 6 | **Sharing Rules criteria‑based + OWD restrita** | O | ✅ OWD Private/Read em 4 objetos; 3 grupos; 8 sharing rules |
+| 7 | **Lightning Record Pages (Dynamic Forms)** | P | ✅ 6 objetos‑bandeira (Remessa, Motorista, Solicitação de Pagamento, Extravio, Ocorrência, Rota) |
+| 8 | **External Services** | Q | ✅ Named Credential + External Service ViaCEP (OpenAPI 3) + Screen Flow |
+| 9 | **Set Up Your Org** — Holidays | N | ✅ 12 feriados nacionais 2026. Business Hours: só Setup (DML bloqueado) — em `PENDENCIAS-MANUAIS.md` |
+| 10 | Report/Dashboard subscriptions + dashboard dinâmico | — | ⏸️ opcional, não feito (valor baixo) |
+| 11 | **Salesforce Mobile** | R | ✅ global actions + form factors + `MOBILE-ROLLOUT.md` (checklist) |
+| 12 | AppExchange (instalar pacote) | — | N/A — projeto é 100% construído à mão |
+
+Restam apenas itens **config‑only** (não versionáveis) em `PENDENCIAS-MANUAIS.md`:
+Business Hours, status de Case em pt‑BR, re‑retrieve limpo do metadata Trailhead
+*stale*, e a publicação no GitHub.
 
 ---
 
