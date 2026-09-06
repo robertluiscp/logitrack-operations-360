@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Consulta de endereco por CEP via API publica ViaCEP. Usada por Flow para preencher endereco de destino de remessas e coletas.</description>
+    <label>ViaCEP - Consulta de Endereco</label>
+    <namedCredentialReference>LogiTrack_CEP</namedCredentialReference>
+    <operations>
+        <active>true</active>
+        <name>consultarCep</name>
+    </operations>
+    <registrationProviderType>Custom</registrationProviderType>
+    <schema>{
+  &quot;openapi&quot;: &quot;3.0.0&quot;,
+  &quot;info&quot;: {
+    &quot;title&quot;: &quot;ViaCEP&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;description&quot;: &quot;Consulta de endereco brasileiro por CEP (API publica ViaCEP).&quot;
+  },
+  &quot;servers&quot;: [
+    {
+      &quot;url&quot;: &quot;/&quot;
+    }
+  ],
+  &quot;paths&quot;: {
+    &quot;/ws/{cep}/json/&quot;: {
+      &quot;get&quot;: {
+        &quot;operationId&quot;: &quot;consultarCep&quot;,
+        &quot;summary&quot;: &quot;Consulta endereco por CEP&quot;,
+        &quot;parameters&quot;: [
+          {
+            &quot;name&quot;: &quot;cep&quot;,
+            &quot;in&quot;: &quot;path&quot;,
+            &quot;required&quot;: true,
+            &quot;description&quot;: &quot;CEP com 8 digitos, sem traco.&quot;,
+            &quot;schema&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        ],
+        &quot;responses&quot;: {
+          &quot;200&quot;: {
+            &quot;description&quot;: &quot;Endereco encontrado.&quot;,
+            &quot;content&quot;: {
+              &quot;application/json&quot;: {
+                &quot;schema&quot;: {
+                  &quot;$ref&quot;: &quot;#/components/schemas/Endereco&quot;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  &quot;components&quot;: {
+    &quot;schemas&quot;: {
+      &quot;Endereco&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;cep&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;logradouro&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;complemento&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;bairro&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;localidade&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;uf&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;ibge&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;ddd&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;erro&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        }
+      }
+    }
+  }
+}</schema>
+    <schemaType>OpenApi3</schemaType>
+    <status>Complete</status>
+    <systemVersion>3</systemVersion>
+</ExternalServiceRegistration>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Screen Flow que consulta o endereco de um CEP na API publica ViaCEP (via External Service) e exibe o resultado.</description>
+    <environments>Default</environments>
+    <interviewLabel>LT - Consultar CEP {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LT - Consultar CEP (ViaCEP)</label>
+    <processMetadataValues><name>BuilderType</name><value><stringValue>LightningFlowBuilder</stringValue></value></processMetadataValues>
+    <processType>Flow</processType>
+    <actionCalls>
+        <name>Consultar_ViaCEP</name>
+        <label>Consultar ViaCEP</label>
+        <locationX>176</locationX>
+        <locationY>276</locationY>
+        <actionName>ViaCEP.consultarCep</actionName>
+        <actionType>externalService</actionType>
+        <connector><targetReference>Mostrar_Resultado</targetReference></connector>
+        <inputParameters>
+            <name>Cep</name>
+            <value><elementReference>CEP_Input</elementReference></value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <screens>
+        <name>Tela_CEP</name>
+        <label>Informe o CEP</label>
+        <locationX>176</locationX>
+        <locationY>156</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>false</allowFinish>
+        <allowPause>false</allowPause>
+        <connector><targetReference>Consultar_ViaCEP</targetReference></connector>
+        <fields>
+            <name>CEP_Input</name>
+            <dataType>String</dataType>
+            <fieldText>CEP (8 digitos, sem traco)</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Mostrar_Resultado</name>
+        <label>Endereco encontrado</label>
+        <locationX>176</locationX>
+        <locationY>396</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Resultado_Texto</name>
+            <fieldType>DisplayText</fieldType>
+            <fieldText>&lt;p&gt;&lt;b&gt;Logradouro:&lt;/b&gt; {!Consultar_ViaCEP.200.logradouro}&lt;/p&gt;&lt;p&gt;&lt;b&gt;Bairro:&lt;/b&gt; {!Consultar_ViaCEP.200.bairro}&lt;/p&gt;&lt;p&gt;&lt;b&gt;Cidade/UF:&lt;/b&gt; {!Consultar_ViaCEP.200.localidade} - {!Consultar_ViaCEP.200.uf}&lt;/p&gt;</fieldText>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Tela_CEP</targetReference></connector>
+    </start>
+    <status>Active</status>
+</Flow>
