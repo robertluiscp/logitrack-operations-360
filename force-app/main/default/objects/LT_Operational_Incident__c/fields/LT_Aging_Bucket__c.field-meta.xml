@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Aging_Bucket__c</fullName>
+    <description>Classifica a ocorrencia pelo tempo em aberto. Acima de 10 dias vira candidata a extravio.</description>
+    <label>Faixa de Envelhecimento</label>
+    <formula>IF(ISBLANK(LT_Days_Open__c), "-", IF(LT_Days_Open__c &lt;= 2, "0-2 dias", IF(LT_Days_Open__c &lt;= 5, "3-5 dias", IF(LT_Days_Open__c &lt;= 10, "6-10 dias", "+10 dias (candidata a extravio)"))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

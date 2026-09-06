@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Incident_Driver_Type_Requires_Driver</fullName>
+    <active>true</active>
+    <description>Retido com Motorista exige o motorista envolvido.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Incident_Type__c, "Retido com Motorista"), ISBLANK(LT_Responsible_Driver__c))</errorConditionFormula>
+    <errorDisplayField>LT_Responsible_Driver__c</errorDisplayField>
+    <errorMessage>Informe o Motorista Envolvido para ocorrencias do tipo Retido com Motorista.</errorMessage>
+</ValidationRule>

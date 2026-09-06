@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Operational_Incident_Summary</fullName>
+    <fields>Name</fields>
+    <fields>LT_Incident_Type__c</fields>
+    <fields>LT_Status__c</fields>
+    <fields>LT_Priority__c</fields>
+    <fields>LT_Days_Open__c</fields>
+    <fields>LT_Assigned_To__c</fields>
+    <label>Ocorrencia - Resumo</label>
+</CompactLayout>

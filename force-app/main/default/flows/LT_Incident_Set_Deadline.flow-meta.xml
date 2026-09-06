@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Antes do salvamento, preenche a data de deteccao (hoje, se vazia) e o prazo de resolucao conforme a prioridade: Critica +1 dia, Alta +2, Media +4, Baixa +7.</description>
+    <environments>Default</environments>
+    <interviewLabel>OC - Definir Prazo de Resolucao {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>OC - Definir Prazo de Resolucao</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value><stringValue>LightningFlowBuilder</stringValue></value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <assignments>
+        <name>Definir_Datas</name>
+        <label>Definir Datas</label>
+        <locationX>176</locationX>
+        <locationY>288</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LT_Detected_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value><elementReference>fDetected</elementReference></value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.LT_Resolution_Deadline__c</assignToReference>
+            <operator>Assign</operator>
+            <value><elementReference>fDeadline</elementReference></value>
+        </assignmentItems>
+    </assignments>
+    <formulas>
+        <name>fDetected</name>
+        <dataType>Date</dataType>
+        <expression>IF(ISBLANK({!$Record.LT_Detected_Date__c}), {!$Flow.CurrentDate}, {!$Record.LT_Detected_Date__c})</expression>
+    </formulas>
+    <formulas>
+        <name>fDeadline</name>
+        <dataType>Date</dataType>
+        <expression>IF(NOT(ISBLANK({!$Record.LT_Resolution_Deadline__c})), {!$Record.LT_Resolution_Deadline__c},
+IF(ISBLANK({!$Record.LT_Detected_Date__c}), {!$Flow.CurrentDate}, {!$Record.LT_Detected_Date__c})
++ CASE(TEXT({!$Record.LT_Priority__c}), "Critica", 1, "Alta", 2, "Media", 4, "Baixa", 7, 4))</expression>
+    </formulas>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Definir_Datas</targetReference></connector>
+        <object>LT_Operational_Incident__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Resolution_Type__c</fullName>
+    <description>Como a ocorrencia foi encerrada.</description>
+    <label>Tipo de Resolucao</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Entregue</fullName>
+                <default>false</default>
+                <label>Entregue</label>
+            </value>
+            <value>
+                <fullName>Reagendada</fullName>
+                <default>false</default>
+                <label>Reagendada</label>
+            </value>
+            <value>
+                <fullName>Devolvida ao Remetente</fullName>
+                <default>false</default>
+                <label>Devolvida ao Remetente</label>
+            </value>
+            <value>
+                <fullName>Encaminhada para Extravio</fullName>
+                <default>false</default>
+                <label>Encaminhada para Extravio</label>
+            </value>
+            <value>
+                <fullName>Localizada e Reintegrada</fullName>
+                <default>false</default>
+                <label>Localizada e Reintegrada</label>
+            </value>
+            <value>
+                <fullName>Sem Acao Necessaria</fullName>
+                <default>false</default>
+                <label>Sem Acao Necessaria</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

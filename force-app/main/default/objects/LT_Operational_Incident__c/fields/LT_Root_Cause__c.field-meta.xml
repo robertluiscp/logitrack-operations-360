@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Root_Cause__c</fullName>
+    <description>Causa raiz identificada.</description>
+    <label>Causa Raiz</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Endereco Incorreto</fullName>
+                <default>false</default>
+                <label>Endereco Incorreto</label>
+            </value>
+            <value>
+                <fullName>Cliente Ausente</fullName>
+                <default>false</default>
+                <label>Cliente Ausente</label>
+            </value>
+            <value>
+                <fullName>Falha de Triagem</fullName>
+                <default>false</default>
+                <label>Falha de Triagem</label>
+            </value>
+            <value>
+                <fullName>Extravio Interno</fullName>
+                <default>false</default>
+                <label>Extravio Interno</label>
+            </value>
+            <value>
+                <fullName>Avaria</fullName>
+                <default>false</default>
+                <label>Avaria</label>
+            </value>
+            <value>
+                <fullName>Falha Sistemica</fullName>
+                <default>false</default>
+                <label>Falha Sistemica</label>
+            </value>
+            <value>
+                <fullName>Postura do Motorista</fullName>
+                <default>false</default>
+                <label>Postura do Motorista</label>
+            </value>
+            <value>
+                <fullName>Fora da Area de Cobertura</fullName>
+                <default>false</default>
+                <label>Fora da Area de Cobertura</label>
+            </value>
+            <value>
+                <fullName>Outro</fullName>
+                <default>false</default>
+                <label>Outro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

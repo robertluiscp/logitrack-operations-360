@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Incident_Deadline_After_Detection</fullName>
+    <active>true</active>
+    <description>O prazo de resolucao nao pode ser anterior a deteccao.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_Resolution_Deadline__c)), NOT(ISBLANK(LT_Detected_Date__c)), LT_Resolution_Deadline__c &lt; LT_Detected_Date__c)</errorConditionFormula>
+    <errorDisplayField>LT_Resolution_Deadline__c</errorDisplayField>
+    <errorMessage>O Prazo de Resolucao nao pode ser anterior a data de deteccao.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Quando uma remessa entra em Retido ou Sem Movimentacao e ainda nao tem ocorrencia aberta, cria automaticamente uma Ocorrencia Operacional para tratamento.</description>
+    <environments>Default</environments>
+    <interviewLabel>RMS - Criar Ocorrencia {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>RMS - Criar Ocorrencia Operacional</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value><stringValue>LightningFlowBuilder</stringValue></value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <formulas>
+        <name>fType</name>
+        <dataType>String</dataType>
+        <expression>IF(ISPICKVAL({!$Record.LT_Status__c}, "Sem Movimentacao"), "Sem Movimentacao",
+IF({!$Record.LT_Holder_Text__c} = "Motorista Last Mile", "Retido com Motorista", "Retido na Base"))</expression>
+    </formulas>
+    <recordLookups>
+        <name>Buscar_Ocorrencia_Aberta</name>
+        <label>Buscar Ocorrencia Aberta</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector><targetReference>Ja_Existe_Ocorrencia</targetReference></connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LT_Shipment__c</field>
+            <operator>EqualTo</operator>
+            <value><elementReference>$Record.Id</elementReference></value>
+        </filters>
+        <filters>
+            <field>LT_Is_Open__c</field>
+            <operator>EqualTo</operator>
+            <value><booleanValue>true</booleanValue></value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>LT_Operational_Incident__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <decisions>
+        <name>Ja_Existe_Ocorrencia</name>
+        <label>Ja existe ocorrencia aberta?</label>
+        <locationX>176</locationX>
+        <locationY>254</locationY>
+        <defaultConnector><targetReference>Criar_Ocorrencia</targetReference></defaultConnector>
+        <defaultConnectorLabel>Nao existe</defaultConnectorLabel>
+        <rules>
+            <name>rExiste</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Buscar_Ocorrencia_Aberta</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue><booleanValue>false</booleanValue></rightValue>
+            </conditions>
+            <label>Ja existe</label>
+        </rules>
+    </decisions>
+    <recordCreates>
+        <name>Criar_Ocorrencia</name>
+        <label>Criar Ocorrencia</label>
+        <locationX>50</locationX>
+        <locationY>374</locationY>
+        <inputAssignments>
+            <field>LT_Shipment__c</field>
+            <value><elementReference>$Record.Id</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Incident_Type__c</field>
+            <value><elementReference>fType</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Detected_Date__c</field>
+            <value><elementReference>$Flow.CurrentDate</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Status__c</field>
+            <value><stringValue>Aberta</stringValue></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Priority__c</field>
+            <value><stringValue>Alta</stringValue></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Owner_Unit__c</field>
+            <value><elementReference>$Record.LT_Delivery_Base__c</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Responsible_Driver__c</field>
+            <value><elementReference>$Record.LT_Last_Mile_Driver__c</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Description__c</field>
+            <value><stringValue>Ocorrencia aberta automaticamente a partir do status da remessa.</stringValue></value>
+        </inputAssignments>
+        <object>LT_Operational_Incident__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Buscar_Ocorrencia_Aberta</targetReference></connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>LT_Status__c</field>
+            <operator>EqualTo</operator>
+            <value><stringValue>Retido</stringValue></value>
+        </filters>
+        <filters>
+            <field>LT_Status__c</field>
+            <operator>EqualTo</operator>
+            <value><stringValue>Sem Movimentacao</stringValue></value>
+        </filters>
+        <object>LT_Shipment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

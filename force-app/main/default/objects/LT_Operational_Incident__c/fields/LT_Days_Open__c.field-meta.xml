@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Days_Open__c</fullName>
+    <description>Dias entre a deteccao e a resolucao (ou hoje, se ainda aberta).</description>
+    <label>Dias em Aberto</label>
+    <formula>IF(ISBLANK(LT_Detected_Date__c), NULL, IF(NOT(ISBLANK(LT_Resolved_Date__c)), DATEVALUE(LT_Resolved_Date__c) - LT_Detected_Date__c, TODAY() - LT_Detected_Date__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>6</precision>
+    <scale>0</scale>
+    <type>Number</type>
+</CustomField>

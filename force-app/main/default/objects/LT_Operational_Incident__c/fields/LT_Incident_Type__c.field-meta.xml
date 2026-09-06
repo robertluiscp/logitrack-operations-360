@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Incident_Type__c</fullName>
+    <description>Natureza da ocorrencia operacional.</description>
+    <label>Tipo de Ocorrencia</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Retido com Motorista</fullName>
+                <default>false</default>
+                <label>Retido com Motorista</label>
+            </value>
+            <value>
+                <fullName>Retido na Base</fullName>
+                <default>false</default>
+                <label>Retido na Base</label>
+            </value>
+            <value>
+                <fullName>Sem Movimentacao</fullName>
+                <default>false</default>
+                <label>Sem Movimentacao</label>
+            </value>
+            <value>
+                <fullName>Suspeita de Extravio</fullName>
+                <default>false</default>
+                <label>Suspeita de Extravio</label>
+            </value>
+            <value>
+                <fullName>Avaria em Transporte</fullName>
+                <default>false</default>
+                <label>Avaria em Transporte</label>
+            </value>
+            <value>
+                <fullName>Entrada no Galpao sem Expedicao</fullName>
+                <default>false</default>
+                <label>Entrada no Galpao sem Expedicao</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>LT_Operational_Incident__c</entityName>
+    <fieldName>LT_Status__c</fieldName>
+    <masterLabel>Tratamento da Ocorrencia</masterLabel>
+    <recordTypeName>__MASTER__</recordTypeName>
+    <pathAssistantSteps>
+        <fieldNames>LT_Incident_Type__c</fieldNames>
+        <fieldNames>LT_Priority__c</fieldNames>
+        <info>&lt;p&gt;Ocorrencia aberta. Classifique o tipo e a prioridade; o prazo de SLA e calculado automaticamente.&lt;/p&gt;</info>
+        <picklistValueName>Aberta</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Assigned_To__c</fieldNames>
+        <info>&lt;p&gt;Ocorrencia atribuida a um responsavel que esta em contato com base/motorista/cliente.&lt;/p&gt;</info>
+        <picklistValueName>Em Tratamento</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Aguardando retorno de terceiro (cliente, transportadora parceira, area interna).&lt;/p&gt;</info>
+        <picklistValueName>Aguardando Terceiro</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Escalation_Date__c</fieldNames>
+        <info>&lt;p&gt;Ocorrencia escalada a coordenacao (SLA estourado ou +10 dias em aberto).&lt;/p&gt;</info>
+        <picklistValueName>Escalada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Resolution_Type__c</fieldNames>
+        <fieldNames>LT_Root_Cause__c</fieldNames>
+        <fieldNames>LT_Resolution_Notes__c</fieldNames>
+        <info>&lt;p&gt;Ocorrencia resolvida. Registre o tipo de resolucao, a causa raiz e o que foi feito.&lt;/p&gt;</info>
+        <picklistValueName>Resolvida</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Ocorrencia cancelada (aberta por engano ou duplicada).&lt;/p&gt;</info>
+        <picklistValueName>Cancelada</picklistValueName>
+    </pathAssistantSteps>
+</PathAssistant>

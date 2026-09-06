@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Responsible_Driver__c</fullName>
+    <description>Motorista que esta com a remessa (retido com motorista).</description>
+    <label>Motorista Envolvido</label>
+    <referenceTo>LT_Driver__c</referenceTo>
+    <relationshipLabel>Ocorrencias</relationshipLabel>
+    <relationshipName>LT_Operational_Incidents</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>
