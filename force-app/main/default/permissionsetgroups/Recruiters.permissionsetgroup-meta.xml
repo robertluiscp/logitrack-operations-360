@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Recruiters</description>
-    <hasActivationRequired>false</hasActivationRequired>
-    <label>Recruiters</label>
-    <permissionSets>Access_and_Manage_Reviews</permissionSets>
-    <permissionSets>Manage_Positions</permissionSets>
-    <status>Updated</status>
-</PermissionSetGroup>
