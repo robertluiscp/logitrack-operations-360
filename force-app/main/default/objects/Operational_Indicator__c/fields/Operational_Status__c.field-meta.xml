@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operational_Status__c</fullName>
+    <description>Classificação automática do desempenho da unidade conforme o SLA.</description>
+    <inlineHelpText>Preenchido automaticamente pelo fluxo de classificação operacional.</inlineHelpText>
+    <label>Status Operacional</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dentro da Meta</fullName>
+                <default>false</default>
+                <label>Dentro da Meta</label>
+            </value>
+            <value>
+                <fullName>Atenção</fullName>
+                <default>false</default>
+                <label>Atenção</label>
+            </value>
+            <value>
+                <fullName>Crítico</fullName>
+                <default>false</default>
+                <label>Crítico</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Require_Partner_For_External_Unit</fullName>
+    <active>true</active>
+    <description>Exige o preenchimento do Parceiro Operacional quando o Modelo Operacional for Franqueada ou Parceira Credenciada.</description>
+    <errorConditionFormula>AND(
+    OR(
+        ISPICKVAL(Operating_Model__c, &quot;Franqueada&quot;),
+        ISPICKVAL(Operating_Model__c, &quot;Parceira Credenciada&quot;)
+    ),
+    ISBLANK(Operating_Partner__c)
+)</errorConditionFormula>
+    <errorDisplayField>Operating_Partner__c</errorDisplayField>
+    <errorMessage>Informe o Parceiro Operacional para unidades franqueadas ou administradas por parceiros credenciados.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Block_Partner_For_Own_Unit</fullName>
+    <active>true</active>
+    <description>Impede o preenchimento do Parceiro Operacional quando o Modelo Operacional da unidade for Própria.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Operating_Model__c, &quot;Própria&quot;),
+    NOT(ISBLANK(Operating_Partner__c))
+)</errorConditionFormula>
+    <errorDisplayField>Operating_Partner__c</errorDisplayField>
+    <errorMessage>Unidades próprias não podem possuir Parceiro Operacional. Remova o parceiro ou altere o Modelo Operacional.</errorMessage>
+</ValidationRule>

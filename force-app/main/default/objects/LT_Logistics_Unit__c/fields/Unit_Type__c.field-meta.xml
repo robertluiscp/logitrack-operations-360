@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Type__c</fullName>
+    <description>Classifica a função exercida pela unidade dentro da estrutura logística e administrativa.</description>
+    <inlineHelpText>Selecione a função principal exercida pela unidade na operação.</inlineHelpText>
+    <label>Tipo da Unidade</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Regional</fullName>
+                <default>false</default>
+                <label>Regional</label>
+            </value>
+            <value>
+                <fullName>Centro de Distribuição (SC)</fullName>
+                <default>false</default>
+                <label>Centro de Distribuição (SC)</label>
+            </value>
+            <value>
+                <fullName>Base de Entrega</fullName>
+                <default>false</default>
+                <label>Base de Entrega</label>
+            </value>
+            <value>
+                <fullName>Ponto de Coleta (DropOff)</fullName>
+                <default>false</default>
+                <label>Ponto de Coleta (DropOff)</label>
+            </value>
+            <value>
+                <fullName>Ponto de Apoio</fullName>
+                <default>false</default>
+                <label>Ponto de Apoio</label>
+            </value>
+            <value>
+                <fullName>Escritório Administrativo</fullName>
+                <default>false</default>
+                <label>Escritório Administrativo</label>
+            </value>
+            <value>
+                <fullName>Centro de Distribuição</fullName>
+                <default>false</default>
+                <label>Centro de Distribuição</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

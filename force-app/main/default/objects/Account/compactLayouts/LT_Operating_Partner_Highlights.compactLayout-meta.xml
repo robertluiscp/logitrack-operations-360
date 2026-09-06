@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Operating_Partner_Highlights</fullName>
+    <fields>Name</fields>
+    <fields>LT_Partner_Status__c</fields>
+    <fields>LT_Operating_Partner_Type__c</fields>
+    <fields>LT_CNPJ__c</fields>
+    <fields>Phone</fields>
+    <fields>Website</fields>
+    <fields>OwnerId</fields>
+    <label>Parceiro Operacional - Destaques</label>
+</CompactLayout>

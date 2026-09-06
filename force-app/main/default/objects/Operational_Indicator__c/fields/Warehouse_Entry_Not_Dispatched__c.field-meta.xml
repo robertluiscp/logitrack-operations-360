@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warehouse_Entry_Not_Dispatched__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Quantidade de pacotes que deram entrada no galpão da unidade logística, mas ainda não tiveram a expedição registrada na data de referência.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Informe quantos pacotes entraram no galpão e permanecem sem registro de expedição nesta unidade e data.</inlineHelpText>
+    <label>Entrada no Galpão de Pacote Não Expedido</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

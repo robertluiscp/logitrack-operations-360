@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Operating_Partner_Type__c</fullName>
+    <description>Classifica a função exercida pela empresa dentro da rede de parceiros operacionais da LogiTrack.</description>
+    <inlineHelpText>Selecione a categoria principal do parceiro operacional, como franqueado ou parceiro DropOff.</inlineHelpText>
+    <label>Tipo de Parceiro Operacional</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Franqueado</fullName>
+                <default>false</default>
+                <label>Franqueado</label>
+            </value>
+            <value>
+                <fullName>Parceiro DropOff</fullName>
+                <default>false</default>
+                <label>Parceiro DropOff</label>
+            </value>
+            <value>
+                <fullName>Operador Logístico Terceirizado</fullName>
+                <default>false</default>
+                <label>Operador Logístico Terceirizado</label>
+            </value>
+            <value>
+                <fullName>Outro Parceiro Logístico</fullName>
+                <default>false</default>
+                <label>Outro Parceiro Logístico</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

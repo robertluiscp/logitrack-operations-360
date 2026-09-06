@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Campo técnico utilizado para impedir mais de um indicador da mesma unidade na mesma data. --></help>
+    <label><!-- Chave Única Unidade-Data --></label>
+    <name>Unit_Date_Unique_Key__c</name>
+</CustomFieldTranslation>

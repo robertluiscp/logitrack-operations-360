@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OI_Stagnant_Packages_Not_Above_Open</fullName>
+    <active>true</active>
+    <description>Impede que a quantidade de pacotes com mais de três dias sem movimentação seja maior que a quantidade de pacotes em aberto.</description>
+    <errorConditionFormula>Packages_Over_3_Days_No_Movement__c &gt; Open_Packages__c</errorConditionFormula>
+    <errorDisplayField>Packages_Over_3_Days_No_Movement__c</errorDisplayField>
+    <errorMessage>Pacotes +3 Dias sem Movimentação não pode ser maior que Pacotes em Aberto.</errorMessage>
+</ValidationRule>

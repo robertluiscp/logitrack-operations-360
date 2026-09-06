@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Informe a data em que a unidade iniciou ou está prevista para iniciar suas operações. --></help>
+    <label><!-- Data de Início da Operação --></label>
+    <name>Operation_Start_Date__c</name>
+</CustomFieldTranslation>

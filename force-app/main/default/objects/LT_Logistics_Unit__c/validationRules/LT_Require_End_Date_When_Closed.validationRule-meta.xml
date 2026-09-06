@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Require_End_Date_When_Closed</fullName>
+    <active>true</active>
+    <description>Exige o preenchimento da Data de Encerramento quando o Status da Unidade for Encerrada.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Unit_Status__c, &quot;Encerrada&quot;),
+    ISBLANK(Operation_End_Date__c)
+)</errorConditionFormula>
+    <errorDisplayField>Operation_End_Date__c</errorDisplayField>
+    <errorMessage>Informe a Data de Encerramento para unidades com status Encerrada.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Operational_Indicator__c.Delivered_Orders__c:SUM/Operational_Indicator__c.Total_Orders__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <description>Percentual consolidado de pedidos entregues sobre o total de pedidos.</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Percentual de Entregas Consolidado</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Operational_Indicator__c.On_Time_Deliveries__c:SUM/Operational_Indicator__c.Total_Orders__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <description>Percentual consolidado de entregas realizadas no prazo.</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>SLA Consolidado</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Operational_Indicator__c.Delivered_Orders__c</column>
+        </chartSummaries>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Operational_Indicator__c.Undelivered_Orders__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CUST_NAME</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Pedidos Entregues e Não Entregues por Un</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>LT_Logistics_Unit__c.Unit_Code__c</field>
+    </columns>
+    <columns>
+        <field>LT_Logistics_Unit__c.State__c</field>
+    </columns>
+    <columns>
+        <field>LT_Logistics_Unit__c.City__c</field>
+    </columns>
+    <columns>
+        <field>Operational_Indicator__c.Reference_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Operational_Indicator__c.Total_Orders__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Operational_Indicator__c.Delivered_Orders__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Operational_Indicator__c.Undelivered_Orders__c</field>
+    </columns>
+    <description>Comparação entre pedidos entregues e não entregues por unidade logística na data selecionada.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Operação — Volume de Pedidos — Por Unida</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$LT_Logistics_Unit__c$Operational_Indicator__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Operational_Indicator__c.Delivered_Orders__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Operational_Indicator__c.Reference_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

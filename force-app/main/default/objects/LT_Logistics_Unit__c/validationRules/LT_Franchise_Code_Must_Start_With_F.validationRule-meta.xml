@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Franchise_Code_Must_Start_With_F</fullName>
+    <active>true</active>
+    <description>Exige que o Código da Unidade comece com o prefixo F seguido de espaço quando o Modelo Operacional for Franqueada.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Operating_Model__c, &quot;Franqueada&quot;),
+    NOT(
+        BEGINS(
+            UPPER(TRIM(Unit_Code__c)),
+            &quot;F &quot;
+        )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Unit_Code__c</errorDisplayField>
+    <errorMessage>O Código da Unidade deve começar com “F ” para unidades franqueadas. Exemplo: F IRA-PR.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Require_CNPJ_For_Operating_Partner</fullName>
+    <active>true</active>
+    <description>Exige o preenchimento do CNPJ para Accounts do Record Type Parceiro Operacional.</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &quot;LT_Operating_Partner&quot;,
+    ISBLANK(LT_CNPJ__c)
+)</errorConditionFormula>
+    <errorDisplayField>LT_CNPJ__c</errorDisplayField>
+    <errorMessage>Informe o CNPJ da empresa parceira.</errorMessage>
+</ValidationRule>

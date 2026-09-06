@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>SLA abaixo da meta que necessita de atenção</description>
+        <name>Set_Attention</name>
+        <label>Definir Atenção</label>
+        <locationX>880</locationX>
+        <locationY>664</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Operational_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Atenção</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Critical</name>
+        <label>Definir Crítico</label>
+        <locationX>1376</locationX>
+        <locationY>686</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Operational_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Crítico</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>SLA dentro da meta prevista</description>
+        <name>Set_Within_Target</name>
+        <label>Definir Dentro da Meta</label>
+        <locationX>489</locationX>
+        <locationY>683</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Operational_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Dentro da Meta</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Classifica o SLA para os status correspondentes.</description>
+        <name>Classify_SLA</name>
+        <label>Classificar SLA</label>
+        <locationX>873</locationX>
+        <locationY>461</locationY>
+        <defaultConnector>
+            <targetReference>Set_Critical</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Crítico</defaultConnectorLabel>
+        <rules>
+            <name>Within_Target</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Calculated_SLA</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>0.95</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Within_Target</targetReference>
+            </connector>
+            <label>Dentro da Meta</label>
+        </rules>
+        <rules>
+            <name>Attention</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Calculated_SLA</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>0.9</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Attention</targetReference>
+            </connector>
+            <label>Atenção</label>
+        </rules>
+    </decisions>
+    <description>Cópia do fluxo de classificação do Status Operacional criada para correção e testes.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Calcula o SLA dentro do Flow antes do Salvamento</description>
+        <name>Calculated_SLA</name>
+        <dataType>Number</dataType>
+        <expression>IF({!$Record.Delivered_Orders__c} &gt; 0, {!$Record.On_Time_Deliveries__c} / {!$Record.Delivered_Orders__c},0)</expression>
+        <scale>4</scale>
+    </formulas>
+    <interviewLabel>Classificar Status Operacional por SLA - Teste {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Classificar Status Operacional por SLA - Teste</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>755</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Classify_SLA</targetReference>
+        </connector>
+        <object>Operational_Indicator__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

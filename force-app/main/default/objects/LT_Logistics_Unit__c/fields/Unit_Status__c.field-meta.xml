@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Status__c</fullName>
+    <description>Representa a situação atual da unidade logística dentro do seu ciclo de implantação e operação.</description>
+    <inlineHelpText>Selecione a situação operacional atual da unidade. Unidades encerradas devem ser mantidas para preservar o histórico.</inlineHelpText>
+    <label>Status da Unidade</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Planejada</fullName>
+                <default>false</default>
+                <label>Planejada</label>
+            </value>
+            <value>
+                <fullName>Em Implantação</fullName>
+                <default>false</default>
+                <label>Em Implantação</label>
+            </value>
+            <value>
+                <fullName>Ativa</fullName>
+                <default>false</default>
+                <label>Ativa</label>
+            </value>
+            <value>
+                <fullName>Temporariamente Inativa</fullName>
+                <default>false</default>
+                <label>Temporariamente Inativa</label>
+            </value>
+            <value>
+                <fullName>Encerrada</fullName>
+                <default>false</default>
+                <label>Encerrada</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

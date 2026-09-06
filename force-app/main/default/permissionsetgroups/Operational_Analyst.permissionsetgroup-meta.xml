@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Agrupa as permissões necessárias para consultar, criar e atualizar unidades logísticas e indicadores operacionais.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Analista Operacional</label>
+    <permissionSets>Manage_Logistics_Units</permissionSets>
+    <permissionSets>Manage_Operational_Indicators</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

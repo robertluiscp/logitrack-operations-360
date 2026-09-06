@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Selecione o usuário Salesforce responsável por acompanhar a operação e os indicadores desta unidade. --></help>
+    <label><!-- Gestor Responsável --></label>
+    <lookupFilter>
+        <errorMessage><!-- O Gestor Responsável deve ser um usuário ativo no Salesforce. --></errorMessage>
+        <informationalMessage><!-- Somente usuários ativos podem ser selecionados como gestores de unidades logísticas. --></informationalMessage>
+    </lookupFilter>
+    <name>Unit_Manager__c</name>
+    <relationshipLabel><!-- Unidades Logísticas --></relationshipLabel>
+</CustomFieldTranslation>

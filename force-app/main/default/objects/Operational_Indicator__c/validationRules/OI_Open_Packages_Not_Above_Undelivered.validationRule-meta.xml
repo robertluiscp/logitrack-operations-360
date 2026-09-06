@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OI_Open_Packages_Not_Above_Undelivered</fullName>
+    <active>true</active>
+    <description>Impede que a quantidade de pacotes em aberto seja maior que a quantidade de pedidos não entregues.</description>
+    <errorConditionFormula>Open_Packages__c &gt; Undelivered_Orders__c</errorConditionFormula>
+    <errorDisplayField>Open_Packages__c</errorDisplayField>
+    <errorMessage>Pacotes em Aberto não pode ser maior que Pedidos Não Entregues.</errorMessage>
+</ValidationRule>

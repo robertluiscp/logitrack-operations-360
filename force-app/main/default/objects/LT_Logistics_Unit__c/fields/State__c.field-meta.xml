@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State__c</fullName>
+    <description>Unidade federativa em que a unidade logística está localizada.</description>
+    <inlineHelpText>Selecione a sigla do estado onde a unidade está localizada. Para unidades regionais que atendem mais de um estado, o campo pode permanecer vazio.</inlineHelpText>
+    <label>Estado (UF)</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Brazilian_States</valueSetName>
+    </valueSet>
+</CustomField>

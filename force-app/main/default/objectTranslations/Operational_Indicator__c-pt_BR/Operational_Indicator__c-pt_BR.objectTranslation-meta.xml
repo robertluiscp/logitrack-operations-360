@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Indicador Operacional</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Indicadores Operacionais</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Indicador Operacional Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Identificação do Indicador --></label>
+            <section>Identificação do Indicador</section>
+        </sections>
+        <sections>
+            <label><!-- Indicadores Calculados --></label>
+            <section>Indicadores Calculados</section>
+        </sections>
+        <sections>
+            <label><!-- Indicadores Críticos --></label>
+            <section>Indicadores Críticos</section>
+        </sections>
+        <sections>
+            <label><!-- Volumes Operacionais --></label>
+            <section>Volumes Operacionais</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- As quantidades dos indicadores operacionais não podem ser negativas. Informe valores iguais ou maiores que zero. --></errorMessage>
+        <name>OI_Block_Negative_Values</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pedidos Entregues não pode ser maior que Total de Pedidos. --></errorMessage>
+        <name>OI_Delivered_Not_Above_Total</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A soma de Entregues no Prazo e Entregues Fora do Prazo não pode ser maior que Pedidos Entregues. --></errorMessage>
+        <name>OI_Delivery_Timing_Not_Above_Delivered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pacotes em Aberto não pode ser maior que Pedidos Não Entregues. --></errorMessage>
+        <name>OI_Open_Packages_Not_Above_Undelivered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A soma de Pedidos Entregues e Pedidos Não Entregues não pode ser maior que Total de Pedidos. --></errorMessage>
+        <name>OI_Order_Status_Not_Above_Total</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pacotes +3 Dias sem Movimentação não pode ser maior que Pacotes em Aberto. --></errorMessage>
+        <name>OI_Stagnant_Packages_Not_Above_Open</name>
+    </validationRules>
+</CustomObjectTranslation>

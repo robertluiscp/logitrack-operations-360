@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Campo calculado automaticamente. Para unidades ativas, considera a data atual; para unidades encerradas, considera a Data de Encerramento. --></help>
+    <label><!-- Dias em Operação --></label>
+    <name>Days_In_Operation__c</name>
+</CustomFieldTranslation>

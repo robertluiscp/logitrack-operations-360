@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_Model__c</fullName>
+    <description>Identifica o modelo de administração e responsabilidade operacional da unidade logística.</description>
+    <inlineHelpText>Informe se a unidade é administrada diretamente pela empresa, por uma franquia ou por um parceiro credenciado.</inlineHelpText>
+    <label>Modelo Operacional</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Própria</fullName>
+                <default>false</default>
+                <label>Própria</label>
+            </value>
+            <value>
+                <fullName>Franqueada</fullName>
+                <default>false</default>
+                <label>Franqueada</label>
+            </value>
+            <value>
+                <fullName>Parceira Credenciada</fullName>
+                <default>false</default>
+                <label>Parceira Credenciada</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

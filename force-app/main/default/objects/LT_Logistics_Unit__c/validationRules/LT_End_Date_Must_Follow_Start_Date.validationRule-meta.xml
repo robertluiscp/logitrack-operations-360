@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_End_Date_Must_Follow_Start_Date</fullName>
+    <active>true</active>
+    <description>Impede que a Data de Encerramento seja anterior à Data de Início da Operação.</description>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(Operation_Start_Date__c)),
+    NOT(ISBLANK(Operation_End_Date__c)),
+    Operation_End_Date__c &lt; Operation_Start_Date__c
+)</errorConditionFormula>
+    <errorDisplayField>Operation_End_Date__c</errorDisplayField>
+    <errorMessage>A Data de Encerramento não pode ser anterior à Data de Início da Operação.</errorMessage>
+</ValidationRule>

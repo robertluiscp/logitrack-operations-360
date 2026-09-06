@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Preenche automaticamente a Chave Única Unidade-Data com o identificador da Unidade Logística e a Data de Referência.</description>
+        <name>Set_Unit_Date_Unique_Key</name>
+        <label>Preencher Chave Única Unidade-Data</label>
+        <locationX>778</locationX>
+        <locationY>383</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Unit_Date_Unique_Key__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>UnitDateUniqueKey</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Preenche antes do salvamento a chave única composta pela Unidade Logística e pela Data de Referência.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Combina o ID da Unidade Logística com a Data de Referência para formar uma chave única.</description>
+        <name>UnitDateUniqueKey</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Logistics_Unit__c} &amp; &quot;-&quot; &amp;
+TEXT({!$Record.Reference_Date__c})</expression>
+    </formulas>
+    <interviewLabel>OI - Preencher Chave Única Unidade-Data {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>OI - Preencher Chave Única Unidade-Data</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>649</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Set_Unit_Date_Unique_Key</targetReference>
+        </connector>
+        <object>Operational_Indicator__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

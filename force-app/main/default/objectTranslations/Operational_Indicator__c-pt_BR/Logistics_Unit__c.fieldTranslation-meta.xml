@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Selecione a unidade logística responsável pelos resultados operacionais registrados. --></help>
+    <label><!-- Unidade Logística --></label>
+    <name>Logistics_Unit__c</name>
+    <relationshipLabel><!-- Indicadores Operacionais --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_F_Code_Requires_Franchise_Model</fullName>
+    <active>true</active>
+    <description>Exige que unidades cujo código comece com F seguido de espaço sejam classificadas com o Modelo Operacional Franqueada.</description>
+    <errorConditionFormula>AND(
+    BEGINS(
+        UPPER(TRIM(Unit_Code__c)),
+        &quot;F &quot;
+    ),
+    NOT(ISPICKVAL(Operating_Model__c, &quot;Franqueada&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Operating_Model__c</errorDisplayField>
+    <errorMessage>Códigos iniciados por “F ” são exclusivos de unidades franqueadas. Altere o Modelo Operacional para Franqueada ou corrija o código.</errorMessage>
+</ValidationRule>

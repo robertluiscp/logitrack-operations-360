@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Code__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Código único utilizado para identificar a unidade logística nos sistemas operacionais e nas integrações.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Informe a sigla oficial da unidade, incluindo identificação da franquia e estado quando aplicável. Exemplo: ALM-PR ou F IRA-PR.</inlineHelpText>
+    <label>Código da Unidade</label>
+    <length>20</length>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

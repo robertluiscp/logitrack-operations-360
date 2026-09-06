@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Daily_Operational_Monitoring</fullName>
+    <columns>NAME</columns>
+    <columns>Reference_Date__c</columns>
+    <columns>Total_Orders__c</columns>
+    <columns>Delivered_Orders__c</columns>
+    <columns>Delivery_Percentage__c</columns>
+    <columns>SLA__c</columns>
+    <columns>Open_Packages__c</columns>
+    <columns>Packages_Over_3_Days_No_Movement__c</columns>
+    <columns>Logistics_Unit__c</columns>
+    <columns>Warehouse_Entry_Not_Dispatched__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Reference_Date__c</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Monitoramento Diário</label>
+</ListView>

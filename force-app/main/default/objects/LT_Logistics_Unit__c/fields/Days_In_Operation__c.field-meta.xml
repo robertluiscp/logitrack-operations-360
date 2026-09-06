@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_In_Operation__c</fullName>
+    <description>Calcula automaticamente a quantidade de dias entre o início da operação e a data atual ou a data de encerramento.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    ISBLANK(Operation_Start_Date__c),
+    NULL,
+    MAX(
+        0,
+        IF(
+            ISBLANK(Operation_End_Date__c),
+            TODAY(),
+            Operation_End_Date__c
+        ) - Operation_Start_Date__c
+    )
+)</formula>
+    <inlineHelpText>Campo calculado automaticamente. Para unidades ativas, considera a data atual; para unidades encerradas, considera a Data de Encerramento.</inlineHelpText>
+    <label>Dias em Operação</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

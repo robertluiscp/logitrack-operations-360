@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OI_Delivery_Timing_Not_Above_Delivered</fullName>
+    <active>true</active>
+    <description>Impede que a soma das entregas no prazo e fora do prazo seja maior que a quantidade total de pedidos entregues.</description>
+    <errorConditionFormula>On_Time_Deliveries__c + Late_Deliveries__c &gt; Delivered_Orders__c</errorConditionFormula>
+    <errorMessage>A soma de Entregues no Prazo e Entregues Fora do Prazo não pode ser maior que Pedidos Entregues.</errorMessage>
+</ValidationRule>

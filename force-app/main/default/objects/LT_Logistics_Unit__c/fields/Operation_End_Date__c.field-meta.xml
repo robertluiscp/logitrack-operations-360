@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operation_End_Date__c</fullName>
+    <description>Data em que a unidade logística encerrou definitivamente suas atividades.</description>
+    <inlineHelpText>Preencha somente quando a unidade for encerrada definitivamente. Suspensões temporárias não devem utilizar este campo.</inlineHelpText>
+    <label>Data de Encerramento</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

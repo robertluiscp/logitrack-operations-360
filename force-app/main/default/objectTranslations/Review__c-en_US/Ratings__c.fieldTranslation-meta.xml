@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ratings --></label>
+    <name>Ratings__c</name>
+    <picklistValues>
+        <masterLabel>Do Not Move Forward</masterLabel>
+        <translation><!-- Do Not Move Forward --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hire</masterLabel>
+        <translation><!-- Hire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hire - Some Reservations</masterLabel>
+        <translation><!-- Hire - Some Reservations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strong Hire</masterLabel>
+        <translation><!-- Strong Hire --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

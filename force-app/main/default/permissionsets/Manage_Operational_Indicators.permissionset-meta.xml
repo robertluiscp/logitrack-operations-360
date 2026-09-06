@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permite consultar, criar e atualizar indicadores operacionais das unidades logísticas.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Gerenciar Indicadores Operacionais</label>
+</PermissionSet>

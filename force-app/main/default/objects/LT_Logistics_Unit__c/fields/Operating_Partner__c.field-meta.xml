@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_Partner__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Empresa parceira, franqueada ou credenciada responsável pela administração da unidade logística.</description>
+    <inlineHelpText>Selecione a empresa responsável pela unidade quando o Modelo Operacional for Franqueada ou Parceira Credenciada. Deixe vazio para unidades próprias.</inlineHelpText>
+    <label>Parceiro Operacional</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Unidades Operadas</relationshipLabel>
+    <relationshipName>Operated_Logistics_Units</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

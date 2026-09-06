@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Logistics_Unit_Highlights</fullName>
+    <fields>Name</fields>
+    <fields>Unit_Code__c</fields>
+    <fields>Unit_Status__c</fields>
+    <fields>Unit_Type__c</fields>
+    <fields>Operating_Model__c</fields>
+    <fields>Parent_Unit__c</fields>
+    <fields>State__c</fields>
+    <fields>City__c</fields>
+    <fields>Unit_Manager__c</fields>
+    <fields>Operating_Partner__c</fields>
+    <label>Destaques da Unidade Logística</label>
+</CompactLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OI_Delivered_Not_Above_Total</fullName>
+    <active>true</active>
+    <description>Impede que a quantidade de pedidos entregues seja maior que o total de pedidos.</description>
+    <errorConditionFormula>Delivered_Orders__c &gt; Total_Orders__c</errorConditionFormula>
+    <errorDisplayField>Delivered_Orders__c</errorDisplayField>
+    <errorMessage>Pedidos Entregues não pode ser maior que Total de Pedidos.</errorMessage>
+</ValidationRule>

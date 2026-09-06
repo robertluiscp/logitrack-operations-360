@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Informe a capacidade diária estimada em número de pacotes, utilizando somente números inteiros. --></help>
+    <label><!-- Capacidade Operacional Diária --></label>
+    <name>Daily_Operational_Capacity__c</name>
+</CustomFieldTranslation>
