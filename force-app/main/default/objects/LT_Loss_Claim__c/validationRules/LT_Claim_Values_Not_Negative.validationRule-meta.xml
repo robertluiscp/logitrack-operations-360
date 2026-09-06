@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Claim_Values_Not_Negative</fullName>
+    <active>true</active>
+    <description>Valores do extravio nao podem ser negativos.</description>
+    <errorConditionFormula>OR(LT_Reimbursement_Value__c &lt; 0, LT_Driver_Charge_Value__c &lt; 0, LT_Declared_Value__c &lt; 0)</errorConditionFormula>
+    <errorMessage>Os valores do extravio nao podem ser negativos.</errorMessage>
+</ValidationRule>

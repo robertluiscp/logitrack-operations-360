@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Quando um extravio e aprovado com responsabilidade do motorista e valor a descontar, cria automaticamente a penalizacao de Desconto por Extravio (se ainda nao existir).</description>
+    <environments>Default</environments>
+    <interviewLabel>EXT - Aprovado gera Penalizacao {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EXT - Extravio Aprovado gera Penalizacao</label>
+    <processMetadataValues><name>BuilderType</name><value><stringValue>LightningFlowBuilder</stringValue></value></processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Buscar_Penalizacao</name>
+        <label>Buscar Penalizacao Existente</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector><targetReference>Ja_Existe_Penalizacao</targetReference></connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LT_Loss_Claim__c</field>
+            <operator>EqualTo</operator>
+            <value><elementReference>$Record.Id</elementReference></value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>LT_Driver_Penalty__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <decisions>
+        <name>Ja_Existe_Penalizacao</name>
+        <label>Ja existe penalizacao?</label>
+        <locationX>176</locationX>
+        <locationY>254</locationY>
+        <defaultConnector><targetReference>Criar_Penalizacao</targetReference></defaultConnector>
+        <defaultConnectorLabel>Nao existe</defaultConnectorLabel>
+        <rules>
+            <name>rExiste</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Buscar_Penalizacao</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue><booleanValue>false</booleanValue></rightValue>
+            </conditions>
+            <label>Ja existe</label>
+        </rules>
+    </decisions>
+    <recordCreates>
+        <name>Criar_Penalizacao</name>
+        <label>Criar Penalizacao</label>
+        <locationX>50</locationX>
+        <locationY>374</locationY>
+        <inputAssignments><field>LT_Driver__c</field><value><elementReference>$Record.LT_Responsible_Driver__c</elementReference></value></inputAssignments>
+        <inputAssignments><field>LT_Penalty_Type__c</field><value><stringValue>Desconto por Extravio</stringValue></value></inputAssignments>
+        <inputAssignments><field>LT_Origin__c</field><value><stringValue>Extravio</stringValue></value></inputAssignments>
+        <inputAssignments><field>LT_Status__c</field><value><stringValue>Registrada</stringValue></value></inputAssignments>
+        <inputAssignments><field>LT_Loss_Claim__c</field><value><elementReference>$Record.Id</elementReference></value></inputAssignments>
+        <inputAssignments><field>LT_Case__c</field><value><elementReference>$Record.LT_Case__c</elementReference></value></inputAssignments>
+        <inputAssignments><field>LT_Amount__c</field><value><elementReference>$Record.LT_Driver_Charge_Value__c</elementReference></value></inputAssignments>
+        <inputAssignments><field>LT_Reference_Date__c</field><value><elementReference>$Flow.CurrentDate</elementReference></value></inputAssignments>
+        <inputAssignments><field>LT_Description__c</field><value><stringValue>Penalizacao gerada automaticamente pela aprovacao do extravio.</stringValue></value></inputAssignments>
+        <object>LT_Driver_Penalty__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Buscar_Penalizacao</targetReference></connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>AND(
+  ISPICKVAL({!$Record.LT_Status__c}, "Aprovado"),
+  ISPICKVAL({!$Record.LT_Responsibility__c}, "Motorista"),
+  NOT(ISBLANK({!$Record.LT_Responsible_Driver__c})),
+  BLANKVALUE({!$Record.LT_Driver_Charge_Value__c}, 0) &gt; 0
+)</filterFormula>
+        <object>LT_Loss_Claim__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

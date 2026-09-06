@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>LT_Driver_Penalty__c</entityName>
+    <fieldName>LT_Status__c</fieldName>
+    <masterLabel>Fluxo da Penalizacao</masterLabel>
+    <recordTypeName>__MASTER__</recordTypeName>
+    <pathAssistantSteps>
+        <fieldNames>LT_Penalty_Type__c</fieldNames>
+        <fieldNames>LT_Amount__c</fieldNames>
+        <info>&lt;p&gt;Penalizacao registrada. Informe o motorista da penalizacao e do valor.&lt;/p&gt;</info>
+        <picklistValueName>Registrada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Contest_Date__c</fieldNames>
+        <info>&lt;p&gt;Motorista contestou a penalizacao. SAC/Coordenacao analisa.&lt;/p&gt;</info>
+        <picklistValueName>Em Contestacao</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Penalizacao confirmada apos analise. Pronta para desconto no proximo romaneio.&lt;/p&gt;</info>
+        <picklistValueName>Confirmada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Applied_In_Manifest__c</fieldNames>
+        <info>&lt;p&gt;Valor descontado no romaneio do motorista.&lt;/p&gt;</info>
+        <picklistValueName>Descontada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Contest_Outcome__c</fieldNames>
+        <info>&lt;p&gt;Penalizacao revertida apos contestacao procedente.&lt;/p&gt;</info>
+        <picklistValueName>Revertida</picklistValueName>
+    </pathAssistantSteps>
+</PathAssistant>

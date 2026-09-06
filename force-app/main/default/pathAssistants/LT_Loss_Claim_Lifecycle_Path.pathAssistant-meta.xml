@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>LT_Loss_Claim__c</entityName>
+    <fieldName>LT_Status__c</fieldName>
+    <masterLabel>Fluxo do Extravio</masterLabel>
+    <recordTypeName>__MASTER__</recordTypeName>
+    <pathAssistantSteps>
+        <fieldNames>LT_Loss_Reason__c</fieldNames>
+        <fieldNames>LT_Responsibility__c</fieldNames>
+        <info>&lt;p&gt;Extravio registrado. Apure o motivo e a responsabilidade; levante o valor declarado.&lt;/p&gt;</info>
+        <picklistValueName>Em Apuracao</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Reimbursement_Value__c</fieldNames>
+        <fieldNames>LT_Driver_Charge_Value__c</fieldNames>
+        <info>&lt;p&gt;Valores definidos. Submeta para aprovacao da coordenacao (acima de R$ 300).&lt;/p&gt;</info>
+        <picklistValueName>Em Aprovacao</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Approved_By__c</fieldNames>
+        <fieldNames>LT_Approval_Date__c</fieldNames>
+        <info>&lt;p&gt;Ressarcimento aprovado. Se a responsabilidade for do motorista, a penalizacao e criada automaticamente.&lt;/p&gt;</info>
+        <picklistValueName>Aprovado</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Reimbursement_Date__c</fieldNames>
+        <info>&lt;p&gt;Embarcador ressarcido. Remessa marcada como ressarcida no rastreamento.&lt;/p&gt;</info>
+        <picklistValueName>Ressarcido</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Resolution_Notes__c</fieldNames>
+        <info>&lt;p&gt;Ressarcimento indeferido. Justifique o motivo.&lt;/p&gt;</info>
+        <picklistValueName>Indeferido</picklistValueName>
+    </pathAssistantSteps>
+</PathAssistant>

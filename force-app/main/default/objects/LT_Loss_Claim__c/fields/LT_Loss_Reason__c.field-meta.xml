@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Loss_Reason__c</fullName>
+    <description>Motivo pelo qual a remessa foi considerada extraviada.</description>
+    <label>Motivo do Extravio</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PNR - Paguei Nao Recebi</fullName>
+                <default>false</default>
+                <label>PNR - Paguei Nao Recebi</label>
+            </value>
+            <value>
+                <fullName>Assinado Nao Recebido</fullName>
+                <default>false</default>
+                <label>Assinado Nao Recebido</label>
+            </value>
+            <value>
+                <fullName>Avaria na Entrega</fullName>
+                <default>false</default>
+                <label>Avaria na Entrega</label>
+            </value>
+            <value>
+                <fullName>Avaria em Transporte</fullName>
+                <default>false</default>
+                <label>Avaria em Transporte</label>
+            </value>
+            <value>
+                <fullName>Retido +10 dias</fullName>
+                <default>false</default>
+                <label>Retido +10 dias</label>
+            </value>
+            <value>
+                <fullName>Sem Movimentacao +10 dias</fullName>
+                <default>false</default>
+                <label>Sem Movimentacao +10 dias</label>
+            </value>
+            <value>
+                <fullName>Roubo / Furto de Carga</fullName>
+                <default>false</default>
+                <label>Roubo / Furto de Carga</label>
+            </value>
+            <value>
+                <fullName>Sinistro (Acidente)</fullName>
+                <default>false</default>
+                <label>Sinistro (Acidente)</label>
+            </value>
+            <value>
+                <fullName>Endereco Inexistente</fullName>
+                <default>false</default>
+                <label>Endereco Inexistente</label>
+            </value>
+            <value>
+                <fullName>Outro</fullName>
+                <default>false</default>
+                <label>Outro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

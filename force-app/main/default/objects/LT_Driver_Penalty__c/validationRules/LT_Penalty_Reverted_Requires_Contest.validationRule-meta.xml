@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Penalty_Reverted_Requires_Contest</fullName>
+    <active>true</active>
+    <description>Penalizacao Revertida exige contestacao com resultado.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Status__c, "Revertida"), OR(NOT(LT_Contested__c), ISPICKVAL(LT_Contest_Outcome__c, "Pendente")))</errorConditionFormula>
+    <errorDisplayField>LT_Status__c</errorDisplayField>
+    <errorMessage>So e possivel reverter uma penalizacao contestada e julgada.</errorMessage>
+</ValidationRule>

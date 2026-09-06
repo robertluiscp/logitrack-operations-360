@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Claim_Charge_Not_Above_Reimb</fullName>
+    <active>true</active>
+    <description>Desconto do motorista nao pode exceder o ressarcimento.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_Driver_Charge_Value__c)), NOT(ISBLANK(LT_Reimbursement_Value__c)), LT_Driver_Charge_Value__c &gt; LT_Reimbursement_Value__c)</errorConditionFormula>
+    <errorDisplayField>LT_Driver_Charge_Value__c</errorDisplayField>
+    <errorMessage>O valor descontado do motorista nao pode ser maior que o valor de ressarcimento.</errorMessage>
+</ValidationRule>

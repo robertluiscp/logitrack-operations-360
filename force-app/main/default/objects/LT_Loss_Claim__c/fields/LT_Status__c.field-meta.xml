@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Status__c</fullName>
+    <description>Etapa de apuracao, aprovacao e ressarcimento.</description>
+    <label>Status do Extravio</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Em Apuracao</fullName>
+                <default>true</default>
+                <label>Em Apuracao</label>
+            </value>
+            <value>
+                <fullName>Em Aprovacao</fullName>
+                <default>false</default>
+                <label>Em Aprovacao</label>
+            </value>
+            <value>
+                <fullName>Aprovado</fullName>
+                <default>false</default>
+                <label>Aprovado</label>
+            </value>
+            <value>
+                <fullName>Ressarcido</fullName>
+                <default>false</default>
+                <label>Ressarcido</label>
+            </value>
+            <value>
+                <fullName>Indeferido</fullName>
+                <default>false</default>
+                <label>Indeferido</label>
+            </value>
+            <value>
+                <fullName>Cancelado</fullName>
+                <default>false</default>
+                <label>Cancelado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

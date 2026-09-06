@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ressarcidos</fullName>
+    <columns>NAME</columns>
+    <columns>LT_Shipment__c</columns>
+    <columns>LT_Loss_Reason__c</columns>
+    <columns>LT_Reimbursement_Value__c</columns>
+    <columns>LT_Net_Company_Cost__c</columns>
+    <columns>LT_Reimbursement_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LT_Status__c</field>
+        <operation>equals</operation>
+        <value>Ressarcido</value>
+    </filters>
+    <label>Ressarcidos</label>
+</ListView>

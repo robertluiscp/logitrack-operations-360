@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>LT_Driver_Penalty_Summary</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Penalizacao de Motorista - LogiTrack Operations 360.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableStreamingApi>true</enableStreamingApi>
+    <label>Penalizacao de Motorista</label>
+    <nameField>
+        <displayFormat>PEN-{000000}</displayFormat>
+        <label>Codigo da Penalizacao</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Penalizacoes de Motorista</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

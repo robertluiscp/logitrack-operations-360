@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Claim_Denied_Requires_Notes</fullName>
+    <active>true</active>
+    <description>Extravio Indeferido exige justificativa.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Status__c, "Indeferido"), ISBLANK(LT_Resolution_Notes__c))</errorConditionFormula>
+    <errorDisplayField>LT_Resolution_Notes__c</errorDisplayField>
+    <errorMessage>Justifique o indeferimento em Notas de Encerramento.</errorMessage>
+</ValidationRule>

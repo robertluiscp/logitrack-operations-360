@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Penalty_Type__c</fullName>
+    <description>Natureza da penalizacao aplicada ao motorista.</description>
+    <label>Tipo de Penalizacao</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Desconto por Extravio</fullName>
+                <default>false</default>
+                <label>Desconto por Extravio</label>
+            </value>
+            <value>
+                <fullName>Desconto por Avaria</fullName>
+                <default>false</default>
+                <label>Desconto por Avaria</label>
+            </value>
+            <value>
+                <fullName>Advertencia (Postura)</fullName>
+                <default>false</default>
+                <label>Advertencia (Postura)</label>
+            </value>
+            <value>
+                <fullName>Suspensao Temporaria</fullName>
+                <default>false</default>
+                <label>Suspensao Temporaria</label>
+            </value>
+            <value>
+                <fullName>Desligamento</fullName>
+                <default>false</default>
+                <label>Desligamento</label>
+            </value>
+            <value>
+                <fullName>Multa Contratual</fullName>
+                <default>false</default>
+                <label>Multa Contratual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

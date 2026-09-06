@@ -66,6 +66,8 @@
     <tabs>LT_Route__c</tabs>
     <tabs>LT_Delivery_Attempt__c</tabs>
     <tabs>LT_Operational_Incident__c</tabs>
+    <tabs>LT_Loss_Claim__c</tabs>
+    <tabs>LT_Driver_Penalty__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LogiTrack_Operations_360_UtilityBar</utilityBar>
 </CustomApplication>

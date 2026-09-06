@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Claim_Driver_Resp_Requires_Driver</fullName>
+    <active>true</active>
+    <description>Responsabilidade Motorista exige o motorista responsavel.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Responsibility__c, "Motorista"), ISBLANK(LT_Responsible_Driver__c))</errorConditionFormula>
+    <errorDisplayField>LT_Responsible_Driver__c</errorDisplayField>
+    <errorMessage>Informe o Motorista Responsavel.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Effective_Amount__c</fullName>
+    <description>Valor realmente descontado apos a contestacao (Cancelada = 0, Reduzida = 50%).</description>
+    <label>Valor Efetivo</label>
+    <formula>CASE(TEXT(LT_Contest_Outcome__c), "Cancelada", 0, "Reduzida", BLANKVALUE(LT_Amount__c, 0) * 0.5, BLANKVALUE(LT_Amount__c, 0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>16</precision>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Contest_Outcome__c</fullName>
+    <description>Desfecho da contestacao do motorista.</description>
+    <label>Resultado da Contestacao</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pendente</fullName>
+                <default>true</default>
+                <label>Pendente</label>
+            </value>
+            <value>
+                <fullName>Mantida</fullName>
+                <default>false</default>
+                <label>Mantida</label>
+            </value>
+            <value>
+                <fullName>Reduzida</fullName>
+                <default>false</default>
+                <label>Reduzida</label>
+            </value>
+            <value>
+                <fullName>Cancelada</fullName>
+                <default>false</default>
+                <label>Cancelada</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

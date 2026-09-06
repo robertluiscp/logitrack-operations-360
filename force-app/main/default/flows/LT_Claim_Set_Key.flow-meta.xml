@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Antes do salvamento, preenche a Chave da Remessa com o ID da remessa, impedindo dois extravios para a mesma remessa (campo unico).</description>
+    <environments>Default</environments>
+    <interviewLabel>EXT - Chave da Remessa {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EXT - Definir Chave da Remessa</label>
+    <processMetadataValues><name>BuilderType</name><value><stringValue>LightningFlowBuilder</stringValue></value></processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <assignments>
+        <name>Definir_Chave</name>
+        <label>Definir Chave</label>
+        <locationX>176</locationX>
+        <locationY>288</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LT_Shipment_Key__c</assignToReference>
+            <operator>Assign</operator>
+            <value><elementReference>$Record.LT_Shipment__c</elementReference></value>
+        </assignmentItems>
+    </assignments>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Definir_Chave</targetReference></connector>
+        <object>LT_Loss_Claim__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

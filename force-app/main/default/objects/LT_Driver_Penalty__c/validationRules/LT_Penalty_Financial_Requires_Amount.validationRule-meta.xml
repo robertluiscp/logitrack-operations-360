@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Penalty_Financial_Requires_Amount</fullName>
+    <active>true</active>
+    <description>Penalizacao financeira exige valor maior que zero.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(LT_Penalty_Type__c, "Desconto por Extravio"), ISPICKVAL(LT_Penalty_Type__c, "Desconto por Avaria"), ISPICKVAL(LT_Penalty_Type__c, "Multa Contratual")), OR(ISBLANK(LT_Amount__c), LT_Amount__c &lt;= 0))</errorConditionFormula>
+    <errorDisplayField>LT_Amount__c</errorDisplayField>
+    <errorMessage>Informe um valor maior que zero para penalizacoes financeiras.</errorMessage>
+</ValidationRule>

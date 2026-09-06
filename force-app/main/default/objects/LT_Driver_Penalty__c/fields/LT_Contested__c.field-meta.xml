@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Contested__c</fullName>
+    <description>Marcada quando o motorista contesta a penalizacao.</description>
+    <label>Contestada</label>
+    <required>false</required>
+    <defaultValue>false</defaultValue>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Penalty_Discounted_Requires_Manifest</fullName>
+    <active>true</active>
+    <description>Penalizacao Descontada exige o romaneio de aplicacao.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Status__c, "Descontada"), ISBLANK(LT_Applied_In_Manifest__c))</errorConditionFormula>
+    <errorDisplayField>LT_Applied_In_Manifest__c</errorDisplayField>
+    <errorMessage>Informe o romaneio em que o desconto foi aplicado.</errorMessage>
+</ValidationRule>
