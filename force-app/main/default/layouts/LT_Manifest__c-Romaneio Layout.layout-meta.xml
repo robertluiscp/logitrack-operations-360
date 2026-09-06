@@ -114,6 +114,7 @@
     <relatedLists>
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
+    <customButtons>Imprimir_Romaneio</customButtons>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

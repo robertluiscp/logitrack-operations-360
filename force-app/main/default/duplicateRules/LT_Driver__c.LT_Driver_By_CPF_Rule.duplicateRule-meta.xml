@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOnInsert>Allow</actionOnInsert>
+    <actionOnUpdate>Allow</actionOnUpdate>
+    <alertText>Ja existe um motorista com este CPF.</alertText>
+    <description>Ja existe um motorista com este CPF.</description>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>LT_Driver__c</matchRuleSObjectType>
+        <matchingRule>LT_Driver_By_CPF</matchingRule>
+    </duplicateRuleMatchRules>
+    <isActive>true</isActive>
+    <masterLabel>Motorista duplicado por CPF</masterLabel>
+    <operationsOnInsert>Alert</operationsOnInsert>
+    <operationsOnInsert>Report</operationsOnInsert>
+    <operationsOnUpdate>Alert</operationsOnUpdate>
+    <operationsOnUpdate>Report</operationsOnUpdate>
+    <securityOption>EnforceSharingRules</securityOption>
+    <sortOrder>1</sortOrder>
+</DuplicateRule>

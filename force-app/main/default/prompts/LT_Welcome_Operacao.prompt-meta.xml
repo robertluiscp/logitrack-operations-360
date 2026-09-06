@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>LT Guia da Operacao</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Ver remessas retidas</actionButtonLabel>
+        <actionButtonLink>/lightning/o/LT_Shipment__c/list?filterName=Retidas_e_Paradas</actionButtonLink>
+        <body>Priorize remessas retidas e sem movimentacao ha mais de 10 dias (candidatas a extravio), ocorrencias fora do prazo e romaneios a pagar. As list views e o painel da home ajudam no dia a dia.</body>
+        <delayDays>1</delayDays>
+        <description>Guia inicial do app (prompt docked).</description>
+        <displayType>DockedComposer</displayType>
+        <header>Guia da Operacao</header>
+        <isPublished>true</isPublished>
+        <masterLabel>LT Guia da Operacao</masterLabel>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <startDate>2026-09-01</startDate>
+        <targetAppDeveloperName>LogiTrack_Operations_360</targetAppDeveloperName>
+        <timesToDisplay>10</timesToDisplay>
+        <title>Operacao Sul</title>
+        <userAccess>Everyone</userAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

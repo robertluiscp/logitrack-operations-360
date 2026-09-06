@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MatchingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <matchingRules>
-        <fullName>LT_Account_By_CNPJ</fullName>
-        <description>Identifica contas (embarcadores / parceiros) com o mesmo CNPJ.</description>
-        <label>Conta por CNPJ</label>
+        <fullName>LT_Vehicle_By_Plate</fullName>
+        <description>Identifica veiculos com a mesma placa.</description>
+        <label>Veiculo por Placa</label>
         <matchingRuleItems>
-            <blankValueBehavior>MatchBlanks</blankValueBehavior>
-            <fieldName>LT_CNPJ__c</fieldName>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>LT_Plate__c</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
         <ruleStatus>Active</ruleStatus>

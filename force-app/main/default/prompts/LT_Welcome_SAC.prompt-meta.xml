@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>LT Guia do SAC</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Meus chamados abertos</actionButtonLabel>
+        <actionButtonLink>/lightning/o/Case/list?filterName=MyOpenCases</actionButtonLink>
+        <body>Os chamados sao roteados automaticamente por tipo (PNR, avaria, agilizacao, postura do motorista). Use a acao rapida "Abrir extravio" quando o caso virar perda e acompanhe o envelhecimento dos PNR.</body>
+        <delayDays>1</delayDays>
+        <description>Guia inicial do app (prompt docked).</description>
+        <displayType>DockedComposer</displayType>
+        <header>Guia do SAC</header>
+        <isPublished>true</isPublished>
+        <masterLabel>LT Guia do SAC</masterLabel>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <startDate>2026-09-01</startDate>
+        <targetAppDeveloperName>LogiTrack_SAC</targetAppDeveloperName>
+        <timesToDisplay>10</timesToDisplay>
+        <title>Atendimento ao Cliente</title>
+        <userAccess>Everyone</userAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

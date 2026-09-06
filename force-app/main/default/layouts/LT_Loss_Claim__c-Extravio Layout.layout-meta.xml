@@ -20,6 +20,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>LT_Loss_Sub_Reason__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>LT_Status__c</field>
             </layoutItems>
             <layoutItems>
@@ -136,6 +140,11 @@
     <relatedLists>
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
+    <quickActionList>
+        <quickActionListItems>
+            <quickActionName>LT_Loss_Claim__c.Marcar_Ressarcido</quickActionName>
+        </quickActionListItems>
+    </quickActionList>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

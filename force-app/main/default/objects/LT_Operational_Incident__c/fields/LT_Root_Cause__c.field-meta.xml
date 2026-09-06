@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LT_Root_Cause__c</fullName>
-    <description>Causa raiz identificada.</description>
+    <description>Causa raiz identificada, dependente do Tipo de Ocorrencia.</description>
     <label>Causa Raiz</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackFeedHistory>false</trackFeedHistory>
     <type>Picklist</type>
     <valueSet>
+        <controllingField>LT_Incident_Type__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
@@ -57,5 +58,50 @@
                 <label>Outro</label>
             </value>
         </valueSetDefinition>
+    <valueSettings>
+        <controllingFieldValue>Retido com Motorista</controllingFieldValue>
+        <controllingFieldValue>Retido na Base</controllingFieldValue>
+        <valueName>Endereco Incorreto</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Retido na Base</controllingFieldValue>
+        <controllingFieldValue>Sem Movimentacao</controllingFieldValue>
+        <controllingFieldValue>Suspeita de Extravio</controllingFieldValue>
+        <controllingFieldValue>Entrada no Galpao sem Expedicao</controllingFieldValue>
+        <valueName>Falha de Triagem</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Suspeita de Extravio</controllingFieldValue>
+        <valueName>Extravio Interno</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Avaria em Transporte</controllingFieldValue>
+        <valueName>Avaria</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Retido na Base</controllingFieldValue>
+        <controllingFieldValue>Sem Movimentacao</controllingFieldValue>
+        <controllingFieldValue>Entrada no Galpao sem Expedicao</controllingFieldValue>
+        <valueName>Falha Sistemica</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Retido com Motorista</controllingFieldValue>
+        <controllingFieldValue>Avaria em Transporte</controllingFieldValue>
+        <valueName>Postura do Motorista</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Retido com Motorista</controllingFieldValue>
+        <controllingFieldValue>Sem Movimentacao</controllingFieldValue>
+        <valueName>Fora da Area de Cobertura</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Retido com Motorista</controllingFieldValue>
+        <controllingFieldValue>Retido na Base</controllingFieldValue>
+        <controllingFieldValue>Sem Movimentacao</controllingFieldValue>
+        <controllingFieldValue>Suspeita de Extravio</controllingFieldValue>
+        <controllingFieldValue>Avaria em Transporte</controllingFieldValue>
+        <controllingFieldValue>Entrada no Galpao sem Expedicao</controllingFieldValue>
+        <valueName>Outro</valueName>
+    </valueSettings>
     </valueSet>
 </CustomField>

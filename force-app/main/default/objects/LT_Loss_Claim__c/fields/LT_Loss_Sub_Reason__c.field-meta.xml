@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Loss_Sub_Reason__c</fullName>
+    <description>Sub-motivo do extravio, dependente do Motivo do Extravio.</description>
+    <label>Sub-motivo do Extravio</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LT_Loss_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acidente de Veiculo</fullName>
+                <default>false</default>
+                <label>Acidente de Veiculo</label>
+            </value>
+            <value>
+                <fullName>Alagamento</fullName>
+                <default>false</default>
+                <label>Alagamento</label>
+            </value>
+            <value>
+                <fullName>Assinatura de Terceiro</fullName>
+                <default>false</default>
+                <label>Assinatura de Terceiro</label>
+            </value>
+            <value>
+                <fullName>CEP Invalido</fullName>
+                <default>false</default>
+                <label>CEP Invalido</label>
+            </value>
+            <value>
+                <fullName>Carga Mal Acomodada</fullName>
+                <default>false</default>
+                <label>Carga Mal Acomodada</label>
+            </value>
+            <value>
+                <fullName>Cliente Mudou</fullName>
+                <default>false</default>
+                <label>Cliente Mudou</label>
+            </value>
+            <value>
+                <fullName>Colisao</fullName>
+                <default>false</default>
+                <label>Colisao</label>
+            </value>
+            <value>
+                <fullName>Desvio Interno</fullName>
+                <default>false</default>
+                <label>Desvio Interno</label>
+            </value>
+            <value>
+                <fullName>Embalagem Insuficiente</fullName>
+                <default>false</default>
+                <label>Embalagem Insuficiente</label>
+            </value>
+            <value>
+                <fullName>Endereco Nao Localizado</fullName>
+                <default>false</default>
+                <label>Endereco Nao Localizado</label>
+            </value>
+            <value>
+                <fullName>Entrega em Endereco Errado</fullName>
+                <default>false</default>
+                <label>Entrega em Endereco Errado</label>
+            </value>
+            <value>
+                <fullName>Erro de Bipagem</fullName>
+                <default>false</default>
+                <label>Erro de Bipagem</label>
+            </value>
+            <value>
+                <fullName>Falha na Comprovacao</fullName>
+                <default>false</default>
+                <label>Falha na Comprovacao</label>
+            </value>
+            <value>
+                <fullName>Fraude do Destinatario</fullName>
+                <default>false</default>
+                <label>Fraude do Destinatario</label>
+            </value>
+            <value>
+                <fullName>Furto no Galpao</fullName>
+                <default>false</default>
+                <label>Furto no Galpao</label>
+            </value>
+            <value>
+                <fullName>Incendio</fullName>
+                <default>false</default>
+                <label>Incendio</label>
+            </value>
+            <value>
+                <fullName>Manuseio do Motorista</fullName>
+                <default>false</default>
+                <label>Manuseio do Motorista</label>
+            </value>
+            <value>
+                <fullName>Numero Inexistente</fullName>
+                <default>false</default>
+                <label>Numero Inexistente</label>
+            </value>
+            <value>
+                <fullName>Outro</fullName>
+                <default>false</default>
+                <label>Outro</label>
+            </value>
+            <value>
+                <fullName>Perda no Galpao</fullName>
+                <default>false</default>
+                <label>Perda no Galpao</label>
+            </value>
+            <value>
+                <fullName>Portaria / Recepcao</fullName>
+                <default>false</default>
+                <label>Portaria / Recepcao</label>
+            </value>
+            <value>
+                <fullName>Produto Fragil</fullName>
+                <default>false</default>
+                <label>Produto Fragil</label>
+            </value>
+            <value>
+                <fullName>Recusa do Cliente</fullName>
+                <default>false</default>
+                <label>Recusa do Cliente</label>
+            </value>
+            <value>
+                <fullName>Roubo em Rota</fullName>
+                <default>false</default>
+                <label>Roubo em Rota</label>
+            </value>
+            <value>
+                <fullName>Sem Rota Atribuida</fullName>
+                <default>false</default>
+                <label>Sem Rota Atribuida</label>
+            </value>
+            <value>
+                <fullName>Sem Tentativa de Contato</fullName>
+                <default>false</default>
+                <label>Sem Tentativa de Contato</label>
+            </value>
+            <value>
+                <fullName>Umidade / Chuva</fullName>
+                <default>false</default>
+                <label>Umidade / Chuva</label>
+            </value>
+        </valueSetDefinition>
+    <valueSettings>
+        <controllingFieldValue>Avaria em Transporte</controllingFieldValue>
+        <valueName>Acidente de Veiculo</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Sinistro (Acidente)</controllingFieldValue>
+        <valueName>Alagamento</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Assinado Nao Recebido</controllingFieldValue>
+        <valueName>Assinatura de Terceiro</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Endereco Inexistente</controllingFieldValue>
+        <valueName>CEP Invalido</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Avaria em Transporte</controllingFieldValue>
+        <valueName>Carga Mal Acomodada</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Endereco Inexistente</controllingFieldValue>
+        <valueName>Cliente Mudou</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Sinistro (Acidente)</controllingFieldValue>
+        <valueName>Colisao</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Roubo / Furto de Carga</controllingFieldValue>
+        <valueName>Desvio Interno</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Avaria na Entrega</controllingFieldValue>
+        <valueName>Embalagem Insuficiente</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Retido +10 dias</controllingFieldValue>
+        <valueName>Endereco Nao Localizado</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>PNR - Paguei Nao Recebi</controllingFieldValue>
+        <valueName>Entrega em Endereco Errado</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Sem Movimentacao +10 dias</controllingFieldValue>
+        <valueName>Erro de Bipagem</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>PNR - Paguei Nao Recebi</controllingFieldValue>
+        <controllingFieldValue>Assinado Nao Recebido</controllingFieldValue>
+        <valueName>Falha na Comprovacao</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>PNR - Paguei Nao Recebi</controllingFieldValue>
+        <valueName>Fraude do Destinatario</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Roubo / Furto de Carga</controllingFieldValue>
+        <valueName>Furto no Galpao</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Sinistro (Acidente)</controllingFieldValue>
+        <valueName>Incendio</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Avaria na Entrega</controllingFieldValue>
+        <valueName>Manuseio do Motorista</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Endereco Inexistente</controllingFieldValue>
+        <valueName>Numero Inexistente</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Outro</controllingFieldValue>
+        <valueName>Outro</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Sem Movimentacao +10 dias</controllingFieldValue>
+        <valueName>Perda no Galpao</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Assinado Nao Recebido</controllingFieldValue>
+        <valueName>Portaria / Recepcao</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Avaria na Entrega</controllingFieldValue>
+        <valueName>Produto Fragil</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Retido +10 dias</controllingFieldValue>
+        <valueName>Recusa do Cliente</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Roubo / Furto de Carga</controllingFieldValue>
+        <valueName>Roubo em Rota</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Sem Movimentacao +10 dias</controllingFieldValue>
+        <valueName>Sem Rota Atribuida</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Retido +10 dias</controllingFieldValue>
+        <valueName>Sem Tentativa de Contato</valueName>
+    </valueSettings>
+    <valueSettings>
+        <controllingFieldValue>Avaria em Transporte</controllingFieldValue>
+        <valueName>Umidade / Chuva</valueName>
+    </valueSettings>
+    </valueSet>
+</CustomField>

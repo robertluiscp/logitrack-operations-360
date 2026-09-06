@@ -169,6 +169,11 @@
     <relatedLists>
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
+    <quickActionList>
+        <quickActionListItems>
+            <quickActionName>Case.Abrir_Extravio</quickActionName>
+        </quickActionListItems>
+    </quickActionList>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

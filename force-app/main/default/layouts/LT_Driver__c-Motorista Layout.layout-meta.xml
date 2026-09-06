@@ -180,6 +180,12 @@
     <relatedLists>
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
+    <customButtons>Falar_no_WhatsApp</customButtons>
+    <quickActionList>
+        <quickActionListItems>
+            <quickActionName>LT_Driver__c.Registrar_Penalizacao</quickActionName>
+        </quickActionListItems>
+    </quickActionList>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

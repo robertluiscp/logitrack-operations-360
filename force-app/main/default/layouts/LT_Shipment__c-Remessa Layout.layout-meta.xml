@@ -205,6 +205,13 @@
     <relatedLists>
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
+    <customButtons>Ver_Destino_no_Mapa</customButtons>
+    <customButtons>Rastrear_no_Site</customButtons>
+    <quickActionList>
+        <quickActionListItems>
+            <quickActionName>LT_Shipment__c.Registrar_Ocorrencia</quickActionName>
+        </quickActionListItems>
+    </quickActionList>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
