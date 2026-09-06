@@ -4,8 +4,8 @@
     <active>true</active>
     <description>Embarcador Ativo precisa ter um Executivo Comercial responsável.</description>
     <errorConditionFormula>AND(
-    RecordType.DeveloperName = "LT_Shipper",
-    ISPICKVAL(LT_Shipper_Status__c, "Ativo"),
+    RecordType.DeveloperName = &quot;LT_Shipper&quot;,
+    ISPICKVAL(LT_Shipper_Status__c, &quot;Ativo&quot;),
     ISBLANK(LT_Commercial_Rep__c)
 )</errorConditionFormula>
     <errorDisplayField>LT_Commercial_Rep__c</errorDisplayField>

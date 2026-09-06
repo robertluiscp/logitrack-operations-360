@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Shipper_Prospecting_Summary</fullName>
+    <fields>Name</fields>
+    <fields>StageName</fields>
+    <fields>LT_Estimated_Monthly_Volume__c</fields>
+    <fields>LT_Estimated_Monthly_Revenue__c</fields>
+    <fields>CloseDate</fields>
+    <fields>OwnerId</fields>
+    <label>Prospeccao de Embarcador - Resumo</label>
+</CompactLayout>

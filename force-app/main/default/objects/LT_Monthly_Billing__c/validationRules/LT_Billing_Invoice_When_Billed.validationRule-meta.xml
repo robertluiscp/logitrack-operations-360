@@ -3,7 +3,7 @@
     <fullName>LT_Billing_Invoice_When_Billed</fullName>
     <active>true</active>
     <description>Numero da Nota Fiscal obrigatorio quando o faturamento esta Faturado ou Pago.</description>
-    <errorConditionFormula>AND( OR(ISPICKVAL(LT_Billing_Status__c, "Faturado"), ISPICKVAL(LT_Billing_Status__c, "Pago")), ISBLANK(LT_Invoice_Number__c) )</errorConditionFormula>
+    <errorConditionFormula>AND( OR(ISPICKVAL(LT_Billing_Status__c, &quot;Faturado&quot;), ISPICKVAL(LT_Billing_Status__c, &quot;Pago&quot;)), ISBLANK(LT_Invoice_Number__c) )</errorConditionFormula>
     <errorDisplayField>LT_Invoice_Number__c</errorDisplayField>
     <errorMessage>Informe o Numero da Nota Fiscal antes de marcar o faturamento como Faturado ou Pago.</errorMessage>
 </ValidationRule>

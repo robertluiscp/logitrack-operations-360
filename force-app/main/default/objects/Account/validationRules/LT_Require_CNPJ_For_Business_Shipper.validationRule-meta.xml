@@ -4,8 +4,8 @@
     <active>true</active>
     <description>Exige CNPJ para embarcadores pessoa jurídica (todos os segmentos, exceto Pessoa Física C2C).</description>
     <errorConditionFormula>AND(
-    RecordType.DeveloperName = "LT_Shipper",
-    NOT(ISPICKVAL(LT_Shipper_Segment__c, "Pessoa Física (C2C)")),
+    RecordType.DeveloperName = &quot;LT_Shipper&quot;,
+    NOT(ISPICKVAL(LT_Shipper_Segment__c, &quot;Pessoa Física (C2C)&quot;)),
     ISBLANK(LT_CNPJ__c)
 )</errorConditionFormula>
     <errorDisplayField>LT_CNPJ__c</errorDisplayField>

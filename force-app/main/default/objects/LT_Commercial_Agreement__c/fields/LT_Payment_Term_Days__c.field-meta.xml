@@ -2,10 +2,13 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LT_Payment_Term_Days__c</fullName>
     <description>Prazo de pagamento em dias apos o fechamento do faturamento mensal.</description>
+    <externalId>false</externalId>
     <label>Prazo de Pagamento (dias)</label>
     <precision>3</precision>
-    <scale>0</scale>
     <required>false</required>
+    <scale>0</scale>
     <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
     <type>Number</type>
+    <unique>false</unique>
 </CustomField>

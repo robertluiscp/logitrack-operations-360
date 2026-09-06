@@ -4,8 +4,9 @@
     <description>Preco por pacote aplicado no mes (copia do contrato no fechamento).</description>
     <label>Preco por Pacote</label>
     <precision>8</precision>
-    <scale>2</scale>
     <required>true</required>
+    <scale>2</scale>
     <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
     <type>Currency</type>
 </CustomField>

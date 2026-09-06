@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Prospeccao de Embarcador</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>LT_Prospect_Segment__c</fieldNames>
+        <fieldNames>LT_Estimated_Monthly_Volume__c</fieldNames>
+        <info>&lt;p&gt;Confirme o segmento e o volume estimado do embarcador. Registre o canal de origem do lead.&lt;/p&gt;</info>
+        <picklistValueName>Qualification</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Pickup_Model__c</fieldNames>
+        <info>&lt;p&gt;Levante como os pacotes entram na malha (Seller ou DropOff) e as cidades de destino predominantes.&lt;/p&gt;</info>
+        <picklistValueName>Needs Analysis</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Proposed_Price_Per_Package__c</fieldNames>
+        <fieldNames>LT_Estimated_Monthly_Revenue__c</fieldNames>
+        <info>&lt;p&gt;Apresente a proposta de frete: preco por pacote e receita mensal estimada.&lt;/p&gt;</info>
+        <picklistValueName>Value Proposition</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Rode a homologacao operacional: valide capacidade nas bases de destino e SLA acordado.&lt;/p&gt;</info>
+        <picklistValueName>Id. Decision Makers</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Acompanhe a analise da proposta pelo embarcador e trate objecoes.&lt;/p&gt;</info>
+        <picklistValueName>Perception Analysis</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Envie a tabela de precos formal e o minuta de contrato.&lt;/p&gt;</info>
+        <picklistValueName>Proposal/Price Quote</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Negociacao final de condicoes comerciais e prazo de pagamento.&lt;/p&gt;</info>
+        <picklistValueName>Negotiation/Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Contrato assinado. Crie o Contrato Comercial e converta a conta para o Record Type Embarcador.&lt;/p&gt;</info>
+        <picklistValueName>Closed Won</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Registre o motivo da perda para analise da equipe comercial.&lt;/p&gt;</info>
+        <picklistValueName>Closed Lost</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>LT_Shipper_Prospecting</recordTypeName>
+</PathAssistant>

@@ -224,6 +224,75 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>LT_Pickup_Type__c</picklist>
+        <values>
+            <fullName>Ambos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coleta no DropOff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coleta no Seller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LT_Shipper_Segment__c</picklist>
+        <values>
+            <fullName>Distribuidor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-commerce Próprio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indústria %2F Fabricante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pessoa Física %28C2C%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Varejo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LT_Shipper_Status__c</picklist>
+        <values>
+            <fullName>Ativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Homologação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encerrado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecção</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Ownership</picklist>
         <values>
             <fullName>Other</fullName>

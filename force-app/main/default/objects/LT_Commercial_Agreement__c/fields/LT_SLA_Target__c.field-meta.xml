@@ -5,8 +5,9 @@
     <inlineHelpText>Percentual minimo de entregas no prazo previsto em contrato.</inlineHelpText>
     <label>Meta de SLA</label>
     <precision>5</precision>
-    <scale>2</scale>
     <required>false</required>
+    <scale>2</scale>
     <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
     <type>Percent</type>
 </CustomField>

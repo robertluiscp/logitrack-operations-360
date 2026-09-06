@@ -8,10 +8,6 @@
     <label>LightningInstrumentation</label>
     <navType>Standard</navType>
     <tabs>standard-LightningInstrumentation</tabs>
-    <tabs>Suggestion__c</tabs>
-    <tabs>Space_Station__c</tabs>
-    <tabs>Resource__c</tabs>
-    <tabs>Supply__c</tabs>
     <tabs>LT_Logistics_Unit__c</tabs>
     <tabs>Operational_Indicator__c</tabs>
     <uiType>Lightning</uiType>

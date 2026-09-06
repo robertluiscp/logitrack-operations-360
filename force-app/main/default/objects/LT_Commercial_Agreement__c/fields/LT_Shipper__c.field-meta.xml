@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LT_Shipper__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
     <description>Embarcador (Conta) coberto por este contrato comercial.</description>
     <inlineHelpText>Selecione a conta do embarcador. Deve ser uma conta do tipo Embarcador.</inlineHelpText>
     <label>Embarcador</label>
-    <referenceTo>Account</referenceTo>
-    <relationshipLabel>Contratos Comerciais</relationshipLabel>
-    <relationshipName>LT_Commercial_Agreements</relationshipName>
-    <required>true</required>
-    <deleteConstraint>Restrict</deleteConstraint>
-    <trackHistory>true</trackHistory>
-    <type>Lookup</type>
     <lookupFilter>
         <active>true</active>
         <errorMessage>O contrato comercial so pode ser vinculado a contas do tipo Embarcador.</errorMessage>
@@ -21,4 +15,11 @@
         </filterItems>
         <isOptional>false</isOptional>
     </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Contratos Comerciais</relationshipLabel>
+    <relationshipName>LT_Commercial_Agreements</relationshipName>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
 </CustomField>

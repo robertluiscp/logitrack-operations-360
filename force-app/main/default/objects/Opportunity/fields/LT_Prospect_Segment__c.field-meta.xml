@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Prospect_Segment__c</fullName>
+    <description>Segmento de mercado do embarcador prospectado.</description>
+    <label>Segmento do Prospect</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marketplace</fullName>
+                <default>false</default>
+                <label>Marketplace</label>
+            </value>
+            <value>
+                <fullName>E-commerce Proprio</fullName>
+                <default>false</default>
+                <label>E-commerce Proprio</label>
+            </value>
+            <value>
+                <fullName>Industria / Fabricante</fullName>
+                <default>false</default>
+                <label>Industria / Fabricante</label>
+            </value>
+            <value>
+                <fullName>Varejo</fullName>
+                <default>false</default>
+                <label>Varejo</label>
+            </value>
+            <value>
+                <fullName>Distribuidor</fullName>
+                <default>false</default>
+                <label>Distribuidor</label>
+            </value>
+            <value>
+                <fullName>Outro</fullName>
+                <default>false</default>
+                <label>Outro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

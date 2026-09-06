@@ -6,5 +6,6 @@
     <summarizedField>LT_Monthly_Billing__c.LT_Packages_Delivered__c</summarizedField>
     <summaryForeignKey>LT_Monthly_Billing__c.LT_Shipper__c</summaryForeignKey>
     <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
     <type>Summary</type>
 </CustomField>

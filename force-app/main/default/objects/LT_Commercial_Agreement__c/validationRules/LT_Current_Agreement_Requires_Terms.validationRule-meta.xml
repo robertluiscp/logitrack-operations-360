@@ -3,6 +3,6 @@
     <fullName>LT_Current_Agreement_Requires_Terms</fullName>
     <active>true</active>
     <description>Contrato Vigente exige inicio de vigencia, preco por pacote e executivo comercial.</description>
-    <errorConditionFormula>AND( ISPICKVAL(LT_Agreement_Status__c, "Vigente"), OR( ISBLANK(LT_Start_Date__c), ISBLANK(LT_Price_Per_Package__c), ISBLANK(LT_Agreement_Commercial_Rep__c) ) )</errorConditionFormula>
+    <errorConditionFormula>AND( ISPICKVAL(LT_Agreement_Status__c, &quot;Vigente&quot;), OR( ISBLANK(LT_Start_Date__c), ISBLANK(LT_Price_Per_Package__c), ISBLANK(LT_Agreement_Commercial_Rep__c) ) )</errorConditionFormula>
     <errorMessage>Para tornar o contrato Vigente informe Inicio da Vigencia, Preco por Pacote e Executivo Comercial.</errorMessage>
 </ValidationRule>

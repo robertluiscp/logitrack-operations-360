@@ -4,7 +4,7 @@
     <active>true</active>
     <description>Exige o Status do Embarcador nas contas do Record Type Embarcador.</description>
     <errorConditionFormula>AND(
-    RecordType.DeveloperName = "LT_Shipper",
+    RecordType.DeveloperName = &quot;LT_Shipper&quot;,
     ISBLANK(TEXT(LT_Shipper_Status__c))
 )</errorConditionFormula>
     <errorDisplayField>LT_Shipper_Status__c</errorDisplayField>

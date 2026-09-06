@@ -6,16 +6,37 @@
     <label>Status do Contrato</label>
     <required>true</required>
     <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
-            <value><fullName>Rascunho</fullName><default>true</default><label>Rascunho</label></value>
-            <value><fullName>Em Aprovacao</fullName><default>false</default><label>Em Aprovacao</label></value>
-            <value><fullName>Vigente</fullName><default>false</default><label>Vigente</label></value>
-            <value><fullName>Suspenso</fullName><default>false</default><label>Suspenso</label></value>
-            <value><fullName>Encerrado</fullName><default>false</default><label>Encerrado</label></value>
+            <value>
+                <fullName>Rascunho</fullName>
+                <default>true</default>
+                <label>Rascunho</label>
+            </value>
+            <value>
+                <fullName>Em Aprovacao</fullName>
+                <default>false</default>
+                <label>Em Aprovacao</label>
+            </value>
+            <value>
+                <fullName>Vigente</fullName>
+                <default>false</default>
+                <label>Vigente</label>
+            </value>
+            <value>
+                <fullName>Suspenso</fullName>
+                <default>false</default>
+                <label>Suspenso</label>
+            </value>
+            <value>
+                <fullName>Encerrado</fullName>
+                <default>false</default>
+                <label>Encerrado</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

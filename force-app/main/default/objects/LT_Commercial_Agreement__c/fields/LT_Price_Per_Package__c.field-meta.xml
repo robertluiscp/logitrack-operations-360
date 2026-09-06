@@ -5,8 +5,9 @@
     <inlineHelpText>Preco unitario por pacote entregue (R$).</inlineHelpText>
     <label>Preco por Pacote</label>
     <precision>8</precision>
-    <scale>2</scale>
     <required>false</required>
+    <scale>2</scale>
     <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
     <type>Currency</type>
 </CustomField>

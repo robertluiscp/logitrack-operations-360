@@ -196,4 +196,24 @@
         <tab>LT_Monthly_Billing__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
+    <applicationVisibilities>
+        <application>LogiTrack_Comercial</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>LogiTrack_Operations_360</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Account.LT_Shipper</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Account.LT_Operating_Partner</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Opportunity.LT_Shipper_Prospecting</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
 </PermissionSet>

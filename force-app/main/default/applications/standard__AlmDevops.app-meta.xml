@@ -13,10 +13,6 @@
     <tabs>standard-DevopsPipeline</tabs>
     <tabs>standard-WorkItem</tabs>
     <tabs>standard-DevopsActivityLog</tabs>
-    <tabs>Suggestion__c</tabs>
-    <tabs>Space_Station__c</tabs>
-    <tabs>Resource__c</tabs>
-    <tabs>Supply__c</tabs>
     <tabs>LT_Logistics_Unit__c</tabs>
     <tabs>Operational_Indicator__c</tabs>
     <uiType>Lightning</uiType>

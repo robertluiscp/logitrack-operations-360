@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LT_Commercial_Rep__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
     <description>Executivo comercial (vendedor) responsável pela conta do embarcador.</description>
     <inlineHelpText>Usuário da equipe comercial responsável pela prospecção e relacionamento com este embarcador.</inlineHelpText>
     <label>Executivo Comercial</label>
@@ -8,7 +9,7 @@
     <relationshipLabel>Embarcadores (Executivo Comercial)</relationshipLabel>
     <relationshipName>LT_Commercial_Accounts</relationshipName>
     <required>false</required>
-    <trackHistory>true</trackHistory>
     <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
     <type>Lookup</type>
 </CustomField>

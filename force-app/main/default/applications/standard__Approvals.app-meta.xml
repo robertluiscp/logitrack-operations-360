@@ -8,10 +8,6 @@
     <label>Approvals</label>
     <navType>Console</navType>
     <tabs>standard-ApprovalsHome</tabs>
-    <tabs>Suggestion__c</tabs>
-    <tabs>Space_Station__c</tabs>
-    <tabs>Resource__c</tabs>
-    <tabs>Supply__c</tabs>
     <tabs>LT_Logistics_Unit__c</tabs>
     <tabs>Operational_Indicator__c</tabs>
     <uiType>Lightning</uiType>
@@ -21,18 +17,6 @@
         </mappings>
         <mappings>
             <tab>Operational_Indicator__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Resource__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Space_Station__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Suggestion__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Supply__c</tab>
         </mappings>
         <mappings>
             <tab>standard-ApprovalsHome</tab>

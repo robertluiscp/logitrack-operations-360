@@ -12,3 +12,8 @@ package.xml
 **/__tests__/**
 
 node_modules/
+
+# Profiles are environment-specific and huge; this project is permission-set-led.
+# Layout/RT assignment handled via permission sets + targeted minimal deploys.
+profiles/
+**/profiles/**

@@ -4,7 +4,7 @@
     <standardValue>
         <fullName>Prospecting</fullName>
         <default>false</default>
-        <label>Prospecting</label>
+        <label>Prospeccao</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>10</probability>
@@ -13,7 +13,7 @@
     <standardValue>
         <fullName>Qualification</fullName>
         <default>false</default>
-        <label>Qualification</label>
+        <label>Qualificacao</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>10</probability>
@@ -22,7 +22,7 @@
     <standardValue>
         <fullName>Needs Analysis</fullName>
         <default>false</default>
-        <label>Needs Analysis</label>
+        <label>Levantamento de Necessidades</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>20</probability>
@@ -31,7 +31,7 @@
     <standardValue>
         <fullName>Value Proposition</fullName>
         <default>false</default>
-        <label>Value Proposition</label>
+        <label>Proposta de Frete</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>50</probability>
@@ -40,7 +40,7 @@
     <standardValue>
         <fullName>Id. Decision Makers</fullName>
         <default>false</default>
-        <label>Id. Decision Makers</label>
+        <label>Homologacao Operacional</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>60</probability>
@@ -49,7 +49,7 @@
     <standardValue>
         <fullName>Perception Analysis</fullName>
         <default>false</default>
-        <label>Perception Analysis</label>
+        <label>Analise da Proposta</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>70</probability>
@@ -58,7 +58,7 @@
     <standardValue>
         <fullName>Proposal/Price Quote</fullName>
         <default>false</default>
-        <label>Proposal/Price Quote</label>
+        <label>Tabela de Precos Enviada</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>75</probability>
@@ -67,7 +67,7 @@
     <standardValue>
         <fullName>Negotiation/Review</fullName>
         <default>false</default>
-        <label>Negotiation/Review</label>
+        <label>Negociacao Final</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>90</probability>
@@ -76,7 +76,7 @@
     <standardValue>
         <fullName>Closed Won</fullName>
         <default>false</default>
-        <label>Closed Won</label>
+        <label>Contrato Assinado</label>
         <closed>true</closed>
         <forecastCategory>Closed</forecastCategory>
         <probability>100</probability>
@@ -85,7 +85,7 @@
     <standardValue>
         <fullName>Closed Lost</fullName>
         <default>false</default>
-        <label>Closed Lost</label>
+        <label>Perdido</label>
         <closed>true</closed>
         <forecastCategory>Omitted</forecastCategory>
         <probability>0</probability>

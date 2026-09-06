@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Contact_Role__c</fullName>
+    <description>Papel do contato dentro do embarcador ou parceiro operacional.</description>
+    <label>Papel na Empresa</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Comercial</fullName>
+                <default>false</default>
+                <label>Comercial</label>
+            </value>
+            <value>
+                <fullName>Financeiro</fullName>
+                <default>false</default>
+                <label>Financeiro</label>
+            </value>
+            <value>
+                <fullName>Operacional / Logistica</fullName>
+                <default>false</default>
+                <label>Operacional / Logistica</label>
+            </value>
+            <value>
+                <fullName>Tecnologia / Integracao</fullName>
+                <default>false</default>
+                <label>Tecnologia / Integracao</label>
+            </value>
+            <value>
+                <fullName>Diretoria</fullName>
+                <default>false</default>
+                <label>Diretoria</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -42,6 +42,12 @@
                 <default>false</default>
                 <label>Escritório Administrativo</label>
             </value>
+            <value>
+                <fullName>Centro de Distribuição (SC)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Centro de Distribuição (SC)</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
