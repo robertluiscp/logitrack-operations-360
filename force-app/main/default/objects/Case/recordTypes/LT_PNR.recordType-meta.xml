@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PNR</fullName>
+    <active>true</active>
+    <businessProcess>LT_SAC_Process</businessProcess>
+    <compactLayoutAssignment>LT_SAC_Highlights</compactLayoutAssignment>
+    <description>Chamado de Assinado nao Recebido que nao foi tratado no prazo. Segue para extravio e ressarcimento ao embarcador.</description>
+    <label>PNR - Paguei Nao Recebi</label>
+</RecordType>

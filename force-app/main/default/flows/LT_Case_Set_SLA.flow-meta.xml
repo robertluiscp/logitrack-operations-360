@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Antes do salvamento, define o prazo de SLA do chamado conforme a prioridade (Alta 24h, Media 48h, Baixa 72h) e a data limite do motorista quando o chamado e encaminhado.</description>
+    <environments>Default</environments>
+    <interviewLabel>SAC - Definir SLA {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SAC - Definir SLA do Chamado</label>
+    <processMetadataValues><name>BuilderType</name><value><stringValue>LightningFlowBuilder</stringValue></value></processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <assignments>
+        <name>Definir_Prazos</name>
+        <label>Definir Prazos</label>
+        <locationX>176</locationX>
+        <locationY>288</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LT_Resolution_Deadline__c</assignToReference>
+            <operator>Assign</operator>
+            <value><elementReference>fDeadline</elementReference></value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.LT_Driver_Response_Deadline__c</assignToReference>
+            <operator>Assign</operator>
+            <value><elementReference>fDriverDeadline</elementReference></value>
+        </assignmentItems>
+    </assignments>
+    <formulas>
+        <name>fDeadline</name>
+        <dataType>DateTime</dataType>
+        <expression>IF(NOT(ISBLANK({!$Record.LT_Resolution_Deadline__c})), {!$Record.LT_Resolution_Deadline__c},
+{!$Flow.CurrentDateTime} + (CASE(TEXT({!$Record.Priority}), "High", 1, "Medium", 2, "Low", 3, 2)))</expression>
+    </formulas>
+    <formulas>
+        <name>fDriverDeadline</name>
+        <dataType>DateTime</dataType>
+        <expression>IF(OR(ISBLANK({!$Record.LT_Forwarded_To_Driver_Date__c}), NOT(ISBLANK({!$Record.LT_Driver_Response_Deadline__c}))),
+{!$Record.LT_Driver_Response_Deadline__c}, {!$Record.LT_Forwarded_To_Driver_Date__c} + 2)</expression>
+    </formulas>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Definir_Prazos</targetReference></connector>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

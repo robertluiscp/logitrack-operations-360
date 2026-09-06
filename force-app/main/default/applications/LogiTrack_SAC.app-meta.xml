@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#B02A37</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Aplicativo do Atendimento ao Cliente (SAC) da LogiTrack: chamados, PNR, extravios e tratativa com motoristas.</description>
+    <formFactors>Large</formFactors>
+    <formFactors>Small</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>LogiTrack SAC</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>LT_Shipment__c</tabs>
+    <tabs>LT_Operational_Incident__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

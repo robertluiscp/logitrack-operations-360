@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Assinado_Nao_Recebido</fullName>
+    <active>true</active>
+    <businessProcess>LT_SAC_Process</businessProcess>
+    <compactLayoutAssignment>LT_SAC_Highlights</compactLayoutAssignment>
+    <description>Pedido consta como entregue no app, mas o cliente afirma que nao recebeu. Encaminhado ao motorista para resolucao; se nao tratado no prazo, vira PNR.</description>
+    <label>Assinado nao Recebido</label>
+</RecordType>

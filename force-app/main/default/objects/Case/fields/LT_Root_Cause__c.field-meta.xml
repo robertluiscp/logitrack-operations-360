@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Root_Cause__c</fullName>
+    <description>Causa raiz apurada pelo SAC.</description>
+    <label>Causa Raiz</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Falha do Motorista</fullName>
+                <default>false</default>
+                <label>Falha do Motorista</label>
+            </value>
+            <value>
+                <fullName>Falha da Base</fullName>
+                <default>false</default>
+                <label>Falha da Base</label>
+            </value>
+            <value>
+                <fullName>Endereco Incorreto</fullName>
+                <default>false</default>
+                <label>Endereco Incorreto</label>
+            </value>
+            <value>
+                <fullName>Extravio Interno</fullName>
+                <default>false</default>
+                <label>Extravio Interno</label>
+            </value>
+            <value>
+                <fullName>Avaria em Transporte</fullName>
+                <default>false</default>
+                <label>Avaria em Transporte</label>
+            </value>
+            <value>
+                <fullName>Problema Sistemico</fullName>
+                <default>false</default>
+                <label>Problema Sistemico</label>
+            </value>
+            <value>
+                <fullName>Informacao Incorreta do Cliente</fullName>
+                <default>false</default>
+                <label>Informacao Incorreta do Cliente</label>
+            </value>
+            <value>
+                <fullName>Sem Culpa da LogiTrack</fullName>
+                <default>false</default>
+                <label>Sem Culpa da LogiTrack</label>
+            </value>
+            <value>
+                <fullName>Outro</fullName>
+                <default>false</default>
+                <label>Outro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

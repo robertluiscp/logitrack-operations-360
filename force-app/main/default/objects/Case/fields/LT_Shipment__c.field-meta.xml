@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Shipment__c</fullName>
+    <description>Remessa objeto da reclamacao.</description>
+    <label>Remessa</label>
+    <referenceTo>LT_Shipment__c</referenceTo>
+    <relationshipLabel>Chamados SAC</relationshipLabel>
+    <relationshipName>LT_Cases</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

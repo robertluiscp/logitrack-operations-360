@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Avaria_Pos_Entrega</fullName>
+    <active>true</active>
+    <businessProcess>LT_SAC_Process</businessProcess>
+    <compactLayoutAssignment>LT_SAC_Highlights</compactLayoutAssignment>
+    <description>Pedido chegou avariado/quebrado. Motorista e informado e a remessa segue para extravio/ressarcimento.</description>
+    <label>Avaria apos a Entrega</label>
+</RecordType>

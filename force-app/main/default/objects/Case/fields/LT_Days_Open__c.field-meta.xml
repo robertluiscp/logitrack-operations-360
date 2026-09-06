@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Days_Open__c</fullName>
+    <description>Dias corridos desde a abertura (ou ate o fechamento).</description>
+    <label>Dias em Aberto</label>
+    <formula>IF(IsClosed, (ClosedDate - CreatedDate), (NOW() - CreatedDate))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>6</precision>
+    <scale>1</scale>
+    <type>Number</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Penalized__c</fullName>
+    <description>Marcado quando o motorista foi penalizado em decorrencia do chamado.</description>
+    <label>Motorista Penalizado</label>
+    <required>false</required>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

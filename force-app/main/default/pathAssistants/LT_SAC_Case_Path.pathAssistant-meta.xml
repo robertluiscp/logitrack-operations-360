@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Fluxo do Chamado SAC</masterLabel>
+    <recordTypeName>__MASTER__</recordTypeName>
+    <pathAssistantSteps>
+        <fieldNames>LT_Shipment__c</fieldNames>
+        <fieldNames>LT_Customer_Channel__c</fieldNames>
+        <info>&lt;p&gt;Chamado aberto. Vincule a remessa e registre o canal de contato do cliente.&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_First_Response_Date__c</fieldNames>
+        <fieldNames>LT_Root_Cause__c</fieldNames>
+        <info>&lt;p&gt;Em analise: primeira resposta dada ao cliente; SAC apura a causa. Encaminhe ao motorista se aplicavel.&lt;/p&gt;</info>
+        <picklistValueName>Working</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_PNR_Flag__c</fieldNames>
+        <fieldNames>LT_Reimbursement_Value__c</fieldNames>
+        <info>&lt;p&gt;Escalado a coordenacao / PNR / extravio. Avalie ressarcimento ao embarcador e penalizacao do motorista.&lt;/p&gt;</info>
+        <picklistValueName>Escalated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Chamado encerrado. Registre a resolucao final e feche.&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+</PathAssistant>

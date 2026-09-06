@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Postura_Motorista</fullName>
+    <active>true</active>
+    <businessProcess>LT_SAC_Process</businessProcess>
+    <compactLayoutAssignment>LT_SAC_Highlights</compactLayoutAssignment>
+    <description>Reclamacao sobre conduta ou falta de respeito do motorista. Se confirmada pelo SAC, o motorista e penalizado.</description>
+    <label>Postura do Motorista</label>
+</RecordType>

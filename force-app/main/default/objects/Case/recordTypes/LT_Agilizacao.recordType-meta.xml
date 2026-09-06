@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Agilizacao</fullName>
+    <active>true</active>
+    <businessProcess>LT_SAC_Process</businessProcess>
+    <compactLayoutAssignment>LT_SAC_Highlights</compactLayoutAssignment>
+    <description>Cliente solicita agilizacao da entrega por falta de evolucao no rastreamento.</description>
+    <label>Agilizacao de Entrega</label>
+</RecordType>

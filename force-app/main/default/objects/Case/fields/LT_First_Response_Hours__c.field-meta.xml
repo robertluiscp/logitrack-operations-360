@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_First_Response_Hours__c</fullName>
+    <description>Horas entre a abertura do chamado e a primeira resposta.</description>
+    <label>Horas ate 1a Resposta</label>
+    <formula>IF(ISBLANK(LT_First_Response_Date__c), NULL, (LT_First_Response_Date__c - CreatedDate) * 24)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>6</precision>
+    <scale>1</scale>
+    <type>Number</type>
+</CustomField>

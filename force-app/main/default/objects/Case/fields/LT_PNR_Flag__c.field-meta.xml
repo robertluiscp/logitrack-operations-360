@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PNR_Flag__c</fullName>
+    <description>Marcado quando o chamado nao foi tratado no prazo e virou PNR (Paguei Nao Recebi).</description>
+    <label>Virou PNR</label>
+    <required>false</required>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

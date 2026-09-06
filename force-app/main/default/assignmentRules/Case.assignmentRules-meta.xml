@@ -1,91 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <assignmentRule>
-        <fullName>Standard</fullName>
+        <fullName>LT Roteamento SAC</fullName>
         <active>true</active>
         <ruleEntry>
-            <assignedTo>ciderblockafram@gmail.com</assignedTo>
-            <assignedToType>User</assignedToType>
+            <assignedTo>SAC_PNR_Extravio</assignedTo>
+            <assignedToType>Queue</assignedToType>
             <criteriaItems>
-                <field>Account.BillingCountry</field>
+                <field>Case.RecordType</field>
                 <operation>equals</operation>
-                <value>US,USA,United States,United States of America</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Account.SLA__c</field>
-                <operation>equals</operation>
-                <value>Gold,Platinum</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Account.Type</field>
-                <operation>contains</operation>
-                <value>Customer</value>
+                <value>PNR - Paguei Nao Recebi</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>ciderblockafram@gmail.com</assignedTo>
-            <assignedToType>User</assignedToType>
+            <assignedTo>SAC_Regional_Sul</assignedTo>
+            <assignedToType>Queue</assignedToType>
             <criteriaItems>
-                <field>Account.BillingCountry</field>
+                <field>Case.RecordType</field>
                 <operation>equals</operation>
-                <value>US,USA,United States,United States of America</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Account.SLA__c</field>
-                <operation>equals</operation>
-                <value>Silver,Bronze</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Account.Type</field>
-                <operation>contains</operation>
-                <value>Customer</value>
+                <value>Postura do Motorista</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>ciderblockafram@gmail.com</assignedTo>
-            <assignedToType>User</assignedToType>
+            <assignedTo>SAC_Regional_Sul</assignedTo>
+            <assignedToType>Queue</assignedToType>
             <criteriaItems>
-                <field>Account.BillingCountry</field>
+                <field>Case.RecordType</field>
+                <operation>equals</operation>
+                <value>Avaria apos a Entrega</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SAC_Motoristas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordType</field>
+                <operation>equals</operation>
+                <value>Assinado nao Recebido</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SAC_Triagem</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.CreatedDate</field>
                 <operation>notEqual</operation>
-                <value>US,USA,United States,United States of America</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Account.SLA__c</field>
-                <operation>equals</operation>
-                <value>Gold,Platinum</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Account.Type</field>
-                <operation>contains</operation>
-                <value>Customer</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>ciderblockafram@gmail.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Account.BillingCountry</field>
-                <operation>notEqual</operation>
-                <value>US,USA,United States,United States of America</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Account.SLA__c</field>
-                <operation>equals</operation>
-                <value>Silver,Bronze</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Account.Type</field>
-                <operation>contains</operation>
-                <value>Customer</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>ciderblockafram@gmail.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Account.Type</field>
-                <operation>contains</operation>
-                <value>Partner</value>
+                <value></value>
             </criteriaItems>
         </ruleEntry>
     </assignmentRule>
