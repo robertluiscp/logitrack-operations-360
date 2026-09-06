@@ -1,0 +1,23 @@
+LT_Payment_Request__c,LT_Amount__c,LT_Payment_Date__c,LT_Status__c,LT_Payment_Method__c,LT_Bank_Account__c,LT_Transaction_Id__c,LT_Paid_By__c,LT_Fee_Amount__c,LT_Reconciled__c,LT_Reconciliation_Date__c,LT_Notes__c
+a0Sg8000000fXCwEAM,214.36,2026-08-20,Confirmado,PIX,Conta Corrente - Bradesco,TX20260820559076,005g8000004iYenAAE,0,true,2026-08-24,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXCyEAM,317.8,2026-07-28,Confirmado,Boleto,Conta Pagamentos - Nubank PJ,TX20260728744768,005g8000004iYenAAE,6.74,true,2026-07-30,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXCzEAM,854.1,2026-08-05,Confirmado,Boleto,Conta Corrente - Bradesco,TX20260805665479,005g8000004iYenAAE,5.78,true,2026-08-06,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXD0EAM,597.2,2026-08-18,Confirmado,PIX,Conta Corrente - Itau,TX20260818921863,005g8000004iYenAAE,0,true,2026-08-19,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXD1EAM,442.28,2026-08-16,Confirmado,PIX,Conta Corrente - Bradesco,TX20260816416656,005g8000004iYenAAE,0,false,,"Pagamento liquidado, conciliacao pendente."
+a0Sg8000000fXD2EAM,323.71,2026-08-23,Confirmado,Boleto,Conta Pagamentos - Nubank PJ,TX20260823298662,005g8000004iYenAAE,5.43,true,2026-08-28,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXD3EAM,638.15,2026-08-13,Confirmado,Boleto,Conta Corrente - Bradesco,TX20260813653129,005g8000004iYenAAE,5.11,true,2026-08-14,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXD5EAM,456.1,2026-07-21,Confirmado,PIX,Conta Corrente - Itau,TX20260721648891,005g8000004iYenAAE,0,true,2026-07-24,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXD6EAM,410.88,2026-09-06,Confirmado,PIX,Conta Corrente - Bradesco,TX20260906320958,005g8000004iYenAAE,0,false,,"Pagamento liquidado, conciliacao pendente."
+a0Sg8000000fXD7EAM,163.8,2026-08-31,Confirmado,PIX,Conta Corrente - Bradesco,TX20260831696276,005g8000004iYenAAE,0,true,2026-09-05,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXD8EAM,201.85,2026-09-06,Confirmado,PIX,Conta Corrente - Itau,TX20260906773769,005g8000004iYenAAE,0,false,,"Pagamento liquidado, conciliacao pendente."
+a0Sg8000000fXD9EAM,327.47,2026-08-08,Confirmado,PIX,Conta Corrente - Bradesco,TX20260808334197,005g8000004iYenAAE,0,true,2026-08-11,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXDAEA2,448.2,2026-08-06,Confirmado,PIX,Conta Corrente - Itau,TX20260806549567,005g8000004iYenAAE,0,true,2026-08-09,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXDBEA2,133,2026-08-11,Confirmado,PIX,Conta Pagamentos - Nubank PJ,TX20260811814154,005g8000004iYenAAE,0,true,2026-08-14,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXDCEA2,264,2026-08-29,Confirmado,TED / Transferencia,Conta Corrente - Bradesco,TX20260829517971,005g8000004iYenAAE,8.49,true,2026-08-31,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXDDEA2,119.8,2026-08-18,Confirmado,PIX,Conta Pagamentos - Nubank PJ,TX20260818375403,005g8000004iYenAAE,0,false,,"Pagamento liquidado, conciliacao pendente."
+a0Sg8000000fXDEEA2,148.96,2026-09-04,Confirmado,TED / Transferencia,Conta Pagamentos - Nubank PJ,TX20260904461755,005g8000004iYenAAE,4.3,false,,"Pagamento liquidado, conciliacao pendente."
+a0Sg8000000fXDHEA2,42800,2026-09-02,Confirmado,PIX,Conta Corrente - Bradesco,TX20260902611061,005g8000004iYenAAE,0,true,2026-09-06,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXDMEA2,3192.1,2026-09-03,Confirmado,TED / Transferencia,Conta Corrente - Itau,TX20260903396091,005g8000004iYenAAE,2.87,false,,"Pagamento liquidado, conciliacao pendente."
+a0Sg8000000fXDQEA2,386.4,2026-08-23,Confirmado,Boleto,Conta Corrente - Bradesco,TX20260823312667,005g8000004iYenAAE,6.63,true,2026-08-28,Pagamento liquidado e conferido contra o extrato.
+a0Sg8000000fXDIEA2,43650,2026-09-01,Agendado,TED / Transferencia,Conta Corrente - Itau,,005g8000004iYenAAE,,,,Pagamento agendado para a data de vencimento.
+a0Sg8000000fXDPEA2,6250,2026-09-14,Agendado,TED / Transferencia,Conta Corrente - Itau,,005g8000004iYenAAE,,,,Pagamento agendado para a data de vencimento.
