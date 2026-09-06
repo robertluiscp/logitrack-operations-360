@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Fluxo agendado diario: para cada motorista Ativo com CNH vencendo nos proximos 30 dias, cria uma tarefa de alerta para o responsavel pelo cadastro.</description>
+    <environments>Default</environments>
+    <interviewLabel>LT - Alerta de CNH a Vencer {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LT - Alerta de CNH a Vencer</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Criar_Tarefa_de_Alerta</name>
+        <label>Criar Tarefa de Alerta</label>
+        <locationX>176</locationX>
+        <locationY>288</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>$Record.LT_CNH_Expiration__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <stringValue>A CNH do motorista vence em {!$Record.LT_CNH_Expiration__c}. Categoria: {!$Record.LT_CNH_Category__c}. Base: {!$Record.LT_Home_Base__r.Name}. Regularize a habilitacao antes do vencimento para nao suspender o motorista.</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>High</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>CNH a vencer - {!$Record.LT_Driver_Code__c}</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Criar_Tarefa_de_Alerta</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LT_Driver_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ativo</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LT_CNH_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>A vencer (30 dias)</stringValue>
+            </value>
+        </filters>
+        <object>LT_Driver__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2026-09-07</startDate>
+            <startTime>06:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
