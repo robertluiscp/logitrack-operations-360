@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Perfil de acesso do comercial: embarcadores, contratos comerciais, faturamento mensal e prospeccao.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LT - Perfil Comercial</label>
+    <permissionSets>LT_Commercial</permissionSets>
+    <permissionSets>LT_Partner_Management</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

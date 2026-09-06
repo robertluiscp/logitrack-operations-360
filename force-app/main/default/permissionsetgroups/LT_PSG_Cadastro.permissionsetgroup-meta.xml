@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Perfil de acesso do cadastro: motoristas, veiculos, documentos e parceiros operacionais.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LT - Perfil Cadastro e Frota</label>
+    <permissionSets>LT_Cadastro</permissionSets>
+    <permissionSets>LT_Partner_Management</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

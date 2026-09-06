@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Perfil do atendimento ao cliente: chamados, PNR, extravios e penalizacao de motoristas.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LT - Perfil SAC e Perdas</label>
+    <permissionSets>LT_SAC</permissionSets>
+    <permissionSets>LT_Loss_Prevention</permissionSets>
+    <permissionSets>LT_Incidents</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

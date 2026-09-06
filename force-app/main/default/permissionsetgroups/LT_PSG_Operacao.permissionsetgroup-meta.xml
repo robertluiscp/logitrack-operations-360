@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Perfil de acesso da operacao: remessas, rastreamento, coletas, romaneios, rotas, tentativas de entrega e ocorrencias operacionais.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LT - Perfil Operacao</label>
+    <permissionSets>LT_Operations</permissionSets>
+    <permissionSets>LT_Routes_Deliveries</permissionSets>
+    <permissionSets>LT_Collections</permissionSets>
+    <permissionSets>LT_Incidents</permissionSets>
+    <permissionSets>Manage_Logistics_Units</permissionSets>
+    <permissionSets>Manage_Operational_Indicators</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

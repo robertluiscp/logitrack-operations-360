@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Perfil de gestao/diretoria: acesso amplo de leitura e operacao em todas as areas para acompanhamento executivo.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LT - Perfil Gestao Consolidada</label>
+    <permissionSets>LT_Operations</permissionSets>
+    <permissionSets>LT_Routes_Deliveries</permissionSets>
+    <permissionSets>LT_Collections</permissionSets>
+    <permissionSets>LT_Incidents</permissionSets>
+    <permissionSets>LT_Commercial</permissionSets>
+    <permissionSets>LT_Partner_Management</permissionSets>
+    <permissionSets>LT_Cadastro</permissionSets>
+    <permissionSets>LT_SAC</permissionSets>
+    <permissionSets>LT_Loss_Prevention</permissionSets>
+    <permissionSets>LT_Finance</permissionSets>
+    <permissionSets>Manage_Logistics_Units</permissionSets>
+    <permissionSets>Manage_Operational_Indicators</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

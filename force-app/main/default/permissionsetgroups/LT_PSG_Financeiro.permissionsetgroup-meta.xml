@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Perfil do financeiro: solicitacoes de pagamento, aprovacao por alcada, pagamentos e despesas.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LT - Perfil Financeiro</label>
+    <permissionSets>LT_Finance</permissionSets>
+    <permissionSets>LT_Partner_Management</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
