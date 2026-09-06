@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Route_MR_Distance</fullName>
+    <active>true</active>
+    <description>Mini Transferencia exige destino a mais de 60 km.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Route_Type__c, "Mini Transferencia"), NOT(ISBLANK(LT_Distance_Km__c)), LT_Distance_Km__c &lt;= 60)</errorConditionFormula>
+    <errorDisplayField>LT_Distance_Km__c</errorDisplayField>
+    <errorMessage>Rota de Mini Transferencia so e elegivel para destinos a mais de 60 km da base mais proxima.</errorMessage>
+</ValidationRule>

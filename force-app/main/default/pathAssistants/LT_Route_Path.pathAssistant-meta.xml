@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>LT_Route__c</entityName>
+    <fieldName>LT_Status__c</fieldName>
+    <masterLabel>Fluxo da Rota</masterLabel>
+    <recordTypeName>__MASTER__</recordTypeName>
+    <pathAssistantSteps>
+        <fieldNames>LT_Planned_Packages__c</fieldNames>
+        <fieldNames>LT_Target_City__c</fieldNames>
+        <info>&lt;p&gt;Rota planejada a partir da triagem da base: cidade alvo e volume previsto.&lt;/p&gt;</info>
+        <picklistValueName>Planejada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Cage_Code__c</fieldNames>
+        <info>&lt;p&gt;Pacotes sendo alocados na gaiola da rota.&lt;/p&gt;</info>
+        <picklistValueName>Em Triagem</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Driver__c</fieldNames>
+        <fieldNames>LT_Loaded_Packages__c</fieldNames>
+        <fieldNames>LT_Vehicle__c</fieldNames>
+        <info>&lt;p&gt;Motorista bipou os pacotes. Confira a carga contra o limite da categoria.&lt;/p&gt;</info>
+        <picklistValueName>Carregada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Departure_Time__c</fieldNames>
+        <info>&lt;p&gt;Motorista saiu para entrega. Acompanhe as tentativas em tempo real.&lt;/p&gt;</info>
+        <picklistValueName>Em Rota</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Return_Time__c</fieldNames>
+        <info>&lt;p&gt;Rota concluida. Pacotes nao entregues retornam a base como retidos.&lt;/p&gt;</info>
+        <picklistValueName>Concluida</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Rota cancelada.&lt;/p&gt;</info>
+        <picklistValueName>Cancelada</picklistValueName>
+    </pathAssistantSteps>
+</PathAssistant>

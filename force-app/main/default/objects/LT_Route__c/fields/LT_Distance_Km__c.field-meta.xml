@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Distance_Km__c</fullName>
+    <description>Distancia da rota. Mini Transferencia so e elegivel acima de 60 km.</description>
+    <label>Distancia (km)</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <precision>6</precision>
+    <scale>1</scale>
+</CustomField>

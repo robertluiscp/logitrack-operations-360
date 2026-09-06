@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Attempt_Delivered_Requires_Receiver</fullName>
+    <active>true</active>
+    <description>Entrega concluida exige documento e motorista.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Result__c, "Entregue"), OR(ISBLANK(LT_Recipient_Doc__c), ISBLANK(LT_Driver__c)))</errorConditionFormula>
+    <errorDisplayField>LT_Recipient_Doc__c</errorDisplayField>
+    <errorMessage>Para registrar Entregue informe o documento do recebedor e o motorista.</errorMessage>
+</ValidationRule>

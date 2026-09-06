@@ -63,6 +63,8 @@
     <tabs>LT_Vehicle__c</tabs>
     <tabs>LT_Pickup_Request__c</tabs>
     <tabs>LT_Manifest__c</tabs>
+    <tabs>LT_Route__c</tabs>
+    <tabs>LT_Delivery_Attempt__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LogiTrack_Operations_360_UtilityBar</utilityBar>
 </CustomApplication>

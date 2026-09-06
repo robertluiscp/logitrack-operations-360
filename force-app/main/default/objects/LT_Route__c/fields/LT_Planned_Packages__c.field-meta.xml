@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Planned_Packages__c</fullName>
+    <description>Quantidade prevista de pacotes na rota.</description>
+    <label>Pacotes Planejados</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <precision>6</precision>
+    <scale>0</scale>
+</CustomField>

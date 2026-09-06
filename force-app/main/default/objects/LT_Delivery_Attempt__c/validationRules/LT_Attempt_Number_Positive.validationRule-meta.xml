@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Attempt_Number_Positive</fullName>
+    <active>true</active>
+    <description>O numero da tentativa deve ser maior que zero.</description>
+    <errorConditionFormula>LT_Attempt_Number__c &lt;= 0</errorConditionFormula>
+    <errorDisplayField>LT_Attempt_Number__c</errorDisplayField>
+    <errorMessage>Informe um Numero da Tentativa maior que zero.</errorMessage>
+</ValidationRule>

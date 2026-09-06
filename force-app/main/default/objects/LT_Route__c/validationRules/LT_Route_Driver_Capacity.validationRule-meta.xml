@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Route_Driver_Capacity</fullName>
+    <active>true</active>
+    <description>Carga da rota acima do limite da categoria do motorista.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_Driver__c)), LT_Driver__r.LT_Max_Packages_Per_Trip__c &gt; 0, LT_Loaded_Packages__c &gt; LT_Driver__r.LT_Max_Packages_Per_Trip__c)</errorConditionFormula>
+    <errorDisplayField>LT_Loaded_Packages__c</errorDisplayField>
+    <errorMessage>A carga da rota excede o maximo de pacotes por frete da categoria do motorista.</errorMessage>
+</ValidationRule>

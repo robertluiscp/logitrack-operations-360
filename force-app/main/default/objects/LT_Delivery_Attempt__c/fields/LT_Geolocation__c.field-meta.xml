@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Geolocation__c</fullName>
+    <description>Coordenadas registradas no momento da tentativa.</description>
+    <label>Geolocalizacao</label>
+    <displayLocationInDecimal>true</displayLocationInDecimal>
+    <required>false</required>
+    <scale>6</scale>
+    <type>Location</type>
+</CustomField>

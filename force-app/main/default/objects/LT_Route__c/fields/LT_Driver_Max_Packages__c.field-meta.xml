@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Max_Packages__c</fullName>
+    <description>Maximo de pacotes por frete da categoria do motorista (0 = sem limite).</description>
+    <label>Limite do Motorista</label>
+    <formula>BLANKVALUE(LT_Driver__r.LT_Max_Packages_Per_Trip__c, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>6</precision>
+    <scale>0</scale>
+    <type>Number</type>
+</CustomField>

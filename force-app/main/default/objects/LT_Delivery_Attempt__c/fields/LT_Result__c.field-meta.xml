@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Result__c</fullName>
+    <description>Resultado da tentativa de entrega.</description>
+    <label>Resultado</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Entregue</fullName>
+                <default>false</default>
+                <label>Entregue</label>
+            </value>
+            <value>
+                <fullName>Destinatario Ausente</fullName>
+                <default>false</default>
+                <label>Destinatario Ausente</label>
+            </value>
+            <value>
+                <fullName>Endereco Nao Localizado</fullName>
+                <default>false</default>
+                <label>Endereco Nao Localizado</label>
+            </value>
+            <value>
+                <fullName>Recusado pelo Destinatario</fullName>
+                <default>false</default>
+                <label>Recusado pelo Destinatario</label>
+            </value>
+            <value>
+                <fullName>Avaria Identificada</fullName>
+                <default>false</default>
+                <label>Avaria Identificada</label>
+            </value>
+            <value>
+                <fullName>Area de Risco</fullName>
+                <default>false</default>
+                <label>Area de Risco</label>
+            </value>
+            <value>
+                <fullName>Estabelecimento Fechado</fullName>
+                <default>false</default>
+                <label>Estabelecimento Fechado</label>
+            </value>
+            <value>
+                <fullName>Cliente Remarcou</fullName>
+                <default>false</default>
+                <label>Cliente Remarcou</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

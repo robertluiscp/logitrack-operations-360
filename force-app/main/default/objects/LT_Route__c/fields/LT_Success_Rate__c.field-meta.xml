@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Success_Rate__c</fullName>
+    <description>Percentual de tentativas da rota com entrega concluida.</description>
+    <label>Taxa de Sucesso</label>
+    <formula>IF(OR(ISBLANK(LT_Attempts_Count__c), LT_Attempts_Count__c = 0), 0, LT_Delivered_Count__c / LT_Attempts_Count__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>5</precision>
+    <scale>2</scale>
+    <type>Percent</type>
+</CustomField>

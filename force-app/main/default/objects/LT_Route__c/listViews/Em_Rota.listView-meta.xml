@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Em_Rota</fullName>
+    <columns>NAME</columns>
+    <columns>LT_Base__c</columns>
+    <columns>LT_Route_Date__c</columns>
+    <columns>LT_Driver__c</columns>
+    <columns>LT_Loaded_Packages__c</columns>
+    <columns>LT_Success_Rate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LT_Status__c</field>
+        <operation>equals</operation>
+        <value>Em Rota,Carregada</value>
+    </filters>
+    <label>Rotas Em Andamento</label>
+</ListView>

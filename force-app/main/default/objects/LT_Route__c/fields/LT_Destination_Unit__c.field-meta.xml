@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Destination_Unit__c</fullName>
+    <description>Unidade de destino da mini transferencia.</description>
+    <label>Unidade de Destino</label>
+    <referenceTo>LT_Logistics_Unit__c</referenceTo>
+    <relationshipLabel>Rotas de Destino</relationshipLabel>
+    <relationshipName>LT_Destination_Routes</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

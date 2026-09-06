@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Route_Loaded_Not_Above_Planned</fullName>
+    <active>true</active>
+    <description>Pacotes carregados nao podem exceder o planejado.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_Planned_Packages__c)), LT_Loaded_Packages__c &gt; LT_Planned_Packages__c)</errorConditionFormula>
+    <errorDisplayField>LT_Loaded_Packages__c</errorDisplayField>
+    <errorMessage>Pacotes Carregados nao pode ser maior que Pacotes Planejados.</errorMessage>
+</ValidationRule>

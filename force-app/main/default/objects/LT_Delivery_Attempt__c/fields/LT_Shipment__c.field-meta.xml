@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Shipment__c</fullName>
+    <description>Remessa alvo da tentativa de entrega.</description>
+    <label>Remessa</label>
+    <referenceTo>LT_Shipment__c</referenceTo>
+    <relationshipLabel>Tentativas de Entrega</relationshipLabel>
+    <relationshipName>LT_Delivery_Attempts</relationshipName>
+    <required>true</required>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

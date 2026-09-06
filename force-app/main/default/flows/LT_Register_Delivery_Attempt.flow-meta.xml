@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Screen Flow para o operador/motorista registrar uma tentativa de entrega de uma remessa. Cria a Tentativa de Entrega; o evento de rastreamento e a atualizacao da remessa acontecem por automacao.</description>
+    <environments>Default</environments>
+    <interviewLabel>Registrar Tentativa de Entrega {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Registrar Tentativa de Entrega</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value><stringValue>LightningFlowBuilder</stringValue></value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <choices>
+        <name>chEntregue</name>
+        <choiceText>Entregue</choiceText>
+        <dataType>String</dataType>
+        <value><stringValue>Entregue</stringValue></value>
+    </choices>
+    <choices>
+        <name>chAusente</name>
+        <choiceText>Destinatario ausente</choiceText>
+        <dataType>String</dataType>
+        <value><stringValue>Destinatario Ausente</stringValue></value>
+    </choices>
+    <choices>
+        <name>chEndereco</name>
+        <choiceText>Endereco nao localizado</choiceText>
+        <dataType>String</dataType>
+        <value><stringValue>Endereco Nao Localizado</stringValue></value>
+    </choices>
+    <choices>
+        <name>chRecusado</name>
+        <choiceText>Recusado pelo destinatario</choiceText>
+        <dataType>String</dataType>
+        <value><stringValue>Recusado pelo Destinatario</stringValue></value>
+    </choices>
+    <choices>
+        <name>chAvaria</name>
+        <choiceText>Avaria identificada</choiceText>
+        <dataType>String</dataType>
+        <value><stringValue>Avaria Identificada</stringValue></value>
+    </choices>
+    <choices>
+        <name>chFechado</name>
+        <choiceText>Estabelecimento fechado</choiceText>
+        <dataType>String</dataType>
+        <value><stringValue>Estabelecimento Fechado</stringValue></value>
+    </choices>
+    <choices>
+        <name>chRelProprio</name>
+        <choiceText>Proprio destinatario</choiceText>
+        <dataType>String</dataType>
+        <value><stringValue>Proprio</stringValue></value>
+    </choices>
+    <choices>
+        <name>chRelFamiliar</name>
+        <choiceText>Familiar</choiceText>
+        <dataType>String</dataType>
+        <value><stringValue>Familiar</stringValue></value>
+    </choices>
+    <choices>
+        <name>chRelPorteiro</name>
+        <choiceText>Porteiro</choiceText>
+        <dataType>String</dataType>
+        <value><stringValue>Porteiro</stringValue></value>
+    </choices>
+    <choices>
+        <name>chRelVizinho</name>
+        <choiceText>Vizinho</choiceText>
+        <dataType>String</dataType>
+        <value><stringValue>Vizinho</stringValue></value>
+    </choices>
+    <constants>
+        <name>cRecordIdError</name>
+        <dataType>String</dataType>
+        <value><stringValue>Abra este fluxo a partir de uma Remessa.</stringValue></value>
+    </constants>
+    <decisions>
+        <name>Resultado_e_Entrega</name>
+        <label>Resultado e Entrega?</label>
+        <locationX>176</locationX>
+        <locationY>374</locationY>
+        <defaultConnector><targetReference>Criar_Tentativa</targetReference></defaultConnector>
+        <defaultConnectorLabel>Nao entregue</defaultConnectorLabel>
+        <rules>
+            <name>rEntregue</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>scResultado</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue><stringValue>Entregue</stringValue></rightValue>
+            </conditions>
+            <connector><targetReference>Tela_Comprovacao</targetReference></connector>
+            <label>Entregue</label>
+        </rules>
+    </decisions>
+    <recordCreates>
+        <name>Criar_Tentativa</name>
+        <label>Criar Tentativa de Entrega</label>
+        <locationX>176</locationX>
+        <locationY>614</locationY>
+        <connector><targetReference>Tela_Confirmacao</targetReference></connector>
+        <inputAssignments>
+            <field>LT_Shipment__c</field>
+            <value><elementReference>recordId</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Result__c</field>
+            <value><elementReference>scResultado</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Attempt_DateTime__c</field>
+            <value><elementReference>scDataHora</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Attempt_Number__c</field>
+            <value><elementReference>scNumero</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Notes__c</field>
+            <value><elementReference>scObs</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Recipient_Doc__c</field>
+            <value><elementReference>scRecebedorDoc</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Recipient_Relationship__c</field>
+            <value><elementReference>scRelacao</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Photo_Link__c</field>
+            <value><elementReference>scFoto</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Driver__c</field>
+            <value><elementReference>Buscar_Remessa.LT_Last_Mile_Driver__c</elementReference></value>
+        </inputAssignments>
+        <object>LT_Delivery_Attempt__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Buscar_Remessa</name>
+        <label>Buscar Remessa</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector><targetReference>Tela_Dados_da_Tentativa</targetReference></connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value><elementReference>recordId</elementReference></value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>LT_Shipment__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>Tela_Dados_da_Tentativa</name>
+        <label>Dados da Tentativa</label>
+        <locationX>176</locationX>
+        <locationY>254</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector><targetReference>Resultado_e_Entrega</targetReference></connector>
+        <fields>
+            <name>infoRemessa</name>
+            <fieldText>&lt;p&gt;&lt;b&gt;Remessa:&lt;/b&gt; {!Buscar_Remessa.LT_Tracking_Code__c} &amp;nbsp; | &amp;nbsp; &lt;b&gt;Destino:&lt;/b&gt; {!Buscar_Remessa.LT_Dest_City__c}/{!Buscar_Remessa.LT_Dest_State__c}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>scResultado</name>
+            <choiceReferences>chEntregue</choiceReferences>
+            <choiceReferences>chAusente</choiceReferences>
+            <choiceReferences>chEndereco</choiceReferences>
+            <choiceReferences>chRecusado</choiceReferences>
+            <choiceReferences>chAvaria</choiceReferences>
+            <choiceReferences>chFechado</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Resultado da tentativa</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>scDataHora</name>
+            <dataType>DateTime</dataType>
+            <defaultValue><elementReference>$Flow.CurrentDateTime</elementReference></defaultValue>
+            <fieldText>Data/hora da tentativa</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>scNumero</name>
+            <dataType>Number</dataType>
+            <defaultValue><numberValue>1.0</numberValue></defaultValue>
+            <fieldText>Numero da tentativa</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>scObs</name>
+            <dataType>String</dataType>
+            <fieldText>Observacoes</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Tela_Comprovacao</name>
+        <label>Comprovacao da Entrega</label>
+        <locationX>50</locationX>
+        <locationY>494</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector><targetReference>Criar_Tentativa</targetReference></connector>
+        <fields>
+            <name>scRecebedorDoc</name>
+            <dataType>String</dataType>
+            <fieldText>Documento de quem recebeu</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>scRelacao</name>
+            <choiceReferences>chRelProprio</choiceReferences>
+            <choiceReferences>chRelFamiliar</choiceReferences>
+            <choiceReferences>chRelPorteiro</choiceReferences>
+            <choiceReferences>chRelVizinho</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Relacao com o destinatario</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>scFoto</name>
+            <dataType>String</dataType>
+            <fieldText>Link da foto do comprovante</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Tela_Confirmacao</name>
+        <label>Tentativa Registrada</label>
+        <locationX>176</locationX>
+        <locationY>734</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>msgOk</name>
+            <fieldText>&lt;p&gt;Tentativa registrada com sucesso. O evento de rastreamento e o status da remessa foram atualizados automaticamente.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Buscar_Remessa</targetReference></connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

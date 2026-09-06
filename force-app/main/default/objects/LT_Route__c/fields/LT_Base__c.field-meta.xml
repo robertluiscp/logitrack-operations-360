@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Base__c</fullName>
+    <description>Base que monta e despacha a rota.</description>
+    <label>Base de Entrega</label>
+    <referenceTo>LT_Logistics_Unit__c</referenceTo>
+    <relationshipLabel>Rotas</relationshipLabel>
+    <relationshipName>LT_Routes</relationshipName>
+    <required>true</required>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>A rota deve partir de uma Base de Entrega.</errorMessage>
+        <filterItems>
+            <field>LT_Logistics_Unit__c.Unit_Type__c</field>
+            <operation>equals</operation>
+            <value>Base de Entrega</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+</CustomField>

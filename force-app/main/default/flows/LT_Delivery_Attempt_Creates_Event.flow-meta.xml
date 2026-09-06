@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Ao registrar uma tentativa de entrega, cria o evento de rastreamento correspondente na remessa (Entregue ou Tentativa de Entrega), mantendo o historico consistente.</description>
+    <environments>Default</environments>
+    <interviewLabel>TE - Tentativa gera Evento {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TE - Tentativa de Entrega gera Evento de Rastreamento</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value><stringValue>LightningFlowBuilder</stringValue></value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <formulas>
+        <name>fEventType</name>
+        <dataType>String</dataType>
+        <expression>IF(ISPICKVAL({!$Record.LT_Result__c}, "Entregue"), "Entregue", IF(ISPICKVAL({!$Record.LT_Result__c}, "Avaria Identificada"), "Avaria Identificada", IF(ISPICKVAL({!$Record.LT_Result__c}, "Recusado pelo Destinatario"), "Recusado pelo Destinatario", IF(ISPICKVAL({!$Record.LT_Result__c}, "Endereco Nao Localizado"), "Endereco Nao Localizado", IF(ISPICKVAL({!$Record.LT_Result__c}, "Destinatario Ausente"), "Destinatario Ausente", "Tentativa de Entrega")))))</expression>
+    </formulas>
+    <recordCreates>
+        <name>Criar_Evento_de_Rastreamento</name>
+        <label>Criar Evento de Rastreamento</label>
+        <locationX>176</locationX>
+        <locationY>288</locationY>
+        <inputAssignments>
+            <field>LT_Shipment__c</field>
+            <value><elementReference>$Record.LT_Shipment__c</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Event_Type__c</field>
+            <value><elementReference>fEventType</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Event_DateTime__c</field>
+            <value><elementReference>$Record.LT_Attempt_DateTime__c</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Driver__c</field>
+            <value><elementReference>$Record.LT_Driver__c</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LT_Notes__c</field>
+            <value><elementReference>$Record.LT_Notes__c</elementReference></value>
+        </inputAssignments>
+        <object>LT_Tracking_Event__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Criar_Evento_de_Rastreamento</targetReference></connector>
+        <object>LT_Delivery_Attempt__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
