@@ -1,0 +1,7 @@
+Name,RecordTypeId,Account.LT_CNPJ__c,StageName,CloseDate,LT_Estimated_Monthly_Volume__c,LT_Prospect_Segment__c,LT_Proposed_Price_Per_Package__c,LT_Pickup_Model__c,OwnerId
+Girassol Cosmeticos - Contrato de Frete,012g8000003swQIAAY,26.110.220/0001-30,Qualification,2026-11-30,3400,Varejo,6.5,Coleta no DropOff,005g8000009JzgwAAC
+Nordeste Express - Operacao Sul,012g8000003swQIAAY,27.220.330/0001-31,Value Proposition,2026-10-31,22000,Marketplace,7.2,Coleta no Seller,005g8000009JzgwAAC
+Vinhos da Serra - Clube de Assinatura,012g8000003swQIAAY,28.330.440/0001-32,Needs Analysis,2026-12-15,5200,Distribuidor,9.1,Coleta no Seller,005g8000009JzgwAAC
+KidsPlay - E-commerce Proprio,012g8000003swQIAAY,29.440.550/0001-33,Proposal/Price Quote,2026-10-20,8700,E-commerce Proprio,5.9,Coleta no Seller,005g8000009JzgwAAC
+MegaShop BR - Expansao Homologacao,012g8000003swQIAAY,24.084.932/0001-88,Id. Decision Makers,2026-10-10,27000,Marketplace,6.8,Coleta no Seller,005g8000009JzgwAAC
+Bella Cosmeticos - Piloto DropOff,012g8000003swQIAAY,32.252.796/0001-64,Negotiation/Review,2026-09-30,3100,Varejo,8.3,Coleta no DropOff,005g8000009JzgwAAC

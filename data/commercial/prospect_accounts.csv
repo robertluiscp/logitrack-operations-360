@@ -1,0 +1,5 @@
+Name,RecordTypeId,LT_Shipper_Segment__c,LT_Shipper_Status__c,LT_CNPJ__c,OwnerId,BillingCity,BillingState,BillingCountry,Industry,Description
+Girassol Cosmeticos,012g8000003syK1AAI,Varejo,Prospecção,26.110.220/0001-30,005g8000009JzgwAAC,Curitiba,PR,Brasil,Transportation,Prospect Varejo em avaliacao comercial.
+Nordeste Express Store,012g8000003syK1AAI,Marketplace,Prospecção,27.220.330/0001-31,005g8000009JzgwAAC,Porto Alegre,RS,Brasil,Transportation,Prospect Marketplace em avaliacao comercial.
+Vinhos da Serra Clube,012g8000003syK1AAI,Distribuidor,Prospecção,28.330.440/0001-32,005g8000009JzgwAAC,Bento Goncalves,RS,Brasil,Transportation,Prospect Distribuidor em avaliacao comercial.
+KidsPlay Brinquedos,012g8000003syK1AAI,E-commerce Próprio,Prospecção,29.440.550/0001-33,005g8000009JzgwAAC,Joinville,SC,Brasil,Transportation,Prospect E-commerce Próprio em avaliacao comercial.
