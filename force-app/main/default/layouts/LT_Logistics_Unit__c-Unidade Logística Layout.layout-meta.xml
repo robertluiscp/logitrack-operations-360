@@ -40,7 +40,7 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Estrutura e Responsabildiade</label>
+        <label>Estrutura e Responsabilidade</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>

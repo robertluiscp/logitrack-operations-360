@@ -18,9 +18,9 @@
                 <label>Regional</label>
             </value>
             <value>
-                <fullName>Centro de Distribuição (SC)</fullName>
+                <fullName>Centro de Distribuição</fullName>
                 <default>false</default>
-                <label>Centro de Distribuição (SC)</label>
+                <label>Centro de Distribuição</label>
             </value>
             <value>
                 <fullName>Base de Entrega</fullName>
@@ -41,11 +41,6 @@
                 <fullName>Escritório Administrativo</fullName>
                 <default>false</default>
                 <label>Escritório Administrativo</label>
-            </value>
-            <value>
-                <fullName>Centro de Distribuição</fullName>
-                <default>false</default>
-                <label>Centro de Distribuição</label>
             </value>
         </valueSetDefinition>
     </valueSet>
