@@ -1,0 +1,9 @@
+Name,RecordTypeId,LT_Operating_Partner_Type__c,LT_CNPJ__c,LT_Partner_Status__c,Type,BillingCity,BillingState,BillingCountry,Description
+Ponto Expresso Centro - Curitiba,012g8000002pYbBAAU,Parceiro DropOff,61.313.877/0001-41,Ativo,Ponto de Coleta,Curitiba,PR,Brasil,Ponto de Coleta (DropOff) da LogiTrack em Curitiba/PR.
+Papelaria Rapida DropOff - Londrina,012g8000002pYbBAAU,Parceiro DropOff,62.626.754/0001-82,Ativo,Ponto de Coleta,Londrina,PR,Brasil,Ponto de Coleta (DropOff) da LogiTrack em Londrina/PR.
+Loja Conveniencia Sul - Maringa,012g8000002pYbBAAU,Parceiro DropOff,63.939.631/0001-23,Ativo,Ponto de Coleta,Maringa,PR,Brasil,Ponto de Coleta (DropOff) da LogiTrack em Maringa/PR.
+Mercado do Bairro - Joinville,012g8000002pYbBAAU,Parceiro DropOff,64.252.508/0001-64,Ativo,Ponto de Coleta,Joinville,SC,Brasil,Ponto de Coleta (DropOff) da LogiTrack em Joinville/SC.
+Lotericas Ilha DropOff - Florianopolis,012g8000002pYbBAAU,Parceiro DropOff,65.565.385/0001-05,Ativo,Ponto de Coleta,Florianopolis,SC,Brasil,Ponto de Coleta (DropOff) da LogiTrack em Florianopolis/SC.
+Tabacaria Central - Blumenau,012g8000002pYbBAAU,Parceiro DropOff,66.878.262/0001-46,Ativo,Ponto de Coleta,Blumenau,SC,Brasil,Ponto de Coleta (DropOff) da LogiTrack em Blumenau/SC.
+Armazem do Vale DropOff - Porto Alegre,012g8000002pYbBAAU,Parceiro DropOff,67.191.139/0001-87,Ativo,Ponto de Coleta,Porto Alegre,RS,Brasil,Ponto de Coleta (DropOff) da LogiTrack em Porto Alegre/RS.
+Ponto Serra - Caxias do Sul,012g8000002pYbBAAU,Parceiro DropOff,68.504.016/0001-28,Ativo,Ponto de Coleta,Caxias do Sul,RS,Brasil,Ponto de Coleta (DropOff) da LogiTrack em Caxias do Sul/RS.

@@ -1,0 +1,96 @@
+LT_Pickup_Type__c,LT_Status__c,LT_Shipper__c,LT_Pickup_Point__r.LT_CNPJ__c,LT_First_Mile_Driver__c,LT_Destination_CD__r.Unit_Code__c,LT_C2C_Dest_City__c,LT_C2C_Recipient_Name__c,LT_C2C_Sender_Name__c,LT_Collected_Packages__c,LT_Completed_DateTime__c,LT_Estimated_Packages__c,LT_Origin_Base__c,LT_Pickup_Address__c,LT_Pickup_City__c,LT_Pickup_State__c,LT_Requested_By__c,LT_Scheduled_Date__c,OwnerId
+Coleta no Seller,Coletada,001g800000kdoNZAAY,,a0Fg8000006qKpHEAU,SC BNU,,,,122,2026-08-21T09:00:00.000Z,156,,"Rua A, 1609",Chapeco,SC,Comercial,2026-08-21,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Coletada,,,a0Fg8000006qKpIEAU,SC BNU,Londrina,Destinatario 222,Pessoa Fisica 95,0,2026-08-23T15:00:00.000Z,1,,"Rua A, 1616",Florianopolis,SC,Central de Coletas,2026-08-23,005g8000009K1pBAAS
+Coleta no DropOff,Solicitada,,65.565.385/0001-05,,SC BNU,,,,,,65,,"Rua B, 119",Criciuma,SC,App do Embarcador,,005g8000009K1pBAAS
+Coleta no Seller,Motorista a Caminho,001g800000kdoNTAAY,,a0Fg8000006qKpEEAU,PR SJS,,,,,,44,,"Rua D, 308",Ponta Grossa,PR,SAC,2026-08-27,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,62.626.754/0001-82,a0Fg8000006qKpEEAU,PR SJS,,,,22,2026-08-12T15:00:00.000Z,26,,"Rua B, 169",Cascavel,PR,Central de Coletas,2026-08-12,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,67.191.139/0001-87,a0Fg8000006qKpKEAU,RS NSR,,,,247,2026-09-08T09:00:00.000Z,252,,"Rua B, 294",Porto Alegre,RS,SAC,2026-09-08,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Coletada,,,a0Fg8000006qKpJEAU,PR SJS,Porto Alegre,Destinatario 85,Pessoa Fisica 58,0,2026-08-05T16:00:00.000Z,1,,"Rua B, 461",Curitiba,PR,Central de Coletas,2026-08-05,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNVAAY,,a0Fg8000006qKpHEAU,SC BNU,,,,154,2026-08-15T10:00:00.000Z,181,,"Rua C, 1548",Blumenau,SC,Comercial,2026-08-15,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,61.313.877/0001-41,a0Fg8000006qKpEEAU,PR SJS,,,,317,2026-08-27T18:00:00.000Z,356,,"Rua A, 495",Londrina,PR,App do Embarcador,2026-08-27,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNXAAY,,a0Fg8000006qKpHEAU,SC BNU,,,,333,2026-08-31T13:00:00.000Z,321,,"Rua D, 814",Chapeco,SC,App do Embarcador,2026-08-31,005g8000009K1pBAAS
+Coleta no Seller,Motorista a Caminho,001g800000kdoNTAAY,,a0Fg8000006qKpHEAU,SC BNU,,,,,,347,,"Rua D, 1500",Florianopolis,SC,App do Embarcador,2026-08-07,005g8000009K1pBAAS
+Coleta no Seller,Nao Realizada,001g800000kdoNWAAY,,a0Fg8000006qKpKEAU,RS NSR,,,,,,219,,"Rua C, 320",Pelotas,RS,SAC,2026-08-26,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Motorista a Caminho,,,a0Fg8000006qKpHEAU,SC BNU,Cascavel,Destinatario 872,Pessoa Fisica 89,,,1,,"Rua C, 835",Joinville,SC,Comercial,2026-08-22,005g8000009K1pBAAS
+Coleta no Seller,Solicitada,001g800000kdoNVAAY,,,RS NSR,,,,,,108,,"Rua C, 157",Canoas,RS,Comercial,,005g8000009K1pBAAS
+Coleta no Seller,Agendada,001g800000kdoNZAAY,,a0Fg8000006qKpJEAU,PR SJS,,,,,,337,,"Rua D, 1654",Curitiba,PR,App do Embarcador,2026-08-03,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNYAAY,,a0Fg8000006qKpKEAU,RS NSR,,,,90,2026-08-10T18:00:00.000Z,128,,"Rua D, 314",Caxias do Sul,RS,App do Embarcador,2026-08-10,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNXAAY,,a0Fg8000006qKpKEAU,RS NSR,,,,296,2026-08-04T17:00:00.000Z,387,,"Rua D, 1496",Porto Alegre,RS,App do Embarcador,2026-08-04,005g8000009K1pBAAS
+Coleta no DropOff,Cancelada,,64.252.508/0001-64,,SC BNU,,,,,,290,,"Rua B, 766",Chapeco,SC,Central de Coletas,,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNZAAY,,a0Fg8000006qKpJEAU,PR SJS,,,,168,2026-08-18T14:00:00.000Z,170,,"Rua A, 1125",Curitiba,PR,Comercial,2026-08-18,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,68.504.016/0001-28,a0Fg8000006qKpKEAU,RS NSR,,,,204,2026-09-01T11:00:00.000Z,204,,"Rua C, 338",Caxias do Sul,RS,Comercial,2026-09-01,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNTAAY,,a0Fg8000006qKpEEAU,PR SJS,,,,125,2026-08-18T15:00:00.000Z,175,,"Rua A, 409",Curitiba,PR,SAC,2026-08-18,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Coletada,,,a0Fg8000006qKpIEAU,SC BNU,Porto Alegre,Destinatario 259,Pessoa Fisica 85,0,2026-08-21T15:00:00.000Z,1,,"Rua D, 1589",Criciuma,SC,App do Embarcador,2026-08-21,005g8000009K1pBAAS
+Coleta no DropOff,Agendada,,66.878.262/0001-46,a0Fg8000006qKpIEAU,SC BNU,,,,,,28,,"Rua A, 405",Criciuma,SC,SAC,2026-08-27,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNSAAY,,a0Fg8000006qKpIEAU,SC BNU,,,,50,2026-08-21T15:00:00.000Z,62,,"Rua C, 1182",Blumenau,SC,Central de Coletas,2026-08-21,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNXAAY,,a0Fg8000006qKpIEAU,SC BNU,,,,269,2026-08-10T13:00:00.000Z,350,,"Rua A, 1703",Chapeco,SC,App do Embarcador,2026-08-10,005g8000009K1pBAAS
+Coleta no Seller,Agendada,001g800000kdoNTAAY,,a0Fg8000006qKpJEAU,PR SJS,,,,,,302,,"Rua A, 1741",Curitiba,PR,Comercial,2026-08-07,005g8000009K1pBAAS
+Coleta no DropOff,Solicitada,,62.626.754/0001-82,,PR SJS,,,,,,23,,"Rua C, 935",Ponta Grossa,PR,Central de Coletas,,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNTAAY,,a0Fg8000006qKpHEAU,SC BNU,,,,170,2026-09-03T18:00:00.000Z,222,,"Rua C, 973",Criciuma,SC,Comercial,2026-09-03,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Agendada,,,a0Fg8000006qKpKEAU,RS NSR,Caxias do Sul,Destinatario 505,Pessoa Fisica 63,,,1,,"Rua C, 1645",Caxias do Sul,RS,App do Embarcador,2026-08-19,005g8000009K1pBAAS
+Coleta no Seller,Agendada,001g800000kdoNXAAY,,a0Fg8000006qKpHEAU,SC BNU,,,,,,56,,"Rua C, 1927",Florianopolis,SC,Central de Coletas,2026-09-07,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,66.878.262/0001-46,a0Fg8000006qKpHEAU,SC BNU,,,,141,2026-08-28T17:00:00.000Z,194,,"Rua D, 176",Blumenau,SC,Central de Coletas,2026-08-28,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Coletada,,,a0Fg8000006qKpHEAU,SC BNU,Londrina,Destinatario 765,Cliente Balcao 21,0,2026-08-26T13:00:00.000Z,1,,"Rua B, 1954",Joinville,SC,SAC,2026-08-26,005g8000009K1pBAAS
+Coleta no Seller,Solicitada,001g800000kdoNXAAY,,,SC BNU,,,,,,259,,"Rua C, 181",Criciuma,SC,App do Embarcador,,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNZAAY,,a0Fg8000006qKpJEAU,PR SJS,,,,197,2026-08-10T09:00:00.000Z,192,,"Rua C, 313",Maringa,PR,Comercial,2026-08-10,005g8000009K1pBAAS
+Coleta no Seller,Solicitada,001g800000kdoNTAAY,,,PR SJS,,,,,,178,,"Rua A, 719",Cascavel,PR,App do Embarcador,,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNYAAY,,a0Fg8000006qKpIEAU,SC BNU,,,,124,2026-08-23T18:00:00.000Z,124,,"Rua D, 1543",Blumenau,SC,Central de Coletas,2026-08-23,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Motorista a Caminho,,,a0Fg8000006qKpKEAU,RS NSR,Chapeco,Destinatario 134,Pessoa Fisica 82,,,1,,"Rua D, 326",Canoas,RS,Central de Coletas,2026-08-25,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Coletada,,,a0Fg8000006qKpJEAU,PR SJS,Ponta Grossa,Destinatario 298,Pessoa Fisica 60,0,2026-08-22T12:00:00.000Z,1,,"Rua C, 1983",Ponta Grossa,PR,Comercial,2026-08-22,005g8000009K1pBAAS
+Coleta no Seller,Solicitada,001g800000kdoNXAAY,,,SC BNU,,,,,,363,,"Rua A, 1612",Florianopolis,SC,App do Embarcador,,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,62.626.754/0001-82,a0Fg8000006qKpEEAU,PR SJS,,,,330,2026-09-05T17:00:00.000Z,321,,"Rua D, 581",Cascavel,PR,Comercial,2026-09-05,005g8000009K1pBAAS
+Coleta no Seller,Solicitada,001g800000kdoNWAAY,,,PR SJS,,,,,,25,,"Rua B, 313",Londrina,PR,Central de Coletas,,005g8000009K1pBAAS
+Coleta no Seller,Nao Realizada,001g800000kdoNXAAY,,a0Fg8000006qKpIEAU,SC BNU,,,,,,319,,"Rua D, 1975",Criciuma,SC,SAC,2026-08-04,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Coletada,,,a0Fg8000006qKpIEAU,SC BNU,Blumenau,Destinatario 724,Cliente Balcao 11,0,2026-09-04T15:00:00.000Z,1,,"Rua A, 30",Florianopolis,SC,App do Embarcador,2026-09-04,005g8000009K1pBAAS
+Coleta no Seller,Agendada,001g800000kdoNTAAY,,a0Fg8000006qKpKEAU,RS NSR,,,,,,353,,"Rua A, 1104",Santa Maria,RS,Comercial,2026-08-28,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNTAAY,,a0Fg8000006qKpJEAU,PR SJS,,,,81,2026-08-26T09:00:00.000Z,109,,"Rua D, 1577",Londrina,PR,Central de Coletas,2026-08-26,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNUAAY,,a0Fg8000006qKpKEAU,RS NSR,,,,180,2026-08-31T09:00:00.000Z,185,,"Rua C, 1915",Porto Alegre,RS,Central de Coletas,2026-08-31,005g8000009K1pBAAS
+Coleta no Seller,Solicitada,001g800000kdoNTAAY,,,PR SJS,,,,,,135,,"Rua D, 12",Cascavel,PR,SAC,,005g8000009K1pBAAS
+Coleta no Seller,Solicitada,001g800000kdoNSAAY,,,RS NSR,,,,,,187,,"Rua C, 1891",Santa Maria,RS,App do Embarcador,,005g8000009K1pBAAS
+Coleta no DropOff,Cancelada,,68.504.016/0001-28,,RS NSR,,,,,,368,,"Rua B, 1906",Pelotas,RS,Comercial,,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,65.565.385/0001-05,a0Fg8000006qKpHEAU,SC BNU,,,,94,2026-08-29T11:00:00.000Z,102,,"Rua B, 149",Chapeco,SC,Comercial,2026-08-29,005g8000009K1pBAAS
+Coleta no Seller,Nao Realizada,001g800000kdoNSAAY,,a0Fg8000006qKpHEAU,SC BNU,,,,,,147,,"Rua B, 1718",Chapeco,SC,SAC,2026-09-02,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNWAAY,,a0Fg8000006qKpIEAU,SC BNU,,,,337,2026-08-10T12:00:00.000Z,398,,"Rua A, 233",Criciuma,SC,Comercial,2026-08-10,005g8000009K1pBAAS
+Coleta no DropOff,Motorista a Caminho,,68.504.016/0001-28,a0Fg8000006qKpKEAU,RS NSR,,,,,,24,,"Rua D, 1421",Porto Alegre,RS,SAC,2026-08-04,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,64.252.508/0001-64,a0Fg8000006qKpHEAU,SC BNU,,,,195,2026-08-27T12:00:00.000Z,186,,"Rua C, 1383",Criciuma,SC,Central de Coletas,2026-08-27,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,67.191.139/0001-87,a0Fg8000006qKpKEAU,RS NSR,,,,157,2026-08-14T18:00:00.000Z,151,,"Rua B, 756",Caxias do Sul,RS,SAC,2026-08-14,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Agendada,,,a0Fg8000006qKpKEAU,RS NSR,Pelotas,Destinatario 48,Pessoa Fisica 94,,,1,,"Rua C, 46",Porto Alegre,RS,Comercial,2026-08-20,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNTAAY,,a0Fg8000006qKpJEAU,PR SJS,,,,228,2026-08-04T13:00:00.000Z,319,,"Rua D, 1131",Cascavel,PR,Central de Coletas,2026-08-04,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,65.565.385/0001-05,a0Fg8000006qKpIEAU,SC BNU,,,,186,2026-08-24T10:00:00.000Z,235,,"Rua D, 230",Florianopolis,SC,Comercial,2026-08-24,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNVAAY,,a0Fg8000006qKpJEAU,PR SJS,,,,222,2026-08-06T10:00:00.000Z,296,,"Rua B, 1103",Maringa,PR,Comercial,2026-08-06,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,61.313.877/0001-41,a0Fg8000006qKpEEAU,PR SJS,,,,370,2026-08-14T14:00:00.000Z,374,,"Rua B, 1357",Cascavel,PR,Comercial,2026-08-14,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNZAAY,,a0Fg8000006qKpEEAU,PR SJS,,,,199,2026-08-11T11:00:00.000Z,251,,"Rua B, 1851",Ponta Grossa,PR,SAC,2026-08-11,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Agendada,,,a0Fg8000006qKpJEAU,PR SJS,Santa Maria,Destinatario 764,Pessoa Fisica 35,,,1,,"Rua C, 1290",Cascavel,PR,Central de Coletas,2026-08-26,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNSAAY,,a0Fg8000006qKpJEAU,PR SJS,,,,63,2026-08-15T18:00:00.000Z,63,,"Rua B, 913",Maringa,PR,Comercial,2026-08-15,005g8000009K1pBAAS
+Coleta no Seller,Agendada,001g800000kdoNTAAY,,a0Fg8000006qKpKEAU,RS NSR,,,,,,93,,"Rua B, 1533",Santa Maria,RS,App do Embarcador,2026-08-15,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,64.252.508/0001-64,a0Fg8000006qKpIEAU,SC BNU,,,,218,2026-08-11T18:00:00.000Z,289,,"Rua B, 733",Blumenau,SC,Comercial,2026-08-11,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNVAAY,,a0Fg8000006qKpKEAU,RS NSR,,,,336,2026-08-21T15:00:00.000Z,355,,"Rua D, 56",Santa Maria,RS,SAC,2026-08-21,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNUAAY,,a0Fg8000006qKpIEAU,SC BNU,,,,98,2026-08-23T15:00:00.000Z,118,,"Rua B, 1629",Joinville,SC,App do Embarcador,2026-08-23,005g8000009K1pBAAS
+Coleta no DropOff,Solicitada,,65.565.385/0001-05,,SC BNU,,,,,,206,,"Rua B, 980",Blumenau,SC,Comercial,,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,68.504.016/0001-28,a0Fg8000006qKpKEAU,RS NSR,,,,152,2026-09-05T11:00:00.000Z,163,,"Rua C, 1572",Porto Alegre,RS,SAC,2026-09-05,005g8000009K1pBAAS
+Coleta no Seller,Cancelada,001g800000kdoNWAAY,,,PR SJS,,,,,,208,,"Rua D, 129",Londrina,PR,Comercial,,005g8000009K1pBAAS
+Coleta no DropOff,Motorista a Caminho,,61.313.877/0001-41,a0Fg8000006qKpJEAU,PR SJS,,,,,,99,,"Rua D, 1765",Maringa,PR,Comercial,2026-09-01,005g8000009K1pBAAS
+Coleta no Seller,Solicitada,001g800000kdoNTAAY,,,PR SJS,,,,,,68,,"Rua B, 34",Londrina,PR,Comercial,,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Coletada,,,a0Fg8000006qKpKEAU,RS NSR,Joinville,Destinatario 92,Cliente Balcao 76,0,2026-08-08T17:00:00.000Z,1,,"Rua C, 247",Canoas,RS,Central de Coletas,2026-08-08,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,65.565.385/0001-05,a0Fg8000006qKpHEAU,SC BNU,,,,272,2026-08-03T16:00:00.000Z,284,,"Rua D, 481",Blumenau,SC,App do Embarcador,2026-08-03,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNTAAY,,a0Fg8000006qKpIEAU,SC BNU,,,,185,2026-08-26T13:00:00.000Z,207,,"Rua D, 1020",Blumenau,SC,SAC,2026-08-26,005g8000009K1pBAAS
+Coleta no Seller,Solicitada,001g800000kdoNSAAY,,,PR SJS,,,,,,351,,"Rua A, 1381",Maringa,PR,Central de Coletas,,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNYAAY,,a0Fg8000006qKpHEAU,SC BNU,,,,266,2026-09-05T15:00:00.000Z,287,,"Rua D, 1637",Criciuma,SC,SAC,2026-09-05,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNUAAY,,a0Fg8000006qKpKEAU,RS NSR,,,,253,2026-08-27T09:00:00.000Z,317,,"Rua C, 964",Porto Alegre,RS,SAC,2026-08-27,005g8000009K1pBAAS
+Coleta no Seller,Cancelada,001g800000kdoNTAAY,,,PR SJS,,,,,,206,,"Rua C, 1289",Curitiba,PR,SAC,,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNUAAY,,a0Fg8000006qKpJEAU,PR SJS,,,,268,2026-09-06T17:00:00.000Z,363,,"Rua D, 738",Londrina,PR,Central de Coletas,2026-09-06,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNWAAY,,a0Fg8000006qKpIEAU,SC BNU,,,,353,2026-08-12T17:00:00.000Z,343,,"Rua B, 175",Joinville,SC,Central de Coletas,2026-08-12,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNTAAY,,a0Fg8000006qKpIEAU,SC BNU,,,,83,2026-08-06T17:00:00.000Z,109,,"Rua A, 1039",Blumenau,SC,Central de Coletas,2026-08-06,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Cancelada,,,,RS NSR,Londrina,Destinatario 627,Cliente Balcao 97,,,1,,"Rua B, 705",Porto Alegre,RS,SAC,,005g8000009K1pBAAS
+Coleta no Seller,Agendada,001g800000kdoNUAAY,,a0Fg8000006qKpKEAU,RS NSR,,,,,,141,,"Rua A, 95",Santa Maria,RS,Comercial,2026-08-16,005g8000009K1pBAAS
+Coleta no DropOff,Motorista a Caminho,,63.939.631/0001-23,a0Fg8000006qKpEEAU,PR SJS,,,,,,249,,"Rua D, 462",Ponta Grossa,PR,Comercial,2026-08-06,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNZAAY,,a0Fg8000006qKpJEAU,PR SJS,,,,97,2026-09-04T16:00:00.000Z,128,,"Rua B, 888",Cascavel,PR,Central de Coletas,2026-09-04,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNYAAY,,a0Fg8000006qKpKEAU,RS NSR,,,,98,2026-08-27T15:00:00.000Z,105,,"Rua C, 1011",Porto Alegre,RS,Comercial,2026-08-27,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Agendada,,,a0Fg8000006qKpEEAU,PR SJS,Blumenau,Destinatario 640,Cliente Balcao 75,,,1,,"Rua C, 677",Cascavel,PR,SAC,2026-09-02,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNVAAY,,a0Fg8000006qKpJEAU,PR SJS,,,,172,2026-08-18T13:00:00.000Z,215,,"Rua B, 693",Curitiba,PR,App do Embarcador,2026-08-18,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,66.878.262/0001-46,a0Fg8000006qKpIEAU,SC BNU,,,,144,2026-09-02T18:00:00.000Z,161,,"Rua C, 429",Chapeco,SC,Comercial,2026-09-02,005g8000009K1pBAAS
+C2C - Venda de Etiqueta,Coletada,,,a0Fg8000006qKpIEAU,SC BNU,Canoas,Destinatario 183,Cliente Balcao 4,0,2026-08-07T11:00:00.000Z,1,,"Rua C, 629",Chapeco,SC,App do Embarcador,2026-08-07,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNXAAY,,a0Fg8000006qKpEEAU,PR SJS,,,,194,2026-08-12T18:00:00.000Z,245,,"Rua D, 447",Maringa,PR,App do Embarcador,2026-08-12,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNTAAY,,a0Fg8000006qKpKEAU,RS NSR,,,,204,2026-08-19T13:00:00.000Z,207,,"Rua D, 1875",Porto Alegre,RS,App do Embarcador,2026-08-19,005g8000009K1pBAAS
+Coleta no Seller,Coletada,001g800000kdoNSAAY,,a0Fg8000006qKpHEAU,SC BNU,,,,208,2026-09-05T12:00:00.000Z,237,,"Rua A, 921",Joinville,SC,Central de Coletas,2026-09-05,005g8000009K1pBAAS
+Coleta no DropOff,Coletada,,68.504.016/0001-28,a0Fg8000006qKpKEAU,RS NSR,,,,13,2026-09-02T12:00:00.000Z,16,,"Rua B, 359",Porto Alegre,RS,Central de Coletas,2026-09-02,005g8000009K1pBAAS
