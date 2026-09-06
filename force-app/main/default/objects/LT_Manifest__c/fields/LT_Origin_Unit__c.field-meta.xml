@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Origin_Unit__c</fullName>
+    <description>Base ou CD de origem do romaneio.</description>
+    <label>Unidade de Origem</label>
+    <referenceTo>LT_Logistics_Unit__c</referenceTo>
+    <relationshipLabel>Romaneios de Origem</relationshipLabel>
+    <relationshipName>LT_Origin_Manifests</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

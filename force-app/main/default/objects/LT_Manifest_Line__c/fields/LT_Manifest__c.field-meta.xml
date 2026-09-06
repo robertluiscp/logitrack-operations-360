@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Manifest__c</fullName>
+    <description>Romaneio a que a linha pertence.</description>
+    <label>Romaneio</label>
+    <referenceTo>LT_Manifest__c</referenceTo>
+    <relationshipLabel>Linhas do Romaneio</relationshipLabel>
+    <relationshipName>LT_Manifest_Lines</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

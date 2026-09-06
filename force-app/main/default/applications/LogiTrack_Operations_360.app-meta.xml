@@ -61,6 +61,8 @@
     <tabs>LT_Tracking_Event__c</tabs>
     <tabs>LT_Driver__c</tabs>
     <tabs>LT_Vehicle__c</tabs>
+    <tabs>LT_Pickup_Request__c</tabs>
+    <tabs>LT_Manifest__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LogiTrack_Operations_360_UtilityBar</utilityBar>
 </CustomApplication>

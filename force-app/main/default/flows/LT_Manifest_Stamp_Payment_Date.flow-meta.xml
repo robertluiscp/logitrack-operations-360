@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Antes do salvamento, se o romaneio passou para Pago sem data de pagamento, preenche com a data de hoje.</description>
+    <environments>Default</environments>
+    <interviewLabel>RMN - Carimbar Data de Pagamento {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>RMN - Carimbar Data de Pagamento</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value><stringValue>LightningFlowBuilder</stringValue></value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <assignments>
+        <name>Definir_Data_Pagamento</name>
+        <label>Definir Data de Pagamento</label>
+        <locationX>176</locationX>
+        <locationY>288</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LT_Payment_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value><elementReference>$Flow.CurrentDate</elementReference></value>
+        </assignmentItems>
+    </assignments>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Definir_Data_Pagamento</targetReference></connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LT_Payment_Status__c</field>
+            <operator>EqualTo</operator>
+            <value><stringValue>Pago</stringValue></value>
+        </filters>
+        <filters>
+            <field>LT_Payment_Date__c</field>
+            <operator>IsNull</operator>
+            <value><booleanValue>true</booleanValue></value>
+        </filters>
+        <object>LT_Manifest__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

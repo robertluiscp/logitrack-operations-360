@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Manifest__c</fullName>
+    <description>Romaneio em que esta coleta foi consolidada para pagamento.</description>
+    <label>Romaneio</label>
+    <referenceTo>LT_Manifest__c</referenceTo>
+    <relationshipLabel>Coletas</relationshipLabel>
+    <relationshipName>LT_Pickup_Requests</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

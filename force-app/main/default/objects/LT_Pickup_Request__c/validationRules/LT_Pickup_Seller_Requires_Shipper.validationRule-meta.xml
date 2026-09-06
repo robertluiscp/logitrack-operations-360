@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Pickup_Seller_Requires_Shipper</fullName>
+    <active>true</active>
+    <description>Coleta no Seller exige o embarcador.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Pickup_Type__c, "Coleta no Seller"), ISBLANK(LT_Shipper__c))</errorConditionFormula>
+    <errorDisplayField>LT_Shipper__c</errorDisplayField>
+    <errorMessage>Informe o Embarcador para coletas no Seller.</errorMessage>
+</ValidationRule>

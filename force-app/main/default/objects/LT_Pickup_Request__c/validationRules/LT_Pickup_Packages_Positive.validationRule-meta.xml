@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Pickup_Packages_Positive</fullName>
+    <active>true</active>
+    <description>Quantidades de pacotes nao podem ser negativas.</description>
+    <errorConditionFormula>OR(LT_Estimated_Packages__c &lt; 0, LT_Collected_Packages__c &lt; 0)</errorConditionFormula>
+    <errorMessage>As quantidades de pacotes nao podem ser negativas.</errorMessage>
+</ValidationRule>

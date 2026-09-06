@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>LT_Pickup_Request__c</entityName>
+    <fieldName>LT_Status__c</fieldName>
+    <masterLabel>Fluxo da Coleta</masterLabel>
+    <recordTypeName>__MASTER__</recordTypeName>
+    <pathAssistantSteps>
+        <fieldNames>LT_Pickup_Type__c</fieldNames>
+        <fieldNames>LT_Estimated_Packages__c</fieldNames>
+        <info>&lt;p&gt;Coleta solicitada pelo embarcador ou ponto DropOff. Confirme o tipo e o volume estimado.&lt;/p&gt;</info>
+        <picklistValueName>Solicitada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_First_Mile_Driver__c</fieldNames>
+        <fieldNames>LT_Scheduled_Date__c</fieldNames>
+        <info>&lt;p&gt;Coleta agendada. Atribua o motorista First Mile e a data.&lt;/p&gt;</info>
+        <picklistValueName>Agendada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Motorista a caminho do endereco de coleta.&lt;/p&gt;</info>
+        <picklistValueName>Motorista a Caminho</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Collected_Packages__c</fieldNames>
+        <fieldNames>LT_Completed_DateTime__c</fieldNames>
+        <info>&lt;p&gt;Coleta realizada. Registre a quantidade coletada e consolide no romaneio do motorista.&lt;/p&gt;</info>
+        <picklistValueName>Coletada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Coleta nao realizada (endereco fechado, sem volume, etc.).&lt;/p&gt;</info>
+        <picklistValueName>Nao Realizada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Coleta cancelada pelo solicitante.&lt;/p&gt;</info>
+        <picklistValueName>Cancelada</picklistValueName>
+    </pathAssistantSteps>
+</PathAssistant>

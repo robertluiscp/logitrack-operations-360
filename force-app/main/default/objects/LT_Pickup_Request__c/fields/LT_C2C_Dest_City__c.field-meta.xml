@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_C2C_Dest_City__c</fullName>
+    <description>Cidade de destino (Venda de Etiqueta).</description>
+    <label>C2C - Cidade de Destino</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <length>80</length>
+    <unique>false</unique>
+</CustomField>

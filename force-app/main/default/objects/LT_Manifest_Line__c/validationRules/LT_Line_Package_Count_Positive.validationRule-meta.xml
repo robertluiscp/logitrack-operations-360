@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Line_Package_Count_Positive</fullName>
+    <active>true</active>
+    <description>A quantidade de pacotes deve ser maior que zero.</description>
+    <errorConditionFormula>LT_Package_Count__c &lt;= 0</errorConditionFormula>
+    <errorDisplayField>LT_Package_Count__c</errorDisplayField>
+    <errorMessage>Informe uma quantidade de pacotes maior que zero.</errorMessage>
+</ValidationRule>

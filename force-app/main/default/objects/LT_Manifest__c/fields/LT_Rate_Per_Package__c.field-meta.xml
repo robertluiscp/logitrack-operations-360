@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Rate_Per_Package__c</fullName>
+    <description>Valor pago ao motorista por pacote coletado/transferido.</description>
+    <label>Valor por Pacote</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Currency</type>
+    <precision>8</precision>
+    <scale>2</scale>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pendentes</fullName>
+    <columns>NAME</columns>
+    <columns>LT_Pickup_Type__c</columns>
+    <columns>LT_Status__c</columns>
+    <columns>LT_Pickup_City__c</columns>
+    <columns>LT_Estimated_Packages__c</columns>
+    <columns>LT_First_Mile_Driver__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LT_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Coletada,Cancelada,Nao Realizada</value>
+    </filters>
+    <label>Coletas Pendentes</label>
+</ListView>

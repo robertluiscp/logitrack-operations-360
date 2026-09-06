@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_First_Mile_Driver__c</fullName>
+    <description>Motorista responsavel pela coleta.</description>
+    <label>Motorista First Mile</label>
+    <referenceTo>LT_Driver__c</referenceTo>
+    <relationshipLabel>Coletas</relationshipLabel>
+    <relationshipName>LT_Pickup_Requests</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

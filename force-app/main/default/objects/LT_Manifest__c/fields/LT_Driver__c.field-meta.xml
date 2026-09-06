@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver__c</fullName>
+    <description>Motorista First Mile ou de Mini Transferencia pago por este romaneio.</description>
+    <label>Motorista</label>
+    <referenceTo>LT_Driver__c</referenceTo>
+    <relationshipLabel>Romaneios</relationshipLabel>
+    <relationshipName>LT_Manifests</relationshipName>
+    <required>true</required>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

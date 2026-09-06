@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Manifest_Line_Summary</fullName>
+    <fields>Name</fields>
+    <fields>LT_Manifest__c</fields>
+    <fields>LT_Package_Count__c</fields>
+    <fields>LT_Collection_City__c</fields>
+    <label>Linha do Romaneio - Resumo</label>
+</CompactLayout>

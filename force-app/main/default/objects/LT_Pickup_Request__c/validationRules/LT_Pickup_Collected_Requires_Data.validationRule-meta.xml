@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Pickup_Collected_Requires_Data</fullName>
+    <active>true</active>
+    <description>Coleta concluida exige motorista, quantidade e data/hora.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Status__c, "Coletada"), OR(ISBLANK(LT_First_Mile_Driver__c), ISBLANK(LT_Collected_Packages__c), ISBLANK(LT_Completed_DateTime__c)))</errorConditionFormula>
+    <errorMessage>Para concluir a coleta informe motorista, pacotes coletados e data/hora.</errorMessage>
+</ValidationRule>

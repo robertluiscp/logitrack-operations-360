@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Category__c</fullName>
+    <description>Categoria do motorista do romaneio (deve pagar por Romaneio).</description>
+    <label>Categoria do Motorista</label>
+    <formula>LT_Driver__r.LT_Category_Code__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Pickup_Request_Summary</fullName>
+    <fields>Name</fields>
+    <fields>LT_Pickup_Type__c</fields>
+    <fields>LT_Status__c</fields>
+    <fields>LT_Pickup_City__c</fields>
+    <fields>LT_Scheduled_Date__c</fields>
+    <fields>LT_First_Mile_Driver__c</fields>
+    <label>Coleta - Resumo</label>
+</CompactLayout>

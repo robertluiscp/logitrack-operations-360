@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Pickup_Window_Order</fullName>
+    <active>true</active>
+    <description>O fim da janela nao pode ser antes do inicio.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_Window_Start__c)), NOT(ISBLANK(LT_Window_End__c)), LT_Window_End__c &lt; LT_Window_Start__c)</errorConditionFormula>
+    <errorDisplayField>LT_Window_End__c</errorDisplayField>
+    <errorMessage>O Fim da Janela nao pode ser anterior ao Inicio.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Manifest_Paid_Requires_Date</fullName>
+    <active>true</active>
+    <description>Romaneio pago exige a data do pagamento.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Payment_Status__c, "Pago"), ISBLANK(LT_Payment_Date__c))</errorConditionFormula>
+    <errorDisplayField>LT_Payment_Date__c</errorDisplayField>
+    <errorMessage>Informe a Data do Pagamento.</errorMessage>
+</ValidationRule>

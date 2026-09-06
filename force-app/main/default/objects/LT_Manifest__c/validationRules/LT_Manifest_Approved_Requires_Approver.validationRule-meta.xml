@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Manifest_Approved_Requires_Approver</fullName>
+    <active>true</active>
+    <description>Romaneio aprovado ou pago exige o aprovador.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(LT_Payment_Status__c, "Aprovado"), ISPICKVAL(LT_Payment_Status__c, "Pago")), ISBLANK(LT_Approved_By__c))</errorConditionFormula>
+    <errorDisplayField>LT_Approved_By__c</errorDisplayField>
+    <errorMessage>Informe quem aprovou o romaneio.</errorMessage>
+</ValidationRule>

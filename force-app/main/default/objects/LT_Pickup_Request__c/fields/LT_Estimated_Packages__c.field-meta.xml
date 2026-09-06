@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Estimated_Packages__c</fullName>
+    <description>Quantidade estimada de pacotes a coletar.</description>
+    <label>Pacotes Estimados</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <precision>6</precision>
+    <scale>0</scale>
+</CustomField>

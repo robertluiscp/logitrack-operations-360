@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Pickup_DropOff_Requires_Point</fullName>
+    <active>true</active>
+    <description>Coleta no DropOff exige o ponto de coleta.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Pickup_Type__c, "Coleta no DropOff"), ISBLANK(LT_Pickup_Point__c))</errorConditionFormula>
+    <errorDisplayField>LT_Pickup_Point__c</errorDisplayField>
+    <errorMessage>Informe o Ponto de Coleta (DropOff).</errorMessage>
+</ValidationRule>

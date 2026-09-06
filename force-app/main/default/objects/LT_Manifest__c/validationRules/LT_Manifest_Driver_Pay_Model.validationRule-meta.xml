@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Manifest_Driver_Pay_Model</fullName>
+    <active>true</active>
+    <description>O motorista do romaneio precisa ser pago por Romaneio (Coleta ou MR).</description>
+    <errorConditionFormula>NOT(CONTAINS(LT_Driver__r.LT_Payment_Model__c, "Romaneio"))</errorConditionFormula>
+    <errorDisplayField>LT_Driver__c</errorDisplayField>
+    <errorMessage>Romaneios so podem ser emitidos para motoristas das categorias Coleta ou Mini Transferencia.</errorMessage>
+</ValidationRule>

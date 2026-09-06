@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>LT_Pickup_Type__c</columns>
+    <columns>LT_Status__c</columns>
+    <columns>LT_Pickup_City__c</columns>
+    <columns>LT_Pickup_State__c</columns>
+    <columns>LT_Scheduled_Date__c</columns>
+    <columns>LT_First_Mile_Driver__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Todas</label>
+</ListView>
