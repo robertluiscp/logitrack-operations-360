@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h2&gt;LogiTrack Brasil - Cockpit Executivo&lt;/h2&gt;&lt;p&gt;Consolidacao das areas: operacao, comercial, prevencao de perdas e financeiro. Use os relatorios e dashboards para o acompanhamento semanal.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Filas para acompanhar:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Operational_Incident__c/list?filterName=Candidatas_Extravio"&gt;Ocorrencias candidatas a extravio&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Loss_Claim__c/list?filterName=Ressarcidos"&gt;Extravios ressarcidos&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Payment_Request__c/list?filterName=A_Pagar"&gt;Contas a pagar aprovadas&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Monthly_Billing__c/list?filterName=Em_Aberto"&gt;Faturamento a receber&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>exe</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>top</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>home:recentRecordContainer</componentName>
+                <identifier>exeRecent</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>bottomLeft</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>runtime_sales_activities:todayTaskContainer</componentName>
+                <identifier>exeTasks</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>bottomRight</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>home:assistant</componentName>
+                <identifier>exeAssist</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sidebar</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>LogiTrack Executivo - Home</masterLabel>
+    <template>
+        <name>home:desktopTemplate</name>
+    </template>
+    <type>HomePage</type>
+</FlexiPage>

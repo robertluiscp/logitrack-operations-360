@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h2&gt;Cadastro e Frota&lt;/h2&gt;&lt;p&gt;Motoristas ativos, CNHs a vencer e veiculos. Mantenha a documentacao em dia.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Filas para acompanhar:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Driver__c/list?filterName=CNH_Pendente"&gt;Motoristas com CNH pendente&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Driver__c/list?filterName=Ativos"&gt;Motoristas ativos&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Vehicle__c/list?filterName=All"&gt;Veiculos&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>cad</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>top</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>home:recentRecordContainer</componentName>
+                <identifier>cadRecent</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>bottomLeft</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>runtime_sales_activities:todayTaskContainer</componentName>
+                <identifier>cadTasks</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>bottomRight</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>home:assistant</componentName>
+                <identifier>cadAssist</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sidebar</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>LogiTrack Cadastro - Home</masterLabel>
+    <template>
+        <name>home:desktopTemplate</name>
+    </template>
+    <type>HomePage</type>
+</FlexiPage>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h2&gt;Financeiro - contas a pagar&lt;/h2&gt;&lt;p&gt;Solicitacoes aguardando aprovacao, aprovadas a pagar, vencidas e despesas previstas do mes.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Filas para acompanhar:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Payment_Request__c/list?filterName=Em_Aprovacao"&gt;Solicitacoes aguardando aprovacao&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Payment_Request__c/list?filterName=A_Pagar"&gt;Solicitacoes aprovadas a pagar&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Payment_Request__c/list?filterName=Vencidas"&gt;Solicitacoes vencidas&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Expense__c/list?filterName=Previstas"&gt;Despesas previstas&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/lightning/o/LT_Payment__c/list?filterName=A_Conciliar"&gt;Pagamentos a conciliar&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>fin</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>top</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>home:recentRecordContainer</componentName>
+                <identifier>finRecent</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>bottomLeft</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>runtime_sales_activities:todayTaskContainer</componentName>
+                <identifier>finTasks</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>bottomRight</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>home:assistant</componentName>
+                <identifier>finAssist</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sidebar</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>LogiTrack Financeiro - Home</masterLabel>
+    <template>
+        <name>home:desktopTemplate</name>
+    </template>
+    <type>HomePage</type>
+</FlexiPage>

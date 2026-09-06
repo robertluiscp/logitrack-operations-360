@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>LogiTrack_Comercial_Home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+    </actionOverrides>
     <brand>
         <headerColor>#0B5D5D</headerColor>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
