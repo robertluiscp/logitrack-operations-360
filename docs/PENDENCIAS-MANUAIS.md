@@ -119,9 +119,12 @@ arquivos do `force-app/` manualmente.
   Public Read/Write (padrão). Para um portfólio mais rico, definir
   Private / Public Read Only em objetos sensíveis (ex.: `LT_Payment_Request__c`,
   `LT_Driver_Penalty__c`) + **Sharing Rules** por base/regional.
-- **Permission Set Assignments:** hoje só o usuário admin (Robert Pestana) tem
-  os permission sets. Os usuários de teste do Módulo M precisarão receber os
-  sets certos por área.
+- **Permission Set Assignments:** feito no Módulo M via Permission Set Groups —
+  Ana→Comercial, Rafael→Operação, Maria→Cadastro, Robert→Gestão,
+  Bruno Tavares→Financeiro. **Falta um usuário de teste de SAC** (licença
+  Salesforce está 2/2 na Developer Edition; o objeto Case exige licença Salesforce).
+  Se liberar uma licença, criar "Camila Rocha" (papel `LT_Atendente_SAC`,
+  PSG `LT_PSG_SAC`).
 
 ---
 
@@ -130,3 +133,39 @@ arquivos do `force-app/` manualmente.
 Os flows agendados foram deployados como `Scheduled` + `Active`, mas **confirme
 no Setup → Flows** que a frequência (diária) e o horário de início estão como
 desejado; o deploy nem sempre materializa o agendamento até a primeira edição.
+
+---
+
+## 9. Publicação no GitHub
+
+**Estado:** repositório Git local pronto (27+ commits, README completo, `.gitignore`
+protege `server.key`/`server.crt`/`*.pem`). **Ainda não publicado** — a CLI `gh`
+não está instalada nesta máquina e publicar é uma ação externa que precisa da sua
+confirmação.
+
+**Antes de publicar, decida sobre o e-mail:** `ciderblockafram@gmail.com` aparece em
+~20 arquivos de metadata (aprovadores dos processos de aprovação, `owner`/
+`runningUser` dos dashboards, `contactEmail` do External Client App, regras de
+atribuição). É o seu próprio e-mail e isso é comum em repositórios de portfólio
+Salesforce, mas num repo **público** fica visível/indexável.
+- **Opção A (mais simples):** publicar como está.
+- **Opção B (scrub):** trocar por um placeholder (ex.: `admin@logitrack360.demo`)
+  em todos os `.xml` antes do primeiro push. Cuidado: os processos de aprovação e
+  dashboards deixam de bater com o usuário real da org — recriar a referência no
+  Setup depois, ou manter a org e o repo divergentes nesses pontos.
+
+**Passos para publicar (após instalar o GitHub CLI ou pelo site):**
+```bash
+# com gh instalado e autenticado:
+gh repo create logitrack-operations-360 --public --source=. --remote=origin \
+  --description "Ambiente Salesforce completo para transportadora de ultima milha (projeto de portfolio, 100% declarativo)"
+git push -u origin main
+
+# OU manualmente: crie o repo vazio em github.com e:
+git remote add origin https://github.com/<seu-usuario>/logitrack-operations-360.git
+git push -u origin main
+```
+
+**Confirme antes do push:** `git status` limpo, `git ls-files | grep -E 'server\.(key|crt)'`
+não retorna nada, e `docs/LINKEDIN.md` com os placeholders `[GITHUB_URL]` / `[VIDEO_URL]`
+ainda por preencher (ou remova esse arquivo do repo público se preferir).
