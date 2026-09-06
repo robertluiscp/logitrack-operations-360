@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Abre o fluxo de consulta de endereco por CEP (ViaCEP).</description>
+    <flowDefinition>LT_Consultar_CEP</flowDefinition>
+    <label>Consultar CEP</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

@@ -108,6 +108,13 @@
         <quickActionListItems>
             <quickActionName>SendEmail</quickActionName>
         </quickActionListItems>
+
+        <quickActionListItems>
+            <quickActionName>LT_New_Payment_Request</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>LT_New_Incident</quickActionName>
+        </quickActionListItems>
     </quickActionList>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>

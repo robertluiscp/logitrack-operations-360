@@ -13,6 +13,7 @@
     </brand>
     <description>Cockpit executivo da LogiTrack Brasil: visao consolidada de operacao, comercial, prevencao de perdas e financeiro com relatorios e dashboards.</description>
     <formFactors>Large</formFactors>
+    <formFactors>Small</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
