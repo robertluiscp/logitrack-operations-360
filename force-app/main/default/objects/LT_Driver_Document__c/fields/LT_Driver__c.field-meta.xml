@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver__c</fullName>
+    <description>Motorista dono deste documento.</description>
+    <label>Motorista</label>
+    <referenceTo>LT_Driver__c</referenceTo>
+    <relationshipLabel>Documentos</relationshipLabel>
+    <relationshipName>LT_Documents</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

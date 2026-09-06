@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Block_Activation_Expired_CNH</fullName>
+    <active>true</active>
+    <description>Nao permite ativar motorista com CNH vencida.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Driver_Status__c, "Ativo"), NOT(ISBLANK(LT_CNH_Expiration__c)), LT_CNH_Expiration__c &lt; TODAY())</errorConditionFormula>
+    <errorDisplayField>LT_CNH_Expiration__c</errorDisplayField>
+    <errorMessage>A CNH do motorista esta vencida. Regularize antes de ativar.</errorMessage>
+</ValidationRule>

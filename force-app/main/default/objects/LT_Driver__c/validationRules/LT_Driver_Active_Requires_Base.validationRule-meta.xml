@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Active_Requires_Base</fullName>
+    <active>true</active>
+    <description>Motorista Ativo precisa estar vinculado a uma base.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Driver_Status__c, "Ativo"), ISBLANK(LT_Home_Base__c))</errorConditionFormula>
+    <errorDisplayField>LT_Home_Base__c</errorDisplayField>
+    <errorMessage>Vincule o motorista a uma base antes de ativar.</errorMessage>
+</ValidationRule>

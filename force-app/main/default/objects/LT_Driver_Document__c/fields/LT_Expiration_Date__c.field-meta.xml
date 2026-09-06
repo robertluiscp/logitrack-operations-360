@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Expiration_Date__c</fullName>
+    <description>Data de validade do documento (deixe em branco se nao expira).</description>
+    <label>Data de Validade</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

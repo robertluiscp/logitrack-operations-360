@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Document_Type__c</fullName>
+    <description>Tipo do documento apresentado pelo motorista.</description>
+    <label>Tipo de Documento</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CNH</fullName>
+                <default>false</default>
+                <label>CNH</label>
+            </value>
+            <value>
+                <fullName>CPF</fullName>
+                <default>false</default>
+                <label>CPF</label>
+            </value>
+            <value>
+                <fullName>Comprovante de Residencia</fullName>
+                <default>false</default>
+                <label>Comprovante de Residencia</label>
+            </value>
+            <value>
+                <fullName>Contrato MEI (CCMEI)</fullName>
+                <default>false</default>
+                <label>Contrato MEI (CCMEI)</label>
+            </value>
+            <value>
+                <fullName>Contrato de Prestacao de Servicos</fullName>
+                <default>false</default>
+                <label>Contrato de Prestacao de Servicos</label>
+            </value>
+            <value>
+                <fullName>RNTRC / ANTT</fullName>
+                <default>false</default>
+                <label>RNTRC / ANTT</label>
+            </value>
+            <value>
+                <fullName>Certidao Negativa</fullName>
+                <default>false</default>
+                <label>Certidao Negativa</label>
+            </value>
+            <value>
+                <fullName>Curso MOPP</fullName>
+                <default>false</default>
+                <label>Curso MOPP</label>
+            </value>
+            <value>
+                <fullName>Antecedentes Criminais</fullName>
+                <default>false</default>
+                <label>Antecedentes Criminais</label>
+            </value>
+            <value>
+                <fullName>Outro</fullName>
+                <default>false</default>
+                <label>Outro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

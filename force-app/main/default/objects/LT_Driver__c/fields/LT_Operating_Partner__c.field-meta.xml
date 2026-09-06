@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Operating_Partner__c</fullName>
+    <description>Parceiro operacional (franquia) responsavel pelo motorista, quando ele opera por uma base franqueada.</description>
+    <label>Parceiro Operacional</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Motoristas</relationshipLabel>
+    <relationshipName>LT_Drivers</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Selecione uma conta do tipo Parceiro Operacional.</errorMessage>
+        <filterItems>
+            <field>Account.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>LT_Operating_Partner</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+</CustomField>

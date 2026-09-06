@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Vehicle_Two_Wheel_Limit</fullName>
+    <active>true</active>
+    <description>Motos e bicicletas ficam limitadas a 80 pacotes.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(LT_Vehicle_Type__c, "Moto"), ISPICKVAL(LT_Vehicle_Type__c, "Bicicleta / Eletrica")), LT_Cargo_Capacity_Packages__c &gt; 80)</errorConditionFormula>
+    <errorDisplayField>LT_Cargo_Capacity_Packages__c</errorDisplayField>
+    <errorMessage>Motos e bicicletas nao podem ter capacidade acima de 80 pacotes.</errorMessage>
+</ValidationRule>

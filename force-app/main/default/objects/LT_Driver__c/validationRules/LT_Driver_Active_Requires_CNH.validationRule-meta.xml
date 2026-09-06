@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Active_Requires_CNH</fullName>
+    <active>true</active>
+    <description>Motorista Ativo precisa da CNH completa (numero, categoria e validade).</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Driver_Status__c, "Ativo"), OR(ISBLANK(LT_CNH_Number__c), ISBLANK(TEXT(LT_CNH_Category__c)), ISBLANK(LT_CNH_Expiration__c)))</errorConditionFormula>
+    <errorMessage>Para ativar o motorista informe numero, categoria e validade da CNH.</errorMessage>
+</ValidationRule>

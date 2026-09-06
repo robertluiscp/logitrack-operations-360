@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_MEI_ETC_Require_CNPJ</fullName>
+    <active>true</active>
+    <description>Motoristas MEI e ETC precisam ter CNPJ cadastrado.</description>
+    <errorConditionFormula>AND(OR(RecordType.DeveloperName = "LT_MEI", RecordType.DeveloperName = "LT_ETC"), ISBLANK(LT_CNPJ__c))</errorConditionFormula>
+    <errorDisplayField>LT_CNPJ__c</errorDisplayField>
+    <errorMessage>Motoristas MEI e ETC precisam ter o CNPJ cadastrado.</errorMessage>
+</ValidationRule>

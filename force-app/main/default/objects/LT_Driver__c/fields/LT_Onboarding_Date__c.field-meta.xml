@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Onboarding_Date__c</fullName>
+    <description>Data em que o motorista foi ativado e comecou a operar.</description>
+    <label>Data de Ativacao</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

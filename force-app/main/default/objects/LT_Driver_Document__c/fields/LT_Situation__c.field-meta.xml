@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Situation__c</fullName>
+    <description>Situacao do documento conforme a data de validade.</description>
+    <label>Situacao</label>
+    <formula>IF(ISBLANK(LT_Expiration_Date__c), "Sem Validade", IF(LT_Expiration_Date__c &lt; TODAY(), "Vencido", IF(LT_Expiration_Date__c &lt;= TODAY() + 30, "A Vencer", "Vigente")))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

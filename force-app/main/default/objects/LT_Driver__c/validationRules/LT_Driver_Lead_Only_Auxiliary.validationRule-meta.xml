@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Lead_Only_Auxiliary</fullName>
+    <active>true</active>
+    <description>Motorista com Motorista Principal nao pode ele mesmo ser ETC.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_Lead_Driver__c)), RecordType.DeveloperName = "LT_ETC")</errorConditionFormula>
+    <errorDisplayField>LT_Lead_Driver__c</errorDisplayField>
+    <errorMessage>Um motorista ETC nao pode estar subordinado a outro motorista principal.</errorMessage>
+</ValidationRule>

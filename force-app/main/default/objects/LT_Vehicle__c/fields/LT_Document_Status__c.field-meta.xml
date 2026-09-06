@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Document_Status__c</fullName>
+    <description>Situacao dos documentos do veiculo (CRLV e seguro).</description>
+    <label>Situacao Documental</label>
+    <formula>IF(OR(AND(NOT(ISBLANK(LT_CRLV_Expiration__c)), LT_CRLV_Expiration__c &lt; TODAY()), AND(NOT(ISBLANK(LT_Insurance_Expiration__c)), LT_Insurance_Expiration__c &lt; TODAY())), "Documentacao Vencida", IF(OR(AND(NOT(ISBLANK(LT_CRLV_Expiration__c)), LT_CRLV_Expiration__c &lt;= TODAY() + 30), AND(NOT(ISBLANK(LT_Insurance_Expiration__c)), LT_Insurance_Expiration__c &lt;= TODAY() + 30)), "A Regularizar (30 dias)", "Regular"))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

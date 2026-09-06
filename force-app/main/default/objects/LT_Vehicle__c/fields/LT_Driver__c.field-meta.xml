@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver__c</fullName>
+    <description>Motorista que opera este veiculo.</description>
+    <label>Motorista</label>
+    <referenceTo>LT_Driver__c</referenceTo>
+    <relationshipLabel>Veiculos</relationshipLabel>
+    <relationshipName>LT_Vehicles</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

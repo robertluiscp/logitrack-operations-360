@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>LT_Driver_Document_Summary</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Documento apresentado por um motorista durante o cadastro. Detail de Motorista.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableStreamingApi>true</enableStreamingApi>
+    <label>Documento do Motorista</label>
+    <nameField>
+        <displayFormat>DOC-{00000}</displayFormat>
+        <label>Codigo do Documento</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Documentos do Motorista</pluralLabel>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

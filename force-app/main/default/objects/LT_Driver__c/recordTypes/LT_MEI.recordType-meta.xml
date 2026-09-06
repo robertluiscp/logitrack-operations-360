@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_MEI</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>LT_Driver_Highlights</compactLayoutAssignment>
+    <description>Motorista MEI. Possui CNPJ. Qualquer tipo de veiculo. Maximo de 80 pacotes por frete.</description>
+    <label>MEI</label>
+</RecordType>

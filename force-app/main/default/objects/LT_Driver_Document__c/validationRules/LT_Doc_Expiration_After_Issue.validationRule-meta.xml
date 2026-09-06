@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Doc_Expiration_After_Issue</fullName>
+    <active>true</active>
+    <description>A data de validade nao pode ser anterior a data de emissao.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_Issue_Date__c)), NOT(ISBLANK(LT_Expiration_Date__c)), LT_Expiration_Date__c &lt; LT_Issue_Date__c)</errorConditionFormula>
+    <errorDisplayField>LT_Expiration_Date__c</errorDisplayField>
+    <errorMessage>A Data de Validade nao pode ser anterior a Data de Emissao.</errorMessage>
+</ValidationRule>

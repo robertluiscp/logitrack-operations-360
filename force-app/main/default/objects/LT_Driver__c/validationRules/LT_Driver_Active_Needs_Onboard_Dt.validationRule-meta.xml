@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Active_Needs_Onboard_Dt</fullName>
+    <active>true</active>
+    <description>Motorista Ativo precisa da data de ativacao preenchida.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Driver_Status__c, "Ativo"), ISBLANK(LT_Onboarding_Date__c))</errorConditionFormula>
+    <errorDisplayField>LT_Onboarding_Date__c</errorDisplayField>
+    <errorMessage>Informe a Data de Ativacao ao ativar o motorista.</errorMessage>
+</ValidationRule>

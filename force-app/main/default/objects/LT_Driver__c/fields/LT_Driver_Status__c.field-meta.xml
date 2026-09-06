@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Status__c</fullName>
+    <description>Situacao cadastral e operacional do motorista.</description>
+    <inlineHelpText>Somente motoristas Ativos podem receber rotas e romaneios.</inlineHelpText>
+    <label>Status do Motorista</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Em Cadastro</fullName>
+                <default>true</default>
+                <label>Em Cadastro</label>
+            </value>
+            <value>
+                <fullName>Documentacao Pendente</fullName>
+                <default>false</default>
+                <label>Documentacao Pendente</label>
+            </value>
+            <value>
+                <fullName>Ativo</fullName>
+                <default>false</default>
+                <label>Ativo</label>
+            </value>
+            <value>
+                <fullName>Suspenso</fullName>
+                <default>false</default>
+                <label>Suspenso</label>
+            </value>
+            <value>
+                <fullName>Inativo</fullName>
+                <default>false</default>
+                <label>Inativo</label>
+            </value>
+            <value>
+                <fullName>Desligado</fullName>
+                <default>false</default>
+                <label>Desligado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

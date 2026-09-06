@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Owner_Type__c</fullName>
+    <description>Quem e o proprietario do veiculo.</description>
+    <label>Propriedade</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Proprio do Motorista</fullName>
+                <default>false</default>
+                <label>Proprio do Motorista</label>
+            </value>
+            <value>
+                <fullName>Alugado</fullName>
+                <default>false</default>
+                <label>Alugado</label>
+            </value>
+            <value>
+                <fullName>Da Empresa</fullName>
+                <default>false</default>
+                <label>Da Empresa</label>
+            </value>
+            <value>
+                <fullName>Do Parceiro Operacional</fullName>
+                <default>false</default>
+                <label>Do Parceiro Operacional</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

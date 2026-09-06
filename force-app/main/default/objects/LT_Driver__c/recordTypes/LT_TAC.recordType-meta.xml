@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_TAC</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>LT_Driver_Highlights</compactLayoutAssignment>
+    <description>Motorista TAC (Transportador Autonomo de Cargas). Exige veiculo com porta-malas amplo. Minimo de 100 pacotes por frete.</description>
+    <label>TAC</label>
+</RecordType>

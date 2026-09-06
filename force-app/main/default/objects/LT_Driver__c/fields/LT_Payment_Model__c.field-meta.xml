@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Payment_Model__c</fullName>
+    <description>Coleta (First Mile) e Mini Transferencia sao pagos por Romaneio; demais categorias por Frete.</description>
+    <label>Modelo de Pagamento</label>
+    <formula>IF(OR(RecordType.DeveloperName = "LT_Coleta", RecordType.DeveloperName = "LT_MR"), "Romaneio (por pacote)", "Frete (por rota)")</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

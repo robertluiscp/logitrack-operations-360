@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Category_Code__c</fullName>
+    <description>Sigla da categoria do motorista derivada do Record Type.</description>
+    <label>Sigla da Categoria</label>
+    <formula>IF(RecordType.DeveloperName = "LT_TAC", "TAC", IF(RecordType.DeveloperName = "LT_MEI", "MEI", IF(RecordType.DeveloperName = "LT_ETC", "ETC", IF(RecordType.DeveloperName = "LT_MR", "MR", IF(RecordType.DeveloperName = "LT_Coleta", "Coleta", "")))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Code__c</fullName>
+    <description>Identificacao usada na operacao: sigla da categoria + nome (ex.: TAC ADRIANO SOUZA).</description>
+    <label>Identificacao do Motorista</label>
+    <formula>IF(AND(LEN(LT_Category_Code__c) &gt; 0, LT_Category_Code__c &lt;&gt; "Coleta"), LT_Category_Code__c &amp; " " &amp; UPPER(Name), UPPER(Name))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_ETC</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>LT_Driver_Highlights</compactLayoutAssignment>
+    <description>Motorista ETC (Empresa de Transporte de Cargas). Veiculo grande. 300 a 3.000 pacotes/dia. Pode ter motoristas auxiliares.</description>
+    <label>ETC</label>
+</RecordType>

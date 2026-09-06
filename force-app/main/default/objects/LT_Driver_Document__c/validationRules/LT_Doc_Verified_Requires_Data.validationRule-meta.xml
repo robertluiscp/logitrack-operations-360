@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Doc_Verified_Requires_Data</fullName>
+    <active>true</active>
+    <description>Documento verificado exige responsavel e data da verificacao.</description>
+    <errorConditionFormula>AND(LT_Verified__c, OR(ISBLANK(LT_Verified_By__c), ISBLANK(LT_Verification_Date__c)))</errorConditionFormula>
+    <errorDisplayField>LT_Verified_By__c</errorDisplayField>
+    <errorMessage>Ao marcar como Verificado informe quem verificou e a data.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_CNH_Status__c</fullName>
+    <description>Situacao calculada da CNH conforme a data de validade.</description>
+    <label>Situacao da CNH</label>
+    <formula>IF(ISBLANK(LT_CNH_Expiration__c), "Sem CNH cadastrada", IF(LT_CNH_Expiration__c &lt; TODAY(), "Vencida", IF(LT_CNH_Expiration__c &lt;= TODAY() + 30, "A vencer (30 dias)", "Vigente")))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

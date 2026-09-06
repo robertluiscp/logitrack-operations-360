@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Vehicle_Requirement__c</fullName>
+    <description>Tipo de veiculo exigido pela categoria do motorista.</description>
+    <label>Exigencia de Veiculo</label>
+    <formula>IF(RecordType.DeveloperName = "LT_TAC", "Veiculo com porta-malas amplo (Fiorino, sedan grande, station wagon)", IF(RecordType.DeveloperName = "LT_MEI", "Qualquer veiculo (moto, carro, bicicleta) - ate 80 pacotes", IF(RecordType.DeveloperName = "LT_ETC", "Veiculo grande: Van, VUC ou caminhao - 300 a 3.000 pacotes/dia", IF(RecordType.DeveloperName = "LT_Coleta", "Veiculo compativel com o volume do roteiro de coleta", IF(RecordType.DeveloperName = "LT_MR", "Veiculo grande para transferencia - 300 a 3.000 pacotes", "")))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

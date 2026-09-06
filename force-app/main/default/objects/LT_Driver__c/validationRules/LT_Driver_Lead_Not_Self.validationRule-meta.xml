@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Lead_Not_Self</fullName>
+    <active>true</active>
+    <description>O motorista nao pode ser o proprio motorista principal.</description>
+    <errorConditionFormula>LT_Lead_Driver__c = Id</errorConditionFormula>
+    <errorDisplayField>LT_Lead_Driver__c</errorDisplayField>
+    <errorMessage>Um motorista nao pode ser o proprio Motorista Principal.</errorMessage>
+</ValidationRule>

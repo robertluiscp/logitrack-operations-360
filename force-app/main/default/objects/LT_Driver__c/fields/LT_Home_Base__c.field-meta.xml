@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Home_Base__c</fullName>
+    <description>Base de entrega ou centro de distribuicao ao qual o motorista esta vinculado.</description>
+    <inlineHelpText>Unidade logistica onde o motorista faz a triagem e retirada dos pacotes.</inlineHelpText>
+    <label>Base Vinculada</label>
+    <referenceTo>LT_Logistics_Unit__c</referenceTo>
+    <relationshipLabel>Motoristas</relationshipLabel>
+    <relationshipName>LT_Drivers</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Vincule o motorista a uma Base de Entrega ou Centro de Distribuicao ativo.</errorMessage>
+        <filterItems>
+            <field>LT_Logistics_Unit__c.Unit_Status__c</field>
+            <operation>equals</operation>
+            <value>Ativa</value>
+        </filterItems>
+        <filterItems>
+            <field>LT_Logistics_Unit__c.Unit_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Regional</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+</CustomField>

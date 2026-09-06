@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_File_Link__c</fullName>
+    <description>Link para o arquivo digitalizado do documento.</description>
+    <label>Link do Arquivo</label>
+    <required>false</required>
+    <type>Url</type>
+</CustomField>

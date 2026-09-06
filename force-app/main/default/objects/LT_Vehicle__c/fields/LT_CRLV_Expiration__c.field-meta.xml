@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_CRLV_Expiration__c</fullName>
+    <description>Data de vencimento do licenciamento anual do veiculo.</description>
+    <label>Vencimento do Licenciamento (CRLV)</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

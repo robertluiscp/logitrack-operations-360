@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Vehicle_Type__c</fullName>
+    <description>Categoria fisica do veiculo.</description>
+    <inlineHelpText>Motos e bicicletas ficam limitadas a 80 pacotes.</inlineHelpText>
+    <label>Tipo de Veiculo</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bicicleta / Eletrica</fullName>
+                <default>false</default>
+                <label>Bicicleta / Eletrica</label>
+            </value>
+            <value>
+                <fullName>Moto</fullName>
+                <default>false</default>
+                <label>Moto</label>
+            </value>
+            <value>
+                <fullName>Carro de Passeio</fullName>
+                <default>false</default>
+                <label>Carro de Passeio</label>
+            </value>
+            <value>
+                <fullName>Fiorino / Furgao Pequeno</fullName>
+                <default>false</default>
+                <label>Fiorino / Furgao Pequeno</label>
+            </value>
+            <value>
+                <fullName>Van</fullName>
+                <default>false</default>
+                <label>Van</label>
+            </value>
+            <value>
+                <fullName>VUC</fullName>
+                <default>false</default>
+                <label>VUC</label>
+            </value>
+            <value>
+                <fullName>Caminhao 3/4</fullName>
+                <default>false</default>
+                <label>Caminhao 3/4</label>
+            </value>
+            <value>
+                <fullName>Caminhao Toco</fullName>
+                <default>false</default>
+                <label>Caminhao Toco</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_MR</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>LT_Driver_Highlights</compactLayoutAssignment>
+    <description>Motorista de Mini Transferencia. Leva cargas para cidades distantes (mais de 60 km da base). Pago via Romaneio.</description>
+    <label>Mini Transferencia (MR)</label>
+</RecordType>

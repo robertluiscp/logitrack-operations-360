@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doc_Vencida</fullName>
+    <columns>LT_Plate__c</columns>
+    <columns>LT_Vehicle_Type__c</columns>
+    <columns>LT_Vehicle_Status__c</columns>
+    <columns>LT_CRLV_Expiration__c</columns>
+    <columns>LT_Insurance_Expiration__c</columns>
+    <columns>LT_Document_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LT_Document_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Regular</value>
+    </filters>
+    <label>Documentacao Pendente</label>
+</ListView>

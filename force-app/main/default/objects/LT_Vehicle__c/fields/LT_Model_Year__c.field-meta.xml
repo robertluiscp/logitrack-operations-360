@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Model_Year__c</fullName>
+    <description>Ano de fabricacao/modelo do veiculo.</description>
+    <label>Ano do Modelo</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <precision>4</precision>
+    <scale>0</scale>
+</CustomField>

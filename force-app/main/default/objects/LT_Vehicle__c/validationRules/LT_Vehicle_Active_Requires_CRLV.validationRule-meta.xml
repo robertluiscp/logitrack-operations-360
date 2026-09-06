@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Vehicle_Active_Requires_CRLV</fullName>
+    <active>true</active>
+    <description>Veiculo Ativo precisa de licenciamento (CRLV) valido.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Vehicle_Status__c, "Ativo"), OR(ISBLANK(LT_CRLV_Expiration__c), LT_CRLV_Expiration__c &lt; TODAY()))</errorConditionFormula>
+    <errorDisplayField>LT_CRLV_Expiration__c</errorDisplayField>
+    <errorMessage>Veiculo Ativo precisa de licenciamento (CRLV) dentro da validade.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Max_Packages_Per_Trip__c</fullName>
+    <description>Quantidade maxima de pacotes por frete conforme a categoria (0 = sem maximo).</description>
+    <label>Maximo de Pacotes por Frete</label>
+    <formula>IF(RecordType.DeveloperName = "LT_MEI", 80, IF(RecordType.DeveloperName = "LT_ETC", 3000, IF(RecordType.DeveloperName = "LT_MR", 3000, 0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>6</precision>
+    <scale>0</scale>
+    <type>Number</type>
+</CustomField>

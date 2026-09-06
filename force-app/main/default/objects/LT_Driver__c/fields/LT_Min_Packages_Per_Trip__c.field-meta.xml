@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Min_Packages_Per_Trip__c</fullName>
+    <description>Quantidade minima de pacotes por frete conforme a categoria (0 = sem minimo).</description>
+    <label>Minimo de Pacotes por Frete</label>
+    <formula>IF(RecordType.DeveloperName = "LT_TAC", 100, IF(RecordType.DeveloperName = "LT_ETC", 300, IF(RecordType.DeveloperName = "LT_MR", 300, 0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>6</precision>
+    <scale>0</scale>
+    <type>Number</type>
+</CustomField>

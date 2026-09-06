@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Vehicle_Year_Range</fullName>
+    <active>true</active>
+    <description>Ano do modelo fora da faixa aceitavel.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_Model_Year__c)), OR(LT_Model_Year__c &lt; 1990, LT_Model_Year__c &gt; YEAR(TODAY()) + 1))</errorConditionFormula>
+    <errorDisplayField>LT_Model_Year__c</errorDisplayField>
+    <errorMessage>Informe um Ano do Modelo entre 1990 e o proximo ano.</errorMessage>
+</ValidationRule>

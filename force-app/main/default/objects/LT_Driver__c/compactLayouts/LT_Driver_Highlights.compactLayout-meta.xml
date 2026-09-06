@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Driver_Highlights</fullName>
+    <fields>LT_Driver_Code__c</fields>
+    <fields>LT_Driver_Status__c</fields>
+    <fields>LT_Category_Code__c</fields>
+    <fields>LT_Home_Base__c</fields>
+    <fields>LT_CNH_Status__c</fields>
+    <fields>LT_Phone__c</fields>
+    <label>Motorista - Destaques</label>
+</CompactLayout>
