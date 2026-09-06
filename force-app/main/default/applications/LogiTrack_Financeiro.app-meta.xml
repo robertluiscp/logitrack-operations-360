@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#1B5E20</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Aplicativo Financeiro da LogiTrack: solicitacoes de pagamento, aprovacoes por alcada, pagamentos e despesas por centro de custo.</description>
+    <formFactors>Large</formFactors>
+    <formFactors>Small</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>LogiTrack Financeiro</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>LT_Payment_Request__c</tabs>
+    <tabs>LT_Payment__c</tabs>
+    <tabs>LT_Expense__c</tabs>
+    <tabs>LT_Manifest__c</tabs>
+    <tabs>LT_Loss_Claim__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

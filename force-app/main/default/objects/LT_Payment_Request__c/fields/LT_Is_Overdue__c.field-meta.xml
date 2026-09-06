@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Is_Overdue__c</fullName>
+    <description>Solicitacao em aberto com vencimento no passado.</description>
+    <label>Vencida</label>
+    <formula>AND(NOT(ISPICKVAL(LT_Status__c, "Paga")), NOT(ISPICKVAL(LT_Status__c, "Reprovada")), NOT(ISPICKVAL(LT_Status__c, "Cancelada")), NOT(ISBLANK(LT_Due_Date__c)), LT_Due_Date__c &lt; TODAY())</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Checkbox</type>
+</CustomField>

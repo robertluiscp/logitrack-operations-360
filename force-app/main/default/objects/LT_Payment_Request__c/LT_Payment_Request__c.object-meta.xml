@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>LT_Payment_Request_Summary</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Solicitacao de Pagamento - LogiTrack Operations 360.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableStreamingApi>true</enableStreamingApi>
+    <label>Solicitacao de Pagamento</label>
+    <nameField>
+        <displayFormat>SOL-{000000}</displayFormat>
+        <label>Codigo da Solicitacao</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Solicitacoes de Pagamento</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

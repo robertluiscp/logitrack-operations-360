@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Depois do salvamento, quando os pagamentos confirmados cobrem o valor de uma solicitacao aprovada, marca a solicitacao como Paga.</description>
+    <environments>Default</environments>
+    <interviewLabel>FIN - Solicitacao Quitada {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FIN - Solicitacao Quitada vira Paga</label>
+    <processMetadataValues><name>BuilderType</name><value><stringValue>LightningFlowBuilder</stringValue></value></processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Marcar_Paga</name>
+        <label>Marcar Solicitacao como Paga</label>
+        <locationX>176</locationX>
+        <locationY>288</locationY>
+        <inputAssignments>
+            <field>LT_Status__c</field>
+            <value><stringValue>Paga</stringValue></value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Marcar_Paga</targetReference></connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>AND(
+  {!$Record.LT_Fully_Paid__c},
+  ISPICKVAL({!$Record.LT_Status__c}, "Aprovada")
+)</filterFormula>
+        <object>LT_Payment_Request__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

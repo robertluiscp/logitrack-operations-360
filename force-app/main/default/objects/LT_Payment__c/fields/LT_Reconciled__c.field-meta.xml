@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Reconciled__c</fullName>
+    <description>Pagamento conferido contra o extrato bancario.</description>
+    <label>Conciliado</label>
+    <required>false</required>
+    <defaultValue>false</defaultValue>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

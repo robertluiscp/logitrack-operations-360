@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PAY_Reversed_Not_Reconciled</fullName>
+    <active>true</active>
+    <description>Pagamento estornado nao pode estar conciliado.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Status__c, "Estornado"), LT_Reconciled__c)</errorConditionFormula>
+    <errorDisplayField>LT_Reconciled__c</errorDisplayField>
+    <errorMessage>Um pagamento estornado nao pode ficar marcado como conciliado.</errorMessage>
+</ValidationRule>

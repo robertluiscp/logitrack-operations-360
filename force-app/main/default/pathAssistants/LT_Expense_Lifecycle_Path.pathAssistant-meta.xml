@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>LT_Expense__c</entityName>
+    <fieldName>LT_Status__c</fieldName>
+    <masterLabel>Fluxo da Despesa</masterLabel>
+    <recordTypeName>__MASTER__</recordTypeName>
+    <pathAssistantSteps>
+        <fieldNames>LT_Expense_Category__c</fieldNames>
+        <fieldNames>LT_Amount__c</fieldNames>
+        <fieldNames>LT_Competency_Month__c</fieldNames>
+        <fieldNames>LT_Cost_Center__c</fieldNames>
+        <info>&lt;p&gt;Despesa planejada para o mes de competencia. Classifique categoria e centro de custo.&lt;/p&gt;</info>
+        <picklistValueName>Prevista</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Supplier__c</fieldNames>
+        <fieldNames>LT_Expense_Date__c</fieldNames>
+        <info>&lt;p&gt;Despesa incorrida. Informe o fornecedor e a data efetiva.&lt;/p&gt;</info>
+        <picklistValueName>Realizada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Invoice_Number__c</fieldNames>
+        <fieldNames>LT_Payment_Request__c</fieldNames>
+        <info>&lt;p&gt;Despesa quitada. Vincule a nota fiscal ou a solicitacao de pagamento.&lt;/p&gt;</info>
+        <picklistValueName>Paga</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Despesa cancelada ou nao realizada.&lt;/p&gt;</info>
+        <picklistValueName>Cancelada</picklistValueName>
+    </pathAssistantSteps>
+</PathAssistant>

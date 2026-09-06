@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Por_Base</fullName>
+    <columns>NAME</columns>
+    <columns>LT_Base__c</columns>
+    <columns>LT_Expense_Category__c</columns>
+    <columns>LT_Amount__c</columns>
+    <columns>LT_Status__c</columns>
+    <columns>LT_Competency_Month__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LT_Base__c</field>
+        <operation>notEqual</operation>
+        <value></value>
+    </filters>
+    <label>Com Base Definida</label>
+</ListView>

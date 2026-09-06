@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Bank_Account__c</fullName>
+    <description>Conta bancaria de onde saiu o recurso.</description>
+    <label>Conta de Origem</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conta Corrente - Itau</fullName>
+                <default>false</default>
+                <label>Conta Corrente - Itau</label>
+            </value>
+            <value>
+                <fullName>Conta Corrente - Bradesco</fullName>
+                <default>false</default>
+                <label>Conta Corrente - Bradesco</label>
+            </value>
+            <value>
+                <fullName>Conta Pagamentos - Nubank PJ</fullName>
+                <default>false</default>
+                <label>Conta Pagamentos - Nubank PJ</label>
+            </value>
+            <value>
+                <fullName>Caixa / Fundo Fixo</fullName>
+                <default>false</default>
+                <label>Caixa / Fundo Fixo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

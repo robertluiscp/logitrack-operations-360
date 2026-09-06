@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>LT_Payment_Request__c</entityName>
+    <fieldName>LT_Status__c</fieldName>
+    <masterLabel>Fluxo da Solicitacao de Pagamento</masterLabel>
+    <recordTypeName>__MASTER__</recordTypeName>
+    <pathAssistantSteps>
+        <fieldNames>LT_Request_Type__c</fieldNames>
+        <fieldNames>LT_Amount__c</fieldNames>
+        <fieldNames>LT_Due_Date__c</fieldNames>
+        <fieldNames>LT_Payee_Name__c</fieldNames>
+        <info>&lt;p&gt;Monte a solicitacao: tipo, valor, favorecido, vencimento e justificativa. Depois submeta para aprovacao.&lt;/p&gt;</info>
+        <picklistValueName>Rascunho</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Approval_Level__c</fieldNames>
+        <fieldNames>LT_Priority__c</fieldNames>
+        <info>&lt;p&gt;Aguardando aprovacao por alcada (Coordenacao sempre, Gerencia acima de R$ 2.000, Diretoria acima de R$ 10.000).&lt;/p&gt;</info>
+        <picklistValueName>Em Aprovacao</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Approved_By__c</fieldNames>
+        <fieldNames>LT_Approval_Date__c</fieldNames>
+        <fieldNames>LT_Payment_Method__c</fieldNames>
+        <info>&lt;p&gt;Solicitacao aprovada. Lance os pagamentos; quando o valor pago cobrir o total, a solicitacao vira Paga automaticamente.&lt;/p&gt;</info>
+        <picklistValueName>Aprovada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Amount_Paid__c</fieldNames>
+        <fieldNames>LT_Last_Payment_Date__c</fieldNames>
+        <info>&lt;p&gt;Pagamento concluido e conciliado.&lt;/p&gt;</info>
+        <picklistValueName>Paga</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>LT_Rejection_Reason__c</fieldNames>
+        <info>&lt;p&gt;Solicitacao reprovada. Registre o motivo da reprovacao.&lt;/p&gt;</info>
+        <picklistValueName>Reprovada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Solicitacao cancelada pelo solicitante antes do pagamento.&lt;/p&gt;</info>
+        <picklistValueName>Cancelada</picklistValueName>
+    </pathAssistantSteps>
+</PathAssistant>

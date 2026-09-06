@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Payment_Method__c</fullName>
+    <description>Meio pelo qual o pagamento sera efetuado.</description>
+    <label>Forma de Pagamento</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PIX</fullName>
+                <default>true</default>
+                <label>PIX</label>
+            </value>
+            <value>
+                <fullName>TED / Transferencia</fullName>
+                <default>false</default>
+                <label>TED / Transferencia</label>
+            </value>
+            <value>
+                <fullName>Boleto</fullName>
+                <default>false</default>
+                <label>Boleto</label>
+            </value>
+            <value>
+                <fullName>Cartao Corporativo</fullName>
+                <default>false</default>
+                <label>Cartao Corporativo</label>
+            </value>
+            <value>
+                <fullName>Dinheiro (Caixa)</fullName>
+                <default>false</default>
+                <label>Dinheiro (Caixa)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

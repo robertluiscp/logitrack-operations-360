@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PR_Paid_Not_Over_Requested</fullName>
+    <active>true</active>
+    <description>O valor pago nao pode exceder o valor solicitado.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_Amount_Paid__c)), NOT(ISBLANK(LT_Amount__c)), LT_Amount_Paid__c &gt; LT_Amount__c)</errorConditionFormula>
+    <errorDisplayField>LT_Amount__c</errorDisplayField>
+    <errorMessage>O total pago ultrapassa o valor solicitado. Ajuste a solicitacao ou os pagamentos.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Status__c</fullName>
+    <description>Situacao da transacao de pagamento.</description>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agendado</fullName>
+                <default>true</default>
+                <label>Agendado</label>
+            </value>
+            <value>
+                <fullName>Processando</fullName>
+                <default>false</default>
+                <label>Processando</label>
+            </value>
+            <value>
+                <fullName>Confirmado</fullName>
+                <default>false</default>
+                <label>Confirmado</label>
+            </value>
+            <value>
+                <fullName>Falhou</fullName>
+                <default>false</default>
+                <label>Falhou</label>
+            </value>
+            <value>
+                <fullName>Estornado</fullName>
+                <default>false</default>
+                <label>Estornado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

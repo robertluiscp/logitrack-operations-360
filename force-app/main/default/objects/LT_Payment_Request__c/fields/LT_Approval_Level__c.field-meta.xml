@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Approval_Level__c</fullName>
+    <description>Nivel de alcada exigido pelo valor solicitado.</description>
+    <label>Alcada de Aprovacao</label>
+    <formula>IF(BLANKVALUE(LT_Amount__c, 0) &gt;= 10000, "Diretoria", IF(BLANKVALUE(LT_Amount__c, 0) &gt;= 2000, "Gerencia", "Coordenacao"))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

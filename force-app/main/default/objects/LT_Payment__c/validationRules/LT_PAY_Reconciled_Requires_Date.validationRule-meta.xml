@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PAY_Reconciled_Requires_Date</fullName>
+    <active>true</active>
+    <description>Pagamento conciliado exige a data da conciliacao.</description>
+    <errorConditionFormula>AND(LT_Reconciled__c, ISBLANK(LT_Reconciliation_Date__c))</errorConditionFormula>
+    <errorDisplayField>LT_Reconciliation_Date__c</errorDisplayField>
+    <errorMessage>Informe a data da conciliacao.</errorMessage>
+</ValidationRule>

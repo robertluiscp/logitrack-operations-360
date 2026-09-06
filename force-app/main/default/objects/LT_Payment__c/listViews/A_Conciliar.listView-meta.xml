@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A_Conciliar</fullName>
+    <columns>NAME</columns>
+    <columns>LT_Amount__c</columns>
+    <columns>LT_Bank_Account__c</columns>
+    <columns>LT_Payment_Date__c</columns>
+    <columns>LT_Transaction_Id__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LT_Status__c</field>
+        <operation>equals</operation>
+        <value>Confirmado</value>
+    </filters>
+    <filters>
+        <field>LT_Reconciled__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>A Conciliar</label>
+</ListView>

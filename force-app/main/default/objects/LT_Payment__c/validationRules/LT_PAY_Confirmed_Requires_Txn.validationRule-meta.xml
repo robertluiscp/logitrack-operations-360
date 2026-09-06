@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PAY_Confirmed_Requires_Txn</fullName>
+    <active>true</active>
+    <description>Pagamento confirmado exige o ID da transacao.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Status__c, "Confirmado"), ISBLANK(LT_Transaction_Id__c))</errorConditionFormula>
+    <errorDisplayField>LT_Transaction_Id__c</errorDisplayField>
+    <errorMessage>Informe o ID da transacao ao confirmar o pagamento.</errorMessage>
+</ValidationRule>

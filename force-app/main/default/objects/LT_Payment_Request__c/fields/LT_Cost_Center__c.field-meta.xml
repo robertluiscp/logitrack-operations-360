@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Cost_Center__c</fullName>
+    <description>Area a que a despesa e alocada.</description>
+    <label>Centro de Custo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Operacao - Ultima Milha</fullName>
+                <default>false</default>
+                <label>Operacao - Ultima Milha</label>
+            </value>
+            <value>
+                <fullName>Operacao - Primeira Milha</fullName>
+                <default>false</default>
+                <label>Operacao - Primeira Milha</label>
+            </value>
+            <value>
+                <fullName>Comercial</fullName>
+                <default>false</default>
+                <label>Comercial</label>
+            </value>
+            <value>
+                <fullName>Cadastro / Frota</fullName>
+                <default>false</default>
+                <label>Cadastro / Frota</label>
+            </value>
+            <value>
+                <fullName>SAC</fullName>
+                <default>false</default>
+                <label>SAC</label>
+            </value>
+            <value>
+                <fullName>Administrativo / RH</fullName>
+                <default>false</default>
+                <label>Administrativo / RH</label>
+            </value>
+            <value>
+                <fullName>Financeiro</fullName>
+                <default>false</default>
+                <label>Financeiro</label>
+            </value>
+            <value>
+                <fullName>Expansao / Novas Bases</fullName>
+                <default>false</default>
+                <label>Expansao / Novas Bases</label>
+            </value>
+            <value>
+                <fullName>Diretoria</fullName>
+                <default>false</default>
+                <label>Diretoria</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

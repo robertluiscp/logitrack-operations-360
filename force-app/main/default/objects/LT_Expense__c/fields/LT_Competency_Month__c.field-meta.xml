@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Competency_Month__c</fullName>
+    <description>Mes contabil no formato AAAA-MM.</description>
+    <inlineHelpText>Use o formato AAAA-MM, por exemplo 2026-08.</inlineHelpText>
+    <label>Mes de Competencia</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <length>7</length>
+    <unique>false</unique>
+</CustomField>

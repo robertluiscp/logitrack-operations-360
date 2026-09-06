@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_EXP_Paid_Requires_Support</fullName>
+    <active>true</active>
+    <description>Despesa paga exige nota fiscal ou solicitacao de pagamento.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Status__c, "Paga"), ISBLANK(LT_Invoice_Number__c), ISBLANK(LT_Payment_Request__c))</errorConditionFormula>
+    <errorDisplayField>LT_Status__c</errorDisplayField>
+    <errorMessage>Vincule uma nota fiscal ou uma solicitacao de pagamento para marcar a despesa como paga.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Payee_Pix_Key__c</fullName>
+    <description>Chave PIX do favorecido.</description>
+    <label>Chave PIX</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <length>80</length>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Days_To_Due__c</fullName>
+    <description>Dias entre hoje e o vencimento (negativo quando vencido).</description>
+    <label>Dias ate o Vencimento</label>
+    <formula>IF(ISBLANK(LT_Due_Date__c), NULL, LT_Due_Date__c - TODAY())</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>6</precision>
+    <scale>0</scale>
+    <type>Number</type>
+</CustomField>

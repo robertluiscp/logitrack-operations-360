@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PR_Approved_Requires_Date</fullName>
+    <active>true</active>
+    <description>Solicitacao aprovada ou paga exige data de aprovacao.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(LT_Status__c, "Aprovada"), ISPICKVAL(LT_Status__c, "Paga")), ISBLANK(LT_Approval_Date__c))</errorConditionFormula>
+    <errorDisplayField>LT_Approval_Date__c</errorDisplayField>
+    <errorMessage>Informe a data de aprovacao.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PR_Due_Not_Before_Request</fullName>
+    <active>true</active>
+    <description>O vencimento nao pode ser anterior a data da solicitacao.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_Due_Date__c)), NOT(ISBLANK(LT_Request_Date__c)), LT_Due_Date__c &lt; LT_Request_Date__c)</errorConditionFormula>
+    <errorDisplayField>LT_Due_Date__c</errorDisplayField>
+    <errorMessage>A data de vencimento nao pode ser anterior a data da solicitacao.</errorMessage>
+</ValidationRule>

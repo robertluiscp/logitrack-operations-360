@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vencidas</fullName>
+    <columns>NAME</columns>
+    <columns>LT_Payee_Name__c</columns>
+    <columns>LT_Amount__c</columns>
+    <columns>LT_Status__c</columns>
+    <columns>LT_Due_Date__c</columns>
+    <columns>LT_Days_To_Due__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LT_Is_Overdue__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Vencidas</label>
+</ListView>

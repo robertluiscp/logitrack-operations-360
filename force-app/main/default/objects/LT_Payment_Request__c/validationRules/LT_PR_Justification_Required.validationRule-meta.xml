@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PR_Justification_Required</fullName>
+    <active>true</active>
+    <description>Solicitacoes exigem justificativa antes de sair do rascunho.</description>
+    <errorConditionFormula>AND(NOT(ISPICKVAL(LT_Status__c, "Rascunho")), ISBLANK(LT_Description__c))</errorConditionFormula>
+    <errorDisplayField>LT_Description__c</errorDisplayField>
+    <errorMessage>Preencha a justificativa antes de submeter a solicitacao.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Last_Payment_Date__c</fullName>
+    <description>Data do pagamento mais recente.</description>
+    <label>Ultimo Pagamento</label>
+    <summarizedField>LT_Payment__c.LT_Payment_Date__c</summarizedField>
+    <summaryForeignKey>LT_Payment__c.LT_Payment_Request__c</summaryForeignKey>
+    <summaryOperation>Max</summaryOperation>
+    <type>Summary</type>
+</CustomField>

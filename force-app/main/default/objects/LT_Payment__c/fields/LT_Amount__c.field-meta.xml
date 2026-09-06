@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Amount__c</fullName>
+    <description>Valor efetivamente pago nesta transacao.</description>
+    <label>Valor Pago</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Currency</type>
+    <precision>14</precision>
+    <scale>2</scale>
+</CustomField>

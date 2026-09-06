@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PR_Shipper_Type_Requires_Shipper</fullName>
+    <active>true</active>
+    <description>Ressarcimento a embarcador exige o embarcador.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Request_Type__c, "Pagamento a Embarcador (Ressarcimento)"), ISBLANK(LT_Shipper__c))</errorConditionFormula>
+    <errorDisplayField>LT_Shipper__c</errorDisplayField>
+    <errorMessage>Informe o embarcador para pagamentos de ressarcimento.</errorMessage>
+</ValidationRule>

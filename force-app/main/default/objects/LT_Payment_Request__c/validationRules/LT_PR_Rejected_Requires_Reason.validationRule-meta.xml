@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PR_Rejected_Requires_Reason</fullName>
+    <active>true</active>
+    <description>Solicitacao reprovada exige o motivo da reprovacao.</description>
+    <errorConditionFormula>AND(ISPICKVAL(LT_Status__c, "Reprovada"), ISBLANK(LT_Rejection_Reason__c), NOT(ISCHANGED(LT_Status__c)))</errorConditionFormula>
+    <errorDisplayField>LT_Rejection_Reason__c</errorDisplayField>
+    <errorMessage>Informe o motivo da reprovacao.</errorMessage>
+</ValidationRule>

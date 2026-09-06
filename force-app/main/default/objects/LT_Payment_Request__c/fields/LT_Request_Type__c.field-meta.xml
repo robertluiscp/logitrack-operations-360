@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Request_Type__c</fullName>
+    <description>Natureza do pagamento solicitado.</description>
+    <label>Tipo de Solicitacao</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pagamento a Embarcador (Ressarcimento)</fullName>
+                <default>false</default>
+                <label>Pagamento a Embarcador (Ressarcimento)</label>
+            </value>
+            <value>
+                <fullName>Pagamento a Motorista (Romaneio)</fullName>
+                <default>false</default>
+                <label>Pagamento a Motorista (Romaneio)</label>
+            </value>
+            <value>
+                <fullName>Folha de Pagamento (Funcionarios)</fullName>
+                <default>false</default>
+                <label>Folha de Pagamento (Funcionarios)</label>
+            </value>
+            <value>
+                <fullName>Insumos para Base/Escritorio</fullName>
+                <default>false</default>
+                <label>Insumos para Base/Escritorio</label>
+            </value>
+            <value>
+                <fullName>Verba para Viagem/Projeto</fullName>
+                <default>false</default>
+                <label>Verba para Viagem/Projeto</label>
+            </value>
+            <value>
+                <fullName>Abertura de Galpao/Nova Base</fullName>
+                <default>false</default>
+                <label>Abertura de Galpao/Nova Base</label>
+            </value>
+            <value>
+                <fullName>Reembolso de Despesa</fullName>
+                <default>false</default>
+                <label>Reembolso de Despesa</label>
+            </value>
+            <value>
+                <fullName>Fornecedor / Prestador de Servico</fullName>
+                <default>false</default>
+                <label>Fornecedor / Prestador de Servico</label>
+            </value>
+            <value>
+                <fullName>Outro</fullName>
+                <default>false</default>
+                <label>Outro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

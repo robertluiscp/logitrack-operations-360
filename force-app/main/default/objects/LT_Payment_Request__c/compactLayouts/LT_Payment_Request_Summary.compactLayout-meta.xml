@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Payment_Request_Summary</fullName>
+    <fields>Name</fields>
+    <fields>LT_Request_Type__c</fields>
+    <fields>LT_Payee_Name__c</fields>
+    <fields>LT_Amount__c</fields>
+    <fields>LT_Status__c</fields>
+    <fields>LT_Due_Date__c</fields>
+    <label>Solicitacao - Resumo</label>
+</CompactLayout>

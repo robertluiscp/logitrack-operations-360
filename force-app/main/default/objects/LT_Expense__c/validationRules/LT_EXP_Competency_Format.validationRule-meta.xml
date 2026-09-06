@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_EXP_Competency_Format</fullName>
+    <active>true</active>
+    <description>O mes de competencia deve estar no formato AAAA-MM.</description>
+    <errorConditionFormula>NOT(REGEX(LT_Competency_Month__c, "[0-9]{4}-(0[1-9]|1[0-2])"))</errorConditionFormula>
+    <errorDisplayField>LT_Competency_Month__c</errorDisplayField>
+    <errorMessage>Use o formato AAAA-MM no mes de competencia (ex.: 2026-08).</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Balance__c</fullName>
+    <description>Valor solicitado menos o valor ja pago.</description>
+    <label>Saldo a Pagar</label>
+    <formula>BLANKVALUE(LT_Amount__c, 0) - BLANKVALUE(LT_Amount_Paid__c, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>16</precision>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_PR_Amount_Positive</fullName>
+    <active>true</active>
+    <description>O valor solicitado deve ser maior que zero.</description>
+    <errorConditionFormula>BLANKVALUE(LT_Amount__c, 0) &lt;= 0</errorConditionFormula>
+    <errorDisplayField>LT_Amount__c</errorDisplayField>
+    <errorMessage>Informe um valor solicitado maior que zero.</errorMessage>
+</ValidationRule>

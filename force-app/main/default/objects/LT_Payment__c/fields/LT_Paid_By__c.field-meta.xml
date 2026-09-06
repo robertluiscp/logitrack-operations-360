@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Paid_By__c</fullName>
+    <description>Usuario que executou o pagamento.</description>
+    <label>Pago Por</label>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Pagamentos Executados</relationshipLabel>
+    <relationshipName>LT_Executed_Payments</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Expense_Category__c</fullName>
+    <description>Natureza contabil da despesa.</description>
+    <label>Categoria da Despesa</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Combustivel</fullName>
+                <default>false</default>
+                <label>Combustivel</label>
+            </value>
+            <value>
+                <fullName>Manutencao de Veiculos</fullName>
+                <default>false</default>
+                <label>Manutencao de Veiculos</label>
+            </value>
+            <value>
+                <fullName>Aluguel de Base/Galpao</fullName>
+                <default>false</default>
+                <label>Aluguel de Base/Galpao</label>
+            </value>
+            <value>
+                <fullName>Energia / Agua / Internet</fullName>
+                <default>false</default>
+                <label>Energia / Agua / Internet</label>
+            </value>
+            <value>
+                <fullName>Material de Embalagem</fullName>
+                <default>false</default>
+                <label>Material de Embalagem</label>
+            </value>
+            <value>
+                <fullName>Equipamentos / EPI</fullName>
+                <default>false</default>
+                <label>Equipamentos / EPI</label>
+            </value>
+            <value>
+                <fullName>Folha / Encargos</fullName>
+                <default>false</default>
+                <label>Folha / Encargos</label>
+            </value>
+            <value>
+                <fullName>Frete / Transferencia (SC/MR)</fullName>
+                <default>false</default>
+                <label>Frete / Transferencia (SC/MR)</label>
+            </value>
+            <value>
+                <fullName>Ressarcimento a Embarcador</fullName>
+                <default>false</default>
+                <label>Ressarcimento a Embarcador</label>
+            </value>
+            <value>
+                <fullName>Penalizacao / Multa</fullName>
+                <default>false</default>
+                <label>Penalizacao / Multa</label>
+            </value>
+            <value>
+                <fullName>Viagem / Diaria</fullName>
+                <default>false</default>
+                <label>Viagem / Diaria</label>
+            </value>
+            <value>
+                <fullName>Servicos de Terceiros</fullName>
+                <default>false</default>
+                <label>Servicos de Terceiros</label>
+            </value>
+            <value>
+                <fullName>Outras Despesas</fullName>
+                <default>false</default>
+                <label>Outras Despesas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
