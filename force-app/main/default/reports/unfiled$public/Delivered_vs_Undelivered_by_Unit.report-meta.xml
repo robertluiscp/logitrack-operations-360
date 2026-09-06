@@ -24,8 +24,8 @@
             <column>Operational_Indicator__c.Reference_Date__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>7/22/2026</value>
+            <operator>greaterOrEqual</operator>
+            <value>8/1/2026</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
