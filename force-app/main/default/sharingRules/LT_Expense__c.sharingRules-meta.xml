@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Share_Expenses_With_Finance</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Compartilha as despesas com o time do Financeiro</description>
+        <label>Compartilha as despesas com o time do Financeiro</label>
+        <sharedTo>
+            <group>LT_Financeiro</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

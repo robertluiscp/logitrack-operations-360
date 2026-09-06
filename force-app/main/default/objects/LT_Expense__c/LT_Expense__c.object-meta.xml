@@ -17,6 +17,6 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Despesas</pluralLabel>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>Read</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

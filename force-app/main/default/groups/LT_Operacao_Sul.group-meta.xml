@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Time da operacao da regional Sul: gerencia regional, coordenacao de CD, supervisao de base e analistas.</description>
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <name>LT Operacao Sul</name>
+</Group>

@@ -17,6 +17,6 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Solicitacoes de Pagamento</pluralLabel>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>Private</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

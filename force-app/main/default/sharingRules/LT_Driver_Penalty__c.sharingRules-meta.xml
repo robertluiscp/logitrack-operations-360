@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_Contested_Penalties_With_Ops</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Penalizacoes em contestacao visiveis para a operacao (analise)</description>
+        <label>Penalizacoes em contestacao visiveis para a operacao (analise)</label>
+        <sharedTo>
+            <group>LT_Operacao_Sul</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LT_Status__c</field>
+            <operation>equals</operation>
+            <value>Em Contestacao</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Share_Penalties_With_Loss_Prevention</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Compartilha as penalizacoes de motorista com a Prevencao de Perdas</description>
+        <label>Compartilha as penalizacoes de motorista com a Prevencao de Perdas</label>
+        <sharedTo>
+            <group>LT_Prevencao_Perdas</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

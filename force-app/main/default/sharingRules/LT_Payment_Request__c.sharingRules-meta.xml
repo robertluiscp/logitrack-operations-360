@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_Urgent_Payments_With_Ops</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Solicitacoes urgentes visiveis para a operacao da regional Sul</description>
+        <label>Solicitacoes urgentes visiveis para a operacao da regional Sul</label>
+        <sharedTo>
+            <group>LT_Operacao_Sul</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LT_Priority__c</field>
+            <operation>equals</operation>
+            <value>Urgente</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Share_Payment_Requests_With_Finance</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Compartilha todas as solicitacoes de pagamento com o time do Financeiro</description>
+        <label>Compartilha todas as solicitacoes de pagamento com o time do Financeiro</label>
+        <sharedTo>
+            <group>LT_Financeiro</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>
