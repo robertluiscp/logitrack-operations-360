@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Gerencia de Cadastro</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Gerencia de Cadastro</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>LT_Diretoria_Operacoes</parentRole>
+</Role>
