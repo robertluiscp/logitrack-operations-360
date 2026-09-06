@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Require_Status_For_Shipper</fullName>
+    <active>true</active>
+    <description>Exige o Status do Embarcador nas contas do Record Type Embarcador.</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = "LT_Shipper",
+    ISBLANK(TEXT(LT_Shipper_Status__c))
+)</errorConditionFormula>
+    <errorDisplayField>LT_Shipper_Status__c</errorDisplayField>
+    <errorMessage>Informe o Status do Embarcador.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Net_Amount__c</fullName>
+    <description>Valor liquido a faturar: Valor Bruto + Ajustes.</description>
+    <label>Valor Liquido</label>
+    <formula>LT_Gross_Amount__c + BLANKVALUE(LT_Adjustments__c, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>18</precision>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Open_Billing_Count__c</fullName>
+    <description>Quantidade de faturamentos mensais do embarcador ainda em aberto (em apuracao ou fechado).</description>
+    <label>Faturamentos em Aberto</label>
+    <summaryForeignKey>LT_Monthly_Billing__c.LT_Shipper__c</summaryForeignKey>
+    <summaryFilterItems>
+        <field>LT_Monthly_Billing__c.LT_Billing_Is_Open__c</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </summaryFilterItems>
+    <summaryOperation>count</summaryOperation>
+    <type>Summary</type>
+</CustomField>

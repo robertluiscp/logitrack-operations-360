@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Shipper_Highlights</fullName>
+    <fields>Name</fields>
+    <fields>LT_Shipper_Status__c</fields>
+    <fields>LT_Shipper_Segment__c</fields>
+    <fields>LT_Monthly_Volume_Estimate__c</fields>
+    <fields>LT_Commercial_Rep__c</fields>
+    <fields>LT_CNPJ__c</fields>
+    <fields>Phone</fields>
+    <label>Embarcador - Destaques</label>
+</CompactLayout>

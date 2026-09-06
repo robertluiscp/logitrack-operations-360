@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Agreement_End_After_Start</fullName>
+    <active>true</active>
+    <description>A data de fim da vigencia nao pode ser anterior ao inicio.</description>
+    <errorConditionFormula>AND( NOT(ISBLANK(LT_Start_Date__c)), NOT(ISBLANK(LT_End_Date__c)), LT_End_Date__c &lt; LT_Start_Date__c )</errorConditionFormula>
+    <errorDisplayField>LT_End_Date__c</errorDisplayField>
+    <errorMessage>O Fim da Vigencia nao pode ser anterior ao Inicio da Vigencia.</errorMessage>
+</ValidationRule>

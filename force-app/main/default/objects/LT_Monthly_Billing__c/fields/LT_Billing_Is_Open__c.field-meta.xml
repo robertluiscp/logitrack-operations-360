@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Billing_Is_Open__c</fullName>
+    <description>Verdadeiro enquanto o faturamento do mes ainda esta em apuracao ou fechado (nao faturado).</description>
+    <label>Faturamento em Aberto</label>
+    <formula>OR(ISPICKVAL(LT_Billing_Status__c, "Em Apuracao"), ISPICKVAL(LT_Billing_Status__c, "Fechado"))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Checkbox</type>
+</CustomField>

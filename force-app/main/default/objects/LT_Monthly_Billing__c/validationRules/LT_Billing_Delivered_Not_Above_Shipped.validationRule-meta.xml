@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Billing_Delivered_Not_Above_Shipped</fullName>
+    <active>true</active>
+    <description>Pacotes entregues nao pode exceder pacotes postados.</description>
+    <errorConditionFormula>LT_Packages_Delivered__c &gt; LT_Packages_Shipped__c</errorConditionFormula>
+    <errorDisplayField>LT_Packages_Delivered__c</errorDisplayField>
+    <errorMessage>Pacotes Entregues nao pode ser maior que Pacotes Postados.</errorMessage>
+</ValidationRule>

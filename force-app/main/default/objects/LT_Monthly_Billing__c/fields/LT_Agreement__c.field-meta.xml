@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Agreement__c</fullName>
+    <description>Contrato comercial vigente que baliza este faturamento.</description>
+    <label>Contrato Comercial</label>
+    <referenceTo>LT_Commercial_Agreement__c</referenceTo>
+    <relationshipLabel>Faturamentos Mensais</relationshipLabel>
+    <relationshipName>LT_Monthly_Billings</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

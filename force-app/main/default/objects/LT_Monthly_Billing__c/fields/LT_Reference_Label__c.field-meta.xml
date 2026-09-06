@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Reference_Label__c</fullName>
+    <description>Rotulo do mes de competencia no formato MM/AAAA.</description>
+    <formula>IF(ISBLANK(LT_Reference_Month__c), "", RIGHT("00" &amp; TEXT(MONTH(LT_Reference_Month__c)), 2) &amp; "/" &amp; TEXT(YEAR(LT_Reference_Month__c)))</formula>
+    <label>Competencia</label>
+    <type>Text</type>
+</CustomField>

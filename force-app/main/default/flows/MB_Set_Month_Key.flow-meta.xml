@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Preenche a Chave Única Embarcador-Mês com o ID do embarcador e o mês de competência.</description>
+        <name>Set_Month_Key</name>
+        <label>Preencher Chave Única Embarcador-Mês</label>
+        <locationX>778</locationX>
+        <locationY>383</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LT_Month_Key__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>MonthKey</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Antes do salvamento, compõe a chave única do faturamento mensal (Embarcador + AAAA-MM), aproveitando a restrição Unique do campo para impedir dois faturamentos do mesmo embarcador no mesmo mês.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Combina o ID do Embarcador com o ano e o mês da competência.</description>
+        <name>MonthKey</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.LT_Shipper__c} &amp; &quot;-&quot; &amp; TEXT(YEAR({!$Record.LT_Reference_Month__c})) &amp; &quot;-&quot; &amp; RIGHT(&quot;00&quot; &amp; TEXT(MONTH({!$Record.LT_Reference_Month__c})), 2)</expression>
+    </formulas>
+    <interviewLabel>FAT - Preencher Chave Única Embarcador-Mês {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FAT - Preencher Chave Única Embarcador-Mês</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>649</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Set_Month_Key</targetReference>
+        </connector>
+        <object>LT_Monthly_Billing__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

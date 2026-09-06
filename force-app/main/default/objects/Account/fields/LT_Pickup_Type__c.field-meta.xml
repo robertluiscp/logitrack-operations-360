@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Pickup_Type__c</fullName>
+    <description>Define como os pacotes do embarcador entram na malha: retirada no próprio embarcador (Seller) ou entrega em ponto físico (DropOff).</description>
+    <inlineHelpText>Coleta no Seller: motorista First Mile retira no embarcador. Coleta no DropOff: pacotes são deixados em um Ponto de Coleta.</inlineHelpText>
+    <label>Tipo de Coleta</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coleta no Seller</fullName>
+                <default>false</default>
+                <label>Coleta no Seller</label>
+            </value>
+            <value>
+                <fullName>Coleta no DropOff</fullName>
+                <default>false</default>
+                <label>Coleta no DropOff</label>
+            </value>
+            <value>
+                <fullName>Ambos</fullName>
+                <default>false</default>
+                <label>Ambos</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

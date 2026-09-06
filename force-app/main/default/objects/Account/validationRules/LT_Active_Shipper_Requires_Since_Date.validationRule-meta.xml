@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Active_Shipper_Requires_Since_Date</fullName>
+    <active>true</active>
+    <description>Embarcador Ativo precisa da data Embarcador Desde preenchida.</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = "LT_Shipper",
+    ISPICKVAL(LT_Shipper_Status__c, "Ativo"),
+    ISBLANK(LT_Shipper_Since__c)
+)</errorConditionFormula>
+    <errorDisplayField>LT_Shipper_Since__c</errorDisplayField>
+    <errorMessage>Informe a data Embarcador Desde ao ativar o embarcador.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_SLA_Target__c</fullName>
+    <description>Meta de SLA de entrega no prazo acordada com o embarcador.</description>
+    <inlineHelpText>Percentual minimo de entregas no prazo previsto em contrato.</inlineHelpText>
+    <label>Meta de SLA</label>
+    <precision>5</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Percent</type>
+</CustomField>

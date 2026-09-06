@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Price_Per_Package__c</fullName>
+    <description>Preco por pacote aplicado no mes (copia do contrato no fechamento).</description>
+    <label>Preco por Pacote</label>
+    <precision>8</precision>
+    <scale>2</scale>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

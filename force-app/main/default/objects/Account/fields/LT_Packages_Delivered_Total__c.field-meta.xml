@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Packages_Delivered_Total__c</fullName>
+    <description>Total de pacotes entregues do embarcador somando todos os faturamentos mensais.</description>
+    <label>Pacotes Entregues (acumulado)</label>
+    <summarizedField>LT_Monthly_Billing__c.LT_Packages_Delivered__c</summarizedField>
+    <summaryForeignKey>LT_Monthly_Billing__c.LT_Shipper__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <type>Summary</type>
+</CustomField>

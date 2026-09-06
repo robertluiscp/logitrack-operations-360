@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Agreement_Price_Positive</fullName>
+    <active>true</active>
+    <description>O preco por pacote deve ser maior que zero quando informado.</description>
+    <errorConditionFormula>AND( NOT(ISBLANK(LT_Price_Per_Package__c)), LT_Price_Per_Package__c &lt;= 0 )</errorConditionFormula>
+    <errorDisplayField>LT_Price_Per_Package__c</errorDisplayField>
+    <errorMessage>Informe um Preco por Pacote maior que zero.</errorMessage>
+</ValidationRule>

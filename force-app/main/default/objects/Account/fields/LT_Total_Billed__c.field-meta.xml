@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Total_Billed__c</fullName>
+    <description>Soma do valor liquido de todos os faturamentos mensais ja faturados ou pagos do embarcador.</description>
+    <label>Total Faturado (acumulado)</label>
+    <summarizedField>LT_Monthly_Billing__c.LT_Net_Amount__c</summarizedField>
+    <summaryForeignKey>LT_Monthly_Billing__c.LT_Shipper__c</summaryForeignKey>
+    <summaryFilterItems>
+        <field>LT_Monthly_Billing__c.LT_Counts_As_Billed__c</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </summaryFilterItems>
+    <summaryOperation>sum</summaryOperation>
+    <type>Summary</type>
+</CustomField>

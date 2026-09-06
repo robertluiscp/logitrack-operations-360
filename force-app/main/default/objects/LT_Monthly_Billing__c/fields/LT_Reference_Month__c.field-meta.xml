@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Reference_Month__c</fullName>
+    <description>Mes de competencia do faturamento (usar sempre o primeiro dia do mes).</description>
+    <inlineHelpText>Informe o primeiro dia do mes de competencia (ex.: 01/03/2025).</inlineHelpText>
+    <label>Mes de Referencia</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

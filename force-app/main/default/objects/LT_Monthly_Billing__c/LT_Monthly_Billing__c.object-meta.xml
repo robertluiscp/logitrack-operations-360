@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>LT_Monthly_Billing_Summary</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Fechamento mensal do embarcador: volume postado e entregue, preço aplicado, ajustes, valor líquido e nota fiscal. Detail de Conta.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableStreamingApi>true</enableStreamingApi>
+    <label>Faturamento Mensal</label>
+    <nameField>
+        <displayFormat>FAT-{00000}</displayFormat>
+        <label>Código do Faturamento</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Faturamentos Mensais</pluralLabel>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

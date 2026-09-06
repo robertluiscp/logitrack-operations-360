@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Is_Current__c</fullName>
+    <description>Indica se o contrato esta vigente hoje (status Vigente e data atual dentro da vigencia).</description>
+    <formula>AND( ISPICKVAL(LT_Agreement_Status__c, "Vigente"), OR(ISBLANK(LT_Start_Date__c), LT_Start_Date__c &lt;= TODAY()), OR(ISBLANK(LT_End_Date__c), LT_End_Date__c &gt;= TODAY()) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Vigente Hoje</label>
+    <type>Checkbox</type>
+</CustomField>

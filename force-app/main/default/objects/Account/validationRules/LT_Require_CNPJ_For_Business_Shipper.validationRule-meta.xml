@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Require_CNPJ_For_Business_Shipper</fullName>
+    <active>true</active>
+    <description>Exige CNPJ para embarcadores pessoa jurídica (todos os segmentos, exceto Pessoa Física C2C).</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = "LT_Shipper",
+    NOT(ISPICKVAL(LT_Shipper_Segment__c, "Pessoa Física (C2C)")),
+    ISBLANK(LT_CNPJ__c)
+)</errorConditionFormula>
+    <errorDisplayField>LT_CNPJ__c</errorDisplayField>
+    <errorMessage>Informe o CNPJ do embarcador. Apenas embarcadores do segmento Pessoa Física (C2C) são dispensados.</errorMessage>
+</ValidationRule>

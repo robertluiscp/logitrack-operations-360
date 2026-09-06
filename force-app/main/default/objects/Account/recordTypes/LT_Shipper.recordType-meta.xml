@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Shipper</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>LT_Shipper_Highlights</compactLayoutAssignment>
+    <description>Utilizado para empresas e pessoas físicas que enviam pacotes pela LogiTrack (marketplaces, e-commerces, indústrias, varejistas e clientes C2C).</description>
+    <label>Embarcador</label>
+</RecordType>

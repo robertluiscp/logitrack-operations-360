@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_Billing_Future_Month_Block</fullName>
+    <active>true</active>
+    <description>Nao e possivel criar faturamento para meses futuros.</description>
+    <errorConditionFormula>LT_Reference_Month__c &gt; TODAY()</errorConditionFormula>
+    <errorDisplayField>LT_Reference_Month__c</errorDisplayField>
+    <errorMessage>O Mes de Referencia nao pode ser um mes futuro.</errorMessage>
+</ValidationRule>
