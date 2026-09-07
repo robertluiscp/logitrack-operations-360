@@ -85,19 +85,23 @@ Resolvido, Fechado) e reordenar o Support Process `LT_SAC_Process`. Fazer
 
 ---
 
-## 5. Higienização final do metadata local (fazer no fim do projeto)
+## 5. Higienização do metadata Trailhead ✅ FEITO (commit fd4ecc8, 73f2245)
 
-Itens que ficaram **stale no source local** mas são inofensivos na org:
+- Deletados da org: `Product2.Macaron_Flavor__c`, `Product2.Shirt__c`,
+  `User.Account_ID__c`, `User.Account_Type__c`.
+- Layouts (Product2, User, UserAlt, CommunityMember) limpos e redeployados.
+- Removidos do source: `globalValueSets/Flavors`, `topicsForObjects/Resource__c`,
+  os 4 campos, 2 permission sets internos.
+- `.forceignore`: `sfdcInternalInt__*`, `appMenus/AppSwitcher`, `settings/Search`
+  (metadata de org, environment-specific — mesma lógica dos profiles).
 
-- ~40 Profiles padrão e `settings/Search.settings` ainda referenciam objetos
-  Trailhead **já deletados** da org.
-- Campos de exemplo Trailhead não removidos: `Product2.Macaron_Flavor__c`,
-  `Product2.Shirt__c`, `User.Account_ID__c`, `User.Account_Type__c`, e o
-  Global Value Set `Flavors`.
+**Resíduo mínimo (1 clique, opcional):** o Global Value Set **`Flavors`** ainda
+aparece em Setup — está bloqueado pela **lixeira de campos** (os campos que o
+usavam levam ~15 dias para expurgar). Some sozinho depois disso, ou:
+Setup → Object Manager → Product2 → Fields & Relationships → "Deleted Fields" →
+Erase nos 2 campos → depois Setup → Picklist Value Sets → apagar `Flavors`.
 
-**Ação:** fazer um **re-retrieve limpo** (`sf project retrieve start` com um
-`package.xml` só do que interessa) antes da publicação final, ou remover esses
-arquivos do `force-app/` manualmente.
+Os ~40 Profiles padrão continuam no `.forceignore` (nunca fizeram parte do projeto).
 
 ---
 
