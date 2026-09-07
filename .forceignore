@@ -17,3 +17,12 @@ node_modules/
 # Layout/RT assignment handled via permission sets + targeted minimal deploys.
 profiles/
 **/profiles/**
+
+# Permission sets internos do SFDC (namespace sfdcInternalInt) - nao fazem parte do projeto
+**/permissionsets/sfdcInternalInt__*
+
+# AppSwitcher e auto-gerenciado pelo SFDC
+**/appMenus/AppSwitcher.appMenu-meta.xml
+
+# Settings de org sao environment-specific (como profiles)
+**/settings/Search.settings-meta.xml
