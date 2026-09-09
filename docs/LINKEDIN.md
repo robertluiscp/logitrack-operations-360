@@ -1,7 +1,8 @@
 # Post para LinkedIn
 
 Três versões: **curta** (feed), **longa** (artigo/carrossel) e **linha de "Sobre"
-do perfil**. Ajuste o link do GitHub e do vídeo antes de publicar.
+do perfil**. O link do GitHub já está preenchido:
+`https://github.com/robertluiscp/logitrack-operations-360`.
 
 ---
 
@@ -26,10 +27,9 @@ do perfil**. Ajuste o link do GitHub e do vídeo antes de publicar.
 > • ~4.500 registros fictícios carregados por Bulk API
 >
 > Tudo declarativo — **clicks, not code**. Os metadados foram versionados no Git
-> (27 commits, um por módulo) e gerados por scripts para manter a consistência.
+> (um bloco de commits por módulo) e gerados por scripts para manter a consistência.
 >
-> 🔗 Código e documentação: [GITHUB_URL]
-> 🎥 Vídeo de 7 min mostrando as 6 áreas: [VIDEO_URL]
+> 🔗 Código e documentação: https://github.com/robertluiscp/logitrack-operations-360
 >
 > Feedback é muito bem‑vindo. 🙌
 >
@@ -80,17 +80,17 @@ pages), relatórios e dashboards, hierarquia de papéis e — em vez de perfis �
 
 **Como foi feito**
 
-Salesforce DX, com os metadados versionados no Git em 27 commits (um bloco por
-módulo). Para não perder a consistência em mais de 500 campos, gerei o XML dos
+Salesforce DX, com os metadados versionados no Git, um bloco de commits por
+módulo. Para não perder a consistência em mais de 500 campos, gerei o XML dos
 metadados a partir de scripts — uma pegada de "infraestrutura como código" aplicada
 à configuração declarativa. Os ~4.500 registros fictícios foram carregados por
 Bulk API 2.0.
 
-O repositório traz um `README` completo, um roteiro de vídeo e a lista honesta do
-que ficou para configuração manual (algumas coisas realmente não passam pela
-Metadata API).
+O repositório traz um `README` completo, uma página-vitrine (HTML/PDF) e a lista
+honesta do que ficou para configuração manual (algumas coisas realmente não passam
+pela Metadata API).
 
-🔗 [GITHUB_URL] · 🎥 [VIDEO_URL]
+🔗 https://github.com/robertluiscp/logitrack-operations-360
 
 Se você trabalha com Salesforce e tiver críticas, manda ver — é assim que eu aprendo.
 
@@ -103,4 +103,5 @@ Se você trabalha com Salesforce e tiver críticas, manda ver — é assim que e
 > Administrador Salesforce em formação. Projeto de portfólio: **LogiTrack Operations
 > 360**, um ambiente Salesforce completo (19 objetos, 19 Flows, aprovações
 > multinível, 6 apps, dashboards) para uma transportadora de última milha —
-> 100 % declarativo e versionado no Git. [GITHUB_URL]
+> 100 % declarativo e versionado no Git.
+> https://github.com/robertluiscp/logitrack-operations-360

@@ -143,6 +143,10 @@ o XML a partir de um módulo auxiliar compartilhado (`metahelp.py`) — abordage
 
 ## Como explorar
 
+```bash
+git clone https://github.com/robertluiscp/logitrack-operations-360.git
+```
+
 1. Autentique a org (JWT Bearer Flow — ver `docs` interno; a chave `server.key`
    **não** vai para o Git).
 2. `sf project deploy start -d force-app` para uma org limpa (Developer Edition).
@@ -156,7 +160,7 @@ o XML a partir de um módulo auxiliar compartilhado (`metahelp.py`) — abordage
 
 | Usuário | Área | Permission Set Group |
 |---|---|---|
-| Robert Pestana (admin) | Gestão / Diretoria | `LT_PSG_Gestao` |
+| Robert Luis Costa Pestana (admin) | Gestão / Diretoria | `LT_PSG_Gestao` |
 | Ana Beatriz Correia | Comercial | `LT_PSG_Comercial` |
 | Rafael Nunes | Operação | `LT_PSG_Operacao` |
 | Maria Thompson | Cadastro / Frota | `LT_PSG_Cadastro` |
