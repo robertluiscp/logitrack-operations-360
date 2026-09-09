@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Informe quantos dos pedidos entregues foram concluídos fora do prazo previsto. --></help>
-    <label><!-- Entregues Fora do Prazo --></label>
-    <name>Late_Deliveries__c</name>
-</CustomFieldTranslation>

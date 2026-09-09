@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Informe a sigla oficial da unidade, incluindo identificação da franquia e estado quando aplicável. Exemplo: ALM-PR ou F IRA-PR. --></help>
-    <label><!-- Código da Unidade --></label>
-    <name>Unit_Code__c</name>
-</CustomFieldTranslation>

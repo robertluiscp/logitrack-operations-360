@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Informe a data operacional correspondente aos resultados deste registro. --></help>
-    <label><!-- Data de Referência --></label>
-    <name>Reference_Date__c</name>
-</CustomFieldTranslation>

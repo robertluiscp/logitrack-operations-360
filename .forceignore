@@ -26,3 +26,89 @@ profiles/
 
 # Settings de org sao environment-specific (como profiles)
 **/settings/Search.settings-meta.xml
+
+# ---------------------------------------------------------------------------
+# Metadata padrao do Salesforce (nao autoral) - mantido fora do repo para que
+# o portfolio mostre apenas o que foi construido neste projeto.
+# A org continua intacta; estes componentes ja existem em qualquer org nova.
+# ---------------------------------------------------------------------------
+
+# Campos, list views e web links padrao dos objetos standard
+objects/Account/fields/[A-Z]*
+objects/Case/fields/[A-Z]*
+objects/Contact/fields/[A-Z]*
+objects/Opportunity/fields/[A-Z]*
+objects/Account/listViews/**
+objects/Case/listViews/**
+objects/Contact/listViews/**
+objects/Opportunity/listViews/**
+objects/Account/webLinks/**
+objects/Case/webLinks/**
+objects/Contact/webLinks/**
+objects/Opportunity/webLinks/**
+
+# Page layouts padrao (projeto e permission-set-led; layouts LT_* ficam versionados)
+layouts/Account-Account*.layout-meta.xml
+layouts/Case-Case*.layout-meta.xml
+layouts/Contact-Contact*.layout-meta.xml
+layouts/Opportunity-Opportunity*.layout-meta.xml
+layouts/Lead-*.layout-meta.xml
+layouts/Campaign-*.layout-meta.xml
+layouts/Asset*.layout-meta.xml
+layouts/Order*.layout-meta.xml
+layouts/Product2-*.layout-meta.xml
+layouts/Pricebook*.layout-meta.xml
+layouts/User*.layout-meta.xml
+layouts/*Payment*.layout-meta.xml
+layouts/Cart*.layout-meta.xml
+layouts/Authorization*.layout-meta.xml
+layouts/Consumption*.layout-meta.xml
+layouts/Assigned*.layout-meta.xml
+layouts/Associated*.layout-meta.xml
+layouts/Async*.layout-meta.xml
+layouts/Api*.layout-meta.xml
+layouts/Appointment*.layout-meta.xml
+layouts/Business*.layout-meta.xml
+layouts/Buyer*.layout-meta.xml
+layouts/Calendar*.layout-meta.xml
+layouts/Card*.layout-meta.xml
+
+# Sharing rules vazias dos objetos standard (mantemos apenas as LT_*)
+sharingRules/**
+!sharingRules/LT_*
+
+# Quick actions globais/standard (mantemos apenas as LT_*)
+quickActions/New*.quickAction-meta.xml
+quickActions/Log*.quickAction-meta.xml
+quickActions/Send*.quickAction-meta.xml
+quickActions/Case.*.quickAction-meta.xml
+quickActions/Task.*.quickAction-meta.xml
+quickActions/CollaborationGroup.*.quickAction-meta.xml
+quickActions/FeedItem.*.quickAction-meta.xml
+
+# Permission set groups gerenciados (namespace force__)
+**/permissionsetgroups/force__*
+
+# Relatorios / report types / dashboards de features nao usadas (EinsteinBot, Enablement, Flow Orchestration)
+reports/EBotR_*
+reports/EinsteinBot*
+reports/Enablement*
+reportTypes/Program_*_sfdcSES*
+reportTypes/flow_orchestration_*
+reportTypes/screen_flows_prebuilt_crt.reportType-meta.xml
+reports/unfiled$public/flow_orchestration_*
+reports/unfiled$public/flow_screen_prebuilt_report.report-meta.xml
+dashboards/Enablement_*
+
+# Flexipages de utility bar de apps standard
+flexipages/*_UtilityBar.flexipage-meta.xml
+
+# Regras/objetos padrao auto-gerenciados
+matchingRules/Address.matchingRule-meta.xml
+matchingRules/Contact.matchingRule-meta.xml
+matchingRules/Individual.matchingRule-meta.xml
+matchingRules/Lead.matchingRule-meta.xml
+duplicateRules/*.Standard_*_Duplicate_Rule.duplicateRule-meta.xml
+assignmentRules/Lead.assignmentRules-meta.xml
+workflows/Account.workflow-meta.xml
+workflows/Case.workflow-meta.xml

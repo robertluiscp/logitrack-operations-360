@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Preencha somente quando a unidade for encerrada definitivamente. Suspensões temporárias não devem utilizar este campo. --></help>
-    <label><!-- Data de Encerramento --></label>
-    <name>Operation_End_Date__c</name>
-</CustomFieldTranslation>

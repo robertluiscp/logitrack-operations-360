@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Informe o nome oficial da cidade, utilizando acentuação e sem incluir a sigla do estado. Exemplo: São José dos Pinhais. --></help>
-    <label><!-- Cidade --></label>
-    <name>City__c</name>
-</CustomFieldTranslation>

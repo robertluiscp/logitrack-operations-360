@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Selecione a empresa responsável pela unidade quando o Modelo Operacional for Franqueada ou Parceira Credenciada. Deixe vazio para unidades próprias. --></help>
-    <label><!-- Parceiro Operacional --></label>
-    <name>Operating_Partner__c</name>
-    <relationshipLabel><!-- Unidades Operadas --></relationshipLabel>
-</CustomFieldTranslation>

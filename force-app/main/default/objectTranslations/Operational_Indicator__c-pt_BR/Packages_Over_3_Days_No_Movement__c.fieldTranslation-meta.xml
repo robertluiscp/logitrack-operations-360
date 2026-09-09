@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Informe quantos pacotes permanecem há mais de três dias sem movimentação nesta unidade e data de referência. --></help>
-    <label><!-- Pacotes +3 Dias sem Movimentação --></label>
-    <name>Packages_Over_3_Days_No_Movement__c</name>
-</CustomFieldTranslation>
