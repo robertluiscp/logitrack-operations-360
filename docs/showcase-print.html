@@ -175,7 +175,7 @@
     <div class="stat"><b>2</b><span>Processos de aprovação</span></div>
     <div class="stat"><b>6</b><span>Apps Lightning</span></div>
     <div class="stat"><b>27</b><span>Relatórios + painéis</span></div>
-    <div class="stat"><b>42</b><span>Commits (um por módulo)</span></div>
+    <div class="stat"><b>18</b><span>Módulos entregues (A&ndash;R)</span></div>
   </div>
 </div>
 
@@ -368,12 +368,12 @@
     <p class="eyebrow">Como foi construído</p>
     <h2>Configuração declarativa, tratada como código</h2>
     <div class="build-grid">
-      <div><h3>Salesforce DX, source-tracked</h3><p>Todo o metadata versionado no Git em <strong>42 commits</strong> — um bloco por módulo de trabalho, mensagem descritiva, histórico auditável.</p></div>
+      <div><h3>Salesforce DX, source-tracked</h3><p>Todo o metadata versionado no Git em <strong>~50 commits</strong> — um bloco por módulo de trabalho, mensagem descritiva, histórico auditável.</p></div>
       <div><h3>Geradores de metadata</h3><p>O XML dos objetos, campos e regras foi gerado por <strong>scripts Python</strong> a partir de um módulo auxiliar comum — para manter 507 campos e 110 validações consistentes.</p></div>
       <div><h3>Bulk API 2.0 para os dados</h3><p>~1.650 registros fictícios carregados por área, com <em>upsert</em> por external ID e tratamento de picklists restritas e limite de storage.</p></div>
       <div><h3>Autenticação JWT Bearer Flow</h3><p>Deploy sem interface, via <span class="mono">sf</span> CLI e certificado — o mesmo que um pipeline de CI usaria.</p></div>
     </div>
-    <p style="margin-top:1.4rem;color:var(--ink-soft)">O repositório traz um <strong>README</strong> completo, um roteiro de walkthrough, e uma auditoria honesta do que ficou para configuração manual no Setup (algumas coisas realmente não passam pela Metadata API).</p>
+    <p style="margin-top:1.4rem;color:var(--ink-soft)">O repositório traz um <strong>README</strong> completo, uma auditoria de competências Trailhead e a lista honesta do que ficou para configuração manual no Setup (algumas coisas realmente não passam pela Metadata API).</p>
   </div>
 </section>
 
@@ -384,9 +384,9 @@
     <div class="explore">
       <div class="explore-item"><span class="n">01</span><div><h3>Ler o metadata no GitHub</h3><p>Para quem conhece Salesforce: cada objeto, flow, processo de aprovação e permission set está em XML legível. Abrir o processo de aprovação de pagamento já mostra a alçada multinível.</p></div></div>
       <div class="explore-item"><span class="n">02</span><div><h3>Fazer o deploy num Developer Edition grátis</h3><p>Uma conta Developer Edition é gratuita. Com o <span class="mono">sf</span> CLI, um <span class="mono">deploy</span> traz o ambiente inteiro em ~10 minutos — o README tem o passo a passo.</p></div></div>
-      <div class="explore-item"><span class="n">03</span><div><h3>Seguir o walkthrough com screenshots</h3><p>Para uma leitura rápida: um roteiro percorre um fluxo de ponta a ponta em telas legendadas, sem precisar instalar nada.</p></div></div>
+      <div class="explore-item"><span class="n">03</span><div><h3>Ler a auditoria de competências</h3><p>O arquivo <span class="mono">AUDITORIA-TRAILHEAD.md</span> mapeia cada módulo das trilhas Administrador Básico e Intermediário para onde ele aparece no projeto — sem precisar instalar nada.</p></div></div>
     </div>
-    <p class="repo-line"><b>Código-fonte e documentação:</b> github.com/robertluiscp/logitrack-operations-360 &mdash; README, roteiro de walkthrough e auditoria de competências Trailhead.</p>
+    <p class="repo-line"><b>Código-fonte e documentação:</b> github.com/robertluiscp/logitrack-operations-360 &mdash; README, auditoria de competências Trailhead e lista de pendências manuais.</p>
   </div>
 </section>
 
