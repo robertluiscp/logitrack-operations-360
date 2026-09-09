@@ -1,0 +1,674 @@
+<title>LogiTrack Operations 360</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap">
+<style>
+  :root {
+    /* light — cool near-white, control-panel greys, in-transit amber */
+    --ground:        #F5F6F8;
+    --surface:       #FFFFFF;
+    --surface-2:     #EDEFF3;
+    --panel:         #ECE7DE;   /* readout board */
+    --panel-ink:     #2A2318;
+    --ink:           #1A2230;
+    --ink-soft:      #4C5768;
+    --ink-faint:     #8B94A4;
+    --line:          #DCE0E7;
+    --line-strong:   #C3C9D4;
+    --accent:        #C0710F;   /* amber as text on light */
+    --accent-mark:   #D98A2A;   /* amber for fills / diagram marks */
+    --ok:            #1C845A;
+    --shadow:        0 1px 2px rgba(20,28,42,.06), 0 12px 32px -18px rgba(20,28,42,.24);
+    --radius:        3px;
+  }
+  :root:not([data-theme="light"]) {
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #0E1622;
+      --surface:     #16202E;
+      --surface-2:   #1C2836;
+      --panel:       #0A1119;
+      --panel-ink:   #F0D9B8;
+      --ink:         #E7ECF3;
+      --ink-soft:    #A7B2C2;
+      --ink-faint:   #69758A;
+      --line:        #26313F;
+      --line-strong: #3A4759;
+      --accent:      #F2A93B;
+      --accent-mark: #E39A34;
+      --ok:          #46C68C;
+      --shadow:      0 1px 2px rgba(0,0,0,.3), 0 16px 40px -20px rgba(0,0,0,.7);
+      color-scheme:  dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:      #0E1622;
+    --surface:     #16202E;
+    --surface-2:   #1C2836;
+    --panel:       #0A1119;
+    --panel-ink:   #F0D9B8;
+    --ink:         #E7ECF3;
+    --ink-soft:    #A7B2C2;
+    --ink-faint:   #69758A;
+    --line:        #26313F;
+    --line-strong: #3A4759;
+    --accent:      #F2A93B;
+    --accent-mark: #E39A34;
+    --ok:          #46C68C;
+    --shadow:      0 1px 2px rgba(0,0,0,.3), 0 16px 40px -20px rgba(0,0,0,.7);
+    color-scheme:  dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 74rem; margin: 0 auto; padding: 0 clamp(1.1rem, 4vw, 3rem); }
+  .col  { max-width: 60rem; }
+
+  h1, h2, h3 {
+    font-family: "Barlow Semi Condensed", "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+    margin: 0;
+  }
+  h2 { font-size: clamp(1.55rem, 3.4vw, 2.15rem); }
+  h3 { font-size: 1.16rem; letter-spacing: 0; }
+  p  { margin: 0 0 1rem; }
+  a  { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { font-weight: 600; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 0.9rem;
+  }
+  .mono { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; }
+
+  /* ---------- header ---------- */
+  header {
+    border-bottom: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .head-inner {
+    padding: clamp(2.4rem, 6vw, 4rem) 0 clamp(1.8rem, 4vw, 2.6rem);
+    display: flex; flex-direction: column; gap: 1.4rem;
+  }
+  .head-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+  h1 {
+    font-size: clamp(2.3rem, 6.2vw, 3.7rem);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .tagline { font-size: clamp(1.05rem, 2.2vw, 1.28rem); color: var(--ink-soft); max-width: 44ch; }
+  .kicker {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.76rem; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--accent); font-weight: 500;
+  }
+
+  button.theme {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--ink-soft);
+    background: var(--surface-2); border: 1px solid var(--line-strong);
+    border-radius: 100px; padding: 0.45rem 0.8rem; cursor: pointer; white-space: nowrap;
+  }
+  button.theme:hover { color: var(--ink); border-color: var(--ink-faint); }
+  button.theme:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---------- readout board ---------- */
+  .board {
+    background: var(--panel);
+    color: var(--panel-ink);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .board-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: color-mix(in srgb, var(--panel-ink) 16%, transparent);
+  }
+  .stat {
+    background: var(--panel);
+    padding: 1.15rem clamp(0.9rem, 2.5vw, 1.6rem);
+    display: flex; flex-direction: column; gap: 0.15rem;
+  }
+  .stat b {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: clamp(1.5rem, 3.6vw, 2rem);
+    font-weight: 600;
+    color: var(--accent-mark);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .stat span {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase;
+    color: color-mix(in srgb, var(--panel-ink) 62%, transparent);
+  }
+  @media (max-width: 800px) { .board-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 420px) { .board-grid { grid-template-columns: 1fr 1fr; } .stat b { font-size: 1.55rem; } }
+
+  /* ---------- sections ---------- */
+  section { padding: clamp(3rem, 7vw, 5.2rem) 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+  .lede { font-size: 1.12rem; color: var(--ink-soft); }
+  .col > p:first-of-type.lede { margin-top: 0.4rem; }
+
+  figure { margin: 2rem 0 0; }
+  .figframe {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: clamp(1rem, 3vw, 2rem);
+    overflow-x: auto;
+  }
+  figure svg { display: block; width: 100%; height: auto; min-width: 520px; }
+  figcaption {
+    margin-top: 0.9rem; font-size: 0.9rem; color: var(--ink-faint);
+    max-width: 62ch;
+  }
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 0.9rem;
+    font-family: "IBM Plex Mono", monospace; font-size: 0.74rem; color: var(--ink-soft);
+    letter-spacing: 0.02em;
+  }
+  .legend span { display: inline-flex; align-items: center; gap: 0.45rem; }
+  .legend svg { width: 34px; min-width: 34px; height: 12px; }
+
+  /* ---------- areas list ---------- */
+  .areas { display: flex; flex-direction: column; gap: 0; margin-top: 2rem; border-top: 1px solid var(--line); }
+  .area {
+    display: grid;
+    grid-template-columns: 13rem 1fr;
+    gap: 1.5rem 2rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .area h3 { color: var(--ink); }
+  .area .objs {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.78rem; color: var(--ink-faint);
+    margin-top: 0.4rem; letter-spacing: 0.01em; line-height: 1.5;
+  }
+  .area p { margin: 0; color: var(--ink-soft); }
+  .area .hi { color: var(--ink); font-weight: 500; }
+  @media (max-width: 680px) { .area { grid-template-columns: 1fr; gap: 0.5rem; } }
+
+  /* ---------- skills matrix ---------- */
+  .matrix { margin-top: 2rem; border-top: 2px solid var(--line-strong); }
+  .row {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    gap: 1rem 2.4rem;
+    padding: 1.05rem 0;
+    border-bottom: 1px solid var(--line);
+    align-items: baseline;
+  }
+  .row dt {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600; font-size: 1.05rem; color: var(--ink);
+  }
+  .row dt small {
+    display: block; font-family: "IBM Plex Mono", monospace; font-weight: 400;
+    font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); margin-top: 0.2rem;
+  }
+  .row dd { margin: 0; color: var(--ink-soft); font-size: 0.98rem; }
+  .row dd b { color: var(--ink); font-weight: 500; }
+  @media (max-width: 680px) { .row { grid-template-columns: 1fr; gap: 0.35rem; } }
+
+  /* ---------- build / explore ---------- */
+  .build-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem 2rem; margin-top: 1.8rem; }
+  .build-grid > div { border-left: 2px solid var(--accent-mark); padding-left: 1.1rem; }
+  .build-grid h3 { font-size: 1rem; margin-bottom: 0.35rem; }
+  .build-grid p { margin: 0; color: var(--ink-soft); font-size: 0.97rem; }
+  @media (max-width: 640px) { .build-grid { grid-template-columns: 1fr; } }
+
+  .explore { display: flex; flex-direction: column; gap: 1.1rem; margin-top: 1.8rem; }
+  .explore-item {
+    display: grid; grid-template-columns: 2.2rem 1fr; gap: 1rem;
+    padding: 1.15rem 0; border-top: 1px solid var(--line);
+  }
+  .explore-item:last-child { border-bottom: 1px solid var(--line); }
+  .explore-item .n {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.9rem; color: var(--accent);
+    font-weight: 500;
+  }
+  .explore-item h3 { font-size: 1.02rem; margin-bottom: 0.25rem; }
+  .explore-item p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+
+  .cta {
+    display: inline-flex; align-items: center; gap: 0.55rem; margin-top: 1.6rem;
+    font-family: "Barlow Semi Condensed", sans-serif; font-weight: 600; font-size: 1.05rem;
+    letter-spacing: 0.01em;
+    background: var(--accent-mark); color: #14100A;
+    border: 1px solid color-mix(in srgb, var(--accent-mark) 70%, #000);
+    border-radius: var(--radius); padding: 0.7rem 1.15rem;
+  }
+  .cta:hover { text-decoration: none; filter: brightness(1.05); }
+  .repo-note {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.78rem; color: var(--ink-faint);
+    margin-top: 0.7rem;
+  }
+
+  footer {
+    padding: 2.4rem 0 3rem; color: var(--ink-faint); font-size: 0.86rem;
+    display: flex; flex-wrap: wrap; gap: 0.3rem 1.4rem; justify-content: space-between;
+  }
+  footer .mono { font-size: 0.78rem; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a, button.theme, .cta { transition: color .15s ease, border-color .15s ease, background .15s ease; }
+  }
+</style>
+
+<header>
+  <div class="wrap head-inner">
+    <div class="head-top">
+      <span class="kicker">Projeto de portfólio · Salesforce Administration</span>
+      <button class="theme" id="themeBtn" type="button" aria-label="Alternar tema">Tema</button>
+    </div>
+    <h1>LogiTrack Operations&nbsp;360</h1>
+    <p class="tagline">Um ambiente Salesforce completo para uma transportadora de última milha &mdash; da coleta na origem à entrega, com SAC, prevenção de perdas e financeiro. Construído <strong>100&nbsp;% declarativo</strong> e versionado no Git.</p>
+  </div>
+</header>
+
+<div class="board">
+  <div class="wrap">
+    <div class="board-grid">
+      <div class="stat"><b>20</b><span>Objetos personalizados</span></div>
+      <div class="stat"><b>507</b><span>Campos personalizados</span></div>
+      <div class="stat"><b>110</b><span>Regras de validação</span></div>
+      <div class="stat"><b>19</b><span>Flows</span></div>
+      <div class="stat"><b>2</b><span>Processos de aprovação</span></div>
+      <div class="stat"><b>6</b><span>Apps Lightning</span></div>
+      <div class="stat"><b>27</b><span>Relatórios + painéis</span></div>
+      <div class="stat"><b>42</b><span>Commits (um por módulo)</span></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap col">
+    <p class="eyebrow">O que é</p>
+    <h2>Uma operação logística inteira, modelada no Salesforce</h2>
+    <p class="lede">O projeto reproduz a rotina de uma transportadora de encomendas fictícia &mdash; <strong>LogiTrack Brasil</strong> &mdash; inspirada na operação real de um <em>carrier</em> de última milha, com empresa, marcas e dados anonimizados.</p>
+    <p>São cinco áreas de negócio conectadas: <strong>bases de entrega</strong> (Regional&nbsp;&rarr;&nbsp;Centro de Distribuição&nbsp;&rarr;&nbsp;Base, com 166&nbsp;bases carregadas de um arquivo real de cidades do Sul do Brasil), <strong>comercial</strong> (embarcadores, contratos, faturamento), <strong>cadastro e frota</strong> (motoristas terceirizados nos modelos TAC&nbsp;/&nbsp;MEI&nbsp;/&nbsp;ETC&nbsp;/&nbsp;MR&nbsp;/&nbsp;Coleta, cada um com regras próprias), <strong>SAC</strong> (chamados, PNR &mdash; &ldquo;paguei não recebi&rdquo;) e <strong>prevenção de perdas</strong> (apuração de extravios e penalização de motorista), fechando no <strong>financeiro</strong> de contas a pagar.</p>
+    <p>Nenhum código Apex de produção. O objetivo é demonstrar domínio da <strong>configuração declarativa</strong> &mdash; <span class="mono">clicks, not code</span> &mdash; no nível de quem concluiu as trilhas <em>Administrador Básico</em> e <em>Intermediário</em> do Trailhead e sabe aplicá-las juntas, num sistema que faz sentido de ponta a ponta.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="col">
+      <p class="eyebrow">Arquitetura de dados</p>
+      <h2>As cinco áreas são integradas, não cinco apps soltos</h2>
+      <p class="lede">Os objetos se referenciam entre domínios: uma remessa aponta para o embarcador que a originou, para o motorista que a leva, para a ocorrência quando ela trava, para o extravio quando ela some &mdash; e para a solicitação de pagamento que ressarce o cliente.</p>
+    </div>
+    <figure>
+      <div class="figframe">
+        <svg viewBox="0 0 940 590" role="img" aria-label="Diagrama do modelo de dados: cinco domínios em colunas (Comercial, Operação, Cadastro e Frota, Prevenção de Perdas, Financeiro) com seus objetos, os relacionamentos master-detail e lookup, e três ligações de integração em âmbar que conectam extravio à remessa e a solicitação de pagamento ao extravio e ao romaneio.">
+          <defs>
+            <marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0 1 L9 5 L0 9 z" fill="var(--ink-faint)"/>
+            </marker>
+            <marker id="ahS" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0 1 L9 5 L0 9 z" fill="var(--ink-soft)"/>
+            </marker>
+            <marker id="ahA" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto">
+              <path d="M0 1 L9 5 L0 9 z" fill="var(--accent-mark)"/>
+            </marker>
+          </defs>
+
+          <g font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1.3" fill="var(--ink-faint)" text-anchor="middle">
+            <text x="99"  y="30">COMERCIAL</text>
+            <text x="292" y="30">OPERAÇÃO</text>
+            <text x="489" y="30">CADASTRO &amp; FROTA</text>
+            <text x="686" y="30">PREVENÇÃO DE PERDAS</text>
+            <text x="866" y="30">FINANCEIRO</text>
+          </g>
+          <g stroke="var(--line)" stroke-width="1">
+            <line x1="18" y1="44" x2="922" y2="44"/>
+            <line x1="193" y1="52" x2="193" y2="500" stroke-dasharray="2 6"/>
+            <line x1="390" y1="52" x2="390" y2="500" stroke-dasharray="2 6"/>
+            <line x1="587" y1="52" x2="587" y2="500" stroke-dasharray="2 6"/>
+            <line x1="784" y1="52" x2="784" y2="500" stroke-dasharray="2 6"/>
+          </g>
+
+          <!-- edges under nodes -->
+          <g fill="none" stroke="var(--ink-soft)" stroke-width="1.7" marker-end="url(#ahS)">
+            <path d="M99 255 L99 213"/>
+            <path d="M866 335 L866 293"/>
+          </g>
+          <g fill="none" stroke="var(--ink-faint)" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#ah)">
+            <path d="M99 129 L99 172"/>
+            <path d="M489 255 L489 213"/>
+            <path d="M217 178 C 202 181, 197 187, 180 190"/>
+            <path d="M367 258 C 390 256, 396 202, 411 195"/>
+            <path d="M686 290 L686 203"/>
+            <path d="M686 400 L686 328"/>
+          </g>
+          <g fill="none" stroke="var(--accent-mark)" stroke-width="1.7" stroke-dasharray="6 4" marker-end="url(#ahA)">
+            <path d="M611 307 L404 307 Q 382 307 382 285 L382 182 Q 382 172 371 172"/>
+            <path d="M791 262 C 780 266, 772 279, 764 284"/>
+            <path d="M866 369 L866 452 Q 866 522 796 522 L 216 522 Q 206 522 206 512 L 206 362 Q 206 352 214 352"/>
+          </g>
+          <g font-family="IBM Plex Mono, monospace" font-size="9.5" fill="var(--accent)" letter-spacing="0.2" text-anchor="middle">
+            <text x="500" y="301">remessa extraviada</text>
+            <text x="500" y="516">frete do motorista</text>
+          </g>
+          <text font-family="IBM Plex Mono, monospace" font-size="9.5" fill="var(--accent)" letter-spacing="0.2" x="778" y="252" text-anchor="end">ressarcimento</text>
+
+          <!-- nodes -->
+          <g font-family="IBM Plex Sans, sans-serif" font-size="12" fill="var(--ink)" text-anchor="middle">
+            <rect x="24" y="95"  width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="99" y="116">Contrato Comercial</text>
+            <rect x="24" y="175" width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="99" y="196">Embarcador (Account)</text>
+            <rect x="24" y="255" width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="99" y="276">Faturamento Mensal</text>
+
+            <rect x="217" y="70"  width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="292" y="91">Unidade Logística</text>
+            <rect x="217" y="165" width="150" height="34" rx="3" fill="var(--surface)" stroke="var(--accent-mark)" stroke-width="1.6"/><text x="292" y="186" font-weight="600">Remessa</text>
+            <rect x="217" y="250" width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="292" y="271">Rota &middot; Tentativa</text>
+            <rect x="217" y="335" width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="292" y="356">Romaneio</text>
+            <rect x="217" y="420" width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="292" y="441">Ocorrência Operac.</text>
+
+            <rect x="414" y="175" width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="489" y="196">Motorista</text>
+            <rect x="414" y="255" width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="489" y="276">Veículo</text>
+
+            <rect x="611" y="165" width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="686" y="186">Chamado (SAC)</text>
+            <rect x="611" y="290" width="150" height="34" rx="3" fill="var(--surface)" stroke="var(--accent-mark)" stroke-width="1.6"/><text x="686" y="311" font-weight="600">Extravio</text>
+            <rect x="611" y="400" width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="686" y="421">Penalização Motor.</text>
+
+            <rect x="791" y="255" width="150" height="34" rx="3" fill="var(--surface)" stroke="var(--accent-mark)" stroke-width="1.6"/><text x="866" y="276" font-weight="600">Solicit. de Pagamento</text>
+            <rect x="791" y="335" width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="866" y="356">Pagamento</text>
+            <rect x="791" y="415" width="150" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/><text x="866" y="436">Despesa</text>
+          </g>
+        </svg>
+      </div>
+      <div class="legend">
+        <span><svg viewBox="0 0 34 12"><line x1="1" y1="6" x2="27" y2="6" stroke="var(--ink-soft)" stroke-width="1.6"/><path d="M25 3 L32 6 L25 9 z" fill="var(--ink-soft)"/></svg> master-detail (roll-ups)</span>
+        <span><svg viewBox="0 0 34 12"><line x1="1" y1="6" x2="27" y2="6" stroke="var(--ink-faint)" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M25 3 L32 6 L25 9 z" fill="var(--ink-faint)"/></svg> lookup</span>
+        <span><svg viewBox="0 0 34 12"><line x1="1" y1="6" x2="27" y2="6" stroke="var(--accent-mark)" stroke-width="1.7" stroke-dasharray="5 4"/><path d="M25 3 L32 6 L25 9 z" fill="var(--accent-mark)"/></svg> integração entre domínios</span>
+      </div>
+      <figcaption>Recorte dos 20 objetos. As três ligações em âmbar mostram que as áreas não são silos: o extravio aponta para a remessa que sumiu, e a solicitação de pagamento cobre tanto o ressarcimento ao embarcador quanto o frete do motorista. Objetos-detalhe (Evento de Rastreamento, Linha do Romaneio, Documento do Motorista) foram omitidos. Total: 67 lookups, 7 master-detail, 13 roll-up summaries.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap col">
+    <p class="eyebrow">As seis áreas</p>
+    <h2>Cada app resolve uma parte da operação</h2>
+    <div class="areas">
+      <div class="area">
+        <div>
+          <h3>Operations 360</h3>
+          <p class="objs">Unidade Logística · Remessa · Evento de Rastreamento · Solicitação de Coleta · Romaneio · Rota · Tentativa de Entrega · Ocorrência Operacional</p>
+        </div>
+        <p>Da coleta à entrega. <span class="hi">Flows agendados</span> detectam remessas retidas e sem movimentação há +10 dias e abrem ocorrências sozinhos; um <span class="hi">screen flow</span> registra a tentativa de entrega com geolocalização e foto.</p>
+      </div>
+      <div class="area">
+        <div>
+          <h3>Comercial</h3>
+          <p class="objs">Embarcador (Account) · Contrato Comercial · Faturamento Mensal · Oportunidade</p>
+        </div>
+        <p>Carteira e prospecção. Faturamento mensal como <span class="hi">master-detail</span> da conta, com roll-ups; processo de negócio de prospecção em 9 etapas com <span class="hi">Path</span>.</p>
+      </div>
+      <div class="area">
+        <div>
+          <h3>Cadastro &amp; Frota</h3>
+          <p class="objs">Motorista · Veículo · Documento do Motorista</p>
+        </div>
+        <p>Motorista com <span class="hi">5 Record Types</span> (TAC / MEI / ETC / MR / Coleta), cada um com fórmulas derivadas do tipo — mínimo de pacotes, exigência de veículo, situação da CNH. Validação de placa Mercosul por <span class="hi">REGEX</span>.</p>
+      </div>
+      <div class="area">
+        <div>
+          <h3>SAC</h3>
+          <p class="objs">Chamado (Case) · 5 filas</p>
+        </div>
+        <p>Cinco Record Types (PNR, avaria pós-entrega, postura do motorista…) e uma <span class="hi">regra de atribuição</span> que roteia por tipo para a fila certa. Flows de SLA e envelhecimento de PNR.</p>
+      </div>
+      <div class="area">
+        <div>
+          <h3>Prevenção de Perdas</h3>
+          <p class="objs">Extravio · Penalização de Motorista</p>
+        </div>
+        <p>Extravio com <span class="hi">chave externa</span> que impede dois registros para a mesma remessa. Ressarcimento acima de R$ 300 sobe para aprovação; ao ser aprovado com culpa do motorista, um <span class="hi">flow after-save</span> cria a penalização automaticamente.</p>
+      </div>
+      <div class="area">
+        <div>
+          <h3>Financeiro</h3>
+          <p class="objs">Solicitação de Pagamento · Pagamento · Despesa</p>
+        </div>
+        <p>Aprovação <span class="hi">multinível por alçada</span>: Coordenação sempre, Gerência acima de R$ 2.000, Diretoria acima de R$ 10.000. Quando os pagamentos confirmados cobrem o valor, a solicitação vira &ldquo;Paga&rdquo; sozinha.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="col">
+      <p class="eyebrow">Um processo de ponta a ponta</p>
+      <h2>Uma remessa que não chega &mdash; até virar penalização</h2>
+      <p class="lede">O cenário que junta quatro tipos de automação: flow agendado, regra de atribuição, processo de aprovação e flow disparado por registro. Tudo declarativo.</p>
+    </div>
+    <figure>
+      <div class="figframe">
+        <svg viewBox="0 0 560 700" role="img" aria-label="Fluxo vertical de sete etapas: remessa retida, flow agendado abre ocorrência, chamado PNR roteado por regra de atribuição, extravio com chave única, aprovação de ressarcimento pela coordenação, flow after-save cria a penalização, penalização descontada no romaneio.">
+          <defs>
+            <marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+              <path d="M0 1 L9 5 L0 9 z" fill="var(--ink-soft)"/>
+            </marker>
+          </defs>
+          <g font-family="IBM Plex Sans, sans-serif">
+            <!-- step boxes -->
+            <g font-size="13.5" fill="var(--ink)" text-anchor="middle">
+              <rect x="150" y="20"  width="260" height="46" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/>
+              <text x="280" y="41">Remessa fica <tspan font-weight="600">Retida</tspan></text>
+              <text x="280" y="57" font-size="10.5" fill="var(--ink-faint)" font-family="IBM Plex Mono, monospace">status = Retido / Sem Movimentação</text>
+
+              <rect x="150" y="130" width="260" height="46" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/>
+              <text x="280" y="151">Abre <tspan font-weight="600">Ocorrência Operacional</tspan></text>
+              <text x="280" y="167" font-size="10.5" fill="var(--ink-faint)" font-family="IBM Plex Mono, monospace">sem duplicar · SLA por prioridade</text>
+
+              <rect x="150" y="240" width="260" height="46" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/>
+              <text x="280" y="261"><tspan font-weight="600">Chamado</tspan> tipo PNR</text>
+              <text x="280" y="277" font-size="10.5" fill="var(--ink-faint)" font-family="IBM Plex Mono, monospace">fila SAC · PNR e Extravio</text>
+
+              <rect x="150" y="350" width="260" height="46" rx="3" fill="var(--surface)" stroke="var(--accent-mark)" stroke-width="1.6"/>
+              <text x="280" y="371"><tspan font-weight="600">Extravio</tspan> registrado</text>
+              <text x="280" y="387" font-size="10.5" fill="var(--ink-faint)" font-family="IBM Plex Mono, monospace">chave única por remessa</text>
+
+              <rect x="150" y="460" width="260" height="46" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/>
+              <text x="280" y="481"><tspan font-weight="600">Coordenação aprova</tspan></text>
+              <text x="280" y="497" font-size="10.5" fill="var(--ink-faint)" font-family="IBM Plex Mono, monospace">ressarcimento ao embarcador</text>
+
+              <rect x="150" y="570" width="260" height="46" rx="3" fill="var(--surface)" stroke="var(--accent-mark)" stroke-width="1.6"/>
+              <text x="280" y="591"><tspan font-weight="600">Penalização</tspan> criada</text>
+              <text x="280" y="607" font-size="10.5" fill="var(--ink-faint)" font-family="IBM Plex Mono, monospace">automaticamente, se culpa do motorista</text>
+
+              <rect x="150" y="660" width="260" height="34" rx="3" fill="var(--surface-2)" stroke="var(--line-strong)"/>
+              <text x="280" y="681">Descontada no próximo <tspan font-weight="600">Romaneio</tspan></text>
+            </g>
+            <!-- connectors -->
+            <g stroke="var(--ink-soft)" stroke-width="1.6" marker-end="url(#ah2)" fill="none">
+              <line x1="280" y1="66"  x2="280" y2="126"/>
+              <line x1="280" y1="176" x2="280" y2="236"/>
+              <line x1="280" y1="286" x2="280" y2="346"/>
+              <line x1="280" y1="396" x2="280" y2="456"/>
+              <line x1="280" y1="506" x2="280" y2="566"/>
+              <line x1="280" y1="616" x2="280" y2="656"/>
+            </g>
+            <!-- mechanism labels -->
+            <g font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--accent)" text-anchor="start" letter-spacing="0.2">
+              <text x="298" y="100">Flow agendado &middot; diário</text>
+              <text x="298" y="210">triagem do SAC</text>
+              <text x="298" y="320">regra de atribuição</text>
+              <text x="298" y="430">valor &gt; R$ 300 &rarr; aprovação</text>
+              <text x="298" y="540">Flow after-save</text>
+              <text x="298" y="641">Flow &middot; contestação possível</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <figcaption>Cada seta é um mecanismo declarativo diferente. O extravio nunca duplica (campo external ID); a penalização só nasce quando a responsabilidade apurada é do motorista e há valor a descontar; o motorista pode contestar e a fórmula do valor efetivo recalcula (cancelada = 0, reduzida = 50 %).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap col">
+    <p class="eyebrow">Competências de administração</p>
+    <h2>O que cada trilha do Trailhead exercita &mdash; e onde está no projeto</h2>
+    <dl class="matrix">
+      <div class="row">
+        <dt>Data Modeling<small>Básico</small></dt>
+        <dd><b>20 objetos</b>; lookup, master-detail e hierarquia; <b>56 fórmulas</b>, <b>13 roll-ups</b>, geolocalização, autonumber, external IDs.</dd>
+      </div>
+      <div class="row">
+        <dt>Formulas &amp; Validations<small>Intermediário</small></dt>
+        <dd><b>110 regras de validação</b> em 21 objetos — REGEX, <span class="mono">ISCHANGED</span>, <span class="mono">PRIORVALUE</span>, <span class="mono">ISNEW</span> — e fórmulas cross-object.</dd>
+      </div>
+      <div class="row">
+        <dt>Data Security<small>Intermediário</small></dt>
+        <dd>OWD <b>Private / Public Read Only</b> em 4 objetos; <b>8 sharing rules</b> (owner e critério) + 3 grupos públicos; hierarquia de <b>17 papéis</b>; <b>10 permission sets + 6 permission set groups</b> (projeto <em>permission-set-led</em>).</dd>
+      </div>
+      <div class="row">
+        <dt>Approval Processes<small>Intermediário</small></dt>
+        <dd><b>2 processos</b>; um <b>multinível por alçada</b> com critério de entrada por etapa; field updates de workflow nas fases inicial, final, de rejeição e de recall.</dd>
+      </div>
+      <div class="row">
+        <dt>Picklist Administration<small>Intermediário</small></dt>
+        <dd><b>63 picklists</b> (51 restritas); <b>global value set</b> reutilizado; <b>2 picklists dependentes</b> (motivo &rarr; sub-motivo).</dd>
+      </div>
+      <div class="row">
+        <dt>Lightning Experience Customization<small>Básico</small></dt>
+        <dd><b>6 apps</b>, 6 home pages, <b>6 Lightning Record Pages (Dynamic Forms)</b>, 11 Paths, 19 compact layouts, utility bar, botões e ações rápidas.</dd>
+      </div>
+      <div class="row">
+        <dt>Automação — Flow<small>Básico + Intermediário</small></dt>
+        <dd><b>8 before-save · 5 after-save · 5 agendados · 1 screen flow</b>; regra de atribuição de Case roteando para 5 filas.</dd>
+      </div>
+      <div class="row">
+        <dt>Data Management<small>Básico</small></dt>
+        <dd><b>Bulk API 2.0</b> com upsert por external ID (~1.650 registros); <b>3 matching rules + 4 duplicate rules</b> (placa de veículo bloqueia, CPF/CNPJ alerta).</dd>
+      </div>
+      <div class="row">
+        <dt>User Engagement<small>Básico</small></dt>
+        <dd><b>4 prompts de In-App Guidance</b> (um por app), com ação que leva à list view da área.</dd>
+      </div>
+      <div class="row">
+        <dt>External Services<small>Intermediário</small></dt>
+        <dd><b>Named Credential + External Service</b> (ViaCEP, schema OpenAPI 3) + screen flow que invoca a ação para consultar endereço por CEP.</dd>
+      </div>
+      <div class="row">
+        <dt>Reports &amp; Dashboards<small>Básico</small></dt>
+        <dd><b>18 relatórios com gráfico</b> · <b>9 painéis</b> em grid layout · 1 custom report type · métricas executivas (SLA, % de entregas, contas a pagar por centro de custo).</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section>
+  <div class="wrap col">
+    <p class="eyebrow">Como foi construído</p>
+    <h2>Configuração declarativa, tratada como código</h2>
+    <div class="build-grid">
+      <div>
+        <h3>Salesforce DX, source-tracked</h3>
+        <p>Todo o metadata versionado no Git em <strong>42 commits</strong> — um bloco por módulo de trabalho, mensagem descritiva, histórico auditável.</p>
+      </div>
+      <div>
+        <h3>Geradores de metadata</h3>
+        <p>O XML dos objetos, campos e regras foi gerado por <strong>scripts Python</strong> a partir de um módulo auxiliar comum — para manter 507 campos e 110 validações consistentes.</p>
+      </div>
+      <div>
+        <h3>Bulk API 2.0 para os dados</h3>
+        <p>~1.650 registros fictícios carregados por área, com <em>upsert</em> por external ID e tratamento de picklists restritas e limite de storage.</p>
+      </div>
+      <div>
+        <h3>Autenticação JWT Bearer Flow</h3>
+        <p>Deploy sem interface, via <span class="mono">sf</span> CLI e certificado — o mesmo que um pipeline de CI usaria.</p>
+      </div>
+    </div>
+    <p style="margin-top:1.8rem;color:var(--ink-soft)">O repositório traz um <strong>README</strong> completo, um roteiro de walkthrough, e uma auditoria honesta do que ficou para configuração manual no Setup (algumas coisas realmente não passam pela Metadata API).</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap col">
+    <p class="eyebrow">Explorar o projeto sem uma conta Salesforce</p>
+    <h2>Três formas de avaliar</h2>
+    <div class="explore">
+      <div class="explore-item">
+        <span class="n">01</span>
+        <div>
+          <h3>Ler o metadata no GitHub</h3>
+          <p>Para quem conhece Salesforce: cada objeto, flow, processo de aprovação e permission set está em XML legível. Abrir o processo de aprovação de pagamento já mostra a alçada multinível.</p>
+        </div>
+      </div>
+      <div class="explore-item">
+        <span class="n">02</span>
+        <div>
+          <h3>Fazer o deploy num Developer Edition grátis</h3>
+          <p>Uma conta Developer Edition é gratuita. Com o <span class="mono">sf</span> CLI, um <span class="mono">deploy</span> traz o ambiente inteiro em ~10 minutos — o README tem o passo a passo.</p>
+        </div>
+      </div>
+      <div class="explore-item">
+        <span class="n">03</span>
+        <div>
+          <h3>Seguir o walkthrough com screenshots</h3>
+          <p>Para uma leitura rápida: <span class="mono">docs/WALKTHROUGH.md</span> percorre um fluxo de ponta a ponta em telas legendadas, sem precisar instalar nada.</p>
+        </div>
+      </div>
+    </div>
+    <a class="cta" href="https://github.com/SEU-USUARIO/logitrack-operations-360">Ver o código no GitHub &rarr;</a>
+    <p class="repo-note">&larr; troque pelo link real do repositório depois de publicar</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:.3rem 1.4rem;justify-content:space-between;width:100%">
+    <span>Robert Pestana &middot; Administrador Salesforce</span>
+    <span class="mono">Projeto de portfólio &middot; empresa, marcas e dados fictícios &middot; 2026</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var btn = document.getElementById('themeBtn');
+    var root = document.documentElement;
+    var KEY = 'lt-theme';
+    try {
+      var saved = localStorage.getItem(KEY);
+      if (saved === 'dark' || saved === 'light') root.setAttribute('data-theme', saved);
+    } catch (e) {}
+    function current() {
+      var attr = root.getAttribute('data-theme');
+      if (attr) return attr;
+      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    btn.addEventListener('click', function () {
+      var next = current() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
