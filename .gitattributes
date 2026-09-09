@@ -1,3 +1,13 @@
+# --- GitHub Linguist ---------------------------------------------------------
+# Este repositorio e um projeto de configuracao Salesforce: o grosso do conteudo
+# e metadata (XML), que o Linguist ignora por padrao. Forcamos a contagem do
+# XML para a barra de linguagem refletir o que o projeto realmente e. Os scripts
+# Python em scripts/ (geradores de metadata e carga de dados) continuam contando
+# como a fatia menor que sao.
+force-app/**       linguist-detectable
+force-app/**/*.xml linguist-language=XML
+# ---------------------------------------------------------------------------
+
 # Normalize line endings for all Salesforce metadata to LF
 *.xml       text eol=lf
 *.cls       text eol=lf
