@@ -66,6 +66,11 @@
             <operator>NotEqualTo</operator>
             <value><stringValue>Sem Movimentacao</stringValue></value>
         </filters>
+        <filters>
+            <field>LT_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value><stringValue>Retido</stringValue></value>
+        </filters>
         <object>LT_Shipment__c</object>
         <schedule>
             <frequency>Daily</frequency>
