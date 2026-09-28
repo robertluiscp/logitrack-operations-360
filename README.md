@@ -29,14 +29,14 @@ Intermediário* do Trailhead.
 | Campos personalizados | ~507 |
 | Record Types | 14 |
 | Regras de validação | 110 |
-| Flows | 19 (8 before‑save, 5 after‑save, 5 agendados, 1 tela) |
+| Flows | 20 (8 before‑save, 5 after‑save, 5 agendados, 2 de tela) |
 | Processos de aprovação | 2 (ressarcimento de extravio; pagamento por alçada) |
 | Permission Sets / Permission Set Groups | 10 / 6 |
 | Lightning Apps | 6 |
 | Filas (Queues) | 5 |
 | Relatórios / Dashboards | 18 / 9 |
 | Registros de dados fictícios | ~2.800 |
-| Commits | 27 (um bloco por módulo) |
+| Commits | 50+ (um bloco por módulo) |
 
 ---
 
@@ -176,9 +176,8 @@ Developer Edition — ver `docs/PENDENCIAS-MANUAIS.md`.)_
 Alguns itens não passam pela Metadata API nesta org e ficam para configuração
 manual no Setup / Lightning App Builder — todos listados em
 [`docs/PENDENCIAS-MANUAIS.md`](docs/PENDENCIAS-MANUAIS.md): cards de list view e
-gráficos de relatório nas home pages, Lightning Record Pages dos objetos novos,
-status de Case em português, e a higienização final de metadados *stale* herdados
-da org de origem.
+gráficos de relatório nas home pages, ação "Consultar CEP" na record page da
+Remessa, Business Hours e status de Case em português.
 
 ---
 
