@@ -351,12 +351,12 @@
   <dl class="matrix">
     <div class="row"><dt>Data Modeling<small>Básico</small></dt><dd><b>20 objetos</b>; lookup, master-detail e hierarquia; <b>56 fórmulas</b>, <b>13 roll-ups</b>, geolocalização, autonumber, external IDs.</dd></div>
     <div class="row"><dt>Formulas &amp; Validations<small>Intermediário</small></dt><dd><b>110 regras de validação</b> em 21 objetos — REGEX, <span class="mono">ISCHANGED</span>, <span class="mono">PRIORVALUE</span>, <span class="mono">ISNEW</span> — e fórmulas cross-object.</dd></div>
-    <div class="row"><dt>Data Security<small>Intermediário</small></dt><dd>OWD <b>Private / Public Read Only</b> em 4 objetos; <b>8 sharing rules</b> (owner e critério) + 3 grupos públicos; hierarquia de <b>17 papéis</b>; <b>10 permission sets + 6 permission set groups</b> (projeto <em>permission-set-led</em>).</dd></div>
+    <div class="row"><dt>Data Security<small>Intermediário</small></dt><dd>OWD <b>Private / Public Read Only</b> em 5 objetos; <b>8 sharing rules</b> (owner e critério) + 3 grupos públicos; hierarquia de <b>17 papéis</b>; <b>10 permission sets + 6 permission set groups</b> (projeto <em>permission-set-led</em>).</dd></div>
     <div class="row"><dt>Approval Processes<small>Intermediário</small></dt><dd><b>2 processos</b>; um <b>multinível por alçada</b> com critério de entrada por etapa; field updates de workflow nas fases inicial, final, de rejeição e de recall.</dd></div>
     <div class="row"><dt>Picklist Administration<small>Intermediário</small></dt><dd><b>63 picklists</b> (51 restritas); <b>global value set</b> reutilizado; <b>2 picklists dependentes</b> (motivo &rarr; sub-motivo).</dd></div>
     <div class="row"><dt>Lightning Experience Customization<small>Básico</small></dt><dd><b>6 apps</b>, 6 home pages, <b>6 Lightning Record Pages (Dynamic Forms)</b>, 11 Paths, 19 compact layouts, utility bar, botões e ações rápidas.</dd></div>
     <div class="row"><dt>Automação — Flow<small>Básico + Intermediário</small></dt><dd><b>8 before-save · 5 after-save · 5 agendados · 1 screen flow</b>; regra de atribuição de Case roteando para 5 filas.</dd></div>
-    <div class="row"><dt>Data Management<small>Básico</small></dt><dd><b>Bulk API 2.0</b> com upsert por external ID (~1.650 registros); <b>3 matching rules + 4 duplicate rules</b> (placa de veículo bloqueia, CPF/CNPJ alerta).</dd></div>
+    <div class="row"><dt>Data Management<small>Básico</small></dt><dd><b>Bulk API 2.0</b> com upsert por external ID (~2.800 registros); <b>3 matching rules + 4 duplicate rules</b> (placa de veículo bloqueia, CPF/CNPJ alerta).</dd></div>
     <div class="row"><dt>User Engagement<small>Básico</small></dt><dd><b>4 prompts de In-App Guidance</b> (um por app), com ação que leva à list view da área.</dd></div>
     <div class="row"><dt>External Services<small>Intermediário</small></dt><dd><b>Named Credential + External Service</b> (ViaCEP, schema OpenAPI 3) + screen flow que invoca a ação para consultar endereço por CEP.</dd></div>
     <div class="row"><dt>Reports &amp; Dashboards<small>Básico</small></dt><dd><b>18 relatórios com gráfico</b> · <b>9 painéis</b> em grid layout · 1 custom report type · métricas executivas (SLA, % de entregas, contas a pagar por centro de custo).</dd></div>
@@ -370,7 +370,7 @@
     <div class="build-grid">
       <div><h3>Salesforce DX, source-tracked</h3><p>Todo o metadata versionado no Git em <strong>~50 commits</strong> — um bloco por módulo de trabalho, mensagem descritiva, histórico auditável.</p></div>
       <div><h3>Geradores de metadata</h3><p>O XML dos objetos, campos e regras foi gerado por <strong>scripts Python</strong> a partir de um módulo auxiliar comum — para manter 507 campos e 110 validações consistentes.</p></div>
-      <div><h3>Bulk API 2.0 para os dados</h3><p>~1.650 registros fictícios carregados por área, com <em>upsert</em> por external ID e tratamento de picklists restritas e limite de storage.</p></div>
+      <div><h3>Bulk API 2.0 para os dados</h3><p>~2.800 registros fictícios carregados por área, com <em>upsert</em> por external ID e tratamento de picklists restritas e limite de storage.</p></div>
       <div><h3>Autenticação JWT Bearer Flow</h3><p>Deploy sem interface, via <span class="mono">sf</span> CLI e certificado — o mesmo que um pipeline de CI usaria.</p></div>
     </div>
     <p style="margin-top:1.4rem;color:var(--ink-soft)">O repositório traz um <strong>README</strong> completo, uma auditoria de competências Trailhead e a lista honesta do que ficou para configuração manual no Setup (algumas coisas realmente não passam pela Metadata API).</p>

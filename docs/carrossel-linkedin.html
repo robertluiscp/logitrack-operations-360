@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>LogiTrack Operations 360 — Carrossel LinkedIn</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  @page { size: 1080px 1350px; margin: 0; }
+  :root { --ground:#0E1622; --surface:#16202E; --ink:#E7ECF3; --ink-soft:#A7B2C2; --ink-faint:#7C889B; --line:#2C3A4C; --accent:#F2A93B; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--ground); }
+  body { font-family: "IBM Plex Sans", system-ui, sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .slide { width:1080px; height:1350px; padding:84px 84px 0; position:relative; overflow:hidden; page-break-after:always; break-after:page; background:var(--ground); display:flex; flex-direction:column; }
+  .slide:last-child { page-break-after:auto; break-after:auto; }
+  .kicker { font-family:"IBM Plex Mono",monospace; font-size:24px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin-bottom:24px; }
+  h1,h2 { font-family:"Barlow Semi Condensed",sans-serif; font-weight:700; line-height:1.02; letter-spacing:-.01em; }
+  h1 { font-size:118px; }
+  h2 { font-size:84px; margin-bottom:28px; }
+  .lede { font-size:40px; line-height:1.36; color:var(--ink-soft); }
+  .lede b { color:var(--ink); font-weight:600; }
+  .foot { position:absolute; left:84px; right:84px; bottom:54px; display:flex; justify-content:space-between; font-family:"IBM Plex Mono",monospace; font-size:24px; color:var(--ink-faint); letter-spacing:.06em; }
+  .foot b { color:var(--accent); font-weight:500; }
+
+  .cover { justify-content:space-between; padding-bottom:150px; }
+  .cover h1 span { color:var(--accent); }
+  .strip { display:flex; border-top:2px solid var(--line); border-bottom:2px solid var(--line); }
+  .strip div { flex:1; padding:26px 0; }
+  .strip div + div { padding-left:36px; border-left:2px solid var(--line); }
+  .strip b { display:block; font-family:"IBM Plex Mono",monospace; font-size:78px; font-weight:600; color:var(--accent); line-height:1; }
+  .strip span { font-family:"IBM Plex Mono",monospace; font-size:22px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); }
+  .swipe { font-family:"IBM Plex Mono",monospace; font-size:28px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-faint); }
+
+  .stats { display:grid; grid-template-columns:1fr 1fr; border-top:2px solid var(--line); margin-top:12px; }
+  .stat { padding:30px 0 28px; border-bottom:2px solid var(--line); min-width:0; }
+  .stat:nth-child(odd) { padding-right:30px; border-right:2px solid var(--line); }
+  .stat:nth-child(even) { padding-left:44px; }
+  .stat b { display:block; font-family:"IBM Plex Mono",monospace; font-size:96px; font-weight:600; color:var(--accent); line-height:1; }
+  .stat span { display:block; margin-top:10px; font-size:30px; color:var(--ink-soft); line-height:1.25; }
+
+  .areas { border-top:2px solid var(--line); margin-top:6px; }
+  .area { padding:24px 0; border-bottom:2px solid var(--line); }
+  .area h3 { font-family:"Barlow Semi Condensed",sans-serif; font-size:54px; font-weight:600; line-height:1.05; }
+  .area p { font-size:30px; color:var(--ink-soft); margin-top:6px; line-height:1.3; }
+
+  .steps { display:flex; flex-direction:column; margin-top:4px; }
+  .step { display:grid; grid-template-columns:84px 1fr; gap:0 28px; position:relative; }
+  .dot { width:84px; height:84px; border:3px solid var(--line); border-radius:50%; font-family:"IBM Plex Mono",monospace; font-size:36px; font-weight:600; display:flex; align-items:center; justify-content:center; background:var(--surface); position:relative; z-index:1; }
+  .step.hi .dot { border-color:var(--accent); color:var(--accent); }
+  .step .body { padding:4px 0 30px; }
+  .step h3 { font-family:"Barlow Semi Condensed",sans-serif; font-size:48px; font-weight:600; line-height:1.05; }
+  .step .tag { font-family:"IBM Plex Mono",monospace; font-size:25px; color:var(--accent); margin-top:6px; }
+  .step:not(:last-child)::before { content:""; position:absolute; left:40px; top:84px; bottom:0; width:4px; background:var(--line); }
+
+  .levels { margin-top:6px; }
+  .level { background:var(--surface); border:3px solid var(--line); border-radius:6px; padding:28px 36px; display:flex; justify-content:space-between; align-items:center; }
+  .level h3 { font-family:"Barlow Semi Condensed",sans-serif; font-size:56px; font-weight:600; }
+  .level small { display:block; font-size:28px; color:var(--ink-soft); margin-top:2px; }
+  .when { font-family:"IBM Plex Mono",monospace; font-size:34px; color:var(--accent); text-align:right; font-weight:500; }
+  .level.top { border-color:var(--accent); }
+  .link { width:4px; height:32px; background:var(--line); margin-left:78px; }
+  .note { margin-top:34px; font-size:30px; color:var(--ink-soft); line-height:1.4; }
+  .note b { color:var(--ink); font-weight:600; }
+
+  .rows { border-top:2px solid var(--line); margin-top:6px; }
+  .row { display:grid; grid-template-columns:130px 1fr; gap:0 28px; padding:28px 0; border-bottom:2px solid var(--line); align-items:baseline; }
+  .row b { font-family:"IBM Plex Mono",monospace; font-size:84px; font-weight:600; color:var(--accent); line-height:1; }
+  .row.txt { grid-template-columns:200px 1fr; padding:20px 0; }
+  .row.txt b { font-size:24px; letter-spacing:.06em; text-transform:uppercase; }
+  .row div { font-size:29px; color:var(--ink-soft); line-height:1.3; }
+  .row div strong { display:block; color:var(--ink); font-size:40px; font-weight:600; margin-bottom:2px; font-family:"Barlow Semi Condensed",sans-serif; }
+
+  .how { display:grid; grid-template-columns:1fr 1fr; gap:30px 40px; margin-top:6px; }
+  .how div { border-left:6px solid var(--accent); padding-left:26px; }
+  .how h3 { font-family:"Barlow Semi Condensed",sans-serif; font-size:44px; font-weight:600; line-height:1.05; margin-bottom:8px; }
+  .how p { font-size:29px; color:var(--ink-soft); line-height:1.32; }
+  .cta { margin-top:48px; padding:36px 40px; background:var(--accent); color:#14100A; border-radius:6px; }
+  .cta b { font-family:"Barlow Semi Condensed",sans-serif; font-size:58px; font-weight:700; display:block; line-height:1.05; }
+  .cta span { font-size:30px; display:block; margin-top:8px; font-weight:500; }
+  .sig { margin-top:32px; font-size:30px; color:var(--ink-soft); }
+  .sig b { color:var(--ink); font-weight:600; }
+</style>
+</head>
+<body>
+
+<section class="slide cover">
+  <div>
+    <p class="kicker">Projeto de portfólio · Administração Salesforce</p>
+    <h1>Construí o Salesforce de uma <span>transportadora</span> inteira</h1>
+  </div>
+  <div>
+    <p class="lede" style="margin-bottom:44px"><b>LogiTrack Operations 360</b> — da coleta na origem à entrega, com SAC, prevenção de perdas e financeiro.</p>
+    <div class="strip">
+      <div><b>20</b><span>objetos</span></div>
+      <div><b>110</b><span>validações</span></div>
+      <div><b>20</b><span>flows</span></div>
+    </div>
+    <p class="swipe" style="margin-top:36px">Deslize &rarr;</p>
+  </div>
+  <div class="foot"><span><b>LogiTrack</b> Operations 360</span><span>1 / 9</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">O tamanho do projeto</p>
+  <h2>Em números</h2>
+  <div class="stats">
+    <div class="stat"><b>20</b><span>objetos personalizados</span></div>
+    <div class="stat"><b>500+</b><span>campos personalizados</span></div>
+    <div class="stat"><b>110</b><span>regras de validação</span></div>
+    <div class="stat"><b>20</b><span>flows automatizados</span></div>
+    <div class="stat"><b>2</b><span>processos de aprovação</span></div>
+    <div class="stat"><b>6</b><span>apps Lightning</span></div>
+    <div class="stat"><b>17</b><span>papéis na hierarquia</span></div>
+    <div class="stat"><b>2.800</b><span>registros de exemplo</span></div>
+  </div>
+  <div class="foot"><span><b>LogiTrack</b> Operations 360</span><span>2 / 9</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">O negócio</p>
+  <h2>Seis áreas, um sistema só</h2>
+  <div class="areas">
+    <div class="area"><h3>Operação</h3><p>Remessa, rastreamento, coleta, romaneio e rota</p></div>
+    <div class="area"><h3>Comercial</h3><p>Embarcadores, contratos, faturamento e prospecção</p></div>
+    <div class="area"><h3>Cadastro &amp; Frota</h3><p>Motoristas em 5 modelos, veículos e documentos</p></div>
+    <div class="area"><h3>SAC</h3><p>Chamados de PNR, avaria e agilização por fila</p></div>
+    <div class="area"><h3>Prevenção de Perdas</h3><p>Extravio, ressarcimento e penalização</p></div>
+    <div class="area"><h3>Financeiro</h3><p>Pagamentos com aprovação por alçada</p></div>
+  </div>
+  <div class="foot"><span><b>LogiTrack</b> Operations 360</span><span>3 / 9</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Modelo de dados</p>
+  <h2>As áreas se conversam</h2>
+  <svg viewBox="0 0 960 850" width="912" role="img" aria-label="Recorte do modelo de dados">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1 L9 5 L0 9 z" fill="#A7B2C2"/></marker>
+      <marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1 L9 5 L0 9 z" fill="#F2A93B"/></marker>
+    </defs>
+    <g fill="none" stroke-width="4">
+      <path d="M560 75 L412 75" stroke="#A7B2C2" marker-end="url(#a)"/>
+      <path d="M730 130 L730 246" stroke="#A7B2C2" marker-end="url(#a)"/>
+      <path d="M730 360 L730 476" stroke="#F2A93B" marker-end="url(#am)"/>
+      <path d="M560 535 L412 535" stroke="#F2A93B" marker-end="url(#am)"/>
+      <path d="M730 590 L730 706" stroke="#F2A93B" marker-end="url(#am)"/>
+      <path d="M560 765 L412 765" stroke="#A7B2C2" marker-end="url(#a)"/>
+    </g>
+    <g font-family="IBM Plex Mono, monospace" font-size="24" fill="#F2A93B">
+      <text x="486" y="60" text-anchor="middle" fill="#A7B2C2">enviada por</text>
+      <text x="710" y="196" text-anchor="end" fill="#A7B2C2">retida abre</text>
+      <text x="710" y="426" text-anchor="end">+10 dias vira</text>
+      <text x="486" y="520" text-anchor="middle">penaliza</text>
+      <text x="710" y="656" text-anchor="end">ressarce</text>
+      <text x="486" y="750" text-anchor="middle" fill="#A7B2C2">quitada por</text>
+    </g>
+    <g font-family="Barlow Semi Condensed, sans-serif" font-size="40" font-weight="600" fill="#E7ECF3">
+      <rect x="60" y="20" width="340" height="110" rx="6" fill="#1C2836" stroke="#3A4A5F" stroke-width="3"/>
+      <text x="82" y="78">Embarcador</text>
+      <rect x="560" y="20" width="340" height="110" rx="6" fill="#16202E" stroke="#F2A93B" stroke-width="4"/>
+      <text x="582" y="78">Remessa</text>
+      <rect x="560" y="250" width="340" height="110" rx="6" fill="#1C2836" stroke="#3A4A5F" stroke-width="3"/>
+      <text x="582" y="308">Ocorrência Operac.</text>
+      <rect x="560" y="480" width="340" height="110" rx="6" fill="#16202E" stroke="#F2A93B" stroke-width="4"/>
+      <text x="582" y="538">Extravio</text>
+      <rect x="60" y="480" width="340" height="110" rx="6" fill="#1C2836" stroke="#3A4A5F" stroke-width="3"/>
+      <text x="82" y="538">Penalização</text>
+      <rect x="560" y="710" width="340" height="110" rx="6" fill="#16202E" stroke="#F2A93B" stroke-width="4"/>
+      <text x="582" y="768" font-size="36">Solicit. de Pagamento</text>
+      <rect x="60" y="710" width="340" height="110" rx="6" fill="#1C2836" stroke="#3A4A5F" stroke-width="3"/>
+      <text x="82" y="768">Pagamento</text>
+    </g>
+    <g font-family="IBM Plex Mono, monospace" font-size="20" letter-spacing="2" fill="#7C889B">
+      <text x="82" y="106">COMERCIAL</text>
+      <text x="582" y="106">OPERAÇÃO</text>
+      <text x="582" y="336">OPERAÇÃO</text>
+      <text x="582" y="566">PERDAS</text>
+      <text x="82" y="566">PERDAS &middot; FROTA</text>
+      <text x="582" y="796">FINANCEIRO</text>
+      <text x="82" y="796">FINANCEIRO</text>
+    </g>
+  </svg>
+  <p class="note" style="margin-top:20px">Recorte dos 20 objetos: lookups, master-detail e roll-ups ligam as seis áreas.</p>
+  <div class="foot"><span><b>LogiTrack</b> Operations 360</span><span>4 / 9</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Ponta a ponta</p>
+  <h2>Uma remessa some. O que acontece?</h2>
+  <div class="steps">
+    <div class="step"><div class="dot">1</div><div class="body"><h3>Remessa fica retida</h3><p class="tag">Flow agendado, todo dia</p></div></div>
+    <div class="step"><div class="dot">2</div><div class="body"><h3>Abre ocorrência operacional</h3><p class="tag">Flow · sem duplicar · SLA por prioridade</p></div></div>
+    <div class="step"><div class="dot">3</div><div class="body"><h3>Chamado PNR cai na fila certa</h3><p class="tag">Regra de atribuição</p></div></div>
+    <div class="step hi"><div class="dot">4</div><div class="body"><h3>Extravio é registrado</h3><p class="tag">Chave única por remessa</p></div></div>
+    <div class="step hi"><div class="dot">5</div><div class="body"><h3>Coordenação aprova o ressarcimento</h3><p class="tag">Processo de aprovação · acima de R$ 300</p></div></div>
+    <div class="step hi"><div class="dot">6</div><div class="body"><h3>Penalização nasce sozinha</h3><p class="tag">Flow after-save · se a culpa é do motorista</p></div></div>
+  </div>
+  <div class="foot"><span><b>LogiTrack</b> Operations 360</span><span>5 / 9</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Financeiro</p>
+  <h2>Aprovação por alçada de valor</h2>
+  <div class="levels">
+    <div class="level"><div><h3>1 · Coordenação</h3><small>aprova toda solicitação</small></div><div class="when">sempre</div></div>
+    <div class="link"></div>
+    <div class="level"><div><h3>2 · Gerência</h3><small>entra só se o valor pedir</small></div><div class="when">&ge; R$ 2.000</div></div>
+    <div class="link"></div>
+    <div class="level top"><div><h3>3 · Diretoria</h3><small>última palavra nos valores altos</small></div><div class="when">&ge; R$ 10.000</div></div>
+  </div>
+  <p class="note">Cada etapa tem <b>critério de entrada próprio</b>, e field updates de workflow marcam o status: em aprovação, aprovado, rejeitado e recall.</p>
+  <div class="foot"><span><b>LogiTrack</b> Operations 360</span><span>6 / 9</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Segurança e acesso</p>
+  <h2>Quem vê o quê</h2>
+  <div class="rows">
+    <div class="row"><b>17</b><div><strong>Papéis em hierarquia</strong>Do CEO Brasil ao atendente de SAC</div></div>
+    <div class="row"><b>5</b><div><strong>Objetos com OWD restrita</strong>Private e Public Read Only</div></div>
+    <div class="row"><b>8</b><div><strong>Regras de compartilhamento</strong>Por dono e por critério, com 3 grupos públicos</div></div>
+    <div class="row"><b>6</b><div><strong>Permission Set Groups</strong>Um por área, no lugar de perfis</div></div>
+  </div>
+  <div class="foot"><span><b>LogiTrack</b> Operations 360</span><span>7 / 9</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Trilhas Básico e Intermediário</p>
+  <h2>O que isso exercita</h2>
+  <div class="rows">
+    <div class="row txt"><b>Dados</b><div><strong>Fórmulas, roll-ups, geolocalização</strong>Record Types, picklists dependentes, external IDs</div></div>
+    <div class="row txt"><b>Qualidade</b><div><strong>Duplicate e Matching Rules</strong>Placa de veículo bloqueia; CPF e CNPJ alertam</div></div>
+    <div class="row txt"><b>Automação</b><div><strong>Flows dos quatro tipos</strong>Regras de atribuição e aprovações</div></div>
+    <div class="row txt"><b>Interface</b><div><strong>6 record pages com Dynamic Forms</strong>Apps, Path, ações rápidas, In-App Guidance</div></div>
+    <div class="row txt"><b>Integração</b><div><strong>External Service (ViaCEP)</strong>Named Credential e Screen Flow de consulta</div></div>
+    <div class="row txt"><b>Análise</b><div><strong>Relatórios e painéis por área</strong>SLA, % de entregas e contas a pagar</div></div>
+  </div>
+  <div class="foot"><span><b>LogiTrack</b> Operations 360</span><span>8 / 9</span></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Como foi feito</p>
+  <h2>Configuração tratada como código</h2>
+  <div class="how">
+    <div><h3>Salesforce DX</h3><p>Metadata versionado no Git, um bloco de commits por módulo</p></div>
+    <div><h3>Scripts geram o XML</h3><p>Python mantém centenas de campos e validações consistentes</p></div>
+    <div><h3>Bulk API 2.0</h3><p>Dados fictícios carregados por área, com upsert por external ID</p></div>
+    <div><h3>Deploy sem interface</h3><p>sf CLI com autenticação JWT, como um pipeline de CI</p></div>
+  </div>
+  <div class="cta"><b>Código e documentação no GitHub</b><span>Link no primeiro comentário &darr;</span></div>
+  <p class="sig"><b>Robert Luis Costa Pestana</b><br>Administrador Salesforce &middot; empresa, marcas e dados fictícios</p>
+  <div class="foot"><span><b>LogiTrack</b> Operations 360</span><span>9 / 9</span></div>
+</section>
+
+</body>
+</html>

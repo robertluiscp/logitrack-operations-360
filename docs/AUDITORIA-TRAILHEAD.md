@@ -25,7 +25,7 @@ Legenda: ✅ coberto com profundidade · 🟡 parcial · ❌ não coberto
 ### Módulo: Data Management 🟡
 | Tópico | No projeto |
 |---|---|
-| Importar/exportar dados | ✅ Bulk API 2.0 usado em massa (166 bases, ~4.500 registros), com upsert por External Id, split PJ/PF, tratamento de picklist restrita |
+| Importar/exportar dados | ✅ Bulk API 2.0 usado em massa (166 bases, ~2.800 registros no total da org), com upsert por External Id, split PJ/PF, tratamento de picklist restrita |
 | Data Loader / Data Import Wizard | ✅ equivalente via `sf data import bulk` (a habilidade é a mesma: mapear colunas, external id, tratar erros) |
 | **Regras de Duplicação / Matching Rules** | ❌ **nenhuma criada**. Só as 3 padrão (Account/Contact/Lead). Faltou, por ex., uma regra de duplicação em `LT_Driver__c` por CPF/CNPJ e em `Account` (Embarcador) por CNPJ |
 | Qualidade de dados / Data.com | n/a (recurso descontinuado) |
@@ -128,7 +128,7 @@ Implementadas nos **Módulos N a R** (commits a25b238, beb9135, 523c126, c1817ee
 | 3 | **Quick Actions** | N + R | ✅ 5 de objeto + 3 globais (nova solicitação, registrar ocorrência, consultar CEP) |
 | 4 | **Regras de Duplicação + Matching Rules** | N | ✅ 3 matching + 4 duplicate (veículo por placa = bloqueia) |
 | 5 | **Picklists dependentes** | N | ✅ Causa Raiz → Tipo de Ocorrência; Sub‑motivo → Motivo do Extravio |
-| 6 | **Sharing Rules criteria‑based + OWD restrita** | O | ✅ OWD Private/Read em 4 objetos; 3 grupos; 8 sharing rules |
+| 6 | **Sharing Rules criteria‑based + OWD restrita** | O | ✅ OWD Private/Read em 5 objetos; 3 grupos; 8 sharing rules |
 | 7 | **Lightning Record Pages (Dynamic Forms)** | P | ✅ 6 objetos‑bandeira (Remessa, Motorista, Solicitação de Pagamento, Extravio, Ocorrência, Rota) |
 | 8 | **External Services** | Q | ✅ Named Credential + External Service ViaCEP (OpenAPI 3) + Screen Flow |
 | 9 | **Set Up Your Org** — Holidays | N | ✅ 12 feriados nacionais 2026. Business Hours: só Setup (DML bloqueado) — em `PENDENCIAS-MANUAIS.md` |
@@ -197,5 +197,5 @@ Extensões em objetos padrão: **Account** (2 RTs, 13 campos, 9 VRs), **Case**
 - **1 Custom Report Type** · **18 relatórios** (com gráfico) · **9 dashboards**.
 
 ### Dados fictícios
-~4.500 registros carregados por Bulk API 2.0, por área (bases, comercial,
+~2.800 registros de exemplo, boa parte carregada por Bulk API 2.0, por área (bases, comercial,
 motoristas, remessas, coletas, rotas, ocorrências, SAC, extravios, financeiro).

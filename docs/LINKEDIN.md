@@ -18,13 +18,13 @@ do perfil**. O link do GitHub já está preenchido:
 > SAC, prevenção de perdas (extravio / PNR) e o financeiro de contas a pagar.
 >
 > 📦 O que tem dentro:
-> • 19 objetos personalizados, ~507 campos, 110 regras de validação
+> • 20 objetos personalizados, 500+ campos, 110 regras de validação
 > • 14 Record Types com Business Processes e Path
-> • 19 Flows (record‑triggered, agendados, de tela) + 2 processos de aprovação
+> • 20 Flows (record‑triggered, agendados, de tela) + 2 processos de aprovação
 >   (um deles multinível, por alçada de valor)
 > • 6 Lightning Apps, hierarquia de 17 papéis, Permission Set Groups por área
 > • 18 relatórios e 9 dashboards
-> • ~4.500 registros fictícios carregados por Bulk API
+> • ~2.800 registros fictícios de exemplo
 >
 > Tudo declarativo — **clicks, not code**. Os metadados foram versionados no Git
 > (um bloco de commits por módulo) e gerados por scripts para manter a consistência.
@@ -83,7 +83,7 @@ pages), relatórios e dashboards, hierarquia de papéis e — em vez de perfis �
 Salesforce DX, com os metadados versionados no Git, um bloco de commits por
 módulo. Para não perder a consistência em mais de 500 campos, gerei o XML dos
 metadados a partir de scripts — uma pegada de "infraestrutura como código" aplicada
-à configuração declarativa. Os ~4.500 registros fictícios foram carregados por
+à configuração declarativa. Os ~2.800 registros fictícios foram carregados em boa parte por
 Bulk API 2.0.
 
 O repositório traz um `README` completo, uma página-vitrine (HTML/PDF) e a lista
@@ -101,7 +101,7 @@ Se você trabalha com Salesforce e tiver críticas, manda ver — é assim que e
 ## Linha para a seção "Sobre" do perfil
 
 > Administrador Salesforce em formação. Projeto de portfólio: **LogiTrack Operations
-> 360**, um ambiente Salesforce completo (19 objetos, 19 Flows, aprovações
+> 360**, um ambiente Salesforce completo (20 objetos, 20 Flows, aprovações
 > multinível, 6 apps, dashboards) para uma transportadora de última milha —
 > 100 % declarativo e versionado no Git.
 > https://github.com/robertluiscp/logitrack-operations-360

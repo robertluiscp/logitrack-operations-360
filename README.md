@@ -35,7 +35,7 @@ Intermediário* do Trailhead.
 | Lightning Apps | 6 |
 | Filas (Queues) | 5 |
 | Relatórios / Dashboards | 18 / 9 |
-| Registros de dados fictícios | ~4.500 |
+| Registros de dados fictícios | ~2.800 |
 | Commits | 27 (um bloco por módulo) |
 
 ---
