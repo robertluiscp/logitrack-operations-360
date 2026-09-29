@@ -161,10 +161,16 @@ git clone https://github.com/robertluiscp/logitrack-operations-360.git
 | Usuário | Área | Permission Set Group |
 |---|---|---|
 | Robert Luis Costa Pestana (admin) | Gestão / Diretoria | `LT_PSG_Gestao` |
-| Ana Beatriz Correia | Comercial | `LT_PSG_Comercial` |
+| Ana Beatriz Correia — *avaliador convidado* | Somente leitura, todas as áreas | `LT_Read_Only_Viewer` |
 | Rafael Nunes | Operação | `LT_PSG_Operacao` |
 | Maria Thompson | Cadastro / Frota | `LT_PSG_Cadastro` |
 | Bruno Tavares | Financeiro | `LT_PSG_Financeiro` |
+
+> O login "Ana Beatriz Correia" foi reservado como conta de demonstração
+> para avaliadores externos: perfil padrão **Read Only** + permission set
+> `LT_Read_Only_Viewer` (visualiza todos os 6 apps, sem criar, editar ou
+> excluir nenhum registro). Para reproduzir a persona comercial original com
+> edição, atribua `LT_PSG_Comercial` a um usuário próprio.
 
 _(SAC não tem usuário de teste dedicado por limite de licença Salesforce na
 Developer Edition — ver `docs/PENDENCIAS-MANUAIS.md`.)_
