@@ -150,6 +150,33 @@
                 <behavior>Edit</behavior>
                 <field>LT_Reimbursement_Value__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>LT_SLA_Violated__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsLeftToRight</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Satisfacao do Cliente (CSAT)</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>LT_CSAT_Score__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>LT_CSAT_Date__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>LT_CSAT_Comment__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -166,6 +193,9 @@
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
+    <relatedLists>
+        <relatedList>RelatedCaseMilestoneList</relatedList>
+    </relatedLists>
     <relatedLists>
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>

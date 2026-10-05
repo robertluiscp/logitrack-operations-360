@@ -26,15 +26,15 @@ Intermediário* do Trailhead.
 | | |
 |---|---:|
 | Objetos personalizados | 19 (+ `Operational_Indicator__c`) |
-| Campos personalizados | ~507 |
+| Campos personalizados | ~511 |
 | Record Types | 14 |
-| Regras de validação | 110 |
-| Flows | 20 (8 before‑save, 5 after‑save, 5 agendados, 2 de tela) |
+| Regras de validação | 112 |
+| Flows | 22 (9 before‑save, 6 after‑save, 5 agendados, 2 de tela) |
 | Processos de aprovação | 2 (ressarcimento de extravio; pagamento por alçada) |
 | Permission Sets / Permission Set Groups | 10 / 6 |
 | Lightning Apps | 6 |
 | Filas (Queues) | 5 |
-| Relatórios / Dashboards | 18 / 9 |
+| Relatórios / Dashboards | 27 / 10 |
 | Registros de dados fictícios | ~2.800 |
 | Commits | 50+ (um bloco por módulo) |
 
@@ -78,6 +78,15 @@ Intermediário* do Trailhead.
 - **`Case`** — 5 Record Types (Assinado Não Recebido, Agilização, Avaria Pós‑Entrega,
   Postura do Motorista, PNR) + Support Process, 5 filas e **regra de atribuição**
   que roteia por Record Type. Flows de SLA e *aging* de PNR.
+- **Service Cloud em profundidade (Módulo T)**:
+  - **Entitlements e Milestones** — processo de SLA `LT_Atendimento_SAC` com dois
+    milestones (primeira resposta em 4 h, resolução em 72 h); a violação marca o chamado
+    (`LT_SLA_Violated__c`) por *workflow field update*. Um flow before‑save atribui o
+    entitlement padrão a todo chamado novo.
+  - **CSAT** — nota de 1 a 5, comentário e data no chamado, com validações (faixa 1–5 e só
+    depois de fechado) e um flow que cria a tarefa de coleta da nota ao fechar o chamado.
+  - **Painel do SAC** (`LT_Dash_SAC`) — volume, tipo, fila, atrasados, tempo médio de primeira
+    resposta, CSAT médio e SLA violado, a partir de 9 relatórios de Case.
 
 ### 5. Prevenção de Perdas (dentro do SAC / Operações)
 - **`LT_Loss_Claim__c`** — extravio: apuração de motivo e responsabilidade, valor

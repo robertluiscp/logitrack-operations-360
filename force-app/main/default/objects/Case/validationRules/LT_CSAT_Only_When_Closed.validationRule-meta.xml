@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_CSAT_Only_When_Closed</fullName>
+    <active>true</active>
+    <description>CSAT so pode ser registrado depois que o chamado for fechado.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_CSAT_Score__c)), NOT(IsClosed))</errorConditionFormula>
+    <errorDisplayField>LT_CSAT_Score__c</errorDisplayField>
+    <errorMessage>Registre a nota CSAT somente depois de fechar o chamado.</errorMessage>
+</ValidationRule>

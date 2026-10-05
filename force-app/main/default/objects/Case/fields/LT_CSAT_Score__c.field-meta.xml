@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_CSAT_Score__c</fullName>
+    <description>Nota de satisfacao do cliente com o atendimento (1 a 5), registrada ao fechar o chamado.</description>
+    <inlineHelpText>Nota de 1 (muito insatisfeito) a 5 (muito satisfeito).</inlineHelpText>
+    <label>Nota CSAT</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <precision>1</precision>
+    <scale>0</scale>
+</CustomField>

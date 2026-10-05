@@ -111,4 +111,3 @@ matchingRules/Lead.matchingRule-meta.xml
 duplicateRules/*.Standard_*_Duplicate_Rule.duplicateRule-meta.xml
 assignmentRules/Lead.assignmentRules-meta.xml
 workflows/Account.workflow-meta.xml
-workflows/Case.workflow-meta.xml

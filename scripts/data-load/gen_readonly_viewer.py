@@ -71,6 +71,18 @@ def build():
             "    </objectPermissions>\n"
         )
 
+    # campos customizados dos objetos padrao + campos padrao de entitlement do Case
+    std_fields = [(obj, f) for obj in STANDARD_OBJECTS for f in custom_fields(obj)]
+    std_fields += [("Case", f) for f in ("EntitlementId", "MilestoneStatus", "SlaStartDate", "SlaExitDate")]
+    for obj, f in std_fields:
+        field_perms.append(
+            "    <fieldPermissions>\n"
+            f"        <editable>false</editable>\n"
+            f"        <field>{obj}.{f}</field>\n"
+            "        <readable>true</readable>\n"
+            "    </fieldPermissions>\n"
+        )
+
     for obj in CUSTOM_OBJECTS:
         tab_settings.append(
             "    <tabSettings>\n"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>LT_Marcar_Violacao_SLA</fullName>
+        <description>Marca o chamado como SLA violado quando um milestone estoura.</description>
+        <field>LT_SLA_Violated__c</field>
+        <literalValue>true</literalValue>
+        <name>LT Marcar Violacao de SLA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT_CSAT_Score_Range</fullName>
+    <active>true</active>
+    <description>A nota CSAT deve ficar entre 1 e 5.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(LT_CSAT_Score__c)), OR(LT_CSAT_Score__c &lt; 1, LT_CSAT_Score__c &gt; 5))</errorConditionFormula>
+    <errorDisplayField>LT_CSAT_Score__c</errorDisplayField>
+    <errorMessage>A nota CSAT deve ser um numero de 1 a 5.</errorMessage>
+</ValidationRule>

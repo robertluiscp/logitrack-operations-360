@@ -5,5 +5,10 @@
         <sharedTo>ciderblockafram@gmail.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>AllInternalUsers</sharedTo>
+        <sharedToType>Organization</sharedToType>
+    </folderShares>
     <name>LogiTrack - Dashboards Operacionais</name>
 </DashboardFolder>

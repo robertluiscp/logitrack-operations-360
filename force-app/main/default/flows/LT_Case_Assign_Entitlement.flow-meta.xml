@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Antes de criar o chamado, atribui o entitlement padrao do SAC (que liga o chamado ao processo de SLA com milestones).</description>
+    <environments>Default</environments>
+    <interviewLabel>SAC - Atribuir Entitlement {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SAC - Atribuir Entitlement Padrao</label>
+    <processMetadataValues><name>BuilderType</name><value><stringValue>LightningFlowBuilder</stringValue></value></processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <assignments>
+        <name>Definir_Entitlement</name>
+        <label>Definir Entitlement</label>
+        <locationX>176</locationX>
+        <locationY>396</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.EntitlementId</assignToReference>
+            <operator>Assign</operator>
+            <value><elementReference>Buscar_Entitlement.Id</elementReference></value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Achou_Entitlement</name>
+        <label>Achou Entitlement?</label>
+        <locationX>176</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Nao</defaultConnectorLabel>
+        <rules>
+            <name>Sim</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Buscar_Entitlement</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue><booleanValue>false</booleanValue></rightValue>
+            </conditions>
+            <connector><targetReference>Definir_Entitlement</targetReference></connector>
+            <label>Sim</label>
+        </rules>
+    </decisions>
+    <recordLookups>
+        <name>Buscar_Entitlement</name>
+        <label>Buscar Entitlement</label>
+        <locationX>176</locationX>
+        <locationY>180</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector><targetReference>Achou_Entitlement</targetReference></connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value><stringValue>SAC Padrao LogiTrack</stringValue></value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Entitlement</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Buscar_Entitlement</targetReference></connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>EntitlementId</field>
+            <operator>IsNull</operator>
+            <value><booleanValue>true</booleanValue></value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

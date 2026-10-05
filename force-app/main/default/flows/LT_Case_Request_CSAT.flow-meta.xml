@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Quando um chamado passa a Fechado sem nota CSAT, cria uma tarefa para quem o fechou coletar a nota de satisfacao do cliente em ate 2 dias.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fSubject</name>
+        <dataType>String</dataType>
+        <expression>"Coletar CSAT - Chamado " &amp; {!$Record.CaseNumber}</expression>
+    </formulas>
+    <formulas>
+        <name>fDue</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() + 2</expression>
+    </formulas>
+    <interviewLabel>SAC - Solicitar CSAT {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SAC - Solicitar CSAT ao Fechar</label>
+    <processMetadataValues><name>BuilderType</name><value><stringValue>LightningFlowBuilder</stringValue></value></processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Criar_Tarefa_CSAT</name>
+        <label>Criar Tarefa CSAT</label>
+        <locationX>176</locationX>
+        <locationY>288</locationY>
+        <inputAssignments>
+            <field>Subject</field>
+            <value><elementReference>fSubject</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value><elementReference>fDue</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value><elementReference>$Record.LastModifiedById</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value><elementReference>$Record.Id</elementReference></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value><stringValue>Not Started</stringValue></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value><stringValue>Normal</stringValue></value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value><stringValue>Contatar o cliente, registrar a nota CSAT (1 a 5) e o comentario no chamado.</stringValue></value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector><targetReference>Criar_Tarefa_CSAT</targetReference></connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsClosed</field>
+            <operator>EqualTo</operator>
+            <value><booleanValue>true</booleanValue></value>
+        </filters>
+        <filters>
+            <field>LT_CSAT_Score__c</field>
+            <operator>IsNull</operator>
+            <value><booleanValue>true</booleanValue></value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
