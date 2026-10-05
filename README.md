@@ -194,6 +194,8 @@ manual no Setup / Lightning App Builder — todos listados em
 gráficos de relatório nas home pages, ação "Consultar CEP" na record page da
 Remessa, Business Hours e status de Case em português.
 
+O processo de SLA `LT_Atendimento_SAC` (Entitlement Process) não pode ser reimplantado numa org onde já está em uso por entitlements e chamados ("Cannot update SLA process that is in use"). Numa org limpa o deploy funciona normalmente; para atualizá-lo depois, ative o versionamento de entitlements ou desative o processo antes.
+
 ---
 
 ## Licença
